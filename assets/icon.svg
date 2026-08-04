@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Interrail 2026 appikon">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3b66"/><stop offset="1" stop-color="#176aa5"/></linearGradient></defs>
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="18"/>
+  <path d="M166 126h180c28 0 50 22 50 50v150c0 25-18 46-42 50l30 46h-48l-28-43H204l-28 43h-48l30-46c-24-4-42-25-42-50V176c0-28 22-50 50-50Z" fill="#fff"/>
+  <rect x="154" y="166" width="204" height="105" rx="24" fill="#bde7ff"/>
+  <rect x="177" y="190" width="66" height="57" rx="10" fill="#176aa5"/>
+  <rect x="269" y="190" width="66" height="57" rx="10" fill="#176aa5"/>
+  <circle cx="184" cy="326" r="22" fill="#0b3b66"/>
+  <circle cx="328" cy="326" r="22" fill="#0b3b66"/>
+  <path d="M221 320h70" stroke="#ef8d22" stroke-width="22" stroke-linecap="round"/>
+</svg>
