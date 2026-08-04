@@ -1,0 +1,14 @@
+{
+  "notice": "Hoteloplysninger tilføjes, når reservationerne er valgt. Undlad betalingskort, adgangskoder og dørkoder i det offentlige repository.",
+  "hotels": [
+    {"city":"Kraków","checkInDate":"2026-10-24","checkOutDate":"2026-10-27","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Wien","checkInDate":"2026-10-28","checkOutDate":"2026-10-30","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Innsbruck","checkInDate":"2026-10-30","checkOutDate":"2026-10-31","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Chur","checkInDate":"2026-10-31","checkOutDate":"2026-11-01","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"St. Moritz","checkInDate":"2026-11-01","checkOutDate":"2026-11-02","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Milano","checkInDate":"2026-11-02","checkOutDate":"2026-11-03","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Montreux","checkInDate":"2026-11-03","checkOutDate":"2026-11-04","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Interlaken","checkInDate":"2026-11-04","checkOutDate":"2026-11-05","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
+    {"city":"Antwerpen","checkInDate":"2026-11-05","checkOutDate":"2026-11-08","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null}
+  ]
+}
