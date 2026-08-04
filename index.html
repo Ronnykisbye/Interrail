@@ -13,10 +13,7 @@
 </head>
 <body>
   <header class="topbar">
-    <div>
-      <p class="eyebrow">RONNY & JOLANTA</p>
-      <h1>Interrail 2026</h1>
-    </div>
+    <div><p class="eyebrow">RONNY & JOLANTA</p><h1>Interrail 2026</h1></div>
     <button id="themeToggle" class="icon-btn" aria-label="Skift tema">☾</button>
   </header>
 
@@ -27,32 +24,39 @@
         <h2 id="nextTitle">Snekkersten → Berlin</h2>
         <p id="nextDate">23. oktober 2026</p>
         <div class="countdown" id="countdown">Rejsen starter snart</div>
-        <button class="primary" data-nav="today">Se dagens rejse</button>
+        <button class="primary" data-nav="today">Se denne dag</button>
       </div>
 
-      <div class="grid two">
-        <article class="card"><span>🚆</span><strong>18 rejsedage</strong><small>Fra Snekkersten og hjem igen</small></article>
-        <article class="card"><span>🌙</span><strong>3 nattog</strong><small>Berlin, Wien og Hamborg</small></article>
-        <article class="card"><span>🏔️</span><strong>3 panoramabaner</strong><small>Albula, Bernina og GoldenPass</small></article>
-        <article class="card"><span>📍</span><strong>13 hovedstop</strong><small>Alle samlet i tidslinjen</small></article>
-      </div>
+      <section class="section-head day-heading">
+        <div><p class="section-kicker">HURTIG ADGANG</p><h2>Vælg en rejsedag</h2></div>
+        <span>Dag 1–18</span>
+      </section>
+      <div id="dayChooser" class="day-chooser" aria-label="Vælg en rejsedag"></div>
+
+      <button class="full-trip-button" data-nav="allTrip">
+        <span class="full-trip-icon">🧭</span>
+        <span><strong>Se hele rejsen</strong><small>Alle 18 dage samlet i rækkefølge</small></span>
+        <b aria-hidden="true">→</b>
+      </button>
 
       <section class="section-head"><h2>Rejsens fremdrift</h2><span id="progressText">0 %</span></section>
       <div class="progress"><div id="progressBar"></div></div>
-
-      <section class="section-head"><h2>Hurtig adgang</h2></section>
-      <div class="quick-actions">
-        <button data-nav="route">🗺️ Hele ruten</button>
-        <button data-nav="today">🚆 Dagens rejse</button>
-        <button data-nav="links">🔗 Toglinks</button>
-        <button data-nav="about">ℹ️ Om appen</button>
-      </div>
     </section>
 
     <section id="today" class="view">
-      <div class="section-head"><h2>Dagens rejse</h2><span id="todayDate"></span></div>
+      <div class="day-view-header">
+        <button id="previousDay" class="day-nav-button" type="button">← Forrige</button>
+        <div><p class="section-kicker" id="dayNumber"></p><h2>Dagens plan</h2><span id="todayDate"></span></div>
+        <button id="nextDay" class="day-nav-button" type="button">Næste →</button>
+      </div>
       <div id="todayCard"></div>
       <div id="timeline" class="timeline"></div>
+      <button class="secondary-wide" data-nav="allTrip">Se hele rejsen</button>
+    </section>
+
+    <section id="allTrip" class="view">
+      <div class="section-head"><div><p class="section-kicker">23. OKTOBER – 9. NOVEMBER</p><h2>Hele rejsen</h2></div><span>18 dage</span></div>
+      <div id="fullTripList" class="full-trip-list"></div>
     </section>
 
     <section id="route" class="view">
@@ -71,20 +75,20 @@
         <h2>Om Interrail 2026</h2>
         <p>Appen er bygget specifikt til Ronny og Jolantas Interrail-rejse fra Snekkersten via Kraków og Alperne til Antwerpen og hjem igen.</p>
         <h3>Sådan bruges appen</h3>
-        <p>Overblik viser næste etape. Dagens rejse viser tidslinjen. Kort viser hele ruten. Links åbner de officielle operatør- og stationssider.</p>
+        <p>Vælg en dag direkte på forsiden, se hele rejsen samlet, brug rutekortet eller åbn de officielle toglinks.</p>
         <h3>Vigtige principper</h3>
         <p>Ingen perroner, sæde- eller tognumre vises som faste, før de er dokumenteret. Oplysninger mærket “afventer” skal kontrolleres ved booking eller på rejsedagen.</p>
-        <p><strong>Version 1.0.0</strong></p>
+        <p><strong>Version 1.1.0</strong></p>
       </article>
     </section>
   </main>
 
   <nav class="bottom-nav" aria-label="Hovedmenu">
     <button class="active" data-nav="overview">⌂<span>Overblik</span></button>
-    <button data-nav="today">🚆<span>Rejse</span></button>
+    <button data-nav="today">🚆<span>Rejsedag</span></button>
+    <button data-nav="allTrip">🧭<span>Hele rejsen</span></button>
     <button data-nav="route">🗺️<span>Kort</span></button>
     <button data-nav="links">🔗<span>Links</span></button>
-    <button data-nav="about">ℹ️<span>Om</span></button>
   </nav>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
