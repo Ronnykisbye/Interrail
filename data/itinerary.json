@@ -1,0 +1,81 @@
+{
+  "trip": {
+    "title": "Interrail 2026",
+    "travelers": "Ronny & Jolanta",
+    "start": "2026-10-23",
+    "end": "2026-11-09",
+    "statusNote": "Tider mærket afventer skal kontrolleres ved booking eller på rejsedagen."
+  },
+  "days": [
+    {
+      "date": "2026-10-23",
+      "title": "Snekkersten → Berlin",
+      "overnight": "Snälltåget nattog",
+      "status": "Bekræftet hovedforløb",
+      "summary": "Rejsen starter på Snekkersten Station og fortsætter til København Syd, hvor nattoget mod Berlin afgår.",
+      "events": [
+        {"time":"Afventer","title":"Snekkersten Station","detail":"Tag DSB mod København. Den konkrete lokale afgang vælges i Rejseplanen tættere på rejsen."},
+        {"time":"Senest 21:15","title":"Ankomst København Syd","detail":"God buffer før nattoget. København Syd er stationens officielle navn; tidligere Ny Ellebjerg."},
+        {"time":"22:32","title":"Snälltåget mod Berlin","detail":"Reservation er obligatorisk. Privat kupé anbefales."}
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "title": "Berlin → Kraków",
+      "overnight": "Kraków 1/3",
+      "status": "Endelig afgang afventer",
+      "summary": "Ankomst til Berlin om morgenen og videre med direkte EuroCity til Kraków.",
+      "events": [
+        {"time":"08:35","title":"Berlin Hbf","detail":"Planlagt ankomst med Snälltåget."},
+        {"time":"Efter 09:35","title":"Direkte EuroCity til Kraków","detail":"Vælg en direkte forbindelse med god buffer. Endeligt tognummer og klokkeslæt kontrolleres ved booking."},
+        {"time":"Aften","title":"Kraków Główny","detail":"Check ind på eget valgte hotel."}
+      ]
+    },
+    {"date":"2026-10-25","title":"Kraków","overnight":"Kraków 2/3","status":"Låst","summary":"Opholdsdag i Kraków.","events":[{"time":"Hele dagen","title":"Kraków","detail":"Bydag med god tid til den gamle by, Wawel og Kazimierz."}]},
+    {"date":"2026-10-26","title":"Kraków","overnight":"Kraków 3/3","status":"Låst","summary":"Anden fulde opholdsdag i Kraków.","events":[{"time":"Hele dagen","title":"Kraków","detail":"Fleksibel opholdsdag uden togskift."}]},
+    {
+      "date":"2026-10-27","title":"Kraków → Wien","overnight":"EuroNight","status":"Forbindelse bekræftet","summary":"Aftenen bruges på EuroNight fra Kraków til Wien.",
+      "events":[{"time":"Dag","title":"Kraków","detail":"Rolig dag før afgang."},{"time":"Aften","title":"EuroNight til Wien","detail":"Privat sovekupé anbefales. Endelig tid og kupénummer kommer fra bookingen."}]
+    },
+    {"date":"2026-10-28","title":"Wien","overnight":"Wien 1/2","status":"Låst","summary":"Ankomst til Wien og opholdsdag.","events":[{"time":"Morgen","title":"Wien Hbf","detail":"Ankomst med nattog."},{"time":"Resten af dagen","title":"Wien","detail":"Ophold uden videre tog."}]},
+    {"date":"2026-10-29","title":"Wien","overnight":"Wien 2/2","status":"Låst","summary":"Hel opholdsdag i Wien.","events":[{"time":"Hele dagen","title":"Wien","detail":"Fleksibel bydag."}]},
+    {
+      "date":"2026-10-30","title":"Wien → Innsbruck","overnight":"Innsbruck","status":"Rute låst","summary":"Direkte Railjet gennem Østrig mod Innsbruck.",
+      "events":[{"time":"Omkring 10:00","title":"Wien Hbf","detail":"Direkte Railjet foretrækkes. Pladsreservation anbefales i 1. klasse."},{"time":"Eftermiddag","title":"Innsbruck Hbf","detail":"Ankomst og overnatning."}]
+    },
+    {
+      "date":"2026-10-31","title":"Innsbruck → Chur","overnight":"Chur","status":"Rute låst","summary":"Dagtog gennem Arlberg-området og videre til Schweiz.",
+      "events":[{"time":"Omkring 10:00","title":"Innsbruck Hbf","detail":"Tidligere afgang vælges, hvis kravet om mindst 60 minutters skift kræver det."},{"time":"Eftermiddag/aften","title":"Chur","detail":"Ankomst og overnatning tæt på næste dags Albula-rute."}]
+    },
+    {
+      "date":"2026-11-01","title":"Chur → St. Moritz","overnight":"St. Moritz","status":"Rute bekræftet","summary":"Regionaltog via den klassiske Albula-bane.",
+      "events":[{"time":"Omkring 10:00","title":"RhB regionaltog fra Chur","detail":"Regionaltog vælges for at sikre Albula-banen, Landwasser-viadukten og den klassiske rute."},{"time":"Eftermiddag","title":"St. Moritz","detail":"Overnatning før Bernina Express næste morgen."}]
+    },
+    {
+      "date":"2026-11-02","title":"St. Moritz → Tirano → Milano","overnight":"Milano","status":"Bernina bekræftet","summary":"Rejsens store panoramadag over Bernina-passet.",
+      "events":[{"time":"09:17","title":"Bernina Express PE 971","detail":"Afgang fra St. Moritz. Reservation i panoramavogn er obligatorisk."},{"time":"11:32","title":"Tirano","detail":"Ankomst. Videre tog må planlægges tidligst kl. 12:32 for en fuld times buffer."},{"time":"Tidligst 12:32","title":"Trenord RE8 mod Milano","detail":"Den konkrete afgang kontrolleres i Trenords køreplan."},{"time":"Eftermiddag/aften","title":"Milano Centrale","detail":"Ankomst og overnatning."}]
+    },
+    {
+      "date":"2026-11-03","title":"Milano → Montreux","overnight":"Montreux","status":"Rute låst","summary":"Tog gennem Simplon-området til Genevesøen.",
+      "events":[{"time":"Omkring 10:00","title":"Milano Centrale","detail":"EC/SBB-forbindelse via Domodossola, Simplon og Brig."},{"time":"Eftermiddag","title":"Montreux","detail":"Ankomst og overnatning før GoldenPass."}]
+    },
+    {
+      "date":"2026-11-04","title":"Montreux → Interlaken","overnight":"Interlaken 1 nat","status":"Rute bekræftet","summary":"Direkte GoldenPass Express gennem det vestlige Schweiz.",
+      "events":[{"time":"Omkring 10:00","title":"GoldenPass Express","detail":"Direkte panoramatog. Rejsetid cirka 3 timer og 15 minutter. Pladsreservation anbefales."},{"time":"Tidlig eftermiddag","title":"Interlaken Ost","detail":"Ankomst og én overnatning."}]
+    },
+    {
+      "date":"2026-11-05","title":"Interlaken → Antwerpen","overnight":"Antwerpen 1/3","status":"Endelig togkæde afventer","summary":"Lang rejsedag til Antwerpen. Tidlig afgang er tilladt.",
+      "events":[{"time":"Før/omkring 10:00","title":"Interlaken Ost","detail":"Direkte tog mod Basel foretrækkes."},{"time":"Afventer","title":"Basel og videre mod Belgien","detail":"Mindst 60 minutter ved planlagte internationale skift."},{"time":"Senest omkring 20:00 ønskes","title":"Antwerpen-Centraal","detail":"Ankomst på første faste opholdsdag."}]
+    },
+    {"date":"2026-11-06","title":"Antwerpen","overnight":"Antwerpen 2/3","status":"Låst","summary":"Opholdsdag i Antwerpen.","events":[{"time":"Hele dagen","title":"Antwerpen","detail":"Ingen planlagte fjerntog."}]},
+    {"date":"2026-11-07","title":"Antwerpen","overnight":"Antwerpen 3/3","status":"Låst","summary":"Anden fulde opholdsdag i Antwerpen.","events":[{"time":"Hele dagen","title":"Antwerpen","detail":"Ingen planlagte fjerntog."}]},
+    {
+      "date":"2026-11-08","title":"Antwerpen → Bruxelles → Hamborg","overnight":"European Sleeper","status":"Driftsdag bekræftet","summary":"Belgisk IC til Bruxelles og nattog videre mod Hamborg.",
+      "events":[{"time":"Afventer","title":"Antwerpen-Centraal → Bruxelles-Midi","detail":"Vælg direkte IC med mindst 90 minutters buffer."},{"time":"Aften","title":"European Sleeper","detail":"Reservation er obligatorisk. Privat kupé anbefales."}]
+    },
+    {
+      "date":"2026-11-09","title":"Hamborg → København → Snekkersten","overnight":"Hjemme","status":"Rute låst","summary":"Sidste dag med dagtog tilbage til Danmark.",
+      "events":[{"time":"Morgen","title":"Hamburg-Harburg","detail":"Ankomst med European Sleeper. Næste tog vælges med mindst 60 minutters buffer."},{"time":"Afventer","title":"Hamborg → København","detail":"DB/DSB-forbindelse vælges efter nattogets faktiske ankomsttid."},{"time":"Afventer","title":"København → Snekkersten","detail":"Kystbanen hjem. Ingen kritisk videreforbindelse."}]
+    }
+  ]
+}
