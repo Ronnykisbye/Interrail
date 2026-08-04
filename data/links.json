@@ -1,0 +1,18 @@
+[
+  {"title":"Rejseplanen","subtitle":"Snekkersten og danske lokalforbindelser","icon":"🇩🇰","url":"https://www.rejseplanen.dk/"},
+  {"title":"Snekkersten Station","subtitle":"Google Maps","icon":"📍","url":"https://www.google.com/maps/search/?api=1&query=Snekkersten+Station"},
+  {"title":"København Syd Station","subtitle":"Google Maps – tidligere Ny Ellebjerg","icon":"📍","url":"https://www.google.com/maps/search/?api=1&query=K%C3%B8benhavn+Syd+Station"},
+  {"title":"Snälltåget","subtitle":"København Syd → Berlin","icon":"🌙","url":"https://www.snalltaget.se/en/berlin"},
+  {"title":"Deutsche Bahn","subtitle":"Berlin → Kraków og internationale tog","icon":"🇩🇪","url":"https://int.bahn.de/en"},
+  {"title":"PKP Intercity","subtitle":"Polske tog og reservationer","icon":"🇵🇱","url":"https://www.intercity.pl/en/"},
+  {"title":"ÖBB","subtitle":"EuroNight og Railjet","icon":"🇦🇹","url":"https://www.oebb.at/en/"},
+  {"title":"Nightjet / EuroNight","subtitle":"Nattog og kupéinformation","icon":"🛏️","url":"https://www.nightjet.com/en/"},
+  {"title":"SBB","subtitle":"Schweiziske forbindelser","icon":"🇨🇭","url":"https://www.sbb.ch/en"},
+  {"title":"Rhätische Bahn","subtitle":"Albula- og Bernina-ruterne","icon":"🏔️","url":"https://www.rhb.ch/en/"},
+  {"title":"Bernina Express","subtitle":"Køreplan og reservation","icon":"🚞","url":"https://www.rhb.ch/en/panoramic-journeys/bernina-express/"},
+  {"title":"Trenord","subtitle":"Tirano → Milano","icon":"🇮🇹","url":"https://www.trenord.it/en/"},
+  {"title":"GoldenPass Express","subtitle":"Montreux → Interlaken","icon":"🌄","url":"https://www.gpx.swiss/en/"},
+  {"title":"Belgian Train","subtitle":"Antwerpen → Bruxelles","icon":"🇧🇪","url":"https://www.belgiantrain.be/en"},
+  {"title":"European Sleeper","subtitle":"Bruxelles → Hamborg","icon":"🌙","url":"https://www.europeansleeper.eu/timetable"},
+  {"title":"Interrail","subtitle":"Pass og reservationsvejledning","icon":"🎫","url":"https://www.interrail.eu/en"}
+]
