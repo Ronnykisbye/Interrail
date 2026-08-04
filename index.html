@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b3b66">
+  <meta name="description" content="Personlig Interrail-app til Ronny og Jolantas rejse i 2026">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <title>Interrail 2026</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">RONNY & JOLANTA</p>
+      <h1>Interrail 2026</h1>
+    </div>
+    <button id="themeToggle" class="icon-btn" aria-label="Skift tema">☾</button>
+  </header>
+
+  <main>
+    <section id="overview" class="view active">
+      <div class="hero-card">
+        <p class="eyebrow">NÆSTE ETAPE</p>
+        <h2 id="nextTitle">Snekkersten → Berlin</h2>
+        <p id="nextDate">23. oktober 2026</p>
+        <div class="countdown" id="countdown">Rejsen starter snart</div>
+        <button class="primary" data-nav="today">Se dagens rejse</button>
+      </div>
+
+      <div class="grid two">
+        <article class="card"><span>🚆</span><strong>18 rejsedage</strong><small>Fra Snekkersten og hjem igen</small></article>
+        <article class="card"><span>🌙</span><strong>3 nattog</strong><small>Berlin, Wien og Hamborg</small></article>
+        <article class="card"><span>🏔️</span><strong>3 panoramabaner</strong><small>Albula, Bernina og GoldenPass</small></article>
+        <article class="card"><span>📍</span><strong>13 hovedstop</strong><small>Alle samlet i tidslinjen</small></article>
+      </div>
+
+      <section class="section-head"><h2>Rejsens fremdrift</h2><span id="progressText">0 %</span></section>
+      <div class="progress"><div id="progressBar"></div></div>
+
+      <section class="section-head"><h2>Hurtig adgang</h2></section>
+      <div class="quick-actions">
+        <button data-nav="route">🗺️ Hele ruten</button>
+        <button data-nav="today">🚆 Dagens rejse</button>
+        <button data-nav="links">🔗 Toglinks</button>
+        <button data-nav="about">ℹ️ Om appen</button>
+      </div>
+    </section>
+
+    <section id="today" class="view">
+      <div class="section-head"><h2>Dagens rejse</h2><span id="todayDate"></span></div>
+      <div id="todayCard"></div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="route" class="view">
+      <div class="section-head"><h2>Rutekort</h2><span>Dag-, nat- og panoramatog</span></div>
+      <div id="map"></div>
+      <div class="legend"><span class="day">Dagtog</span><span class="night">Nattog</span><span class="panorama">Panorama</span></div>
+    </section>
+
+    <section id="links" class="view">
+      <div class="section-head"><h2>Rejse- og stationslinks</h2><span>Officielle sider</span></div>
+      <div id="linkList" class="link-list"></div>
+    </section>
+
+    <section id="about" class="view">
+      <article class="about-card">
+        <h2>Om Interrail 2026</h2>
+        <p>Appen er bygget specifikt til Ronny og Jolantas Interrail-rejse fra Snekkersten via Kraków og Alperne til Antwerpen og hjem igen.</p>
+        <h3>Sådan bruges appen</h3>
+        <p>Overblik viser næste etape. Dagens rejse viser tidslinjen. Kort viser hele ruten. Links åbner de officielle operatør- og stationssider.</p>
+        <h3>Vigtige principper</h3>
+        <p>Ingen perroner, sæde- eller tognumre vises som faste, før de er dokumenteret. Oplysninger mærket “afventer” skal kontrolleres ved booking eller på rejsedagen.</p>
+        <p><strong>Version 1.0.0</strong></p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Hovedmenu">
+    <button class="active" data-nav="overview">⌂<span>Overblik</span></button>
+    <button data-nav="today">🚆<span>Rejse</span></button>
+    <button data-nav="route">🗺️<span>Kort</span></button>
+    <button data-nav="links">🔗<span>Links</span></button>
+    <button data-nav="about">ℹ️<span>Om</span></button>
+  </nav>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
