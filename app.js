@@ -1,22 +1,6 @@
-const state={data:null,links:[],map:null};
+const state={data:null,links:[],map:null,selectedDayIndex:0};
 const routeStops=[
-  {name:'Snekkersten',lat:56.0095,lng:12.5822,type:'day'},
-  {name:'København Syd',lat:55.6380,lng:12.5360,type:'night'},
-  {name:'Berlin Hbf',lat:52.5251,lng:13.3694,type:'day'},
-  {name:'Kraków Główny',lat:50.0674,lng:19.9472,type:'night'},
-  {name:'Wien Hbf',lat:48.1852,lng:16.3768,type:'day'},
-  {name:'Innsbruck Hbf',lat:47.2639,lng:11.4010,type:'day'},
-  {name:'Chur',lat:46.8530,lng:9.5308,type:'panorama'},
-  {name:'St. Moritz',lat:46.4970,lng:9.8380,type:'panorama'},
-  {name:'Tirano',lat:46.2165,lng:10.1690,type:'day'},
-  {name:'Milano Centrale',lat:45.4856,lng:9.2042,type:'day'},
-  {name:'Montreux',lat:46.4358,lng:6.9107,type:'panorama'},
-  {name:'Interlaken Ost',lat:46.6900,lng:7.8690,type:'day'},
-  {name:'Antwerpen-Centraal',lat:51.2172,lng:4.4211,type:'day'},
-  {name:'Bruxelles-Midi',lat:50.8357,lng:4.3365,type:'night'},
-  {name:'Hamburg-Harburg',lat:53.4568,lng:9.9917,type:'day'},
-  {name:'København H',lat:55.6727,lng:12.5649,type:'day'},
-  {name:'Snekkersten',lat:56.0095,lng:12.5822,type:'day'}
+  {name:'Snekkersten',lat:56.0095,lng:12.5822,type:'day'},{name:'København Syd',lat:55.6380,lng:12.5360,type:'night'},{name:'Berlin Hbf',lat:52.5251,lng:13.3694,type:'day'},{name:'Kraków Główny',lat:50.0674,lng:19.9472,type:'night'},{name:'Wien Hbf',lat:48.1852,lng:16.3768,type:'day'},{name:'Innsbruck Hbf',lat:47.2639,lng:11.4010,type:'day'},{name:'Chur',lat:46.8530,lng:9.5308,type:'panorama'},{name:'St. Moritz',lat:46.4970,lng:9.8380,type:'panorama'},{name:'Tirano',lat:46.2165,lng:10.1690,type:'day'},{name:'Milano Centrale',lat:45.4856,lng:9.2042,type:'day'},{name:'Montreux',lat:46.4358,lng:6.9107,type:'panorama'},{name:'Interlaken Ost',lat:46.6900,lng:7.8690,type:'day'},{name:'Antwerpen-Centraal',lat:51.2172,lng:4.4211,type:'day'},{name:'Bruxelles-Midi',lat:50.8357,lng:4.3365,type:'night'},{name:'Hamburg-Harburg',lat:53.4568,lng:9.9917,type:'day'},{name:'København H',lat:55.6727,lng:12.5649,type:'day'},{name:'Snekkersten',lat:56.0095,lng:12.5822,type:'day'}
 ];
 const colors={day:'#25835b',night:'#173a7a',panorama:'#ef8d22'};
 
@@ -25,6 +9,7 @@ async function loadData(){
     const [tripRes,linksRes]=await Promise.all([fetch('data/itinerary.json'),fetch('data/links.json')]);
     if(!tripRes.ok||!linksRes.ok)throw new Error('Data kunne ikke hentes');
     state.data=await tripRes.json();state.links=await linksRes.json();
+    state.selectedDayIndex=getCurrentDayIndex();
     initApp();
   }catch(error){
     console.error(error);
@@ -33,7 +18,7 @@ async function loadData(){
 }
 
 function initApp(){
-  bindNavigation();bindTheme();renderOverview();renderToday();renderLinks();registerServiceWorker();
+  bindNavigation();bindTheme();bindDayNavigation();renderOverview();renderSelectedDay();renderFullTrip();renderLinks();registerServiceWorker();
 }
 
 function bindNavigation(){
@@ -44,6 +29,7 @@ function showView(id){
   document.querySelectorAll('.bottom-nav button').forEach(b=>b.classList.toggle('active',b.dataset.nav===id));
   window.scrollTo({top:0,behavior:'smooth'});
   if(id==='route')setTimeout(renderMap,80);
+  if(id==='today')renderSelectedDay();
 }
 function bindTheme(){
   const saved=localStorage.getItem('interrail-theme');
@@ -59,13 +45,14 @@ function updateThemeIcon(){document.getElementById('themeToggle').textContent=do
 
 function localDate(value){return new Date(`${value}T12:00:00`)}
 function formatDate(value){return new Intl.DateTimeFormat('da-DK',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(localDate(value))}
-function getCurrentDay(){
-  const now=new Date();
-  const days=state.data.days;
-  const exact=days.find(d=>d.date===now.toISOString().slice(0,10));
-  if(exact)return exact;
-  if(now<localDate(days[0].date))return days[0];
-  return [...days].reverse().find(d=>now>=localDate(d.date))||days[0];
+function shortDate(value){return new Intl.DateTimeFormat('da-DK',{day:'numeric',month:'short'}).format(localDate(value))}
+function getCurrentDayIndex(){
+  const now=new Date();const days=state.data.days;
+  const exact=days.findIndex(d=>d.date===now.toISOString().slice(0,10));
+  if(exact>=0)return exact;
+  if(now<localDate(days[0].date))return 0;
+  const past=[...days].map((day,index)=>({day,index})).reverse().find(item=>now>=localDate(item.day.date));
+  return past?.index??0;
 }
 function getProgress(){
   const start=localDate(state.data.trip.start),end=localDate(state.data.trip.end),now=new Date();
@@ -73,21 +60,41 @@ function getProgress(){
   return Math.round(((now-start)/(end-start))*100);
 }
 function renderOverview(){
-  const day=getCurrentDay();
+  const day=state.data.days[getCurrentDayIndex()];
   document.getElementById('nextTitle').textContent=day.title;
   document.getElementById('nextDate').textContent=formatDate(day.date);
-  const diff=localDate(state.data.trip.start)-new Date();
-  const count=document.getElementById('countdown');
+  const diff=localDate(state.data.trip.start)-new Date();const count=document.getElementById('countdown');
   if(diff>0){const n=Math.ceil(diff/86400000);count.textContent=`${n} ${n===1?'dag':'dage'} til afrejse`;}
   else if(new Date()<=localDate(state.data.trip.end)){count.textContent='Rejsen er i gang';}
   else count.textContent='Rejsen er afsluttet';
   const p=getProgress();document.getElementById('progressText').textContent=`${p} %`;document.getElementById('progressBar').style.width=`${p}%`;
+  renderDayChooser();
 }
-function renderToday(){
-  const day=getCurrentDay();
+function renderDayChooser(){
+  const container=document.getElementById('dayChooser');
+  container.innerHTML=state.data.days.map((day,index)=>`<button class="day-choice ${index===getCurrentDayIndex()?'is-current':''}" type="button" data-day-index="${index}"><span class="day-choice-number">Dag ${index+1}</span><strong>${escapeHtml(day.title)}</strong><small>${escapeHtml(shortDate(day.date))}</small></button>`).join('');
+  container.querySelectorAll('[data-day-index]').forEach(button=>button.addEventListener('click',()=>selectDay(Number(button.dataset.dayIndex))));
+}
+function selectDay(index){
+  state.selectedDayIndex=Math.max(0,Math.min(index,state.data.days.length-1));
+  renderSelectedDay();showView('today');
+}
+function bindDayNavigation(){
+  document.getElementById('previousDay').addEventListener('click',()=>selectDay(state.selectedDayIndex-1));
+  document.getElementById('nextDay').addEventListener('click',()=>selectDay(state.selectedDayIndex+1));
+}
+function renderSelectedDay(){
+  const day=state.data.days[state.selectedDayIndex];
+  document.getElementById('dayNumber').textContent=`DAG ${state.selectedDayIndex+1} AF ${state.data.days.length}`;
   document.getElementById('todayDate').textContent=formatDate(day.date);
   document.getElementById('todayCard').innerHTML=`<article class="trip-card"><span class="badge">${escapeHtml(day.status)}</span><div class="route">${escapeHtml(day.title)}</div><p>${escapeHtml(day.summary)}</p><small><strong>Overnatning:</strong> ${escapeHtml(day.overnight)}</small></article>`;
   document.getElementById('timeline').innerHTML=day.events.map(event=>`<div class="timeline-item"><div class="timeline-time">${escapeHtml(event.time)}</div><div class="timeline-dot"></div><div class="timeline-body"><strong>${escapeHtml(event.title)}</strong><p>${escapeHtml(event.detail)}</p></div></div>`).join('');
+  document.getElementById('previousDay').disabled=state.selectedDayIndex===0;
+  document.getElementById('nextDay').disabled=state.selectedDayIndex===state.data.days.length-1;
+}
+function renderFullTrip(){
+  document.getElementById('fullTripList').innerHTML=state.data.days.map((day,index)=>`<button class="full-trip-day" type="button" data-full-day="${index}"><span class="full-trip-day-number">${index+1}</span><span class="full-trip-day-copy"><small>${escapeHtml(shortDate(day.date))} · ${escapeHtml(day.status)}</small><strong>${escapeHtml(day.title)}</strong><span>${escapeHtml(day.summary)}</span></span><b>→</b></button>`).join('');
+  document.querySelectorAll('[data-full-day]').forEach(button=>button.addEventListener('click',()=>selectDay(Number(button.dataset.fullDay))));
 }
 function renderLinks(){
   document.getElementById('linkList').innerHTML=state.links.map(link=>`<a class="link-card" href="${link.url}" target="_blank" rel="noopener noreferrer"><div><strong>${escapeHtml(link.title)}</strong><small>${escapeHtml(link.subtitle)}</small></div><b>${link.icon}</b></a>`).join('');
