@@ -1,4 +1,4 @@
-const CACHE='interrail-2026-v1-1';
+const CACHE='interrail-2026-v1-2';
 const CORE=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./data/itinerary.json','./data/links.json','./assets/icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting();});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))));self.clients.claim();});
