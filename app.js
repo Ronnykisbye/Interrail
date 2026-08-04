@@ -3,6 +3,21 @@ const routeStops=[
   {name:'Snekkersten',lat:56.0095,lng:12.5822,type:'day'},{name:'København Syd',lat:55.6380,lng:12.5360,type:'night'},{name:'Berlin Hbf',lat:52.5251,lng:13.3694,type:'day'},{name:'Kraków Główny',lat:50.0674,lng:19.9472,type:'night'},{name:'Wien Hbf',lat:48.1852,lng:16.3768,type:'day'},{name:'Innsbruck Hbf',lat:47.2639,lng:11.4010,type:'day'},{name:'Chur',lat:46.8530,lng:9.5308,type:'panorama'},{name:'St. Moritz',lat:46.4970,lng:9.8380,type:'panorama'},{name:'Tirano',lat:46.2165,lng:10.1690,type:'day'},{name:'Milano Centrale',lat:45.4856,lng:9.2042,type:'day'},{name:'Montreux',lat:46.4358,lng:6.9107,type:'panorama'},{name:'Interlaken Ost',lat:46.6900,lng:7.8690,type:'day'},{name:'Antwerpen-Centraal',lat:51.2172,lng:4.4211,type:'day'},{name:'Bruxelles-Midi',lat:50.8357,lng:4.3365,type:'night'},{name:'Hamburg-Harburg',lat:53.4568,lng:9.9917,type:'day'},{name:'København H',lat:55.6727,lng:12.5649,type:'day'},{name:'Snekkersten',lat:56.0095,lng:12.5822,type:'day'}
 ];
 const colors={day:'#25835b',night:'#173a7a',panorama:'#ef8d22'};
+const operatorLinks={
+  rejseplanen:{label:'Rejseplanen',url:'https://www.rejseplanen.dk/'},
+  snalltaget:{label:'Snälltåget',url:'https://www.snalltaget.se/en/berlin'},
+  db:{label:'Deutsche Bahn',url:'https://int.bahn.de/en'},
+  pkp:{label:'PKP Intercity',url:'https://www.intercity.pl/en/'},
+  oebb:{label:'ÖBB',url:'https://www.oebb.at/en/'},
+  nightjet:{label:'Nightjet / EuroNight',url:'https://www.nightjet.com/en/'},
+  sbb:{label:'SBB',url:'https://www.sbb.ch/en'},
+  rhb:{label:'Rhätische Bahn',url:'https://www.rhb.ch/en/'},
+  bernina:{label:'Bernina Express',url:'https://www.rhb.ch/en/panoramic-journeys/bernina-express/'},
+  trenord:{label:'Trenord',url:'https://www.trenord.it/en/'},
+  goldenpass:{label:'GoldenPass Express',url:'https://www.gpx.swiss/en/'},
+  belgian:{label:'Belgian Train',url:'https://www.belgiantrain.be/en'},
+  europeanSleeper:{label:'European Sleeper',url:'https://www.europeansleeper.eu/timetable'}
+};
 
 async function loadData(){
   try{
@@ -18,7 +33,7 @@ async function loadData(){
 }
 
 function initApp(){
-  bindNavigation();bindTheme();bindDayNavigation();renderOverview();renderSelectedDay();renderFullTrip();renderLinks();registerServiceWorker();
+  bindNavigation();bindTheme();bindDayNavigation();renderOverview();renderDayChooser();renderSelectedDay();renderFullTrip();renderLinks();registerServiceWorker();
 }
 
 function bindNavigation(){
@@ -68,7 +83,6 @@ function renderOverview(){
   else if(new Date()<=localDate(state.data.trip.end)){count.textContent='Rejsen er i gang';}
   else count.textContent='Rejsen er afsluttet';
   const p=getProgress();document.getElementById('progressText').textContent=`${p} %`;document.getElementById('progressBar').style.width=`${p}%`;
-  renderDayChooser();
 }
 function renderDayChooser(){
   const container=document.getElementById('dayChooser');
@@ -83,12 +97,36 @@ function bindDayNavigation(){
   document.getElementById('previousDay').addEventListener('click',()=>selectDay(state.selectedDayIndex-1));
   document.getElementById('nextDay').addEventListener('click',()=>selectDay(state.selectedDayIndex+1));
 }
+function getEventLinks(event){
+  const text=`${event.title} ${event.detail}`.toLowerCase();
+  const links=[];
+  const add=key=>{if(!links.some(item=>item.url===operatorLinks[key].url))links.push(operatorLinks[key]);};
+  if(/snekkersten|københavn|dsb|kystban/.test(text))add('rejseplanen');
+  if(/snälltåget/.test(text))add('snalltaget');
+  if(/berlin|deutsche bahn|\bdb\b/.test(text))add('db');
+  if(/kraków|polsk|pkp|eurocity/.test(text))add('pkp');
+  if(/wien|innsbruck|railjet|öbb/.test(text))add('oebb');
+  if(/euronight|nightjet|sovekupé/.test(text))add('nightjet');
+  if(/chur|interlaken|basel|simplon|sbb|schweiz/.test(text))add('sbb');
+  if(/albula|rhätische|rhb/.test(text))add('rhb');
+  if(/bernina/.test(text))add('bernina');
+  if(/tirano|trenord|milano/.test(text))add('trenord');
+  if(/goldenpass|montreux/.test(text))add('goldenpass');
+  if(/antwerpen|belgisk ic|bruxelles-midi/.test(text))add('belgian');
+  if(/european sleeper|hamburg-harburg/.test(text))add('europeanSleeper');
+  return links.slice(0,2);
+}
+function eventLinksHtml(event){
+  const links=getEventLinks(event);
+  if(!links.length)return '';
+  return `<div class="departure-links">${links.map(link=>`<a href="${link.url}" target="_blank" rel="noopener noreferrer">Opdatering hos ${escapeHtml(link.label)} ↗</a>`).join('')}</div>`;
+}
 function renderSelectedDay(){
   const day=state.data.days[state.selectedDayIndex];
   document.getElementById('dayNumber').textContent=`DAG ${state.selectedDayIndex+1} AF ${state.data.days.length}`;
   document.getElementById('todayDate').textContent=formatDate(day.date);
   document.getElementById('todayCard').innerHTML=`<article class="trip-card"><span class="badge">${escapeHtml(day.status)}</span><div class="route">${escapeHtml(day.title)}</div><p>${escapeHtml(day.summary)}</p><small><strong>Overnatning:</strong> ${escapeHtml(day.overnight)}</small></article>`;
-  document.getElementById('timeline').innerHTML=day.events.map(event=>`<div class="timeline-item"><div class="timeline-time">${escapeHtml(event.time)}</div><div class="timeline-dot"></div><div class="timeline-body"><strong>${escapeHtml(event.title)}</strong><p>${escapeHtml(event.detail)}</p></div></div>`).join('');
+  document.getElementById('timeline').innerHTML=day.events.map(event=>`<div class="timeline-item"><div class="timeline-time">${escapeHtml(event.time)}</div><div class="timeline-dot"></div><div class="timeline-body"><strong>${escapeHtml(event.title)}</strong><p>${escapeHtml(event.detail)}</p>${eventLinksHtml(event)}</div></div>`).join('');
   document.getElementById('previousDay').disabled=state.selectedDayIndex===0;
   document.getElementById('nextDay').disabled=state.selectedDayIndex===state.data.days.length-1;
 }
