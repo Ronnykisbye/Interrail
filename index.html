@@ -27,20 +27,30 @@
         <button class="primary" data-nav="today">Se denne dag</button>
       </div>
 
-      <section class="section-head day-heading">
-        <div><p class="section-kicker">HURTIG ADGANG</p><h2>Vælg en rejsedag</h2></div>
-        <span>Dag 1–18</span>
-      </section>
-      <div id="dayChooser" class="day-chooser" aria-label="Vælg en rejsedag"></div>
-
-      <button class="full-trip-button" data-nav="allTrip">
-        <span class="full-trip-icon">🧭</span>
-        <span><strong>Se hele rejsen</strong><small>Alle 18 dage samlet i rækkefølge</small></span>
-        <b aria-hidden="true">→</b>
-      </button>
+      <div class="home-actions">
+        <button class="home-action primary-action" data-nav="dayPicker">
+          <span class="home-action-icon">📅</span>
+          <span><strong>Vælg rejsedag</strong><small>Åbn alle 18 dag-knapper</small></span>
+          <b aria-hidden="true">→</b>
+        </button>
+        <button class="home-action" data-nav="allTrip">
+          <span class="home-action-icon">🧭</span>
+          <span><strong>Se hele rejsen</strong><small>Alle dage samlet i rækkefølge</small></span>
+          <b aria-hidden="true">→</b>
+        </button>
+      </div>
 
       <section class="section-head"><h2>Rejsens fremdrift</h2><span id="progressText">0 %</span></section>
       <div class="progress"><div id="progressBar"></div></div>
+    </section>
+
+    <section id="dayPicker" class="view">
+      <div class="section-head day-heading">
+        <div><p class="section-kicker">DAG 1–18</p><h2>Vælg en rejsedag</h2></div>
+        <button class="small-back" data-nav="overview">← Forside</button>
+      </div>
+      <div id="dayChooser" class="day-chooser" aria-label="Vælg en rejsedag"></div>
+      <button class="secondary-wide" data-nav="allTrip">Se hele rejsen samlet</button>
     </section>
 
     <section id="today" class="view">
@@ -51,7 +61,7 @@
       </div>
       <div id="todayCard"></div>
       <div id="timeline" class="timeline"></div>
-      <button class="secondary-wide" data-nav="allTrip">Se hele rejsen</button>
+      <button class="secondary-wide" data-nav="dayPicker">Vælg en anden rejsedag</button>
     </section>
 
     <section id="allTrip" class="view">
@@ -69,23 +79,11 @@
       <div class="section-head"><h2>Rejse- og stationslinks</h2><span>Officielle sider</span></div>
       <div id="linkList" class="link-list"></div>
     </section>
-
-    <section id="about" class="view">
-      <article class="about-card">
-        <h2>Om Interrail 2026</h2>
-        <p>Appen er bygget specifikt til Ronny og Jolantas Interrail-rejse fra Snekkersten via Kraków og Alperne til Antwerpen og hjem igen.</p>
-        <h3>Sådan bruges appen</h3>
-        <p>Vælg en dag direkte på forsiden, se hele rejsen samlet, brug rutekortet eller åbn de officielle toglinks.</p>
-        <h3>Vigtige principper</h3>
-        <p>Ingen perroner, sæde- eller tognumre vises som faste, før de er dokumenteret. Oplysninger mærket “afventer” skal kontrolleres ved booking eller på rejsedagen.</p>
-        <p><strong>Version 1.1.0</strong></p>
-      </article>
-    </section>
   </main>
 
   <nav class="bottom-nav" aria-label="Hovedmenu">
     <button class="active" data-nav="overview">⌂<span>Overblik</span></button>
-    <button data-nav="today">🚆<span>Rejsedag</span></button>
+    <button data-nav="dayPicker">📅<span>Vælg dag</span></button>
     <button data-nav="allTrip">🧭<span>Hele rejsen</span></button>
     <button data-nav="route">🗺️<span>Kort</span></button>
     <button data-nav="links">🔗<span>Links</span></button>
