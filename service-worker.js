@@ -1,5 +1,5 @@
-const CACHE='interrail-2026-v1-7';
-const CORE=['./','./index.html','./styles.css','./app.js','./install.js','./manifest.webmanifest','./data/itinerary.json','./data/links.json','./data/hotels.json','./assets/icon.svg','./downloads/Interrail_2026_Hotelliste.xlsx','./downloads/Interrail_2026_Togliste_korrigeret_med_rejsetid.xlsx'];
+const CACHE='interrail-2026-v1-8';
+const CORE=['./','./index.html','./styles.css','./app.js','./install.js','./manifest.webmanifest','./data/itinerary.json','./data/links.json','./data/hotels.json','./assets/icon.svg','./assets/favicon.svg','./downloads/Interrail_2026_Hotelliste.xlsx','./downloads/Interrail_2026_Togliste_korrigeret_med_rejsetid.xlsx'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting();});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))));self.clients.claim();});
 self.addEventListener('fetch',event=>{
