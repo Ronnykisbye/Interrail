@@ -1,12 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Interrail 2026 appikon">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3b66"/><stop offset="1" stop-color="#176aa5"/></linearGradient></defs>
-  <rect width="512" height="512" rx="112" fill="url(#g)"/>
-  <circle cx="256" cy="256" r="174" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="18"/>
-  <path d="M166 126h180c28 0 50 22 50 50v150c0 25-18 46-42 50l30 46h-48l-28-43H204l-28 43h-48l30-46c-24-4-42-25-42-50V176c0-28 22-50 50-50Z" fill="#fff"/>
-  <rect x="154" y="166" width="204" height="105" rx="24" fill="#bde7ff"/>
-  <rect x="177" y="190" width="66" height="57" rx="10" fill="#176aa5"/>
-  <rect x="269" y="190" width="66" height="57" rx="10" fill="#176aa5"/>
-  <circle cx="184" cy="326" r="22" fill="#0b3b66"/>
-  <circle cx="328" cy="326" r="22" fill="#0b3b66"/>
-  <path d="M221 320h70" stroke="#ef8d22" stroke-width="22" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Interrail 2026 appikon med tog over alpebro">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0677d8"/><stop offset="1" stop-color="#63c8ff"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#27e1e7"/><stop offset="1" stop-color="#007bb7"/></linearGradient>
+    <linearGradient id="train" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#dceeff"/><stop offset="1" stop-color="#8eb9d9"/></linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe54f"/><stop offset=".45" stop-color="#ffbd18"/><stop offset="1" stop-color="#f29b00"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#001a38" flood-opacity=".5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="round"><rect width="512" height="512" rx="104"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <circle cx="420" cy="106" r="62" fill="#fff6b8" opacity=".92" filter="url(#glow)"/>
+    <path d="M0 270 74 164l58 63 60-105 60 111 68-90 62 99 59-71 71 104v75H0Z" fill="#eaf7ff"/>
+    <path d="M0 291 78 197l57 58 57-98 59 106 68-82 62 91 57-66 84 103v61H0Z" fill="#2f739d" opacity=".82"/>
+    <path d="M0 322c95-48 177-30 257-6 88 27 167 19 255-23v219H0Z" fill="url(#water)"/>
+    <path d="M28 407c112-55 228-92 456-104" fill="none" stroke="#bfc2bb" stroke-width="68"/>
+    <path d="M28 407c112-55 228-92 456-104" fill="none" stroke="#786b57" stroke-width="52"/>
+    <path d="M39 402c106-50 217-84 440-96" fill="none" stroke="#ded9c8" stroke-width="38"/>
+    <path d="M42 396c105-48 215-81 435-93" fill="none" stroke="#343c45" stroke-width="7"/>
+    <path d="M50 415c105-48 215-81 435-93" fill="none" stroke="#343c45" stroke-width="7"/>
+    <g opacity=".7"><path d="M36 430c107-56 227-95 451-106" fill="none" stroke="#ff9c20" stroke-width="10"/><path d="M20 447c108-59 230-101 468-112" fill="none" stroke="#63d9ff" stroke-width="9"/></g>
+    <g transform="translate(117 224) rotate(-10 150 94)" filter="url(#shadow)">
+      <path d="M24 128C34 63 89 17 174 10c67-6 142 18 182 58 19 19 27 40 19 60-8 21-33 34-67 38L81 191c-41 4-64-17-57-63Z" fill="url(#train)"/>
+      <path d="M85 53c58-33 160-39 226 7 16 11 27 22 34 33l-219 19c-27 2-47-8-57-22 3-13 8-25 16-37Z" fill="#083663"/>
+      <path d="m76 132 275-25" stroke="#0a65aa" stroke-width="17"/><path d="m80 151 269-24" stroke="#ff9f16" stroke-width="8"/>
+      <ellipse cx="72" cy="137" rx="31" ry="21" fill="#eef8ff"/><ellipse cx="313" cy="116" rx="27" ry="14" fill="#dce9f2"/>
+      <circle cx="85" cy="140" r="10" fill="#e9ffff" filter="url(#glow)"/><circle cx="113" cy="137" r="8" fill="#e9ffff" filter="url(#glow)"/>
+      <g fill="#071f38"><rect x="155" y="91" width="30" height="35" rx="6"/><rect x="194" y="87" width="30" height="35" rx="6"/><rect x="233" y="83" width="30" height="35" rx="6"/><rect x="272" y="79" width="30" height="35" rx="6"/></g>
+    </g>
+    <path d="M42 118C137 29 369 13 470 118l-34 83c-101-70-258-70-360 0Z" fill="url(#band)" stroke="#fff3a1" stroke-width="5" filter="url(#shadow)"/>
+    <text x="256" y="119" text-anchor="middle" fill="#062b66" font-family="Arial,Segoe UI,sans-serif" font-size="57" font-weight="900" letter-spacing="-1">Interrail 2026</text>
+    <path d="M13 45c48-32 91-38 128-40" fill="none" stroke="#fff" stroke-width="10" opacity=".45" stroke-linecap="round"/>
+  </g>
+  <rect x="4" y="4" width="504" height="504" rx="100" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="8"/>
 </svg>
