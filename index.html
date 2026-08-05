@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
-    .home-actions{display:grid;gap:14px;margin-top:18px}.home-action{width:100%;border:1px solid var(--border);border-radius:22px;background:var(--surface);color:var(--text);padding:18px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-align:left;box-shadow:var(--shadow)}.home-action.primary-action{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border:0}.home-action-icon{font-size:1.7rem}.home-action strong{display:block;font-size:1.05rem}.home-action small{display:block;color:var(--muted);margin-top:3px}.home-action.primary-action small{color:rgba(255,255,255,.82)}.home-action b{font-size:1.4rem}.small-back{border:1px solid var(--border);background:var(--surface);color:var(--primary);border-radius:12px;padding:9px 12px;font-weight:800}.departure-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.departure-links a{display:inline-flex;align-items:center;padding:9px 11px;border-radius:12px;background:#eaf3fb;color:var(--primary);font-size:.82rem;font-weight:850;text-decoration:none;border:1px solid rgba(23,106,165,.18)}body.dark .departure-links a{background:#213a52;color:#edf4fb}@media(min-width:720px){.home-actions{grid-template-columns:1fr 1fr}}
+    .home-actions{display:grid;gap:14px;margin-top:18px}.home-action{width:100%;border:1px solid var(--border);border-radius:22px;background:var(--surface);color:var(--text);padding:18px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-align:left;box-shadow:var(--shadow)}.home-action.primary-action{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border:0}.home-action-icon{font-size:1.7rem}.home-action strong{display:block;font-size:1.05rem}.home-action small{display:block;color:var(--muted);margin-top:3px}.home-action.primary-action small{color:rgba(255,255,255,.82)}.home-action b{font-size:1.4rem}.small-back{border:1px solid var(--border);background:var(--surface);color:var(--primary);border-radius:12px;padding:9px 12px;font-weight:800}.departure-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.departure-links a{display:inline-flex;align-items:center;padding:9px 11px;border-radius:12px;background:#eaf3fb;color:var(--primary);font-size:.82rem;font-weight:850;text-decoration:none;border:1px solid rgba(23,106,165,.18)}.download-list{display:grid;gap:12px;margin-bottom:28px}.download-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:18px;border-radius:18px;background:var(--surface);border:1px solid var(--border);color:var(--text);text-decoration:none;box-shadow:0 5px 18px rgba(18,43,70,.05)}.download-card .icon{font-size:1.8rem}.download-card strong{display:block;margin-bottom:4px}.download-card small{display:block;color:var(--muted);line-height:1.4}.download-card b{color:var(--primary-2);font-size:1.25rem}body.dark .departure-links a{background:#213a52;color:#edf4fb}@media(min-width:720px){.home-actions{grid-template-columns:1fr 1fr}.download-list{grid-template-columns:1fr 1fr}}
   </style>
   <title>Interrail 2026</title>
 </head>
@@ -80,6 +80,19 @@
     </section>
 
     <section id="links" class="view">
+      <div class="section-head"><h2>Download rejsefiler</h2><span>Excel-filer</span></div>
+      <div class="download-list">
+        <a class="download-card" href="downloads/Interrail_2026_Hotelliste.xlsx" download>
+          <span class="icon">🏨</span>
+          <span><strong>Hotelliste</strong><small>Byer, check-in/check-out og spørgsmål til hotelbooking</small></span>
+          <b aria-hidden="true">↓</b>
+        </a>
+        <a class="download-card" href="downloads/Interrail_2026_Togliste_korrigeret_med_rejsetid.xlsx" download>
+          <span class="icon">🚆</span>
+          <span><strong>Togliste</strong><small>Alle tog i rækkefølge, rejsetider og reservationsfelter</small></span>
+          <b aria-hidden="true">↓</b>
+        </a>
+      </div>
       <div class="section-head"><h2>Rejse- og stationslinks</h2><span>Officielle sider</span></div>
       <div id="linkList" class="link-list"></div>
     </section>
@@ -90,7 +103,7 @@
     <button data-nav="dayPicker">📅<span>Vælg dag</span></button>
     <button data-nav="allTrip">🧭<span>Hele rejsen</span></button>
     <button data-nav="route">🗺️<span>Kort</span></button>
-    <button data-nav="links">🔗<span>Links</span></button>
+    <button data-nav="links">🔗<span>Links/filer</span></button>
   </nav>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
