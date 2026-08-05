@@ -1,8 +1,9 @@
 {
+  "id": "./?app=interrail-2026-v2",
   "name": "Interrail 2026 – Ronny & Jolanta",
-  "short_name": "Interrail",
+  "short_name": "Interrail 2026",
   "description": "Personlig rejseapp til Interrail 2026",
-  "start_url": "./",
+  "start_url": "./?app=interrail-2026-v2",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -10,6 +11,17 @@
   "theme_color": "#0b3b66",
   "lang": "da-DK",
   "icons": [
-    {"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+    {
+      "src": "assets/icon.svg?v=20260805-2",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon.svg?v=20260805-maskable-2",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
   ]
 }
