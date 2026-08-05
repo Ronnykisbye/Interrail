@@ -1,9 +1,9 @@
 {
-  "id": "./?app=interrail-2026-v3",
+  "id": "./?app=interrail-2026-photo-icon-v4",
   "name": "Interrail 2026",
   "short_name": "Interrail 2026",
   "description": "Personlig rejseapp til Interrail 2026",
-  "start_url": "./?app=interrail-2026-v3",
+  "start_url": "./?app=interrail-2026-photo-icon-v4",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -12,15 +12,21 @@
   "lang": "da-DK",
   "icons": [
     {
-      "src": "assets/icon.svg?v=20260805-3",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "assets/icon-192.jpg?v=20260805-photo-1",
+      "sizes": "192x192",
+      "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "assets/icon.svg?v=20260805-maskable-3",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "assets/icon-512.jpg?v=20260805-photo-1",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-maskable-512.jpg?v=20260805-photo-1",
+      "sizes": "192x192",
+      "type": "image/jpeg",
       "purpose": "maskable"
     }
   ]
