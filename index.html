@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b3b66">
   <meta name="description" content="Personlig Interrail-app til Ronny og Jolantas rejse i 2026">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest?v=20260805-2">
+  <link rel="icon" href="assets/icon.svg?v=20260805-2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon.svg?v=20260805-2">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
-    .home-actions{display:grid;gap:14px;margin-top:18px}.home-action{width:100%;border:1px solid var(--border);border-radius:22px;background:var(--surface);color:var(--text);padding:18px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-align:left;box-shadow:var(--shadow)}.home-action.primary-action{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border:0}.home-action-icon{font-size:1.7rem}.home-action strong{display:block;font-size:1.05rem}.home-action small{display:block;color:var(--muted);margin-top:3px}.home-action.primary-action small{color:rgba(255,255,255,.82)}.home-action b{font-size:1.4rem}.small-back{border:1px solid var(--border);background:var(--surface);color:var(--primary);border-radius:12px;padding:9px 12px;font-weight:800}.departure-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.departure-links a{display:inline-flex;align-items:center;padding:9px 11px;border-radius:12px;background:#eaf3fb;color:var(--primary);font-size:.82rem;font-weight:850;text-decoration:none;border:1px solid rgba(23,106,165,.18)}.download-list{display:grid;gap:12px;margin-bottom:28px}.download-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:18px;border-radius:18px;background:var(--surface);border:1px solid var(--border);color:var(--text);text-decoration:none;box-shadow:0 5px 18px rgba(18,43,70,.05)}.download-card .icon{font-size:1.8rem}.download-card strong{display:block;margin-bottom:4px}.download-card small{display:block;color:var(--muted);line-height:1.4}.download-card b{color:var(--primary-2);font-size:1.25rem}body.dark .departure-links a{background:#213a52;color:#edf4fb}@media(min-width:720px){.home-actions{grid-template-columns:1fr 1fr}.download-list{grid-template-columns:1fr 1fr}}
+    .home-actions{display:grid;gap:14px;margin-top:18px}.home-action{width:100%;border:1px solid var(--border);border-radius:22px;background:var(--surface);color:var(--text);padding:18px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-align:left;box-shadow:var(--shadow)}.home-action.primary-action{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border:0}.home-action.install-action{background:linear-gradient(135deg,#146c43,#249c66);color:#fff;border:0}.home-action.file-action{background:linear-gradient(135deg,#6b3e97,#8b5cc7);color:#fff;border:0}.home-action-icon{font-size:1.7rem}.home-action strong{display:block;font-size:1.05rem}.home-action small{display:block;color:var(--muted);margin-top:3px}.home-action.primary-action small,.home-action.install-action small,.home-action.file-action small{color:rgba(255,255,255,.84)}.home-action b{font-size:1.4rem}.home-action:disabled{opacity:.75}.install-status{margin:10px 4px 0;color:var(--muted);font-size:.84rem;line-height:1.45}.small-back{border:1px solid var(--border);background:var(--surface);color:var(--primary);border-radius:12px;padding:9px 12px;font-weight:800}.departure-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.departure-links a{display:inline-flex;align-items:center;padding:9px 11px;border-radius:12px;background:#eaf3fb;color:var(--primary);font-size:.82rem;font-weight:850;text-decoration:none;border:1px solid rgba(23,106,165,.18)}.download-list{display:grid;gap:12px;margin-bottom:28px}.download-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:18px;border-radius:18px;background:var(--surface);border:1px solid var(--border);color:var(--text);text-decoration:none;box-shadow:0 5px 18px rgba(18,43,70,.05)}.download-card .icon{font-size:1.8rem}.download-card strong{display:block;margin-bottom:4px}.download-card small{display:block;color:var(--muted);line-height:1.4}.download-card b{color:var(--primary-2);font-size:1.25rem}body.dark .departure-links a{background:#213a52;color:#edf4fb}@media(min-width:720px){.home-actions{grid-template-columns:1fr 1fr}.download-list{grid-template-columns:1fr 1fr}}
   </style>
   <title>Interrail 2026</title>
 </head>
@@ -41,7 +43,18 @@
           <span><strong>Se hele rejsen</strong><small>Alle dage samlet i rækkefølge</small></span>
           <b aria-hidden="true">→</b>
         </button>
+        <button id="installAppButton" class="home-action install-action" type="button">
+          <span class="home-action-icon">📲</span>
+          <span><strong>Installer app</strong><small>Installer på denne PC eller mobil</small></span>
+          <b aria-hidden="true">↓</b>
+        </button>
+        <button class="home-action file-action" data-nav="links" type="button">
+          <span class="home-action-icon">📁</span>
+          <span><strong>Download rejsefiler</strong><small>Hotelliste og togliste i Excel</small></span>
+          <b aria-hidden="true">→</b>
+        </button>
       </div>
+      <p id="installStatus" class="install-status" aria-live="polite"></p>
 
       <section class="section-head"><h2>Rejsens fremdrift</h2><span id="progressText">0 %</span></section>
       <div class="progress"><div id="progressBar"></div></div>
@@ -108,5 +121,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js"></script>
+  <script src="install.js?v=20260805-2"></script>
 </body>
 </html>
