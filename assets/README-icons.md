@@ -1,0 +1,1 @@
+App-installationsikonerne skal bruge det oprindelige fotorealistiske togikon. Browserens favicon er separat.
