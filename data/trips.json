@@ -1,0 +1,64 @@
+{
+  "trips": [
+    {
+      "id": "antwerpen-2026",
+      "slot": 1,
+      "active": true,
+      "title": "Antwerpen",
+      "subtitle": "Bilrejse · november 2026",
+      "icon": "🚗",
+      "status": "Aktiv planlægning",
+      "target": "antwerpen"
+    },
+    {
+      "id": "interrail",
+      "slot": 2,
+      "active": true,
+      "title": "Interrail",
+      "subtitle": "Fremtidig rejse · Istanbul",
+      "icon": "🚆",
+      "status": "På pause",
+      "target": "interrail"
+    },
+    {
+      "id": "reserve-3",
+      "slot": 3,
+      "active": false,
+      "title": "Ny rejse",
+      "subtitle": "Ledig plads",
+      "icon": "＋",
+      "status": "Reserve",
+      "target": null
+    },
+    {
+      "id": "reserve-4",
+      "slot": 4,
+      "active": false,
+      "title": "Ny rejse",
+      "subtitle": "Ledig plads",
+      "icon": "＋",
+      "status": "Reserve",
+      "target": null
+    },
+    {
+      "id": "reserve-5",
+      "slot": 5,
+      "active": false,
+      "title": "Ny rejse",
+      "subtitle": "Ledig plads",
+      "icon": "＋",
+      "status": "Reserve",
+      "target": null
+    },
+    {
+      "id": "reserve-6",
+      "slot": 6,
+      "active": false,
+      "title": "Ny rejse",
+      "subtitle": "Ledig plads",
+      "icon": "＋",
+      "status": "Reserve",
+      "target": null
+    }
+  ]
+}
