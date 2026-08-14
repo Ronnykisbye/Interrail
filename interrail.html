@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b3b66">
+  <meta name="description" content="Personlig Interrail-app til Ronny og Jolantas rejse i 2026">
+  <link rel="manifest" href="manifest.webmanifest?v=20260805-photo-1">
+  <link rel="icon" href="assets/favicon.svg?v=20260805-4" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/favicon.svg?v=20260805-4">
+  <link rel="apple-touch-icon" href="assets/icon-192.jpg?v=20260805-photo-1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    .home-actions{display:grid;gap:14px;margin-top:18px}.home-action{width:100%;border:1px solid var(--border);border-radius:22px;background:var(--surface);color:var(--text);padding:18px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;text-align:left;box-shadow:var(--shadow)}.home-action.primary-action{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border:0}.home-action.install-action{background:linear-gradient(135deg,#146c43,#249c66);color:#fff;border:0}.home-action.file-action{background:linear-gradient(135deg,#6b3e97,#8b5cc7);color:#fff;border:0}.home-action-icon{font-size:1.7rem}.home-action strong{display:block;font-size:1.05rem}.home-action small{display:block;color:var(--muted);margin-top:3px}.home-action.primary-action small,.home-action.install-action small,.home-action.file-action small{color:rgba(255,255,255,.84)}.home-action b{font-size:1.4rem}.home-action:disabled{opacity:.75}.install-status{margin:10px 4px 0;color:var(--muted);font-size:.84rem;line-height:1.45}.small-back{border:1px solid var(--border);background:var(--surface);color:var(--primary);border-radius:12px;padding:9px 12px;font-weight:800}.departure-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.departure-links a{display:inline-flex;align-items:center;padding:9px 11px;border-radius:12px;background:#eaf3fb;color:var(--primary);font-size:.82rem;font-weight:850;text-decoration:none;border:1px solid rgba(23,106,165,.18)}.download-list{display:grid;gap:12px;margin-bottom:28px}.download-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:18px;border-radius:18px;background:var(--surface);border:1px solid var(--border);color:var(--text);text-decoration:none;box-shadow:0 5px 18px rgba(18,43,70,.05)}.download-card .icon{font-size:1.8rem}.download-card strong{display:block;margin-bottom:4px}.download-card small{display:block;color:var(--muted);line-height:1.4}.download-card b{color:var(--primary-2);font-size:1.25rem}body.dark .departure-links a{background:#213a52;color:#edf4fb}@media(min-width:720px){.home-actions{grid-template-columns:1fr 1fr}.download-list{grid-template-columns:1fr 1fr}}
+  </style>
+  <title>Interrail 2026</title>
+</head>
+<body>
+  <header class="topbar">
+    <div><p class="eyebrow">RONNY & JOLANTA</p><h1>Interrail 2026</h1></div>
+    <button id="themeToggle" class="icon-btn" aria-label="Skift tema">☾</button>
+  </header>
+
+  <main>
+    <section id="overview" class="view active">
+      <div class="hero-card">
+        <p class="eyebrow">NÆSTE ETAPE</p>
+        <h2 id="nextTitle">Snekkersten → Berlin</h2>
+        <p id="nextDate">23. oktober 2026</p>
+        <div class="countdown" id="countdown">Rejsen starter snart</div>
+        <button class="primary" data-nav="today">Se denne dag</button>
+      </div>
+
+      <div class="home-actions">
+        <button class="home-action primary-action" data-nav="dayPicker">
+          <span class="home-action-icon">📅</span>
+          <span><strong>Vælg rejsedag</strong><small>Åbn alle 18 dag-knapper</small></span>
+          <b aria-hidden="true">→</b>
+        </button>
+        <button class="home-action" data-nav="allTrip">
+          <span class="home-action-icon">🧭</span>
+          <span><strong>Se hele rejsen</strong><small>Alle dage samlet i rækkefølge</small></span>
+          <b aria-hidden="true">→</b>
+        </button>
+        <button id="installAppButton" class="home-action install-action" type="button">
+          <span class="home-action-icon">📲</span>
+          <span><strong>Installer app</strong><small>Installer på denne PC eller mobil</small></span>
+          <b aria-hidden="true">↓</b>
+        </button>
+        <button class="home-action file-action" data-nav="links" type="button">
+          <span class="home-action-icon">📁</span>
+          <span><strong>Download rejsefiler</strong><small>Hotelliste og togliste i Excel</small></span>
+          <b aria-hidden="true">→</b>
+        </button>
+      </div>
+      <p id="installStatus" class="install-status" aria-live="polite"></p>
+
+      <section class="section-head"><h2>Rejsens fremdrift</h2><span id="progressText">0 %</span></section>
+      <div class="progress"><div id="progressBar"></div></div>
+    </section>
+
+    <section id="dayPicker" class="view">
+      <div class="section-head day-heading">
+        <div><p class="section-kicker">DAG 1–18</p><h2>Vælg en rejsedag</h2></div>
+        <button class="small-back" onclick="location.href='index.html'">← Rejser</button>
+      </div>
+      <div id="dayChooser" class="day-chooser" aria-label="Vælg en rejsedag"></div>
+      <button class="secondary-wide" data-nav="allTrip">Se hele rejsen samlet</button>
+    </section>
+
+    <section id="today" class="view">
+      <div class="day-view-header">
+        <button id="previousDay" class="day-nav-button" type="button">← Forrige</button>
+        <div><p class="section-kicker" id="dayNumber"></p><h2>Dagens plan</h2><span id="todayDate"></span></div>
+        <button id="nextDay" class="day-nav-button" type="button">Næste →</button>
+      </div>
+      <div id="todayCard"></div>
+      <div id="hotelDetails"></div>
+      <div id="timeline" class="timeline"></div>
+      <button class="secondary-wide" data-nav="dayPicker">Vælg en anden rejsedag</button>
+    </section>
+
+    <section id="allTrip" class="view">
+      <div class="section-head"><div><p class="section-kicker">23. OKTOBER – 9. NOVEMBER</p><h2>Hele rejsen</h2></div><span>18 dage</span></div>
+      <div id="fullTripList" class="full-trip-list"></div>
+    </section>
+
+    <section id="route" class="view">
+      <div class="section-head"><h2>Rutekort</h2><span>Dag-, nat- og panoramatog</span></div>
+      <div id="map"></div>
+      <div class="legend"><span class="day">Dagtog</span><span class="night">Nattog</span><span class="panorama">Panorama</span></div>
+    </section>
+
+    <section id="links" class="view">
+      <div class="section-head"><h2>Download rejsefiler</h2><span>Excel-filer</span></div>
+      <div class="download-list">
+        <a class="download-card" href="downloads/Interrail_2026_Hotelliste.xlsx" download>
+          <span class="icon">🏨</span>
+          <span><strong>Hotelliste</strong><small>Byer, check-in/check-out og spørgsmål til hotelbooking</small></span>
+          <b aria-hidden="true">↓</b>
+        </a>
+        <a class="download-card" href="downloads/Interrail_2026_Togliste_korrigeret_med_rejsetid.xlsx" download>
+          <span class="icon">🚆</span>
+          <span><strong>Togliste</strong><small>Alle tog i rækkefølge, rejsetider og reservationsfelter</small></span>
+          <b aria-hidden="true">↓</b>
+        </a>
+      </div>
+      <div class="section-head"><h2>Rejse- og stationslinks</h2><span>Officielle sider</span></div>
+      <div id="linkList" class="link-list"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Hovedmenu">
+    <button class="active" data-nav="overview">⌂<span>Overblik</span></button>
+    <button data-nav="dayPicker">📅<span>Vælg dag</span></button>
+    <button data-nav="allTrip">🧭<span>Hele rejsen</span></button>
+    <button data-nav="route">🗺️<span>Kort</span></button>
+    <button data-nav="links">🔗<span>Links/filer</span></button>
+  </nav>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script src="install.js?v=20260805-photo-1"></script>
+</body>
+</html>
