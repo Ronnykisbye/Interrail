@@ -30,4 +30,11 @@ function escapeHtml(value){
   return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 }
 
+function registerServiceWorker(){
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('service-worker.js').catch(console.error);
+  }
+}
+
 loadTrips();
+registerServiceWorker();
