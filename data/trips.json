@@ -11,14 +11,14 @@
       "target": "antwerpen"
     },
     {
-      "id": "interrail",
+      "id": "interrail-istanbul",
       "slot": 2,
       "active": true,
       "title": "Interrail",
-      "subtitle": "Fremtidig rejse · Istanbul",
+      "subtitle": "Kraków · Bratislava · Istanbul",
       "icon": "🚆",
-      "status": "På pause",
-      "target": "interrail"
+      "status": "Dato ikke fastlagt",
+      "target": "interrail-istanbul"
     },
     {
       "id": "reserve-3",
