@@ -22,6 +22,7 @@ function renderTrip(trip){
 
 function targetFor(target){
   if(target==='antwerpen')return 'antwerpen.html';
+  if(target==='interrail-istanbul')return 'interrail-istanbul.html';
   if(target==='interrail')return 'interrail.html';
   return '#';
 }
