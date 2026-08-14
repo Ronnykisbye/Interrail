@@ -5,7 +5,7 @@ async function loadAntwerpen(){
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
-    root.innerHTML=data.sections.map(section=>renderSection(section,data.hotel)).join('');
+    root.innerHTML=data.sections.map(section=>renderSection(section,data.trip,data.hotel)).join('');
   }catch(error){
     console.error(error);
     root.innerHTML='<article class="section-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
@@ -19,9 +19,15 @@ function renderHero(trip){
   document.getElementById('tripVehicle').textContent=trip.vehicle;
 }
 
-function renderSection(section,hotel){
+function renderSection(section,trip,hotel){
   if(section.id==='hotel')return renderHotel(section,hotel);
+  if(section.id==='route')return renderRoute(section,trip);
   return `<article class="section-card"><div class="section-icon" aria-hidden="true">${escapeHtml(section.icon)}</div><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p></article>`;
+}
+
+function renderRoute(section,trip){
+  const action=trip.routeUrl?`<div class="hotel-actions"><a href="${escapeHtml(trip.routeUrl)}" target="_blank" rel="noopener noreferrer">Åbn din rute i Google Maps ↗</a></div>`:'';
+  return `<article class="section-card"><div class="section-icon" aria-hidden="true">${escapeHtml(section.icon)}</div><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p>${action}</article>`;
 }
 
 function renderHotel(section,hotel){
