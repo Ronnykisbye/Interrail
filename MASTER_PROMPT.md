@@ -1,104 +1,136 @@
 # MASTERPROMPT – REJSER / TRAVEL APPS
 
 ## Sådan bruges denne fil
-Denne fil er den faste startkontekst for nye ChatGPT-sessioner om Ronny og Jolantas rejseapps.
+Denne fil er fast startkontekst for nye ChatGPT-sessioner om Ronny og Jolantas rejseapps.
 
 Når en ny session starter, skal ChatGPT først:
 1. Læse denne fil fra GitHub-repository `Ronnykisbye/Interrail`.
-2. Kontrollere de aktuelle relevante filer i GitHub, før der ændres noget.
-3. Bruge GitHub som teknisk source of truth for den kode og de data, der faktisk er aktive.
-4. Aldrig gætte på den aktuelle status, hvis den kan kontrolleres i GitHub.
-5. Efter større beslutninger eller ændringer opdatere denne MASTER_PROMPT.md, så den fortsat er frisk.
+2. Kontrollere de aktuelle relevante filer i GitHub før ændringer.
+3. Bruge GitHub som teknisk source of truth.
+4. Aldrig gætte på aktuel status, hvis den kan kontrolleres.
+5. Efter større beslutninger eller ændringer opdatere denne fil.
 
----
-
-# Kort startprompt til en ny session
-
+## Kort startprompt
 **Læs først `MASTER_PROMPT.md` i GitHub-repository `Ronnykisbye/Interrail`. Brug derefter de aktuelle GitHub-filer som source of truth. Fortsæt projektet derfra. Lav små sikre ændringer, kvalitetssikr før aflevering, og ødelæg aldrig fungerende funktioner.**
 
 ---
 
 # Projektets formål
-Ronny og Jolanta vil have én samlet rejse-løsning med navnet **Rejser**.
+Den samlede løsning hedder **Rejser**.
 
-`Rejser` skal være en hovedapp/hub med store tydelige knapper eller rejsekort til forskellige rejser. Hver rejse kan enten:
-- åbne sin egen eksisterende GitHub Pages-app, eller
-- senere blive integreret som en underside/modul.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 2 aktive rejser og 4 reservepladser. Reservepladserne skal blive liggende, så en ny rejse senere kun kræver nyt indhold og ikke en ny forside.
 
-Den foretrukne arkitektur er i første omgang en **hub**, fordi den er enkel, robust og mindsker risikoen for at ødelægge eksisterende apps.
+Aktuelle slots:
+1. **Antwerpen** – aktiv
+2. **Interrail** – aktiv, men rejseplanen er på pause
+3. Reserve
+4. Reserve
+5. Reserve
+6. Reserve
+
+Designet skal være meget enkelt og intuitivt som godt legetøjsdesign: store tydelige knapper, ikon øverst, tekst nedenunder, bløde former og synlig 3D-effekt, men stadig voksent og pænt.
+
+---
+
+# Fast udviklingsprincip
+Projektet bygges modulært efter princippet:
+
+**Én fil = ét tydeligt ansvar.**
+
+Eksempler:
+- data i egne JSON-filer
+- udseende/farver i egne CSS-filer
+- funktioner/logik i egne JS-filer
+- hver større rejse i sin egen HTML-side
+
+Undgå at samle data, farver og logik i én stor fil, når de kan holdes adskilt.
+
+Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
+
+---
+
+# Aktuel arkitektur
+
+## Rejser-hub
+- `index.html` – kun hovedforsiden/hubben
+- `hub.css` – kun designet til hubben og de 6 store 3D-knapper
+- `hub.js` – kun indlæsning og visning af rejseknapper
+- `data/trips.json` – indhold/status for de 6 rejsepladser
+
+## Antwerpen
+- `antwerpen.html` – Antwerpen-siden
+- `antwerpen.css` – design til Antwerpen-siden
+- `antwerpen.js` – funktioner/rendering til Antwerpen-siden
+- `data/antwerpen.json` – Antwerpen-data
+
+## Interrail
+Den tidligere fungerende Interrail-app er bevaret som separat side:
+- `interrail.html`
+- `styles.css`
+- `app.js`
+- `install.js`
+- `data/itinerary.json`
+- `data/hotels.json`
+- `data/links.json`
+
+Den gamle Interrail-funktionalitet må ikke slettes eller omskrives unødvendigt.
+
+## PWA
+- `manifest.webmanifest` beskriver nu hovedappen som **Rejser**.
+- `service-worker.js` cacher både hub, Antwerpen-modulet og den eksisterende Interrail-app.
 
 ---
 
 # Aktuel rejse-status
 
 ## 1. Antwerpen – november 2026
-Dette er nu den vigtigste kommende rejse.
+Dette er den vigtigste kommende rejse.
 
-- Rejsen er en **bilrejse**, ikke Interrail.
+- Bilrejse, ikke Interrail.
 - Udgangspunkt: Helsingør.
 - Bil: Ford Mustang Mach-E.
 - Rejsen går via Fyn og Jylland gennem Tyskland til Antwerpen.
-- Der planlægges opladning undervejs, herunder E.ON Drive og eventuelle billigere alternativer, hvis de reelt er bedre.
+- Der planlægges opladning undervejs, herunder E.ON Drive og eventuelle bedre/billigere alternativer efter verificering.
 - Der skal være en overnatning syd for Hamborg på udrejsen.
-- Antwerpen skal være en selvstændig rejse/app og ikke længere være en del af Interrail-rejsen.
-- Antwerpen-rejsen skal senere kunne have sektioner som: Rute, opladning, hoteller, dagsplan, parkering, dokumenter og nyttige links.
-- Bekræftet hotel i Antwerpen: **Prize by Radisson, Antwerp City**, Tunnelplaats 5, 2000 Antwerp, Belgien.
-- Hotelophold: **5. november 2026 til 8. november 2026**, 3 nætter.
-- Superior-værelse, ikke-ryger (Design).
-- Samlet pris ifølge kvitteringen: **2.993,94 kr.**; **151,97 kr.** betales på overnatningsstedet.
-- Bookingreference og betalingskortoplysninger må ikke lægges i den offentlige app.
+- Antwerpen har egen side og skal udvikles som selvstændigt rejsemodul.
+
+Bekræftet hotel:
+- **Prize by Radisson, Antwerp City**
+- Tunnelplaats 5, 2000 Antwerp, Belgien
+- Check-in: **5. november 2026**
+- Check-out: **8. november 2026**
+- 3 nætter
+- Superior-værelse, ikke-ryger (Design)
+- Samlet pris ifølge kvittering: **2.993,94 kr.**
+- Betalt: **2.841,97 kr.**
+- Betales på hotel: **151,97 kr.**
+
+Bookingreference og betalingskortoplysninger må ikke ligge i den offentlige app.
+
+Antwerpen-modulet har foreløbige områder til:
+- Rute
+- Opladning
+- Hotel
+- Dagsplan
+- Parkering
+- Nyttige links
+
+Kun verificerede oplysninger må markeres som fakta. Ukendte forhold skal stå som afventer/verificeres.
 
 ## 2. Interrail
 Den tidligere Interrail-plan er **foreløbig udskudt**.
 
-- Den gamle aktive rute gennem Alperne og videre til Antwerpen skal ikke længere behandles som den kommende rejse.
-- Ronny og Jolanta forventer sandsynligvis, at en fremtidig Interrail-rejse i stedet skal gå mod **Istanbul**.
-- Datoen er endnu ikke fastlagt.
-- Ruten er endnu ikke fastlagt.
-- Interrail bør derfor vises som fx **På pause / dato ikke fastlagt** i en kommende Rejser-hub.
-- Den eksisterende Interrail-app må ikke slettes; den kan bevares som historik/kladde, indtil den nye Istanbul-version planlægges.
+- Den gamle Alperne-rute skal ikke vises som den kommende hovedrejse på hubben.
+- En fremtidig Interrail-rejse forventes sandsynligvis at gå mod **Istanbul**.
+- Dato og rute er ikke fastlagt.
+- På Rejser-hubben vises Interrail som **På pause**.
+- Den eksisterende Interrail-app bevares som historik/kladde og fungerende modul.
 
 ## 3. Neon Voyages
 Eksisterende app:
 `https://ronnykisbye.github.io/neon-voyages/`
 
-Der er allerede lavet en direkte knap i Interrail-appen, som åbner Neon Voyages i en ny fane.
-
----
-
-# Eksisterende Interrail-app
-
-GitHub repository:
-`Ronnykisbye/Interrail`
-
-Live app:
-`https://ronnykisbye.github.io/Interrail/`
-
-Appen er en statisk GitHub Pages/PWA med blandt andet:
-- forside/overblik
-- rejsedage
-- samlet rejse
-- rutekort
-- hotelliste
-- togliste
-- links
-- PWA-installation
-- offline-cache via service worker
-- mørkt/lyst tema
-- direkte link til Neon Voyages
-
-Vigtige datafiler:
-- `data/itinerary.json`
-- `data/hotels.json`
-- `data/links.json`
-
-Vigtige programfiler:
-- `index.html`
-- `app.js`
-- `install.js`
-- `styles.css`
-- `manifest.webmanifest`
-- `service-worker.js`
+Den eksisterende Interrail-app har tidligere haft direkte link til Neon Voyages. Bevar eksisterende funktioner, medmindre andet aftales.
 
 ---
 
@@ -107,98 +139,45 @@ Vigtige programfiler:
 ## Før enhver ændring
 - Fetch altid den aktuelle fil fra GitHub først.
 - Brug den aktuelle SHA ved opdatering.
-- Antag aldrig, at en tidligere version stadig er den gældende.
-- Lav helst én lille isoleret ændring ad gangen.
-- Hvis en ændring påvirker PWA/cache, opdater service-worker cache-versionen.
-- Bevar eksisterende funktioner, medmindre Ronny direkte beder om at ændre dem.
+- Antag aldrig, at en tidligere version stadig gælder.
+- Lav én lille isoleret ændring ad gangen, når det er muligt.
+- Bevar eksisterende funktioner.
+- Hvis PWA/cache påvirkes, opdater cache-versionen.
 
-## Efter en ændring
-Kvalitetssikr:
-- at appen stadig loader
-- at navigation virker
-- at eksisterende knapper stadig virker
-- at PWA-installation ikke er brudt
-- at links åbner korrekt
-- at HTML/JS ikke er blevet afkortet ved en fejl
-- at cache-versionen er opdateret, hvis nødvendigt
+## Efter enhver ændring – obligatorisk kvalitetssikring
+Kontrollér mindst:
+- at de ændrede filer findes i GitHub
+- at filerne ikke er afkortet
+- at HTML-referencer peger på eksisterende CSS/JS/datafiler
+- at JSON er strukturelt gyldigt
+- at navigation mellem `index.html`, `antwerpen.html` og `interrail.html` er korrekt
+- at aktive rejseknapper har gyldige mål
+- at reserveknapper ikke forsøger at navigere
+- at eksterne links bruger `target="_blank"` og `rel="noopener noreferrer"`, hvor relevant
+- at service-workerens CORE-liste indeholder de nødvendige nye filer
+- at cache-versionen er ændret ved relevante PWA-ændringer
+- at bookingreferencer, betalingskort, adgangskoder, pasnumre, MitID-data, private nøgler og andre hemmelige oplysninger ikke offentliggøres
 
-Hvis noget er usikkert, så kontrollér GitHub-filen igen før aflevering.
-
----
-
-# Ikoner og PWA
-Interrail-appen har tidligere haft problemer med forkerte/grimme ikoner.
-
-Vigtig læring:
-- Browserfavicon og installationsikon er ikke nødvendigvis det samme.
-- Det flotte togikon skal bruges til installation.
-- Favicon kan være simplere.
-- Billedfiler skal uploades som rigtige binære blobs, ikke som base64-tekstfiler.
-- Manifestet skal pege på de korrekte app-ikoner.
-- Ved ikonændringer skal cache/versionering opdateres, fordi Chrome/Windows/Android cacher ikoner aggressivt.
-
-Aktuelle ikonfiler skal altid kontrolleres i GitHub før ændringer.
+Hvis noget er usikkert, kontrollér GitHub igen før aflevering.
 
 ---
 
-# Sikkerhed
-Appene er primært private i brug, men GitHub Pages/repository kan være offentligt.
-
-Derfor må der aldrig lægges følsomme oplysninger i offentlige filer, fx:
-- betalingskort
-- adgangskoder
-- pasnumre
-- MitID-oplysninger
-- dørkoder
-- private nøgler/tokens
-- andre hemmelige oplysninger
-
-Vær forsigtig med bookingreferencer og andre rejseoplysninger, hvis repoet er offentligt.
-
-Ved eksterne links bruges `target="_blank"` sammen med `rel="noopener noreferrer"`.
-
-Overvej senere sikkerhedshærdning med Content Security Policy og lokal hosting/integritetskontrol af tredjepartsbiblioteker, men uden at ødelægge appens funktionalitet.
-
----
-
-# Arbejdsform og kvalitet
+# Arbejdsform
 Ronny ønsker:
-- svar på dansk
-- direkte handling frem for unødvendige forklaringer
+- dansk
+- direkte handling
+- trin-for-trin/SBS ved større ændringer
 - ingen gæt, når fakta kan kontrolleres
-- kvalitetssikring før aflevering
-- små sikre ændringer i GitHub
-- eksisterende funktioner må ikke gå i stykker
-- filer og apps skal være overskuelige og nemme at bruge på både PC og mobil
+- kvalitetssikring hver gang
+- små sikre GitHub-ændringer
+- PC- og mobilvenligt design
+- enkel navigation med store tydelige elementer
 
-Når der planlægges rejser, skal aktuelle fakta som køreplaner, priser, hoteller, opladere og åbningstider verificeres via aktuelle kilder, fordi de kan ændre sig.
-
----
-
-# Fremtidig Rejser-hub – anbefalet struktur
-
-Forsiden i den kommende **Rejser**-app bør vise store rejsekort, fx:
-
-### Næste rejse
-**Antwerpen – november 2026**
-- Bilrejse
-- Aktiv planlægning
-- Stor og tydelig primær knap
-
-### Fremtidig rejse
-**Interrail – Istanbul**
-- Status: På pause / dato ikke fastlagt
-- Må ikke vise den gamle Alperne-rute som aktuel plan
-
-### Anden app
-**Neon Voyages**
-- Åbner den eksisterende app
-
-Senere kan der tilføjes flere rejser uden at bygge hovedappen om.
+Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parkering og åbningstider bruges, skal de verificeres mod aktuelle kilder.
 
 ---
 
 # Hovedprincip
-**Bevar fungerende apps. Byg Rejser som et stabilt lag ovenpå dem. Flyt eller omskriv først eksisterende apps, hvis Ronny specifikt ønsker det.**
+**Bevar fungerende apps. Byg Rejser som et stabilt modulært lag ovenpå dem. Nye rejser skal primært være nye data/moduler, ikke omskrivning af forsiden.**
 
-Når denne fil og aktuelle GitHub-data er læst, skal ChatGPT kunne fortsætte projektet uden at bede Ronny gentage hele historikken.
+Når denne fil og aktuelle GitHub-data er læst, skal ChatGPT kunne fortsætte projektet uden at Ronny skal gentage historikken.
