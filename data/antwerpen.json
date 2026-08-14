@@ -17,8 +17,14 @@
     "totalPriceDkk": "2.993,94 kr.",
     "paidDkk": "2.841,97 kr.",
     "payAtPropertyDkk": "151,97 kr.",
+    "website": "https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien"
   },
+  "links": [
+    {"title":"Prize by Radisson, Antwerp City","subtitle":"Hotellets officielle hjemmeside","url":"https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city","icon":"🏨"},
+    {"title":"Hotel i Google Maps","subtitle":"Tunnelplaats 5, Antwerpen","url":"https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien","icon":"📍"},
+    {"title":"Din kørerute","subtitle":"Gemte Google Maps-rute til Antwerpen","url":"https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7","icon":"🗺️"}
+  ],
   "sections": [
     {"id":"route","icon":"🗺️","title":"Rute","text":"Din gemte Google Maps-rute er klar. Køre- og ladestop verificeres separat."},
     {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
