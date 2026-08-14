@@ -18,17 +18,17 @@ Når en ny session starter, skal ChatGPT først:
 # Projektets formål
 Den samlede løsning hedder **Rejser**.
 
-Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 2 aktive rejser og 4 reservepladser. Reservepladserne skal blive liggende, så en ny rejse senere kun kræver nyt indhold og ikke en ny forside.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er 2 aktive rejser og 4 reservepladser. Reservepladserne skal blive liggende, så en ny rejse senere kun kræver nyt indhold og ikke en ny forside.
 
 Aktuelle slots:
 1. **Antwerpen** – aktiv
-2. **Interrail** – aktiv, men rejseplanen er på pause
+2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
 3. Reserve
 4. Reserve
 5. Reserve
 6. Reserve
 
-Designet skal være meget enkelt og intuitivt som godt legetøjsdesign: store tydelige knapper, ikon øverst, tekst nedenunder, bløde former og synlig 3D-effekt, men stadig voksent og pænt.
+Designet skal være enkelt og intuitivt som godt legetøjsdesign: store tydelige knapper, ikon øverst, tekst nedenunder, bløde former og synlig 3D-effekt, men stadig voksent og pænt.
 
 ---
 
@@ -44,7 +44,6 @@ Eksempler:
 - hver større rejse i sin egen HTML-side
 
 Undgå at samle data, farver og logik i én stor fil, når de kan holdes adskilt.
-
 Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 
 ---
@@ -53,18 +52,24 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 
 ## Rejser-hub
 - `index.html` – kun hovedforsiden/hubben
-- `hub.css` – kun designet til hubben og de 6 store 3D-knapper
-- `hub.js` – kun indlæsning og visning af rejseknapper
+- `hub.css` – design til hubben og de 6 store 3D-knapper
+- `hub.js` – indlæsning og visning af rejseknapper
 - `data/trips.json` – indhold/status for de 6 rejsepladser
 
 ## Antwerpen
-- `antwerpen.html` – Antwerpen-siden
-- `antwerpen.css` – design til Antwerpen-siden
-- `antwerpen.js` – funktioner/rendering til Antwerpen-siden
-- `data/antwerpen.json` – Antwerpen-data
+- `antwerpen.html`
+- `antwerpen.css`
+- `antwerpen.js`
+- `data/antwerpen.json`
 
-## Interrail
-Den tidligere fungerende Interrail-app er bevaret som separat side:
+## Ny Interrail-plan mod Istanbul
+- `interrail-istanbul.html` – den aktive foreløbige Istanbul-plan
+- `interrail-istanbul.css` – design
+- `interrail-istanbul.js` – rendering/funktion
+- `data/interrail-istanbul.json` – rute, ophold, status og officielle kilder
+
+## Tidligere Interrail-app
+Den tidligere fungerende Alperne-version er stadig bevaret separat:
 - `interrail.html`
 - `styles.css`
 - `app.js`
@@ -73,11 +78,11 @@ Den tidligere fungerende Interrail-app er bevaret som separat side:
 - `data/hotels.json`
 - `data/links.json`
 
-Den gamle Interrail-funktionalitet må ikke slettes eller omskrives unødvendigt.
+Den gamle funktionalitet må ikke slettes eller omskrives unødvendigt.
 
 ## PWA
-- `manifest.webmanifest` beskriver nu hovedappen som **Rejser**.
-- `service-worker.js` cacher både hub, Antwerpen-modulet og den eksisterende Interrail-app.
+- `manifest.webmanifest` beskriver hovedappen som **Rejser**.
+- `service-worker.js` cacher hub, Antwerpen, den nye Istanbul-plan og den gamle Interrail-side.
 
 ---
 
@@ -92,7 +97,7 @@ Dette er den vigtigste kommende rejse.
 - Rejsen går via Fyn og Jylland gennem Tyskland til Antwerpen.
 - Der planlægges opladning undervejs, herunder E.ON Drive og eventuelle bedre/billigere alternativer efter verificering.
 - Der skal være en overnatning syd for Hamborg på udrejsen.
-- Antwerpen har egen side og skal udvikles som selvstændigt rejsemodul.
+- Antwerpen har egen side og udvikles som selvstændigt rejsemodul.
 
 Bekræftet hotel:
 - **Prize by Radisson, Antwerp City**
@@ -107,30 +112,23 @@ Bekræftet hotel:
 
 Bookingreference og betalingskortoplysninger må ikke ligge i den offentlige app.
 
-Antwerpen-modulet har foreløbige områder til:
-- Rute
-- Opladning
-- Hotel
-- Dagsplan
-- Parkering
-- Nyttige links
+## 2. Interrail – Istanbul
+Ny foreløbig hovedplan:
 
-Kun verificerede oplysninger må markeres som fakta. Ukendte forhold skal stå som afventer/verificeres.
-
-## 2. Interrail
-Den tidligere Interrail-plan er **foreløbig udskudt**.
-
-- Den gamle Alperne-rute skal ikke vises som den kommende hovedrejse på hubben.
-- En fremtidig Interrail-rejse forventes sandsynligvis at gå mod **Istanbul**.
-- Dato og rute er ikke fastlagt.
-- På Rejser-hubben vises Interrail som **På pause**.
-- Den eksisterende Interrail-app bevares som historik/kladde og fungerende modul.
+- Start: Snekkersten.
+- Første lange stræk tænkes via København Syd og nattog mod Berlin, når den valgte dato understøtter det.
+- Videre til **Kraków**, hvor planen er **4 nætter**.
+- Derefter ønskes ruten via **Bratislava**.
+- Foreløbig korridor videre: Bratislava → Budapest → București → Sofia → Istanbul/Halkalı.
+- I **Istanbul planlægges 7 nætter**.
+- Hjemrejsen går foreløbigt tilbage gennem samme centrale korridor mod Danmark.
+- Rejsedatoen er **ikke fastlagt**, derfor må eksakte tognumre, klokkeslæt, priser og reservationer ikke fremstilles som låste fakta endnu.
+- Den konkrete Kraków–Bratislava-forbindelse og alle øvrige skifteforbindelser skal verificeres igen, når datoen kendes.
+- Officielle 2026-kilder dokumenterer bl.a. Snälltåget København–Berlin, internationale MÁV-korridorer, Budapest–București, București–Sofia samt Sofia–Halkalı. Disse er dato-/sæsonafhængige og skal genkontrolleres ved booking.
 
 ## 3. Neon Voyages
 Eksisterende app:
 `https://ronnykisbye.github.io/neon-voyages/`
-
-Den eksisterende Interrail-app har tidligere haft direkte link til Neon Voyages. Bevar eksisterende funktioner, medmindre andet aftales.
 
 ---
 
@@ -150,13 +148,14 @@ Kontrollér mindst:
 - at filerne ikke er afkortet
 - at HTML-referencer peger på eksisterende CSS/JS/datafiler
 - at JSON er strukturelt gyldigt
-- at navigation mellem `index.html`, `antwerpen.html` og `interrail.html` er korrekt
+- at navigation mellem hub og rejsemoduler er korrekt
 - at aktive rejseknapper har gyldige mål
 - at reserveknapper ikke forsøger at navigere
 - at eksterne links bruger `target="_blank"` og `rel="noopener noreferrer"`, hvor relevant
-- at service-workerens CORE-liste indeholder de nødvendige nye filer
+- at service-workerens CORE-liste indeholder nødvendige nye filer
 - at cache-versionen er ændret ved relevante PWA-ændringer
-- at bookingreferencer, betalingskort, adgangskoder, pasnumre, MitID-data, private nøgler og andre hemmelige oplysninger ikke offentliggøres
+- at følsomme oplysninger ikke offentliggøres
+- at rejsefakta med mulighed for ændring er markeret med korrekt status og kilde
 
 Hvis noget er usikkert, kontrollér GitHub igen før aflevering.
 
@@ -179,5 +178,3 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 
 # Hovedprincip
 **Bevar fungerende apps. Byg Rejser som et stabilt modulært lag ovenpå dem. Nye rejser skal primært være nye data/moduler, ikke omskrivning af forsiden.**
-
-Når denne fil og aktuelle GitHub-data er læst, skal ChatGPT kunne fortsætte projektet uden at Ronny skal gentage historikken.
