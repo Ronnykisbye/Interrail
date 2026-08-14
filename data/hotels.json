@@ -1,5 +1,5 @@
 {
-  "notice": "Hoteloplysninger tilføjes, når reservationerne er valgt. Undlad betalingskort, adgangskoder og dørkoder i det offentlige repository.",
+  "notice": "Hoteloplysninger tilføjes, når reservationerne er valgt. Undlad betalingskort, adgangskoder, dørkoder og bookingreferencer i det offentlige repository.",
   "hotels": [
     {"city":"Kraków","checkInDate":"2026-10-24","checkOutDate":"2026-10-27","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
     {"city":"Wien","checkInDate":"2026-10-28","checkOutDate":"2026-10-30","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
@@ -9,6 +9,6 @@
     {"city":"Milano","checkInDate":"2026-11-02","checkOutDate":"2026-11-03","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
     {"city":"Montreux","checkInDate":"2026-11-03","checkOutDate":"2026-11-04","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
     {"city":"Interlaken","checkInDate":"2026-11-04","checkOutDate":"2026-11-05","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null},
-    {"city":"Antwerpen","checkInDate":"2026-11-05","checkOutDate":"2026-11-08","name":null,"address":null,"checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":null,"notes":null}
+    {"city":"Antwerpen","checkInDate":"2026-11-05","checkOutDate":"2026-11-08","name":"Prize by Radisson, Antwerp City","address":"Tunnelplaats 5, 2000 Antwerp, Belgien","checkInTime":null,"checkOutTime":null,"bookingReference":null,"phone":null,"website":null,"mapUrl":"https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien","notes":"Bekræftet reservation: 5.–8. november 2026, 3 nætter. Superior-værelse, ikke-ryger (Design). Samlet pris ifølge kvitteringen: 2.993,94 kr.; 151,97 kr. betales på overnatningsstedet. Bookingreference og betalingsoplysninger opbevares ikke i den offentlige app."}
   ]
 }
