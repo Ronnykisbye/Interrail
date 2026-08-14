@@ -1,0 +1,29 @@
+{
+  "trip": {
+    "title": "Antwerpen",
+    "subtitle": "Bilrejse · november 2026",
+    "travelers": "Ronny & Jolanta",
+    "vehicle": "Ford Mustang Mach-E",
+    "status": "Aktiv planlægning"
+  },
+  "hotel": {
+    "name": "Prize by Radisson, Antwerp City",
+    "address": "Tunnelplaats 5, 2000 Antwerp, Belgien",
+    "checkIn": "2026-11-05",
+    "checkOut": "2026-11-08",
+    "nights": 3,
+    "room": "Superior-værelse - ikke-ryger (Design)",
+    "totalPriceDkk": "2.993,94 kr.",
+    "paidDkk": "2.841,97 kr.",
+    "payAtPropertyDkk": "151,97 kr.",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien"
+  },
+  "sections": [
+    {"id":"route","icon":"🗺️","title":"Rute","text":"Kørerute og stop tilføjes efter verificering."},
+    {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
+    {"id":"hotel","icon":"🏨","title":"Hotel","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
+    {"id":"days","icon":"📅","title":"Dagsplan","text":"Dagsplanen bygges løbende."},
+    {"id":"parking","icon":"🅿️","title":"Parkering","text":"Parkering ved hotel og centrum skal verificeres."},
+    {"id":"links","icon":"🔗","title":"Nyttige links","text":"Kort, hotel, opladning og andre relevante links samles her."}
+  ]
+}
