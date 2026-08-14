@@ -42,6 +42,11 @@ Dette er nu den vigtigste kommende rejse.
 - Der skal være en overnatning syd for Hamborg på udrejsen.
 - Antwerpen skal være en selvstændig rejse/app og ikke længere være en del af Interrail-rejsen.
 - Antwerpen-rejsen skal senere kunne have sektioner som: Rute, opladning, hoteller, dagsplan, parkering, dokumenter og nyttige links.
+- Bekræftet hotel i Antwerpen: **Prize by Radisson, Antwerp City**, Tunnelplaats 5, 2000 Antwerp, Belgien.
+- Hotelophold: **5. november 2026 til 8. november 2026**, 3 nætter.
+- Superior-værelse, ikke-ryger (Design).
+- Samlet pris ifølge kvitteringen: **2.993,94 kr.**; **151,97 kr.** betales på overnatningsstedet.
+- Bookingreference og betalingskortoplysninger må ikke lægges i den offentlige app.
 
 ## 2. Interrail
 Den tidligere Interrail-plan er **foreløbig udskudt**.
