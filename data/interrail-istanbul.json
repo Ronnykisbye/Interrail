@@ -1,0 +1,142 @@
+{
+  "trip": {
+    "title": "Interrail til Istanbul",
+    "subtitle": "Snekkersten · Kraków · Bratislava · Istanbul",
+    "travelers": "Ronny & Jolanta",
+    "dateStatus": "Dato ikke fastlagt",
+    "planningStatus": "Foreløbig rute – tog og tider verificeres igen, når datoen er valgt",
+    "istanbulNights": 7,
+    "krakowNights": 4
+  },
+  "principles": [
+    "Lange stræk prioriteres med nattog, når det giver mening og kan bookes på den valgte dato.",
+    "Der planlægges med gode skiftebuffere frem for korte, stressende forbindelser.",
+    "Eksakte tognumre, tider, priser og reservationskrav låses først, når rejsedatoen er kendt.",
+    "Ruten skal kunne ændres uden at forsiden eller Antwerpen-rejsen bygges om."
+  ],
+  "outbound": [
+    {
+      "order": 1,
+      "from": "Snekkersten",
+      "to": "København Syd",
+      "mode": "regionaltog",
+      "stay": null,
+      "status": "Plan",
+      "note": "Lokal forbindelse vælges ud fra nattogets afgangstid."
+    },
+    {
+      "order": 2,
+      "from": "København Syd",
+      "to": "Berlin",
+      "mode": "nattog",
+      "stay": null,
+      "status": "Forbindelsen findes i 2026 – datoafhængig",
+      "note": "Snälltåget kører i 2026 nattog København Syd–Berlin på udvalgte dage. Privat kupé er førstevalg."
+    },
+    {
+      "order": 3,
+      "from": "Berlin",
+      "to": "Kraków",
+      "mode": "dagtog",
+      "stay": "4 nætter",
+      "status": "Eksakt forbindelse afventer dato",
+      "note": "Målet er en rolig forbindelse samme dag efter ankomst til Berlin, ellers én overnatning i Berlin."
+    },
+    {
+      "order": 4,
+      "from": "Kraków",
+      "to": "Bratislava",
+      "mode": "dagtog",
+      "stay": "1–2 nætter foreslået",
+      "status": "Rutekæde afventer dato",
+      "note": "Bratislava indgår som ønsket mellemstop. Den konkrete togkæde gennem Tjekkiet/Slovakiet fastlægges efter dato."
+    },
+    {
+      "order": 5,
+      "from": "Bratislava",
+      "to": "Budapest",
+      "mode": "EuroCity/dagtog",
+      "stay": "1–2 nætter foreslået",
+      "status": "International korridor bekræftet i 2026",
+      "note": "MÁV viser internationale EuroCity-forbindelser på korridoren Budapest–Bratislava–Polen."
+    },
+    {
+      "order": 6,
+      "from": "Budapest",
+      "to": "București",
+      "mode": "internationalt tog",
+      "stay": "1–2 nætter foreslået",
+      "status": "Direkte forbindelse bekræftet i 2025–2026-køreplanen",
+      "note": "CFR oplyser direkte Budapest Keleti–București Nord-forbindelser i 2025–2026-køreplanen."
+    },
+    {
+      "order": 7,
+      "from": "București",
+      "to": "Sofia",
+      "mode": "internationalt tog",
+      "stay": "1 nat foreslået",
+      "status": "Forbindelse findes i 2026 – periodeafhængig",
+      "note": "BDZ/CFR har internationale tog mellem București og Sofia; drift og sæson skal kontrolleres mod den valgte dato."
+    },
+    {
+      "order": 8,
+      "from": "Sofia",
+      "to": "Istanbul (Halkalı)",
+      "mode": "nattog",
+      "stay": "7 nætter",
+      "status": "Dagligt nattog bekræftet i den aktuelle 2026-plan",
+      "note": "BDZ oplyser dagligt Sofia–Halkalı med ligge- og sovevogne i den offentliggjorte 2026-periode. Reservation er obligatorisk."
+    }
+  ],
+  "return": [
+    {
+      "order": 1,
+      "from": "Istanbul (Halkalı)",
+      "to": "Sofia",
+      "mode": "nattog",
+      "status": "Aktuel 2026-forbindelse – dato skal kontrolleres"
+    },
+    {
+      "order": 2,
+      "from": "Sofia",
+      "to": "București",
+      "mode": "internationalt tog",
+      "status": "Dato og sæson skal kontrolleres"
+    },
+    {
+      "order": 3,
+      "from": "București",
+      "to": "Budapest",
+      "mode": "internationalt tog",
+      "status": "Direkte korridor bekræftet i 2025–2026-køreplanen"
+    },
+    {
+      "order": 4,
+      "from": "Budapest",
+      "to": "Berlin eller Hamborg",
+      "mode": "dag-/nattog",
+      "status": "Optimeres efter rejsedato"
+    },
+    {
+      "order": 5,
+      "from": "Berlin/Hamborg",
+      "to": "København",
+      "mode": "dag-/nattog",
+      "status": "Aktuelle 2026-forbindelser findes – datoafhængig"
+    },
+    {
+      "order": 6,
+      "from": "København",
+      "to": "Snekkersten",
+      "mode": "regionaltog",
+      "status": "Plan"
+    }
+  ],
+  "sources": [
+    {"label":"Snälltåget København–Berlin","url":"https://www.snalltaget.se/page?id=9643de83-4b6b-48ef-908f-2134d8959d0b"},
+    {"label":"MÁV internationale køreplaner","url":"https://www.mavcsoport.hu/mav-szemelyszallitas/nemzetkozi-utazas/nemzetkozi-menetrendek"},
+    {"label":"CFR 2025–2026 international køreplan","url":"https://www.cfrcalatori.ro/en/comunicate/shift-to-the-new-2025-2026-timetable/"},
+    {"label":"BDZ Sofia–București","url":"https://www.bdz.bg/en/a/sofia-bucuresti-sofia"},
+    {"label":"BDZ Sofia–Halkalı","url":"https://www.bdz.bg/en/a/sofia-istanbul-sofia"}
+  ]
+}
