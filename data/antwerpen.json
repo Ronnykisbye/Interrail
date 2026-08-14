@@ -4,7 +4,8 @@
     "subtitle": "Bilrejse · november 2026",
     "travelers": "Ronny & Jolanta",
     "vehicle": "Ford Mustang Mach-E",
-    "status": "Aktiv planlægning"
+    "status": "Aktiv planlægning",
+    "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7"
   },
   "hotel": {
     "name": "Prize by Radisson, Antwerp City",
@@ -19,7 +20,7 @@
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien"
   },
   "sections": [
-    {"id":"route","icon":"🗺️","title":"Rute","text":"Kørerute og stop tilføjes efter verificering."},
+    {"id":"route","icon":"🗺️","title":"Rute","text":"Din gemte Google Maps-rute er klar. Køre- og ladestop verificeres separat."},
     {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
     {"id":"hotel","icon":"🏨","title":"Hotel","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
     {"id":"days","icon":"📅","title":"Dagsplan","text":"Dagsplanen bygges løbende."},
