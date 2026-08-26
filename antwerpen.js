@@ -1,7 +1,7 @@
 async function loadAntwerpen(){
   const root=document.getElementById('antwerpenContent');
   try{
-    const response=await fetch('data/antwerpen.json',{cache:'no-store'});
+    const response=await fetch('data/antwerpen.json?v=20260826-4',{cache:'no-store'});
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
@@ -65,7 +65,7 @@ function formatDate(value){
 }
 
 function escapeHtml(value){
-  return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+  return String(value??'').replace(/[&<>'\"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[ch]));
 }
 
 loadAntwerpen();
