@@ -5,7 +5,9 @@
     "travelers": "Ronny & Jolanta",
     "vehicle": "Ford Mustang Mach-E",
     "status": "Aktiv planlægning",
-    "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7"
+    "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
+    "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving",
+    "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen og går via Bremen med én hotelovernatning. Der køres videre mod Danmark 9. november."
   },
   "hotel": {
     "name": "Prize by Radisson, Antwerp City",
@@ -20,17 +22,36 @@
     "website": "https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien"
   },
+  "returnHotel": {
+    "name": "Best Western Hotel Zur Post",
+    "city": "Bremen",
+    "address": "Bahnhofsplatz 11, 28195 Bremen, Tyskland",
+    "checkIn": "2026-11-08",
+    "checkInTime": "15:00",
+    "checkOut": "2026-11-09",
+    "checkOutTime": "12:00",
+    "nights": 1,
+    "room": "Classic-værelse · 1 dobbeltseng · køleskab (kan omdannes til 2 enkeltsenge)",
+    "features": ["Gratis Wi‑Fi", "Pool", "Spa", "Kæledyrsvenligt", "Mulighed for parkering"],
+    "website": "https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany",
+    "note": "Bekræftet reservation fra Hotels.com. Bookingnummer og e-mail gemmes ikke i den offentlige app."
+  },
   "links": [
     {"title":"Prize by Radisson, Antwerp City","subtitle":"Hotellets officielle hjemmeside","url":"https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city","icon":"🏨"},
     {"title":"Hotel i Google Maps","subtitle":"Tunnelplaats 5, Antwerpen","url":"https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien","icon":"📍"},
-    {"title":"Din kørerute","subtitle":"Gemte Google Maps-rute til Antwerpen","url":"https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7","icon":"🗺️"}
+    {"title":"Din kørerute til Antwerpen","subtitle":"Gemte Google Maps-rute","url":"https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7","icon":"🗺️"},
+    {"title":"Hjemrejse via Bremen","subtitle":"Antwerpen → Bremen → Helsingør","url":"https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving","icon":"🚗"},
+    {"title":"Best Western Hotel Zur Post","subtitle":"Hotellets officielle hjemmeside i Bremen","url":"https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel","icon":"🏨"},
+    {"title":"Bremen-hotel i Google Maps","subtitle":"Bahnhofsplatz 11, Bremen","url":"https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany","icon":"📍"}
   ],
   "sections": [
-    {"id":"route","icon":"🗺️","title":"Rute","text":"Din gemte Google Maps-rute er klar. Køre- og ladestop verificeres separat."},
+    {"id":"route","icon":"🗺️","title":"Rute","text":"Udrejsens gemte Google Maps-rute er klar. Hjemrejsen går 8.–9. november via Bremen med én overnatning."},
     {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
-    {"id":"hotel","icon":"🏨","title":"Hotel","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
+    {"id":"hotel","icon":"🏨","title":"Hotel i Antwerpen","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
+    {"id":"returnHotel","icon":"🛏️","title":"Overnatning på hjemrejsen","text":"Bekræftet overnatning i Bremen 8.–9. november 2026."},
     {"id":"days","icon":"📅","title":"Dagsplan","text":"Dagsplanen bygges løbende."},
-    {"id":"parking","icon":"🅿️","title":"Parkering","text":"Parkering ved hotel og centrum skal verificeres."},
-    {"id":"links","icon":"🔗","title":"Nyttige links","text":"Kort, hotel, opladning og andre relevante links samles her."}
+    {"id":"parking","icon":"🅿️","title":"Parkering","text":"Parkering ved hoteller og centrum skal verificeres."},
+    {"id":"links","icon":"🔗","title":"Nyttige links","text":"Kort, hoteller, opladning og andre relevante links samles her."}
   ]
 }
