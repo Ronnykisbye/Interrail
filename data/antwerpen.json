@@ -7,7 +7,23 @@
     "status": "Aktiv planlægning",
     "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
     "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving",
+    "outboundNote": "Udrejsen har hotelophold i Jesteburg 3.–5. november 2026. Der køres videre til Antwerpen den 5. november.",
     "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen og går via Bremen med én hotelovernatning. Der køres videre mod Danmark 9. november."
+  },
+  "outboundHotel": {
+    "name": "Hotel Heideblick an der Lüneburger Heide",
+    "city": "Jesteburg",
+    "address": "Itzenbütteler Straße 35, 21266 Jesteburg, Tyskland",
+    "checkIn": "2026-11-03",
+    "checkInTime": "15:00",
+    "checkOut": "2026-11-05",
+    "checkOutTime": "11:00",
+    "nights": 2,
+    "room": "Economy-dobbeltværelse",
+    "features": ["Gratis Wi‑Fi", "Gratis selvstændig parkering", "Motionscenter", "Døgnåben reception"],
+    "bookingInfoUrl": "https://www.booking.com/hotel/de/parkhotel-jesteburg.html",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany",
+    "note": "Bekræftet reservation fra Hotels.com. Bookingnummer og e-mail gemmes ikke i den offentlige app."
   },
   "hotel": {
     "name": "Prize by Radisson, Antwerp City",
@@ -38,6 +54,8 @@
     "note": "Bekræftet reservation fra Hotels.com. Bookingnummer og e-mail gemmes ikke i den offentlige app."
   },
   "links": [
+    {"title":"Hotel Heideblick i Google Maps","subtitle":"Itzenbütteler Straße 35, Jesteburg","url":"https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany","icon":"📍"},
+    {"title":"Hotel Heideblick - hotelinfo","subtitle":"Booking.com-side med adresse og faciliteter","url":"https://www.booking.com/hotel/de/parkhotel-jesteburg.html","icon":"🏨"},
     {"title":"Prize by Radisson, Antwerp City","subtitle":"Hotellets officielle hjemmeside","url":"https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city","icon":"🏨"},
     {"title":"Hotel i Google Maps","subtitle":"Tunnelplaats 5, Antwerpen","url":"https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien","icon":"📍"},
     {"title":"Din kørerute til Antwerpen","subtitle":"Gemte Google Maps-rute","url":"https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7","icon":"🗺️"},
@@ -46,8 +64,9 @@
     {"title":"Bremen-hotel i Google Maps","subtitle":"Bahnhofsplatz 11, Bremen","url":"https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany","icon":"📍"}
   ],
   "sections": [
-    {"id":"route","icon":"🗺️","title":"Rute","text":"Udrejsens gemte Google Maps-rute er klar. Hjemrejsen går 8.–9. november via Bremen med én overnatning."},
+    {"id":"route","icon":"🗺️","title":"Rute","text":"Udrejsen har hotelophold i Jesteburg 3.–5. november. Antwerpen nås 5. november. Hjemrejsen går 8.–9. november via Bremen med én overnatning."},
     {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
+    {"id":"outboundHotel","icon":"🛏️","title":"Hotel på udrejsen","text":"Bekræftet hotelophold i Jesteburg 3.–5. november 2026."},
     {"id":"hotel","icon":"🏨","title":"Hotel i Antwerpen","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
     {"id":"returnHotel","icon":"🛏️","title":"Overnatning på hjemrejsen","text":"Bekræftet overnatning i Bremen 8.–9. november 2026."},
     {"id":"days","icon":"📅","title":"Dagsplan","text":"Dagsplanen bygges løbende."},
