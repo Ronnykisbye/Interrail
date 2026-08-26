@@ -96,8 +96,18 @@ Dette er den vigtigste kommende rejse.
 - Bil: Ford Mustang Mach-E.
 - Rejsen går via Fyn og Jylland gennem Tyskland til Antwerpen.
 - Der planlægges opladning undervejs, herunder E.ON Drive og eventuelle bedre/billigere alternativer efter verificering.
-- Der skal være en overnatning syd for Hamborg på udrejsen.
 - Antwerpen har egen side og udvikles som selvstændigt rejsemodul.
+
+Udrejse:
+- Bekræftet hotelophold i **Jesteburg** fra **3. november 2026** til **5. november 2026**.
+- Hotel: **Hotel Heideblick an der Lüneburger Heide**.
+- Adresse: **Itzenbütteler Straße 35, 21266 Jesteburg, Tyskland**.
+- Check-in: **3. november 2026 kl. 15:00**.
+- Check-out: **5. november 2026 kl. 11:00**.
+- 2 nætter.
+- Economy-dobbeltværelse.
+- Screenshot fra Hotels.com viser bl.a. gratis Wi‑Fi, gratis selvstændig parkering, motionscenter og døgnåben reception.
+- Der køres videre til Antwerpen den **5. november 2026**.
 
 Bekræftet hotel i Antwerpen:
 - **Prize by Radisson, Antwerp City**
