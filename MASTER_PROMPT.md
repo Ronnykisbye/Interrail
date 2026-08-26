@@ -99,7 +99,7 @@ Dette er den vigtigste kommende rejse.
 - Der skal være en overnatning syd for Hamborg på udrejsen.
 - Antwerpen har egen side og udvikles som selvstændigt rejsemodul.
 
-Bekræftet hotel:
+Bekræftet hotel i Antwerpen:
 - **Prize by Radisson, Antwerp City**
 - Tunnelplaats 5, 2000 Antwerp, Belgien
 - Check-in: **5. november 2026**
@@ -110,7 +110,18 @@ Bekræftet hotel:
 - Betalt: **2.841,97 kr.**
 - Betales på hotel: **151,97 kr.**
 
-Bookingreference og betalingskortoplysninger må ikke ligge i den offentlige app.
+Hjemrejse:
+- Afgang fra Antwerpen **8. november 2026**.
+- Hjemrejsen går via **Bremen**.
+- Bekræftet overnatning: **Best Western Hotel Zur Post**, Bahnhofsplatz 11, 28195 Bremen.
+- Check-in: **8. november 2026 kl. 15:00**.
+- Check-out: **9. november 2026 kl. 12:00**.
+- 1 nat.
+- Classic-værelse med 1 dobbeltseng, køleskab; kan omdannes til 2 enkeltsenge.
+- Screenshot fra Hotels.com viser bl.a. gratis Wi‑Fi, pool, spa, kæledyrsvenligt og mulighed for parkering.
+- Der køres videre mod Danmark efter udtjekning 9. november.
+
+Bookingreferencer, e-mail og betalingskortoplysninger må ikke ligge i den offentlige app.
 
 ## 2. Interrail – Istanbul
 Ny foreløbig hovedplan:
