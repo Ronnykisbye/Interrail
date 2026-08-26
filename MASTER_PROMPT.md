@@ -122,14 +122,18 @@ Bekræftet hotel i Antwerpen:
 
 Hjemrejse:
 - Afgang fra Antwerpen **8. november 2026**.
-- Hjemrejsen går via **Bremen**.
-- Bekræftet overnatning: **Best Western Hotel Zur Post**, Bahnhofsplatz 11, 28195 Bremen.
-- Check-in: **8. november 2026 kl. 15:00**.
-- Check-out: **9. november 2026 kl. 12:00**.
+- **Bremen er hovedmuligheden**: Best Western Hotel Zur Post, Bahnhofsplatz 11, 28195 Bremen.
+- Check-in Bremen: **8. november 2026 kl. 15:00**.
+- Check-out Bremen: **9. november 2026 kl. 12:00**.
 - 1 nat.
 - Classic-værelse med 1 dobbeltseng, køleskab; kan omdannes til 2 enkeltsenge.
 - Screenshot fra Hotels.com viser bl.a. gratis Wi‑Fi, pool, spa, kæledyrsvenligt og mulighed for parkering.
-- Der køres videre mod Danmark efter udtjekning 9. november.
+- **Kiel er booket som alternativ på samme dato**: Hotel Consul, Walkerdamm 11, 24103 Kiel.
+- Check-in Kiel: **8. november 2026 kl. 15:00**.
+- Check-out Kiel: **9. november 2026 kl. 11:00**.
+- 1 nat, 2 voksne, 1 værelse.
+- Hotel Consul skal vises som alternativ, ikke som erstatning for Bremen, indtil der træffes et valg.
+- Der køres videre mod Danmark 9. november.
 
 Bookingreferencer, e-mail og betalingskortoplysninger må ikke ligge i den offentlige app.
 
