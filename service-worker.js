@@ -1,4 +1,4 @@
-const CACHE='rejser-v1-20260826-5';
+const CACHE='rejser-v1-20260826-6';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen.css','./antwerpen.js','./data/antwerpen.json',
@@ -7,11 +7,34 @@ const CORE=[
   './assets/favicon.svg','./assets/icon-192.jpg','./assets/icon-512.jpg','./assets/icon-maskable-512.jpg',
   './downloads/Interrail_2026_Hotelliste.xlsx','./downloads/Interrail_2026_Togliste_korrigeret_med_rejsetid.xlsx'
 ];
-self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting();});
-self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))));self.clients.claim();});
+
+self.addEventListener('install',event=>{
+  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));
+  self.skipWaiting();
+});
+
+self.addEventListener('activate',event=>{
+  event.waitUntil(
+    caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))))
+  );
+  self.clients.claim();
+});
+
 self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
-  event.respondWith(fetch(event.request).then(response=>{
-    const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));return response;
-  }).catch(()=>caches.match(event.request).then(cached=>cached||caches.match('./index.html'))));
+
+  const url=new URL(event.request.url);
+  if(url.protocol!=='http:'&&url.protocol!=='https:')return;
+
+  event.respondWith(
+    fetch(event.request)
+      .then(response=>{
+        if(response&&response.ok){
+          const copy=response.clone();
+          caches.open(CACHE).then(cache=>cache.put(event.request,copy));
+        }
+        return response;
+      })
+      .catch(()=>caches.match(event.request).then(cached=>cached||caches.match('./index.html')))
+  );
 });
