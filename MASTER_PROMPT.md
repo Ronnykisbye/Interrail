@@ -98,6 +98,12 @@ Dette er den vigtigste kommende rejse.
 - Der planlægges opladning undervejs, herunder E.ON Drive og eventuelle bedre/billigere alternativer efter verificering.
 - Antwerpen har egen side og udvikles som selvstændigt rejsemodul.
 
+Tilladelser og miljøzoner:
+- Antwerpen LEZ-ansøgning er indsendt **26. august 2026** og afventer behandling.
+- Grøn tysk **Umweltplakette** er bestilt hos **FDM 26. august 2026** til Ford Mustang Mach-E.
+- Pris for Umweltplakette: **200 kr. + 45 kr. fragt = 245 kr.**
+- Ordrenumre, ansøgningsnumre, e-mail og andre personlige oplysninger må ikke ligge i den offentlige app.
+
 Udrejse:
 - Bekræftet hotelophold i **Jesteburg** fra **3. november 2026** til **5. november 2026**.
 - Hotel: **Hotel Heideblick an der Lüneburger Heide**.
