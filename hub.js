@@ -31,9 +31,21 @@ function escapeHtml(value){
   return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 }
 
-function registerServiceWorker(){
-  if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('service-worker.js').catch(console.error);
+async function registerServiceWorker(){
+  if(!('serviceWorker' in navigator))return;
+
+  const reloadKey='rejser-sw-20260826-7';
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{
+    if(sessionStorage.getItem(reloadKey))return;
+    sessionStorage.setItem(reloadKey,'1');
+    window.location.reload();
+  });
+
+  try{
+    const registration=await navigator.serviceWorker.register('service-worker.js?v=20260826-7',{updateViaCache:'none'});
+    await registration.update();
+  }catch(error){
+    console.error('Service worker kunne ikke opdateres',error);
   }
 }
 
