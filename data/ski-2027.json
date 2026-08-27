@@ -1,0 +1,16 @@
+{
+  "trip": {
+    "title": "Skiferie 2027",
+    "subtitle": "Uge 5 · Italien",
+    "status": "Planlægning",
+    "candidate": "Sestriere"
+  },
+  "planning": [
+    {"icon":"🏔️","title":"Destination","text":"Sestriere er foreløbig kandidat. Destinationen er endnu ikke låst."},
+    {"icon":"✈️","title":"Fly","text":"Fly fra København skal undersøges og sammenlignes."},
+    {"icon":"🚐","title":"Transfer","text":"Transfer mellem lufthavn og skiområde skal findes."},
+    {"icon":"🏨","title":"Overnatning","text":"Der søges efter hotel eller lejlighed med 3 rigtige værelser/soveværelser."},
+    {"icon":"🎿","title":"Liftkort","text":"Liftkort skal sammenlignes som del af samlet pris."},
+    {"icon":"🥾","title":"Skileje","text":"Skileje skal sammenlignes som del af samlet pris."}
+  ]
+}
