@@ -1,10 +1,10 @@
-const CACHE='rejser-v1-20260826-7';
+const CACHE='rejser-v1-20260827-1';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen.css','./antwerpen.js','./data/antwerpen.json',
   './interrail-istanbul.html','./interrail-istanbul.css','./interrail-istanbul.js','./data/interrail-istanbul.json',
   './interrail.html','./styles.css','./app.js','./install.js','./data/itinerary.json','./data/links.json','./data/hotels.json',
-  './assets/favicon.svg','./assets/icon-192.jpg','./assets/icon-512.jpg','./assets/icon-maskable-512.jpg',
+  './assets/rejser-icon.svg','./assets/favicon.svg','./assets/icon-192.jpg','./assets/icon-512.jpg','./assets/icon-maskable-512.jpg',
   './downloads/Interrail_2026_Hotelliste.xlsx','./downloads/Interrail_2026_Togliste_korrigeret_med_rejsetid.xlsx'
 ];
 
