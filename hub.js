@@ -23,6 +23,7 @@ function renderTrip(trip){
 function targetFor(target){
   if(target==='antwerpen')return 'antwerpen.html';
   if(target==='interrail-istanbul')return 'interrail-istanbul.html';
+  if(target==='ski-2027')return 'ski-2027.html';
   if(target==='interrail')return 'interrail.html';
   return '#';
 }
@@ -34,7 +35,7 @@ function escapeHtml(value){
 async function registerServiceWorker(){
   if(!('serviceWorker' in navigator))return;
 
-  const reloadKey='rejser-sw-20260826-7';
+  const reloadKey='rejser-sw-20260827-2';
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
     if(sessionStorage.getItem(reloadKey))return;
     sessionStorage.setItem(reloadKey,'1');
@@ -42,7 +43,7 @@ async function registerServiceWorker(){
   });
 
   try{
-    const registration=await navigator.serviceWorker.register('service-worker.js?v=20260826-7',{updateViaCache:'none'});
+    const registration=await navigator.serviceWorker.register('service-worker.js?v=20260827-2',{updateViaCache:'none'});
     await registration.update();
   }catch(error){
     console.error('Service worker kunne ikke opdateres',error);
