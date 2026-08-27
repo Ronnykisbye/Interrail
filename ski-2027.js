@@ -1,7 +1,7 @@
 async function loadSkiTrip(){
   const root=document.getElementById('skiContent');
   try{
-    const response=await fetch('data/ski-2027.json?v=20260827-2',{cache:'no-store'});
+    const response=await fetch('data/ski-2027.json?v=20260827-3',{cache:'no-store'});
     if(!response.ok)throw new Error('Skiferiedata kunne ikke hentes');
     const data=await response.json();
     document.getElementById('skiTitle').textContent=data.trip.title;
@@ -10,6 +10,7 @@ async function loadSkiTrip(){
     document.getElementById('skiCandidate').textContent=data.trip.candidate;
 
     const planning=Array.isArray(data.planning)?data.planning:[];
+    const information=Array.isArray(data.information)?data.information:[];
     const links=Array.isArray(data.links)?data.links:[];
 
     const cards=planning.map(item=>{
@@ -19,11 +20,15 @@ async function loadSkiTrip(){
       return `<article class="ski-card"><div class="ski-icon" aria-hidden="true">${escapeHtml(item.icon)}</div>${title}<p>${escapeHtml(item.text)}</p></article>`;
     }).join('');
 
+    const informationCard=information.length
+      ? `<article class="ski-card ski-links-card"><div class="ski-icon" aria-hidden="true">ℹ️</div><h2>Information</h2><div class="ski-links">${information.map(item=>`<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text||'')}</span> ↗</a>`).join('')}</div></article>`
+      : '';
+
     const linkCard=links.length
       ? `<article class="ski-card ski-links-card"><div class="ski-icon" aria-hidden="true">🔗</div><h2>Nyttige links</h2><div class="ski-links">${links.map(link=>`<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.title)} ↗</a>`).join('')}</div></article>`
       : '';
 
-    root.innerHTML=cards+linkCard;
+    root.innerHTML=cards+informationCard+linkCard;
   }catch(error){
     console.error(error);
     root.innerHTML='<article class="ski-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
