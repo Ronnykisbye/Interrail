@@ -70,6 +70,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 
 ## Skiferie 2027
 - `ski-2027.html` – aktiv side for skiferieplanen
+- `ski-2027-delt.html` – delt skiferievisning uden navigation til de øvrige rejser
 - `ski-2027.css` – design
 - `ski-2027.js` – rendering/funktion
 - `data/ski-2027.json` – foreløbig plan og status
@@ -88,7 +89,19 @@ Den gamle funktionalitet må ikke slettes eller omskrives unødvendigt.
 
 ## PWA
 - `manifest.webmanifest` beskriver hovedappen som **Rejser**.
-- `service-worker.js` cacher hub, Antwerpen, den nye Istanbul-plan, Skiferie 2027 og den gamle Interrail-side.
+- `service-worker.js` cacher hub, Antwerpen, den nye Istanbul-plan, Skiferie 2027, den delte skiferievisning og den gamle Interrail-side.
+
+---
+
+# Adgangsmodel
+
+Målet er:
+- Ronny og Jolanta bruger hovedappen og kan se alle rejser.
+- Børn/familie kan få et direkte link til `ski-2027-delt.html`, som kun viser skiferien og ikke har navigation tilbage til hovedappen.
+- Den delte side har `noindex,nofollow,noarchive`, så den ikke bør indekseres af søgemaskiner.
+- GitHub Pages er stadig teknisk offentlig hosting. En direkte delt URL er derfor praktisk begrænset adgang, men ikke stærk autentificering.
+- Følsomme oplysninger må ikke lægges i offentlige HTML/JS/JSON-filer.
+- Hvis der senere ønskes reel lukket adgang til hovedappen, skal der bruges et eksternt autentificerings-/access-lag foran siden.
 
 ---
 
