@@ -9,13 +9,27 @@
   },
   "planning": [
     {"icon":"👥","title":"Faste krav","text":"4 voksne. Fly fra København. Ski-in/ski-out eller helst maks. 300–500 m til lift/piste. Mindst 2 separate soveværelser. Par i ét værelse; datter + far kan dele det andet."},
-    {"icon":"🏔️","title":"Sestriere · prisfavorit","text":"Sestriere ligger i 2.035 m. Dokumenteret 7-dages flypakke 30/1 2027: 8.945 kr. pr. person i 2-værelses lejlighed for 4, inkl. fly fra København og 6 dages liftkort. Samlet 35.780 kr. før transfer, skiudstyr og ekstra bagage."},
-    {"icon":"🏨","title":"Sestriere · andre fund","text":"Dobbeltværelse for 2: 10.299–10.999 kr. pr. person inkl. fly CPH + 6 dages liftkort. Grand Hotel Sestriere standard: 11.195 kr. pr. person inkl. fly CPH + 6 dages liftkort. To værelser og præcis lift-afstand skal bekræftes."},
-    {"icon":"⛷️","title":"Livigno · stærkt alternativ","text":"Livigno ligger i 1.816 m og har ifølge destinationen 115 km pister og 32 lifte. Området har et meget stærkt udvalg af ski-in/ski-out hoteller og lejligheder."},
-    {"icon":"🏨","title":"Livigno · fund omkring uge 5","text":"Hotel Montivas Lodge: 12.405 kr. pr. person, 30/1 2027 i 7 dage, inkl. fly CPH + 6 dages liftkort. Standard dobbeltværelse-bureau-fund: 10.799 kr. pr. person. 3-værelses lejlighed til maks. 4: 7.495 kr. pr. person ved 4, men med bus og 8 dage fra 29/1."},
-    {"icon":"✈️","title":"Egne ski & bagage","text":"Ved Nortlander bruges foreløbigt 599 kr. pr. skisæt som budget. Et skisæt omfatter skitaske med ski + stave samt støvletaske med støvler og hjelm. Standardbagage på Nortlander-fly er angivet som 10 kg indchecket + 5 kg håndbagage pr. person. Ekstra 5 kg: 149 kr.; ekstra 10 kg: 199 kr. Endelig bookingpris gælder altid."},
+    {"icon":"🏔️","title":"Sestriere · prisfavorit","url":"https://www.vialattea.it/en/ski-area/sestriere/","text":"Sestriere ligger i 2.035 m. Dokumenteret 7-dages flypakke 30/1 2027: 8.945 kr. pr. person i 2-værelses lejlighed for 4, inkl. fly fra København og 6 dages liftkort. Samlet 35.780 kr. før transfer, skiudstyr og ekstra bagage."},
+    {"icon":"🏨","title":"Sestriere · andre fund","url":"https://www.skisport.dk/italien/sestriere/afbudsrejser/","text":"Dobbeltværelse for 2: 10.299–10.999 kr. pr. person inkl. fly CPH + 6 dages liftkort. Grand Hotel Sestriere standard: 11.195 kr. pr. person inkl. fly CPH + 6 dages liftkort. To værelser og præcis lift-afstand skal bekræftes."},
+    {"icon":"⛷️","title":"Livigno · stærkt alternativ","url":"https://www.livigno.eu/en/skiing-livigno","text":"Livigno ligger i 1.816 m og har ifølge destinationen 115 km pister og 32 lifte. Området har et meget stærkt udvalg af ski-in/ski-out hoteller og lejligheder."},
+    {"icon":"🏨","title":"Livigno · fund omkring uge 5","url":"https://www.skisport.dk/italien/livigno/lejligheder/","text":"Hotel Montivas Lodge: 12.405 kr. pr. person, 30/1 2027 i 7 dage, inkl. fly CPH + 6 dages liftkort. Standard dobbeltværelse-bureau-fund: 10.799 kr. pr. person. 3-værelses lejlighed til maks. 4: 7.495 kr. pr. person ved 4, men med bus og 8 dage fra 29/1."},
+    {"icon":"✈️","title":"Egne ski & bagage","url":"https://www.nortlander.dk/om-rejsen/transport/skiferie-fly","text":"Ved Nortlander bruges foreløbigt 599 kr. pr. skisæt som budget. Et skisæt omfatter skitaske med ski + stave samt støvletaske med støvler og hjelm. Standardbagage på Nortlander-fly er angivet som 10 kg indchecket + 5 kg håndbagage pr. person. Ekstra 5 kg: 149 kr.; ekstra 10 kg: 199 kr. Endelig bookingpris gælder altid."},
     {"icon":"🧳","title":"Praktisk bagagebudget","text":"Hvis 2 personer medbringer egne ski, budgetteres foreløbigt med 2 × 599 kr. = 1.198 kr. i skitransport. Eventuel ekstra 10 kg bagage til skitøj er yderligere 199 kr. pr. person på afgange, hvor Nortlanders charterregler gælder."},
     {"icon":"✅","title":"Foreløbig anbefaling","text":"Arbejd videre med Sestriere først, fordi den dokumenterede 4-personers flypakke til 8.945 kr. pr. person er meget konkurrencedygtig. Behold Livigno som stærkt alternativ, især hvis der findes en 2-soveværelses ski-in/ski-out bolig til en pris, der opvejer den dyrere transport/pakke."},
     {"icon":"🔎","title":"Før booking skal vi have slutprisen","text":"4 voksne, 2 separate værelser, fly, transfer, 6 dages liftkort, 2 skisæt som specialbagage, støvle/skitøjstaske, eventuel ekstra kuffert og skileje til dem uden eget udstyr."}
+  ],
+  "links": [
+    {"title":"Sestriere · officiel Via Lattea","url":"https://www.vialattea.it/en/ski-area/sestriere/"},
+    {"title":"Sestriere · Skisport.dk","url":"https://www.skisport.dk/italien/sestriere/afbudsrejser/"},
+    {"title":"Nortlander · Italien","url":"https://www.nortlander.dk/skiferie/italien"},
+    {"title":"Slopestar","url":"https://www.slopestar.dk/"},
+    {"title":"Livigno · officiel skiinfo","url":"https://www.livigno.eu/en/skiing-livigno"},
+    {"title":"Livigno · pister og sæson","url":"https://www.livigno.eu/en/slopes"},
+    {"title":"Livigno · Skisport.dk lejligheder","url":"https://www.skisport.dk/italien/livigno/lejligheder/"},
+    {"title":"Livigno · Airbnb ski-in/ski-out","url":"https://www.airbnb.com/livigno-italy/stays/ski-in-ski-out"},
+    {"title":"Nortlander · fly og skitransport","url":"https://www.nortlander.dk/om-rejsen/transport/skiferie-fly"},
+    {"title":"Nortlander · FAQ","url":"https://www.nortlander.dk/info/kontakt/kundeservice-faq"},
+    {"title":"SAS · specialbagage og ski","url":"https://www.sas.dk/rejseinfo/bagage/special"},
+    {"title":"Norwegian · bagagepriser","url":"https://www.norwegian.com/dk/booking/bookingoplysninger/tillaeg-for-valgfri-service/"}
   ]
 }
