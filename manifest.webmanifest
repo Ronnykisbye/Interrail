@@ -1,9 +1,9 @@
 {
-  "id": "./?app=rejser-v1",
+  "id": "./?app=rejser-v2",
   "name": "Rejser",
   "short_name": "Rejser",
   "description": "Samlet rejseapp til Ronny og Jolantas ture",
-  "start_url": "./?app=rejser-v1",
+  "start_url": "./?app=rejser-v2",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -12,6 +12,12 @@
   "lang": "da-DK",
   "icons": [
     {
+      "src": "assets/rejser-icon.svg?v=20260827-1",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
       "src": "assets/icon-192.jpg?v=20260805-photo-1",
       "sizes": "192x192",
       "type": "image/jpeg",
@@ -19,13 +25,13 @@
     },
     {
       "src": "assets/icon-512.jpg?v=20260805-photo-1",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
       "src": "assets/icon-maskable-512.jpg?v=20260805-photo-1",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "maskable"
     }
