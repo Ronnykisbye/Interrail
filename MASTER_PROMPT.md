@@ -106,6 +106,7 @@ Bevares separat:
 - Tysk Umweltplakette bestilt hos FDM 26. august 2026, 245 kr. inkl. fragt.
 - Jesteburg: Hotel Heideblick, 3.–5. november 2026.
 - Antwerpen: Prize by Radisson, Antwerp City, 5.–8. november 2026.
+- Tomorrowland Immersive Experience: 6. november 2026 kl. 19:30, Waagnatie Expo & Events, 2 billetter. Personlige billet-/ordrelinks må ikke gemmes offentligt.
 - Hjemrejse: Bremen som hovedmulighed 8.–9. november; Kiel som alternativ samme dato.
 - Bookingreferencer, e-mail og betalingskortoplysninger må ikke offentliggøres.
 
@@ -127,12 +128,11 @@ Faste krav:
 - Mindst **2 separate soveværelser**.
 - Sovefordeling: par i ét værelse; datter + far kan dele det andet.
 
-Sestriere:
-- Byhøjde 2.035 m.
-- Dokumenteret 7-dages flypakke 30/1 2027: **8.945 kr. pr. person** i 2-værelses lejlighed for 4, inkl. fly fra København og 6 dages liftkort.
-- Samlet **35.780 kr. for 4** før transfer, skiudstyr og ekstra bagage.
-- Dobbeltværelsesfund: 10.299–10.999 kr. pr. person inkl. fly + 6 dages liftkort.
-- Grand Hotel Sestriere standard: 11.195 kr. pr. person inkl. fly + 6 dages liftkort.
+Sestriere – konkrete pakker:
+- **Apartment Villaggio Olimpico**: 30/1 2027, 7 dage, fly fra København, 2-værelses lejlighed til 4, 6 dages liftkort, dokumenteret pris **8.945 kr. pr. person / 35.780 kr. for 4** før transfer, skiudstyr og ekstra bagage. Lejlighederne ligger ca. 50 m fra piste/lift.
+- **Grand Hotel Sestriere**: 30/1 2027, 7 dage, fly fra København, dobbeltværelse standard, 6 dages liftkort, dokumenteret pris **11.195 kr. pr. person ved 2 personer**. To separate værelser og samlet pris for 4 skal bekræftes.
+- Pakkekort i appen må kun være klikbare, når de leder direkte til den konkrete indkvartering/pakke. Generelle destinationslinks må ikke bruges som pakkelinks.
+- Øvrige fund uden direkte hotel-/pakkelink vises som information uden klik.
 
 Nortlander og bagage:
 - Skitransport vist i booking: **599 kr. pr. person**.
@@ -167,6 +167,8 @@ Ski-appen har en særskilt **Information**-sektion. Aktuelle informationslinks:
 
 ### Nyttige links i ski-appen
 Aktuelle kategorier omfatter:
+- Apartment Villaggio Olimpico – konkret pakke
+- Grand Hotel Sestriere – konkret pakke
 - officiel Via Lattea / Sestriere
 - Skisport.dk
 - Nortlander Italien
