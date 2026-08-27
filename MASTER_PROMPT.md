@@ -18,12 +18,12 @@ Når en ny session starter, skal ChatGPT først:
 # Projektets formål
 Den samlede løsning hedder **Rejser**.
 
-Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rejser og 3 reservepladser. Reservepladserne skal blive liggende, så en ny rejse senere kun kræver nyt indhold og ikke en ny forside.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rejser og 3 reservepladser.
 
 Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
-3. **Skiferie 2027** – aktiv planlægning, uge 5, Italien, Sestriere som foreløbig kandidat
+3. **Skiferie 2027** – aktiv planlægning, uge 5, Italien, Sestriere som foreløbig prisfavorit og Livigno som stærkt alternativ
 4. Reserve
 5. Reserve
 6. Reserve
@@ -33,8 +33,6 @@ Designet skal være enkelt og intuitivt som godt legetøjsdesign: store tydelige
 ---
 
 # Fast udviklingsprincip
-Projektet bygges modulært efter princippet:
-
 **Én fil = ét tydeligt ansvar.**
 
 Eksempler:
@@ -51,10 +49,10 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 # Aktuel arkitektur
 
 ## Rejser-hub
-- `index.html` – kun hovedforsiden/hubben
-- `hub.css` – design til hubben og de 6 store 3D-knapper
-- `hub.js` – indlæsning og visning af rejseknapper
-- `data/trips.json` – indhold/status for de 6 rejsepladser
+- `index.html`
+- `hub.css`
+- `hub.js`
+- `data/trips.json`
 
 ## Antwerpen
 - `antwerpen.html`
@@ -62,21 +60,21 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `antwerpen.js`
 - `data/antwerpen.json`
 
-## Ny Interrail-plan mod Istanbul
-- `interrail-istanbul.html` – den aktive foreløbige Istanbul-plan
-- `interrail-istanbul.css` – design
-- `interrail-istanbul.js` – rendering/funktion
-- `data/interrail-istanbul.json` – rute, ophold, status og officielle kilder
+## Interrail mod Istanbul
+- `interrail-istanbul.html`
+- `interrail-istanbul.css`
+- `interrail-istanbul.js`
+- `data/interrail-istanbul.json`
 
 ## Skiferie 2027
 - `ski-2027.html` – aktiv side for skiferieplanen
-- `ski-2027-delt.html` – delt skiferievisning uden navigation til de øvrige rejser
-- `ski-2027.css` – design
-- `ski-2027.js` – rendering/funktion
-- `data/ski-2027.json` – foreløbig plan og status
+- `ski-2027-delt.html` – delt visning uden navigation til de øvrige rejser
+- `ski-2027.css`
+- `ski-2027.js`
+- `data/ski-2027.json`
 
 ## Tidligere Interrail-app
-Den tidligere fungerende Alperne-version er stadig bevaret separat:
+Bevares separat:
 - `interrail.html`
 - `styles.css`
 - `app.js`
@@ -85,104 +83,80 @@ Den tidligere fungerende Alperne-version er stadig bevaret separat:
 - `data/hotels.json`
 - `data/links.json`
 
-Den gamle funktionalitet må ikke slettes eller omskrives unødvendigt.
-
 ## PWA
 - `manifest.webmanifest` beskriver hovedappen som **Rejser**.
-- `service-worker.js` cacher hub, Antwerpen, den nye Istanbul-plan, Skiferie 2027, den delte skiferievisning og den gamle Interrail-side.
+- `service-worker.js` cacher hub, Antwerpen, Istanbul-planen, Skiferie 2027, den delte skiferievisning og den gamle Interrail-side.
 
 ---
 
 # Adgangsmodel
-
-Målet er:
 - Ronny og Jolanta bruger hovedappen og kan se alle rejser.
-- Børn/familie kan få et direkte link til `ski-2027-delt.html`, som kun viser skiferien og ikke har navigation tilbage til hovedappen.
-- Den delte side har `noindex,nofollow,noarchive`, så den ikke bør indekseres af søgemaskiner.
-- GitHub Pages er stadig teknisk offentlig hosting. En direkte delt URL er derfor praktisk begrænset adgang, men ikke stærk autentificering.
-- Følsomme oplysninger må ikke lægges i offentlige HTML/JS/JSON-filer.
-- Hvis der senere ønskes reel lukket adgang til hovedappen, skal der bruges et eksternt autentificerings-/access-lag foran siden.
+- Børn/familie kan få direkte link til `ski-2027-delt.html`, som kun viser skiferien og ikke har navigation tilbage til hovedappen.
+- Den delte side har `noindex,nofollow,noarchive`.
+- GitHub Pages er stadig teknisk offentlig hosting; delt link er praktisk begrænsning, ikke stærk autentificering.
+- Følsomme oplysninger må ikke ligge i offentlige HTML/JS/JSON-filer.
 
 ---
 
 # Aktuel rejse-status
 
 ## 1. Antwerpen – november 2026
-Dette er den vigtigste kommende rejse.
-
-- Bilrejse, ikke Interrail.
-- Udgangspunkt: Helsingør.
-- Bil: Ford Mustang Mach-E.
-- Rejsen går via Fyn og Jylland gennem Tyskland til Antwerpen.
-- Der planlægges opladning undervejs, herunder E.ON Drive og eventuelle bedre/billigere alternativer efter verificering.
-- Antwerpen har egen side og udvikles som selvstændigt rejsemodul.
-
-Tilladelser og miljøzoner:
-- Antwerpen LEZ-ansøgning er indsendt **26. august 2026** og afventer behandling.
-- Grøn tysk **Umweltplakette** er bestilt hos **FDM 26. august 2026** til Ford Mustang Mach-E.
-- Pris for Umweltplakette: **200 kr. + 45 kr. fragt = 245 kr.**
-- Ordrenumre, ansøgningsnumre, e-mail og andre personlige oplysninger må ikke ligge i den offentlige app.
-
-Udrejse:
-- Bekræftet hotelophold i **Jesteburg** fra **3. november 2026** til **5. november 2026**.
-- Hotel: **Hotel Heideblick an der Lüneburger Heide**.
-- Adresse: **Itzenbütteler Straße 35, 21266 Jesteburg, Tyskland**.
-- Check-in: **3. november 2026 kl. 15:00**.
-- Check-out: **5. november 2026 kl. 11:00**.
-- 2 nætter.
-- Economy-dobbeltværelse.
-- Screenshot fra Hotels.com viser bl.a. gratis Wi‑Fi, gratis selvstændig parkering, motionscenter og døgnåben reception.
-- Der køres videre til Antwerpen den **5. november 2026**.
-
-Bekræftet hotel i Antwerpen:
-- **Prize by Radisson, Antwerp City**
-- Tunnelplaats 5, 2000 Antwerp, Belgien
-- Check-in: **5. november 2026**
-- Check-out: **8. november 2026**
-- 3 nætter
-- Superior-værelse, ikke-ryger (Design)
-- Samlet pris ifølge kvittering: **2.993,94 kr.**
-- Betalt: **2.841,97 kr.**
-- Betales på hotel: **151,97 kr.**
-
-Hjemrejse:
-- Afgang fra Antwerpen **8. november 2026**.
-- **Bremen er hovedmuligheden**: Best Western Hotel Zur Post, Bahnhofsplatz 11, 28195 Bremen.
-- Check-in Bremen: **8. november 2026 kl. 15:00**.
-- Check-out Bremen: **9. november 2026 kl. 12:00**.
-- 1 nat.
-- **Kiel er booket som alternativ på samme dato**: Hotel Consul, Walkerdamm 11, 24103 Kiel.
-- Check-in Kiel: **8. november 2026 kl. 15:00**.
-- Check-out Kiel: **9. november 2026 kl. 11:00**.
-- Hotel Consul skal vises som alternativ, ikke som erstatning for Bremen, indtil der træffes et valg.
-
-Bookingreferencer, e-mail og betalingskortoplysninger må ikke ligge i den offentlige app.
+- Bilrejse fra Helsingør i Ford Mustang Mach-E.
+- LEZ-ansøgning til Antwerpen indsendt 26. august 2026 og afventer behandling.
+- Tysk Umweltplakette bestilt hos FDM 26. august 2026, 245 kr. inkl. fragt.
+- Jesteburg: Hotel Heideblick, 3.–5. november 2026.
+- Antwerpen: Prize by Radisson, Antwerp City, 5.–8. november 2026.
+- Hjemrejse: Bremen som hovedmulighed 8.–9. november; Kiel som alternativ samme dato.
+- Bookingreferencer, e-mail og betalingskortoplysninger må ikke offentliggøres.
 
 ## 2. Interrail – Istanbul
-Ny foreløbig hovedplan:
-
-- Start: Snekkersten.
-- Første lange stræk tænkes via København Syd og nattog mod Berlin, når den valgte dato understøtter det.
-- Videre til **Kraków**, hvor planen er **4 nætter**.
-- Derefter ønskes ruten via **Bratislava**.
-- Foreløbig korridor videre: Bratislava → Budapest → București → Sofia → Istanbul/Halkalı.
-- I **Istanbul planlægges 7 nætter**.
-- Hjemrejsen går foreløbigt tilbage gennem samme centrale korridor mod Danmark.
-- Rejsedatoen er **ikke fastlagt**, derfor må eksakte tognumre, klokkeslæt, priser og reservationer ikke fremstilles som låste fakta endnu.
+- Start Snekkersten via København Syd og nattog mod Berlin, når dato understøtter det.
+- Kraków 4 nætter.
+- Videre via Bratislava → Budapest → București → Sofia → Istanbul/Halkalı.
+- Istanbul planlagt til 7 nætter.
+- Dato ikke fastlagt, så tognumre, tider, priser og reservationer må ikke fremstilles som låste fakta.
 
 ## 3. Skiferie – uge 5, 2027
-Aktiv planlægning i rejseplads 3.
+Seneste kvalitetssikrede rejseoversigt er dateret 27.08.2026.
 
-- Uge 5, 2027.
-- Italien prioriteres.
-- **Sestriere er foreløbig kandidat**, men destinationen er ikke låst.
-- Der skal arbejdes videre med fly fra København, transfer, hotel/lejlighed, liftkort og skileje.
-- Overnatning skal som udgangspunkt have **3 rigtige værelser/soveværelser**, ikke kun sovesofa/alkove.
-- Nye priser, pakkerejser og konkrete forbindelser skal verificeres før de vises som fakta.
+Faste krav:
+- **4 voksne**.
+- Dato: **30. januar – 6. februar 2027**.
+- Fly fra København.
+- Ski-in/ski-out eller helst maks. 300–500 m til lift/piste.
+- Mindst **2 separate soveværelser**.
+- Sovefordeling: par i ét værelse; datter + far kan dele det andet.
+
+Sestriere:
+- Foreløbig prisfavorit.
+- Byhøjde 2.035 m.
+- Dokumenteret 7-dages flypakke 30/1 2027: **8.945 kr. pr. person** i 2-værelses lejlighed for 4, inkl. fly fra København og 6 dages liftkort.
+- Samlet **35.780 kr. for 4** før transfer, skiudstyr og ekstra bagage.
+- Dobbeltværelsesfund: 10.299–10.999 kr. pr. person inkl. fly + 6 dages liftkort.
+- Grand Hotel Sestriere standard: 11.195 kr. pr. person inkl. fly + 6 dages liftkort.
+
+Livigno:
+- Stærkeste alternativ på beliggenhed/ski-in-ski-out.
+- Byhøjde 1.816 m.
+- Officiel destination oplyser 115 km pister og 32 lifte.
+- Hotel Montivas Lodge: 12.405 kr. pr. person, 30/1 2027, 7 dage, inkl. fly CPH + 6 dages liftkort.
+- Standard dobbeltværelse-bureau-fund: 10.799 kr. pr. person.
+- 3-værelses lejlighed til maks. 4: 7.495 kr. pr. person ved 4, men med bus og 8 dage fra 29/1.
+
+Bagage og egne ski:
+- Nortlander: brug foreløbigt 599 kr. pr. skisæt som budget; endelig bookingpris skal kontrolleres.
+- Ved 2 egne skisæt budgetteres 1.198 kr. i skitransport.
+- Nortlander standardbagage angivet som 10 kg indchecket + 5 kg håndbagage pr. person.
+- Ekstra 5 kg: 149 kr.; ekstra 10 kg: 199 kr. på relevante charterafgange.
+
+Foreløbig anbefaling:
+- Arbejd videre med Sestriere først på grund af den dokumenterede 4-personers flypakke til 8.945 kr. pr. person.
+- Behold Livigno som stærkt alternativ, især hvis der findes en 2-soveværelses ski-in/ski-out bolig til en pris, der opvejer den dyrere transport/pakke.
+- Før booking skal slutprisen indeholde: 4 voksne, 2 separate værelser, fly, transfer, 6 dages liftkort, 2 skisæt som specialbagage, støvle/skitøjstaske, eventuel ekstra kuffert og skileje til dem uden eget udstyr.
+- Alle priser og bagageregler kan ændre sig; konkret booking/rejsebevis har altid forrang.
 
 ## 4. Neon Voyages
-Eksisterende app:
-`https://ronnykisbye.github.io/neon-voyages/`
+Eksisterende app: `https://ronnykisbye.github.io/neon-voyages/`
 
 ---
 
@@ -216,7 +190,6 @@ Hvis noget er usikkert, kontrollér GitHub igen før aflevering.
 ---
 
 # Arbejdsform
-Ronny ønsker:
 - dansk
 - direkte handling
 - trin-for-trin/SBS ved større ændringer
