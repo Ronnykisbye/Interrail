@@ -44,6 +44,17 @@
     "website": "https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien"
   },
+  "event": {
+    "title": "Tomorrowland Immersive Experience",
+    "date": "2026-11-06",
+    "time": "19:30",
+    "venue": "Waagnatie Expo & Events",
+    "address": "Rijnkaai 150, 2000 Antwerpen, Belgien",
+    "tickets": 2,
+    "totalPrice": "€70,00",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Waagnatie%20Expo%20%26%20Events%2C%20Rijnkaai%20150%2C%202000%20Antwerpen%2C%20Belgium",
+    "note": "Billetter er købt. Personlige MyBeat- og Ticketmaster-ordrelinks gemmes ikke i den offentlige app."
+  },
   "returnHotel": {
     "name": "Best Western Hotel Zur Post",
     "city": "Bremen",
@@ -77,6 +88,7 @@
   "links": [
     {"title":"Antwerpen LEZ","subtitle":"Officiel information om lavemissionszonen","url":"https://www.slimnaarantwerpen.be/en/lez","icon":"✅"},
     {"title":"Tysk miljømærke hos FDM","subtitle":"Grøn Umweltplakette – bestilt 26. august 2026","url":"https://koeb.fdm.dk/vignetter-og-miljoemaerkater-til-bil/miljoemaerkat-tyskland/","icon":"🟢"},
+    {"title":"Tomorrowland Immersive Experience · sted","subtitle":"Waagnatie Expo & Events · Rijnkaai 150","url":"https://www.google.com/maps/search/?api=1&query=Waagnatie%20Expo%20%26%20Events%2C%20Rijnkaai%20150%2C%202000%20Antwerpen%2C%20Belgium","icon":"🎟️"},
     {"title":"Hotel Heideblick i Google Maps","subtitle":"Itzenbütteler Straße 35, Jesteburg","url":"https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany","icon":"📍"},
     {"title":"Hotel Heideblick - hotelinfo","subtitle":"Booking.com-side med adresse og faciliteter","url":"https://www.booking.com/hotel/de/parkhotel-jesteburg.html","icon":"🏨"},
     {"title":"Prize by Radisson, Antwerp City","subtitle":"Hotellets officielle hjemmeside","url":"https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city","icon":"🏨"},
@@ -92,6 +104,7 @@
   "sections": [
     {"id":"route","icon":"🗺️","title":"Rute","text":"Udrejsen har hotelophold i Jesteburg 3.–5. november. Antwerpen nås 5. november. På hjemrejsen 8.–9. november er Bremen hovedmuligheden, mens Kiel er gemt som alternativ."},
     {"id":"permits","icon":"🛂","title":"Tilladelser & miljøzoner","text":"Antwerpen LEZ: ansøgning indsendt 26. august 2026 og afventer behandling. Tysk grøn Umweltplakette: bestilt hos FDM 26. august 2026 til bilen for 245 kr. inkl. fragt."},
+    {"id":"event","icon":"🎟️","title":"Tomorrowland Immersive Experience","text":"Fredag 6. november 2026 kl. 19:30 · Waagnatie Expo & Events · 2 billetter."},
     {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
     {"id":"outboundHotel","icon":"🛏️","title":"Hotel på udrejsen","text":"Bekræftet hotelophold i Jesteburg 3.–5. november 2026."},
     {"id":"hotel","icon":"🏨","title":"Hotel i Antwerpen","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
