@@ -1,107 +1,124 @@
-# Interrail 2026
+# Rejser
 
-En mobilvenlig og installerbar rejseapp bygget specifikt til **Ronny og Jolantas Interrail-rejse i 2026**.
+En mobilvenlig og installerbar rejseapp, som samler flere rejser i én fælles hub.
 
-## Formål
-
-Appen samler hele rejseplanen fra **Snekkersten** via **Kraków**, **Wien**, **Alperne** og **Antwerpen** og tilbage til Snekkersten. Den er lavet til hurtig brug på mobilen under rejsen og fungerer også på tablet og computer.
-
-## Live app
-
-Når GitHub Pages er aktiveret, findes appen på:
-
+Live app:
 `https://ronnykisbye.github.io/Interrail/`
 
-## Funktioner i version 1.0
+## Aktive rejser
 
-- Mobilvenligt dashboard
-- Automatisk visning af den relevante rejsedag
-- Dag-for-dag-tidslinje
-- Interaktivt OpenStreetMap-kort med hele ruten
-- Særskilte farver for dagtog, nattog og panoramabaner
-- Officielle links til togoperatører og stationer
-- Lys og mørk tilstand
-- PWA-installation på mobil og computer
-- Offline-cache af appens vigtigste filer
-- Tydelig markering af oplysninger, der endnu afventer booking eller endelig køreplan
+1. **Antwerpen 2026** – bilrejse med Ford Mustang Mach-E, hoteller, rute, miljøzoner, opladning og nyttige links.
+2. **Interrail mod Istanbul** – foreløbig rute via bl.a. Kraków, Bratislava, Budapest, București og Sofia.
+3. **Skiferie 2027** – uge 5, 30. januar–6. februar 2027, 4 voksne, med fokus på Sestriere i Italien.
 
-## Ruten
+Der er desuden 3 reservepladser til kommende rejser.
 
-Snekkersten → København Syd → Berlin → Kraków → Wien → Innsbruck → Chur → St. Moritz → Tirano → Milano → Montreux → Interlaken → Antwerpen → Bruxelles → Hamborg → København → Snekkersten.
+## Skiferie 2027
 
-## Sådan bruges appen
+Skiferien har sit eget modul:
+- `ski-2027.html` – visning inde fra hovedappen
+- `ski-2027-delt.html` – delt visning uden navigation til de øvrige rejser
+- `ski-2027.css` – design
+- `ski-2027.js` – rendering og links
+- `data/ski-2027.json` – rejseplan, priser, Nortlander-info og informationslinks
 
-### Overblik
-Viser næste eller aktuelle etape, nedtælling og hurtig adgang til de vigtigste funktioner.
+Delt ski-link:
+`https://ronnykisbye.github.io/Interrail/ski-2027-delt.html`
 
-### Rejse
-Viser dagens rute, status, overnatning og alle dagens trin i kronologisk rækkefølge.
+Den delte side er lavet til familie/børn og viser kun skiferien. Den har `noindex,nofollow,noarchive`, men GitHub Pages er stadig teknisk offentlig hosting, så dette er praktisk begrænset adgang og ikke stærk autentificering.
 
-### Kort
-Viser hele rejsen på et interaktivt kort. Grøn er dagtog, blå er nattog og orange er panoramabaner.
+### Aktuel skiplan
+- 4 voksne
+- 30. januar–6. februar 2027
+- fly fra København
+- ski-in/ski-out eller helst maks. 300–500 m til lift/piste
+- mindst 2 separate soveværelser
+- Sestriere er aktuelt eneste destination i appen
+- dokumenteret pakke: 8.945 kr. pr. person / 35.780 kr. for 4, inkl. fly fra København og 6 dages liftkort, før transfer, skiudstyr og ekstra bagage
 
-### Links
-Åbner de officielle sider for DSB, Snälltåget, DB, PKP, ÖBB, SBB, RhB, Trenord, GoldenPass, Belgian Train, European Sleeper og Interrail.
+### Nortlander-info
+- skitransport: 599 kr. pr. person i den aktuelle bookingvisning
+- maks. 12 kg pr. skitransport, angivet som skitaske + støvlepose
+- 5 kg håndbagage + 10 kg indchecket bagage pr. person inkluderet
+- ekstra indchecket bagage fra 149 kr. pr. person
+- sædevalg fra 25 kr. pr. person
+- ved 2 egne skisæt budgetteres foreløbigt med 1.198 kr. i skitransport
 
-### Om
-Forklarer appens formål og principper. Perron-, sæde- og tognumre vises ikke som faste, før de er dokumenteret.
+Den konkrete booking/rejsebevis har altid forrang, fordi priser og regler kan ændre sig.
 
-## Installation på mobil
+### Information i ski-appen
+Der er en særskilt **Information**-sektion med bl.a.:
+- YouTube-video om skiferien
+- ekstra YouTube-video om Sestriere
+- Slopestar snestatistik for Sestriere
+- Skisport.dk pistekort for Sestriere
 
-### Android / Chrome
-1. Åbn appens GitHub Pages-link.
-2. Tryk på browsermenuen.
-3. Vælg **Installer app** eller **Føj til startskærm**.
-
-### iPhone / Safari
-1. Åbn appens GitHub Pages-link.
-2. Tryk på Del-knappen.
-3. Vælg **Føj til hjemmeskærm**.
+Derudover findes en sektion med nyttige links til Via Lattea, Skisport.dk, Nortlander, Slopestar, SAS og Norwegian.
 
 ## Projektstruktur
 
 ```text
 Interrail/
 ├── index.html
-├── styles.css
-├── app.js
+├── hub.css
+├── hub.js
 ├── manifest.webmanifest
 ├── service-worker.js
+├── MASTER_PROMPT.md
 ├── README.md
+├── antwerpen.html
+├── antwerpen.css
+├── antwerpen.js
+├── interrail-istanbul.html
+├── interrail-istanbul.css
+├── interrail-istanbul.js
+├── ski-2027.html
+├── ski-2027-delt.html
+├── ski-2027.css
+├── ski-2027.js
+├── interrail.html
+├── styles.css
+├── app.js
+├── install.js
 ├── assets/
-│   └── icon.svg
 └── data/
+    ├── trips.json
+    ├── antwerpen.json
+    ├── interrail-istanbul.json
+    ├── ski-2027.json
     ├── itinerary.json
+    ├── hotels.json
     └── links.json
 ```
 
-## Opdatering af rejseplanen
+## Udviklingsprincip
 
-Rejsedata ligger i `data/itinerary.json`. Hver dag indeholder:
+**Én fil = ét tydeligt ansvar.**
 
-- dato
-- titel
-- overnatning
-- status
-- kort beskrivelse
-- dagens hændelser med tid, titel og detaljer
+- data i JSON
+- udseende i CSS
+- funktioner i JavaScript
+- større rejser i egne HTML-moduler
 
-Officielle links ligger i `data/links.json`.
+GitHub er source of truth. Før ændringer hentes den aktuelle fil og SHA. Efter ændringer kvalitetssikres struktur, navigation, JSON, links, PWA-cache og at følsomme oplysninger ikke er offentliggjort.
 
-## Datakvalitet
+## Installation
 
-Appen skelner mellem:
+### iPhone / Safari
+1. Åbn det ønskede app-link i Safari.
+2. Tryk på Del-knappen.
+3. Vælg **Føj til hjemmeskærm**.
+4. Vælg navn og tryk **Tilføj**.
 
-- **Bekræftet**: dokumenteret hovedforløb eller offentlig køreplan
-- **Rute låst**: ruten er valgt, men præcis afgang afventer
-- **Afventer**: tognummer, perron, sæde eller endeligt klokkeslæt skal kontrolleres senere
+### Android / Chrome
+1. Åbn app-linket.
+2. Tryk på browsermenuen.
+3. Vælg **Installer app** eller **Føj til startskærm**.
 
-Der indsættes ikke opdigtede perron- eller pladsnumre.
+## Sikkerhed og privatliv
 
-## Offline
+Bookingreferencer, ansøgningsnumre, e-mail, telefonnumre, adresser, betalingskortdata og andre følsomme oplysninger må ikke lægges i de offentlige HTML-, JavaScript- eller JSON-filer.
 
-Ved første besøg gemmer appens service worker de vigtigste appfiler. Derefter kan rejseplan, links og grundkortvisningen åbnes uden stabil internetforbindelse. Selve OpenStreetMap-kortfliser kræver internet, medmindre de tidligere er blevet cachet af browseren.
+## Status
 
-## Version
-
-**1.0.0** – Første komplette, fungerende udgave med dashboard, tidslinje, rutekort, officielle links, PWA og offline-cache.
+Projektet er i aktiv udvikling. Antwerpen, Interrail Istanbul og Skiferie 2027 er aktive moduler, mens den tidligere Interrail-app fortsat er bevaret separat for at undgå at ødelægge fungerende funktioner.
