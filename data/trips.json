@@ -21,14 +21,14 @@
       "target": "interrail-istanbul"
     },
     {
-      "id": "reserve-3",
+      "id": "ski-2027",
       "slot": 3,
-      "active": false,
-      "title": "Ny rejse",
-      "subtitle": "Ledig plads",
-      "icon": "＋",
-      "status": "Reserve",
-      "target": null
+      "active": true,
+      "title": "Skiferie 2027",
+      "subtitle": "Uge 5 · Italien · Sestriere?",
+      "icon": "⛷️",
+      "status": "Planlægning",
+      "target": "ski-2027"
     },
     {
       "id": "reserve-4",
