@@ -1,7 +1,7 @@
 # MASTERPROMPT – REJSER / TRAVEL APPS
 
 ## Sådan bruges denne fil
-Denne fil er fast startkontekst for nye ChatGPT-sessioner om Ronny og Jolantas rejseapps.
+Denne fil er fast startkontekst for nye ChatGPT-sessioner om rejseapps-projektet.
 
 Når en ny session starter, skal ChatGPT først:
 1. Læse denne fil fra GitHub-repository `Ronnykisbye/Interrail`.
@@ -23,12 +23,12 @@ Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rej
 Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
-3. **Skiferie 2027** – aktiv planlægning, uge 5, Italien, Sestriere som foreløbig prisfavorit og Livigno som stærkt alternativ
+3. **Skiferie 2027** – aktiv planlægning, uge 5, Sestriere i Italien
 4. Reserve
 5. Reserve
 6. Reserve
 
-Designet skal være enkelt og intuitivt som godt legetøjsdesign: store tydelige knapper, ikon øverst, tekst nedenunder, bløde former og synlig 3D-effekt, men stadig voksent og pænt.
+Designet skal være enkelt og intuitivt: store tydelige knapper, ikon øverst, tekst nedenunder, bløde former og synlig 3D-effekt, men stadig voksent og pænt.
 
 ---
 
@@ -68,7 +68,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 
 ## Skiferie 2027
 - `ski-2027.html` – aktiv side for skiferieplanen
-- `ski-2027-delt.html` – delt visning uden navigation til de øvrige rejser
+- `ski-2027-delt.html` – delt visning uden navigation til øvrige rejser
 - `ski-2027.css`
 - `ski-2027.js`
 - `data/ski-2027.json`
@@ -90,8 +90,8 @@ Bevares separat:
 ---
 
 # Adgangsmodel
-- Ronny og Jolanta bruger hovedappen og kan se alle rejser.
-- Børn/familie kan få direkte link til `ski-2027-delt.html`, som kun viser skiferien og ikke har navigation tilbage til hovedappen.
+- Hovedappen bruges til alle rejser.
+- Familie/børn kan få direkte link til `ski-2027-delt.html`, som kun viser skiferien og ikke har navigation tilbage til hovedappen.
 - Den delte side har `noindex,nofollow,noarchive`.
 - GitHub Pages er stadig teknisk offentlig hosting; delt link er praktisk begrænsning, ikke stærk autentificering.
 - Følsomme oplysninger må ikke ligge i offentlige HTML/JS/JSON-filer.
@@ -117,7 +117,7 @@ Bevares separat:
 - Dato ikke fastlagt, så tognumre, tider, priser og reservationer må ikke fremstilles som låste fakta.
 
 ## 3. Skiferie – uge 5, 2027
-Seneste kvalitetssikrede rejseoversigt er dateret 27.08.2026.
+Aktuel fokusdestination: **Sestriere**. Livigno er fjernet fra appen og skal ikke længere vises som alternativ.
 
 Faste krav:
 - **4 voksne**.
@@ -128,35 +128,56 @@ Faste krav:
 - Sovefordeling: par i ét værelse; datter + far kan dele det andet.
 
 Sestriere:
-- Foreløbig prisfavorit.
 - Byhøjde 2.035 m.
 - Dokumenteret 7-dages flypakke 30/1 2027: **8.945 kr. pr. person** i 2-værelses lejlighed for 4, inkl. fly fra København og 6 dages liftkort.
 - Samlet **35.780 kr. for 4** før transfer, skiudstyr og ekstra bagage.
 - Dobbeltværelsesfund: 10.299–10.999 kr. pr. person inkl. fly + 6 dages liftkort.
 - Grand Hotel Sestriere standard: 11.195 kr. pr. person inkl. fly + 6 dages liftkort.
 
-Livigno:
-- Stærkeste alternativ på beliggenhed/ski-in-ski-out.
-- Byhøjde 1.816 m.
-- Officiel destination oplyser 115 km pister og 32 lifte.
-- Hotel Montivas Lodge: 12.405 kr. pr. person, 30/1 2027, 7 dage, inkl. fly CPH + 6 dages liftkort.
-- Standard dobbeltværelse-bureau-fund: 10.799 kr. pr. person.
-- 3-værelses lejlighed til maks. 4: 7.495 kr. pr. person ved 4, men med bus og 8 dage fra 29/1.
+Nortlander og bagage:
+- Skitransport vist i booking: **599 kr. pr. person**.
+- Maksimal vægt pr. skitransport: **12 kg**, angivet som skitaske + støvlepose.
+- Skitransport skal bestilles på forhånd og kan blive udsolgt.
+- Inkluderet bagage: **5 kg håndbagage + 10 kg indchecket bagage** pr. person.
+- Ekstra indchecket bagage kan tilkøbes fra **149 kr. pr. person**.
+- Tidligere Nortlander-info viser ekstra 5 kg til 149 kr. og ekstra 10 kg til 199 kr.; konkret bookingpris har altid forrang.
+- Sædevalg i flyet vises fra **25 kr. pr. person**.
+- Ved 2 egne skisæt budgetteres foreløbigt med **1.198 kr.** i skitransport.
 
-Bagage og egne ski:
-- Nortlander: brug foreløbigt 599 kr. pr. skisæt som budget; endelig bookingpris skal kontrolleres.
-- Ved 2 egne skisæt budgetteres 1.198 kr. i skitransport.
-- Nortlander standardbagage angivet som 10 kg indchecket + 5 kg håndbagage pr. person.
-- Ekstra 5 kg: 149 kr.; ekstra 10 kg: 199 kr. på relevante charterafgange.
+Før booking skal slutprisen indeholde:
+- 4 voksne
+- 2 separate værelser
+- fly
+- transfer
+- 6 dages liftkort
+- 2 skisæt som specialbagage
+- støvle/skitøjstaske
+- eventuel ekstra kuffert
+- eventuelt sædevalg
+- skileje til dem uden eget udstyr
 
-Foreløbig anbefaling:
-- Arbejd videre med Sestriere først på grund af den dokumenterede 4-personers flypakke til 8.945 kr. pr. person.
-- Behold Livigno som stærkt alternativ, især hvis der findes en 2-soveværelses ski-in/ski-out bolig til en pris, der opvejer den dyrere transport/pakke.
-- Før booking skal slutprisen indeholde: 4 voksne, 2 separate værelser, fly, transfer, 6 dages liftkort, 2 skisæt som specialbagage, støvle/skitøjstaske, eventuel ekstra kuffert og skileje til dem uden eget udstyr.
-- Alle priser og bagageregler kan ændre sig; konkret booking/rejsebevis har altid forrang.
+Alle priser og bagageregler kan ændre sig; konkret booking/rejsebevis har altid forrang.
 
-## 4. Neon Voyages
-Eksisterende app: `https://ronnykisbye.github.io/neon-voyages/`
+### Information i ski-appen
+Ski-appen har en særskilt **Information**-sektion. Aktuelle informationslinks:
+- YouTube: `https://www.youtube.com/watch?v=0HuF-0JFL8I`
+- YouTube Sestriere: `https://www.youtube.com/watch?v=_l2_XI1dJLA`
+- Slopestar snestatistik: `https://www.slopestar.dk/sestriere/snestatistik`
+- Skisport.dk pistekort: `https://www.skisport.dk/italien/sestriere/pistekort/`
+
+### Nyttige links i ski-appen
+Aktuelle kategorier omfatter:
+- officiel Via Lattea / Sestriere
+- Skisport.dk
+- Nortlander Italien
+- Nortlander booking
+- Slopestar
+- Nortlander fly og skitransport
+- Nortlander FAQ
+- SAS specialbagage og ski
+- Norwegian bagagepriser
+
+Eksterne links skal åbne med `target="_blank"` og `rel="noopener noreferrer"`.
 
 ---
 
