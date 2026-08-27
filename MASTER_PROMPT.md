@@ -18,12 +18,12 @@ Når en ny session starter, skal ChatGPT først:
 # Projektets formål
 Den samlede løsning hedder **Rejser**.
 
-Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er 2 aktive rejser og 4 reservepladser. Reservepladserne skal blive liggende, så en ny rejse senere kun kræver nyt indhold og ikke en ny forside.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rejser og 3 reservepladser. Reservepladserne skal blive liggende, så en ny rejse senere kun kræver nyt indhold og ikke en ny forside.
 
 Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
-3. Reserve
+3. **Skiferie 2027** – aktiv planlægning, uge 5, Italien, Sestriere som foreløbig kandidat
 4. Reserve
 5. Reserve
 6. Reserve
@@ -68,6 +68,12 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `interrail-istanbul.js` – rendering/funktion
 - `data/interrail-istanbul.json` – rute, ophold, status og officielle kilder
 
+## Skiferie 2027
+- `ski-2027.html` – aktiv side for skiferieplanen
+- `ski-2027.css` – design
+- `ski-2027.js` – rendering/funktion
+- `data/ski-2027.json` – foreløbig plan og status
+
 ## Tidligere Interrail-app
 Den tidligere fungerende Alperne-version er stadig bevaret separat:
 - `interrail.html`
@@ -82,7 +88,7 @@ Den gamle funktionalitet må ikke slettes eller omskrives unødvendigt.
 
 ## PWA
 - `manifest.webmanifest` beskriver hovedappen som **Rejser**.
-- `service-worker.js` cacher hub, Antwerpen, den nye Istanbul-plan og den gamle Interrail-side.
+- `service-worker.js` cacher hub, Antwerpen, den nye Istanbul-plan, Skiferie 2027 og den gamle Interrail-side.
 
 ---
 
@@ -132,14 +138,10 @@ Hjemrejse:
 - Check-in Bremen: **8. november 2026 kl. 15:00**.
 - Check-out Bremen: **9. november 2026 kl. 12:00**.
 - 1 nat.
-- Classic-værelse med 1 dobbeltseng, køleskab; kan omdannes til 2 enkeltsenge.
-- Screenshot fra Hotels.com viser bl.a. gratis Wi‑Fi, pool, spa, kæledyrsvenligt og mulighed for parkering.
 - **Kiel er booket som alternativ på samme dato**: Hotel Consul, Walkerdamm 11, 24103 Kiel.
 - Check-in Kiel: **8. november 2026 kl. 15:00**.
 - Check-out Kiel: **9. november 2026 kl. 11:00**.
-- 1 nat, 2 voksne, 1 værelse.
 - Hotel Consul skal vises som alternativ, ikke som erstatning for Bremen, indtil der træffes et valg.
-- Der køres videre mod Danmark 9. november.
 
 Bookingreferencer, e-mail og betalingskortoplysninger må ikke ligge i den offentlige app.
 
@@ -154,10 +156,18 @@ Ny foreløbig hovedplan:
 - I **Istanbul planlægges 7 nætter**.
 - Hjemrejsen går foreløbigt tilbage gennem samme centrale korridor mod Danmark.
 - Rejsedatoen er **ikke fastlagt**, derfor må eksakte tognumre, klokkeslæt, priser og reservationer ikke fremstilles som låste fakta endnu.
-- Den konkrete Kraków–Bratislava-forbindelse og alle øvrige skifteforbindelser skal verificeres igen, når datoen kendes.
-- Officielle 2026-kilder dokumenterer bl.a. Snälltåget København–Berlin, internationale MÁV-korridorer, Budapest–București, București–Sofia samt Sofia–Halkalı. Disse er dato-/sæsonafhængige og skal genkontrolleres ved booking.
 
-## 3. Neon Voyages
+## 3. Skiferie – uge 5, 2027
+Aktiv planlægning i rejseplads 3.
+
+- Uge 5, 2027.
+- Italien prioriteres.
+- **Sestriere er foreløbig kandidat**, men destinationen er ikke låst.
+- Der skal arbejdes videre med fly fra København, transfer, hotel/lejlighed, liftkort og skileje.
+- Overnatning skal som udgangspunkt have **3 rigtige værelser/soveværelser**, ikke kun sovesofa/alkove.
+- Nye priser, pakkerejser og konkrete forbindelser skal verificeres før de vises som fakta.
+
+## 4. Neon Voyages
 Eksisterende app:
 `https://ronnykisbye.github.io/neon-voyages/`
 
