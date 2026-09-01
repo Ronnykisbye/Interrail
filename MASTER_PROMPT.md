@@ -102,7 +102,11 @@ Bevares separat:
 
 ## 1. Antwerpen – november 2026
 - Bilrejse fra Helsingør i Ford Mustang Mach-E.
-- LEZ-ansøgning til Antwerpen indsendt 26. august 2026 og afventer behandling.
+- **Antwerpen LEZ er GODKENDT pr. 1. september 2026.**
+- Registreringen gælder fra **26. august 2026** og giver adgang til LEZ i **Antwerpen og Gent**.
+- Registreringen gælder **ikke Bruxelles**.
+- Slutdatoen er foreløbig ikke fastlagt og kan ændres ved ændringer i LEZ-reglerne; adgang skal derfor kontrolleres igen tættere på rejsen.
+- Ansøgningsnummer, nummerplade og øvrige personlige LEZ-oplysninger må ikke gemmes i den offentlige app.
 - Tysk Umweltplakette bestilt hos FDM 26. august 2026, 245 kr. inkl. fragt.
 - Jesteburg: Hotel Heideblick, 3.–5. november 2026.
 - Antwerpen: Prize by Radisson, Antwerp City, 5.–8. november 2026.
