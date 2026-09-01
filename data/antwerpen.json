@@ -12,9 +12,9 @@
     "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Bremen er den nuværende hovedmulighed med én overnatning. Hotel Consul i Kiel er gemt som alternativ på samme dato. Der køres videre mod Danmark 9. november."
   },
   "permits": {
-    "antwerpLez": "Ansøgning til Antwerpen LEZ er indsendt 26. august 2026 og afventer behandling.",
+    "antwerpLez": "Antwerpen LEZ er godkendt. Registreringen gælder fra 26. august 2026 og giver adgang til LEZ i Antwerpen og Gent. Den gælder ikke for Bruxelles. Slutdatoen er foreløbig ikke fastlagt og kan ændres ved ændringer i LEZ-reglerne.",
     "germanySticker": "Grøn tysk Umweltplakette er bestilt hos FDM 26. august 2026 til Ford Mustang Mach-E. Pris 200 kr. + 45 kr. fragt = 245 kr.",
-    "privacyNote": "Ansøgningsnumre, ordrenumre, e-mail og andre personlige oplysninger vises ikke i den offentlige app."
+    "privacyNote": "Ansøgningsnumre, nummerplade, ordrenumre, e-mail og andre personlige oplysninger vises ikke i den offentlige app."
   },
   "outboundHotel": {
     "name": "Hotel Heideblick an der Lüneburger Heide",
@@ -86,7 +86,7 @@
     "note": "Booket som alternativ på samme dato som Bremen-hotellet. Screenshot fra Hotels.com viser check-in 8. november kl. 15:00 og check-out 9. november kl. 11:00. Bookingnummer gemmes ikke i den offentlige app."
   },
   "links": [
-    {"title":"Antwerpen LEZ","subtitle":"Officiel information om lavemissionszonen","url":"https://www.slimnaarantwerpen.be/en/lez","icon":"✅"},
+    {"title":"Antwerpen LEZ","subtitle":"Godkendt · officiel LEZ-information","url":"https://www.slimnaarantwerpen.be/en/lez","icon":"✅"},
     {"title":"Tysk miljømærke hos FDM","subtitle":"Grøn Umweltplakette – bestilt 26. august 2026","url":"https://koeb.fdm.dk/vignetter-og-miljoemaerkater-til-bil/miljoemaerkat-tyskland/","icon":"🟢"},
     {"title":"Tomorrowland Immersive Experience · sted","subtitle":"Waagnatie Expo & Events · Rijnkaai 150","url":"https://www.google.com/maps/search/?api=1&query=Waagnatie%20Expo%20%26%20Events%2C%20Rijnkaai%20150%2C%202000%20Antwerpen%2C%20Belgium","icon":"🎟️"},
     {"title":"Hotel Heideblick i Google Maps","subtitle":"Itzenbütteler Straße 35, Jesteburg","url":"https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany","icon":"📍"},
@@ -103,7 +103,7 @@
   ],
   "sections": [
     {"id":"route","icon":"🗺️","title":"Rute","text":"Udrejsen har hotelophold i Jesteburg 3.–5. november. Antwerpen nås 5. november. På hjemrejsen 8.–9. november er Bremen hovedmuligheden, mens Kiel er gemt som alternativ."},
-    {"id":"permits","icon":"🛂","title":"Tilladelser & miljøzoner","text":"Antwerpen LEZ: ansøgning indsendt 26. august 2026 og afventer behandling. Tysk grøn Umweltplakette: bestilt hos FDM 26. august 2026 til bilen for 245 kr. inkl. fragt."},
+    {"id":"permits","icon":"🛂","title":"Tilladelser & miljøzoner","text":"Antwerpen LEZ: GODKENDT. Registreringen gælder fra 26. august 2026 og giver adgang til Antwerpen og Gent, men ikke Bruxelles. Tysk grøn Umweltplakette er bestilt hos FDM for 245 kr. inkl. fragt."},
     {"id":"event","icon":"🎟️","title":"Tomorrowland Immersive Experience","text":"Fredag 6. november 2026 kl. 19:30 · Waagnatie Expo & Events · 2 billetter."},
     {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
     {"id":"outboundHotel","icon":"🛏️","title":"Hotel på udrejsen","text":"Bekræftet hotelophold i Jesteburg 3.–5. november 2026."},
