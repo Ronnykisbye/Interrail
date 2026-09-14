@@ -1,89 +1,121 @@
 {
-  "trip": {
-    "title": "Skiferie 2027",
-    "subtitle": "30. jan. – 6. feb. 2027 · Sestriere, Italien · 4 voksne",
-    "status": "Bestilt",
-    "candidate": "Grand Hotel Sestriere",
-    "sourceNote": "Opdateret 14.09.2026 ud fra Slopestar-rejsebevis og bookingbekræftelse. Loginoplysninger, telefonnumre og e-mailadresser vises ikke i den offentlige app."
+  "trip":{
+    "title":"Skiferie 2027",
+    "subtitle":"30. jan. – 6. feb. 2027 · Sestriere, Italien · 4 voksne",
+    "status":"Bestilt",
+    "candidate":"Grand Hotel Sestriere",
+    "sourceNote":"Bookingoplysninger opdateret 14.09.2026 fra Slopestar. Private loginoplysninger, telefonnumre og e-mailadresser vises ikke i appen."
   },
-  "highlights": [
-    {"icon":"✅","title":"Rejsen er bestilt","text":"Skiferien er bekræftet gennem Slopestar med ophold på Grand Hotel Sestriere fra 30. januar til 6. februar 2027."},
-    {"icon":"🏨","title":"Grand Hotel Sestriere","text":"2 standard dobbeltværelser til 4 gæster med halvpension. Hotellet ligger centralt i Sestriere og ca. 600 meter fra lift og piste."},
-    {"icon":"✈️","title":"Fly og transfer","text":"Norwegian direkte mellem København og Torino. Transfer til og fra destinationen er inkluderet."}
-  ],
-  "sections": [
+  "tabs":[
     {
-      "title":"Rejseplan",
-      "icon":"✈️",
-      "items":[
+      "id":"overblik","label":"Overblik","icon":"🏔️",
+      "intro":"Alt det vigtigste om jeres bestilte skiferie samlet ét sted.",
+      "cards":[
+        {"icon":"✅","title":"Rejsen er bestilt","text":"Slopestar · Sestriere · 30. januar til 6. februar 2027 · 4 voksne."},
+        {"icon":"🏨","title":"Grand Hotel Sestriere","text":"2 standard dobbeltværelser med halvpension. Ca. 600 meter til lift og piste."},
+        {"icon":"✈️","title":"Fly og transfer","text":"Norwegian direkte København–Torino tur/retur. Transfer mellem Torino og Sestriere er inkluderet."},
+        {"icon":"🎿","title":"Liftkort","text":"6 dages standard liftkort fra søndag 31.01.2027. Rejsebeviset angiver 315 km pister på den italienske side samt 1 dag i Montgenèvre."},
+        {"icon":"💳","title":"Samlet pris","text":"48.765 kr. Turistskat er inkluderet."},
+        {"icon":"📍","title":"Sestriere","text":"Sestriere ligger 2.035 meter over havet. Vialattea oplyser 85 pister og 20 lifte i Sestriere-området."}
+      ]
+    },
+    {
+      "id":"sestriere","label":"Sestriere","icon":"🇮🇹",
+      "intro":"Byen, området og det, der er rart at vide under jeres uge i de italienske alper.",
+      "cards":[
+        {"icon":"🏔️","title":"2.035 meter over havet","text":"Sestriere ligger højt i Via Lattea og er et af områdets vigtigste knudepunkter."},
+        {"icon":"🏅","title":"Olympisk skisportsby","text":"Sestriere var en vigtig værtsby under vinter-OL i Torino 2006 og har mange gange været vært for Alpine Ski World Cup."},
+        {"icon":"🌌","title":"Via Lattea – Mælkevejen","text":"Via Lattea forbinder bl.a. Sestriere, Sauze d'Oulx, Sansicario, Cesana, Claviere, Pragelato og Montgenèvre i Frankrig."},
+        {"icon":"📷","title":"Webcams og forhold","text":"Se aktuelle forhold, åbne lifte og pister på Vialatteas officielle side.","url":"https://www.vialattea.it/en/ski-area/sestriere/"}
+      ]
+    },
+    {
+      "id":"ski","label":"Skiløb","icon":"⛷️",
+      "intro":"Praktisk skiinformation til Sestriere og Via Lattea.",
+      "cards":[
+        {"icon":"🎿","title":"Sestriere-området","text":"Vialattea oplyser 85 pister og 20 lifte i Sestriere."},
+        {"icon":"🗺️","title":"Jeres liftkort","text":"Slopestar angiver adgang til 315 km pister på den italienske side. Ved minimum 6 dages liftkort følger 1 dag i Montgenèvre."},
+        {"icon":"📅","title":"Sæson 2026/27","text":"Vialattea har planlagt sæsonen fra 5. december 2026 til 11. april 2027. Den daglige drift afhænger af vejr, sne og sikkerhed."},
+        {"icon":"🌙","title":"Night skiing","text":"Vialattea oplyser, at der i 2026/27 vil være night skiing på Kandahar-pisten på udvalgte datoer."},
+        {"icon":"🚦","title":"Dagens åbne pister","text":"Tjek altid dagens åbne lifte og pister, inden I starter.","url":"https://www.vialattea.it/en/slopes-and-facilities/"}
+      ]
+    },
+    {
+      "id":"pistekort","label":"Pistekort","icon":"🗺️",
+      "intro":"Brug det officielle Vialattea-kort til at planlægge dagens rute og forbindelser.",
+      "featuredLink":{"title":"Åbn officielt Vialattea skiområde og pistekort","text":"Officiel information om pister, lifte, webcams og Sestriere.","url":"https://www.vialattea.it/en/ski-area/sestriere/"},
+      "cards":[
+        {"icon":"🔵","title":"Blå pister","text":"Gode til roligt skiløb og til at lære området at kende."},
+        {"icon":"🔴","title":"Røde pister","text":"Via Lattea har mange røde forbindelser og lange nedfarter. Jeres Superior-lejeski er valgt til øvede skiløbere."},
+        {"icon":"⚫","title":"Sorte pister","text":"Sestriere har krævende terræn og konkurrencepister. Vælg dem efter forhold, sigtbarhed og eget niveau."},
+        {"icon":"🇫🇷","title":"Montgenèvre-dag","text":"Planlæg den inkluderede franske dag, når vejret er godt og forbindelserne er åbne."}
+      ]
+    },
+    {
+      "id":"spisesteder","label":"Spisesteder","icon":"🍝",
+      "intro":"I har halvpension på hotellet. Her er aktuelle, godt anmeldte muligheder til pizza, piemontesisk mad og en aften ude. Tjek åbningstider og bestil gerne bord samme dag.",
+      "restaurants":[
+        {"name":"Grange Sax Cafè","type":"Italiensk · europæisk · Grangesises","rating":"4,6/5 på Tripadvisor","note":"Meget populært til piemontesisk mad. Ligger ca. 3 km fra Sestriere.","map":"https://www.google.com/maps/search/?api=1&query=Grange+Sax+Cafe+Sestriere"},
+        {"name":"Pizzeria Da Gennaro","type":"Napolitansk pizza · Grangesises","rating":"4,7/5 på Tripadvisor","note":"Træfyret pizza og meget høje anmeldelser. Ca. 2,5 km fra Sestriere.","map":"https://www.google.com/maps/search/?api=1&query=Pizzeria+Da+Gennaro+Sestriere"},
+        {"name":"La Cioca","type":"Italiensk · europæisk · Grangesises","rating":"4,6/5 på Tripadvisor","note":"Kendt for lokale retter, bl.a. raclette og fondue.","map":"https://www.google.com/maps/search/?api=1&query=La+Cioca+Sestriere"},
+        {"name":"Ristorante Il Centro","type":"Italiensk · pizza · Piazza Agnelli","rating":"4,2/5 på Tripadvisor","note":"Centralt i Sestriere og nemt tilgængeligt fra hotellet.","map":"https://www.google.com/maps/search/?api=1&query=Ristorante+Il+Centro+Sestriere"},
+        {"name":"Last Tango Ristorante Grill","type":"Piemontesisk · grill · Via La Gleisa","rating":"4,2/5","note":"Hyggelig bjergrestaurant med typisk piemontesisk køkken.","map":"https://www.google.com/maps/search/?api=1&query=Last+Tango+Ristorante+Grill+Sestriere"},
+        {"name":"Kovo","type":"Italiensk · steakhouse · bar","rating":"4,3/5 på Tripadvisor","note":"Uformelt valg til middag og drinks i Sestriere.","map":"https://www.google.com/maps/search/?api=1&query=Kovo+Sestriere"}
+      ]
+    },
+    {
+      "id":"rejse","label":"Rejse","icon":"✈️",
+      "intro":"De bekræftede rejseoplysninger fra Slopestar.",
+      "facts":[
         {"label":"Udrejse","value":"Lørdag 30.01.2027 · København 17:20 → Torino 19:20 · Norwegian D89720"},
         {"label":"Hjemrejse","value":"Lørdag 06.02.2027 · Torino 20:20 → København 22:25 · Norwegian D89721"},
         {"label":"Transfer","value":"Inkluderet til og fra Sestriere · rejsebeviset angiver 1:45"},
         {"label":"Bagage","value":"20 kg indchecket bagage + 5 kg håndbagage pr. person"},
-        {"label":"Check-in","value":"Åbner 2 timer før afgang og skal være afsluttet senest 1 time før afgang"}
+        {"label":"Check-in","value":"Åbner 2 timer før afgang og skal være afsluttet senest 1 time før afgang"},
+        {"label":"Samlet pris","value":"48.765 kr."},
+        {"label":"1. rate","value":"7.600 kr. · senest 15.09.2026"},
+        {"label":"2. rate","value":"41.165 kr. · senest 01.12.2026"},
+        {"label":"Turistskat","value":"Inkluderet"}
       ]
     },
     {
-      "title":"Hotel",
-      "icon":"🏨",
-      "items":[
+      "id":"hotel","label":"Hotel","icon":"🏨",
+      "intro":"Jeres base i Sestriere hele ugen.",
+      "facts":[
         {"label":"Hotel","value":"Grand Hotel Sestriere"},
         {"label":"Værelser","value":"2 × standard dobbeltværelse · 4 gæster"},
         {"label":"Pension","value":"Halvpension"},
         {"label":"Beliggenhed","value":"Centralt i Sestriere · ca. 600 m til lift og piste"},
         {"label":"Faciliteter","value":"Restaurant, bar, lounge, elevator, ski-rum, gratis Wi‑Fi, sauna, dampbad og jacuzzi"},
-        {"label":"Wellness","value":"Spa-/wellnessområde koster 20 € pr. person pr. dag"},
-        {"label":"Forplejning","value":"Morgenmadsbuffet og aftenbuffet. Én gang om ugen serveres gallamiddag med 4 retter."}
+        {"label":"Wellness","value":"20 € pr. person pr. dag ifølge rejsebeviset"},
+        {"label":"Forplejning","value":"Morgenmadsbuffet og aftenbuffet. Én gang om ugen gallamiddag med 4 retter."},
+        {"label":"Værelse","value":"Eget badeværelse, TV, Wi‑Fi, safebox, hårtørrer, bord og stol."}
+      ],
+      "links":[
+        {"title":"Grand Hotel Sestriere hos Slopestar","url":"https://www.slopestar.dk/sestriere/grand/hotel/sestriere"},
+        {"title":"Find hotellet på Google Maps","url":"https://www.google.com/maps/search/?api=1&query=Grand+Hotel+Sestriere+Via+Assietta+1"}
       ]
     },
     {
-      "title":"Liftkort og skiområde",
-      "icon":"🎿",
-      "items":[
-        {"label":"Liftkort","value":"6 dage · start søndag 31.01.2027"},
-        {"label":"Område","value":"Standard liftkort til den italienske side af Via Lattea"},
-        {"label":"Pister","value":"Adgang til i alt 315 km pister"},
-        {"label":"Frankrig","value":"Ved minimum 6 dages liftkort følger automatisk 1 dags adgang til Montgenèvre med"}
-      ]
-    },
-    {
-      "title":"Skileje",
-      "icon":"🥽",
-      "items":[
-        {"label":"Ronny","value":"Ski og stave, Superior, voksen, 6 dage + hjelm"},
-        {"label":"Camilla","value":"Ski, støvler og stave, Superior, voksen, 6 dage"},
-        {"label":"Gabriella","value":"Ski, støvler og stave, Superior, voksen, 6 dage"},
-        {"label":"Friedrich","value":"Skitransport med fly er bestilt"},
-        {"label":"Udlejning","value":"Maison Clataud Sport · Via Pinerolo 10 · 10056 Sestriere"}
-      ]
-    },
-    {
-      "title":"Pris og betaling",
-      "icon":"💳",
-      "items":[
-        {"label":"Samlet pris","value":"48.765 kr."},
-        {"label":"1. rate","value":"7.600 kr. · senest 15.09.2026"},
-        {"label":"2. rate","value":"41.165 kr. · senest 01.12.2026"},
-        {"label":"Turistskat","value":"Inkluderet"},
-        {"label":"Pris pr. rejsende før tilvalg","value":"11.295 kr. pr. person ifølge rejsebeviset"}
-      ]
-    },
-    {
-      "title":"Vigtige regler og praktisk info",
-      "icon":"ℹ️",
-      "items":[
-        {"label":"Ansvarsforsikring","value":"Obligatorisk i Italien ved skiløb. Dokumentation for tredjepartsdækning skal medbringes."},
-        {"label":"Hjelm","value":"Hjelm er lovpligtig for både børn og voksne i Italien."},
+      "id":"praktisk","label":"Praktisk","icon":"ℹ️",
+      "intro":"Regler, skileje og ting, der er værd at have styr på før afrejse.",
+      "facts":[
+        {"label":"Ansvarsforsikring","value":"Obligatorisk i Italien ved skiløb. Medbring dokumentation for tredjepartsdækning."},
+        {"label":"Hjelm","value":"Rejsebeviset oplyser, at hjelm er lovpligtig for både børn og voksne i Italien."},
         {"label":"Ankomst","value":"Værelset er tidligst klar kl. 16:00 på ankomstdagen."},
         {"label":"Afrejse","value":"Værelset skal normalt forlades senest kl. 10:00; det kan være kl. 09:00."},
-        {"label":"Billet","value":"Gyldigt pas og rejsebevis bruges ved check-in."}
+        {"label":"Billet","value":"Gyldigt pas og rejsebevis bruges ved check-in."},
+        {"label":"Skileje","value":"Maison Clataud Sport · Via Pinerolo 10 · Sestriere"},
+        {"label":"Ronny","value":"Ski og stave, Superior, 6 dage + hjelm"},
+        {"label":"Camilla","value":"Ski, støvler og stave, Superior, 6 dage"},
+        {"label":"Gabriella","value":"Ski, støvler og stave, Superior, 6 dage"},
+        {"label":"Friedrich","value":"Skitransport med fly er bestilt"}
+      ],
+      "links":[
+        {"title":"Vialattea · åbne lifte og pister","url":"https://www.vialattea.it/en/slopes-and-facilities/"},
+        {"title":"Vialattea · FAQ","url":"https://www.vialattea.it/en/faq/"},
+        {"title":"Vialattea · Sestriere","url":"https://www.vialattea.it/en/ski-area/sestriere/"}
       ]
     }
-  ],
-  "information": [
-    {"title":"Grand Hotel Sestriere · Slopestar","url":"https://www.slopestar.dk/sestriere/grand/hotel/sestriere","text":"Hotelbeskrivelse og aktuelle informationer."},
-    {"title":"Via Lattea · Sestriere","url":"https://www.vialattea.it/en/ski-area/sestriere/","text":"Officiel information om skiområdet."},
-    {"title":"Sestriere pistekort","url":"https://www.skisport.dk/italien/sestriere/pistekort/","text":"Pistekort og overblik over området."},
-    {"title":"Sestriere snestatistik","url":"https://www.slopestar.dk/sestriere/snestatistik","text":"Historiske sneforhold for Sestriere."}
   ]
 }
