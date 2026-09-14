@@ -78,6 +78,8 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `athen-2026.css`
 - `athen-2026.js`
 - `data/athen-2026.json`
+- `assets/athen-banner.svg`
+- Athen-siden bruger sammenklappelige hovedmapper og undermapper, så indholdet ikke står som én lang væg af kort.
 
 ## Tidligere Interrail-app
 Bevares separat:
@@ -198,7 +200,11 @@ Eksterne links skal åbne med `target="_blank"` og `rel="noopener noreferrer"`.
 - Udrejse mandag 21. september 2026: København/Kastrup (CPH) **06:55** → Athen (ATH) **11:05**, flyvetid **3 t 10 min**.
 - Hjemrejse fredag 25. september 2026: Athen (ATH) **10:50** → København/Kastrup (CPH) **13:05**, flyvetid **3 t 15 min**.
 - Ordrenummer/bookingreference er privat og må ikke gemmes i den offentlige app.
-- Hotel, transfer og dagsplan tilføjes, når oplysningerne foreligger.
+- Transportdata, museumsdata, seniorinfo, spisesteder og forslag til dagsplan er lagt ind i `data/athen-2026.json`.
+- UI-strukturen er nu sammenklappelige mapper: **Overblik**, **Transport**, **Museer & seværdigheder**, **Senior & rabatter**, **Spisesteder**, **Forslag til dagene** og **Kvalitetssikring**.
+- Hver hovedmappe kan åbnes/lukkes, og hvert punkt under mappen er en separat undermappe, som også kan åbnes/lukkes.
+- Athen-siden har et bannerbillede med Akropolis-stemning via `assets/athen-banner.svg`.
+- Hotel og præcis transfer til hotellet tilføjes, når hoteloplysningerne foreligger.
 
 ---
 
