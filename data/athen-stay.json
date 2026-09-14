@@ -1,7 +1,7 @@
 {
   "stay": {
     "name": "Helichrysum Studio | Pela Collection | Koukaki",
-    "status": "Kandidatbolig · endnu ikke markeret som booket",
+    "status": "Booket · 21.–25. september 2026",
     "type": "Airbnb · hel udlejningsbolig",
     "area": "Koukaki, Athen",
     "guests": "2 gæster",
@@ -9,12 +9,17 @@
     "bed": "1 kingsize-dobbeltseng",
     "bathroom": "1 badeværelse",
     "floor": "5. sal",
-    "checkIn": "Efter kl. 14:00",
-    "checkOut": "Før kl. 12:00",
+    "checkIn": "21. september 2026 · efter kl. 14:00",
+    "checkOut": "25. september 2026 · før kl. 12:00",
     "airbnbUrl": "https://www.airbnb.dk/rooms/1728474875564184013",
-    "note": "Den præcise adresse er ikke oplyst endnu. Derfor beregnes præcis lufthavnstransport, nærmeste metro og gåafstande først, når adressen er kendt."
+    "note": "Boligen er booket. Den præcise adresse er endnu ikke oplyst i de oplysninger, vi har. Derfor beregnes præcis lufthavnstransport, nærmeste metro og gåafstande, når adressen er kendt."
   },
   "items": [
+    {
+      "icon": "✅",
+      "title": "Bookingstatus",
+      "text": "Helichrysum Studio | Pela Collection | Koukaki er booket til Jolanta og Camilla fra 21. til 25. september 2026."
+    },
     {
       "icon": "🏠",
       "title": "Boligen",
@@ -39,7 +44,7 @@
     {
       "icon": "🕑",
       "title": "Ind- og udtjekning",
-      "text": "Indtjekning efter kl. 14:00. Udtjekning før kl. 12:00. Maksimum 2 gæster."
+      "text": "Indtjekning 21. september efter kl. 14:00. Udtjekning 25. september før kl. 12:00. Maksimum 2 gæster."
     },
     {
       "icon": "☕",
