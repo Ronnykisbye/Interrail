@@ -1,0 +1,65 @@
+{
+  "stay": {
+    "name": "Helichrysum Studio | Pela Collection | Koukaki",
+    "status": "Kandidatbolig · endnu ikke markeret som booket",
+    "type": "Airbnb · hel udlejningsbolig",
+    "area": "Koukaki, Athen",
+    "guests": "2 gæster",
+    "bedroom": "1 soveværelse",
+    "bed": "1 kingsize-dobbeltseng",
+    "bathroom": "1 badeværelse",
+    "floor": "5. sal",
+    "checkIn": "Efter kl. 14:00",
+    "checkOut": "Før kl. 12:00",
+    "airbnbUrl": "https://www.airbnb.dk/rooms/1728474875564184013",
+    "note": "Den præcise adresse er ikke oplyst endnu. Derfor beregnes præcis lufthavnstransport, nærmeste metro og gåafstande først, når adressen er kendt."
+  },
+  "items": [
+    {
+      "icon": "🏠",
+      "title": "Boligen",
+      "text": "Boutique-studio i Koukaki til 2 gæster. 1 soveværelse, 1 kingsize-dobbeltseng, 1 badeværelse, fuldt udstyret køkken, spise-/arbejdsplads og højhastigheds-wi-fi.",
+      "url": "https://www.airbnb.dk/rooms/1728474875564184013"
+    },
+    {
+      "icon": "📍",
+      "title": "Område · Koukaki",
+      "text": "Boligen beskrives som liggende i hjertet af Koukaki, et livligt og gåvenligt område med caféer, restauranter, offentlig transport og kort afstand til Akropolis. Den nøjagtige adresse er endnu ikke kendt."
+    },
+    {
+      "icon": "🔐",
+      "title": "Indtjekning uden vært",
+      "text": "Indgang til bygning og studio sker via nøglefrit adgangssystem/smartlås. Gæster får individuelle adgangskoder og instruktioner før ankomst."
+    },
+    {
+      "icon": "🛗",
+      "title": "5. sal · elevator",
+      "text": "Studiet ligger på 5. sal og er tilgængeligt med elevator."
+    },
+    {
+      "icon": "🕑",
+      "title": "Ind- og udtjekning",
+      "text": "Indtjekning efter kl. 14:00. Udtjekning før kl. 12:00. Maksimum 2 gæster."
+    },
+    {
+      "icon": "☕",
+      "title": "Faciliteter",
+      "text": "Køkken, wi-fi, dedikeret arbejdsplads, tv, stempelkande til kaffe, rent sengetøj og håndklæder. Studiet rengøres professionelt før hver ankomst."
+    },
+    {
+      "icon": "🛡️",
+      "title": "Sikkerhed",
+      "text": "Røgalarm er angivet. Udendørs overvågningskameraer findes på ejendommen. Kuliltealarm er ikke angivet i opslaget."
+    },
+    {
+      "icon": "⭐",
+      "title": "Nyt opslag · få omtaler",
+      "text": "Opslaget er nyt og har 2 omtaler. De nuværende gæster fremhæver især beliggenheden, mulighed for at gå til Akropolis og centrum, moderne bolig, balkon og hurtig kommunikation med værten."
+    },
+    {
+      "icon": "👤",
+      "title": "Vært · Pela",
+      "text": "Værten oplyser, at hun taler græsk og engelsk. Airbnb viser 100 % svarrate og svar typisk inden for et par timer."
+    }
+  ]
+}
