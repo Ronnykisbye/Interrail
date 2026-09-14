@@ -12,18 +12,18 @@ async function loadAthenTrip(){
 
     flightRoot.innerHTML=(data.flights||[]).map(flight=>`<article class="flight-card"><h2>✈️ ${escapeHtml(flight.direction)}</h2><div class="flight-date">${formatDate(flight.date)}</div><div class="flight-times"><div class="flight-time">${escapeHtml(flight.departureTime)}</div><div class="flight-duration">${escapeHtml(flight.duration)}</div><div class="flight-time flight-arrival">${escapeHtml(flight.arrivalTime)}</div></div><div class="flight-route"><div>${escapeHtml(flight.from)}</div><div>${escapeHtml(flight.to)}</div></div></article>`).join('');
 
-    const blocks=[];
-    if(data.sections?.length)blocks.push(renderGroup('Overblik','🧭',data.sections));
-    if(data.transport?.length)blocks.push(renderGroup('Transport','🚇',data.transport));
-    if(data.museums?.length)blocks.push(renderGroup('Museer & seværdigheder','🏛️',data.museums));
-    if(data.senior?.length)blocks.push(renderGroup('Senior & rabatter','🪪',data.senior));
-    if(data.restaurants?.length)blocks.push(renderGroup('Spisesteder','🍽️',data.restaurants));
-    if(data.suggestedPlan?.length)blocks.push(renderGroup('Forslag til dagene','📅',data.suggestedPlan));
+    const folders=[];
+    if(data.sections?.length)folders.push(renderFolder('Overblik','🧭',data.sections));
+    if(data.transport?.length)folders.push(renderFolder('Transport','🚇',data.transport));
+    if(data.museums?.length)folders.push(renderFolder('Museer & seværdigheder','🏛️',data.museums));
+    if(data.senior?.length)folders.push(renderFolder('Senior & rabatter','🪪',data.senior));
+    if(data.restaurants?.length)folders.push(renderFolder('Spisesteder','🍽️',data.restaurants));
+    if(data.suggestedPlan?.length)folders.push(renderFolder('Forslag til dagene','📅',data.suggestedPlan));
 
     if(data.trip.sourceNote){
-      blocks.push(`<article class="athen-card source-card"><div class="athen-icon" aria-hidden="true">✅</div><h2>Kvalitetssikring</h2><p>${escapeHtml(data.trip.sourceNote)}</p></article>`);
+      folders.push(`<details class="athen-folder quality-folder"><summary><span class="folder-icon" aria-hidden="true">✅</span><span class="folder-title">Kvalitetssikring</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body"><p class="quality-note">${escapeHtml(data.trip.sourceNote)}</p></div></details>`);
     }
-    infoRoot.innerHTML=blocks.join('');
+    infoRoot.innerHTML=folders.join('');
   }catch(error){
     console.error(error);
     flightRoot.innerHTML='<article class="flight-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
@@ -31,14 +31,16 @@ async function loadAthenTrip(){
   }
 }
 
-function renderGroup(title,icon,items){
-  const cards=items.map(item=>{
-    const heading=item.url
-      ? `<h2><a class="athen-title-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)} ↗</a></h2>`
-      : `<h2>${escapeHtml(item.title)}</h2>`;
-    return `<article class="athen-card"><div class="athen-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</div>${heading}<p>${escapeHtml(item.text||'')}</p></article>`;
-  }).join('');
-  return `<section class="athen-group"><div class="group-heading"><span aria-hidden="true">${escapeHtml(icon)}</span><h2>${escapeHtml(title)}</h2></div><div class="athen-grid">${cards}</div></section>`;
+function renderFolder(title,icon,items){
+  const subfolders=items.map(item=>renderSubfolder(item)).join('');
+  return `<details class="athen-folder"><summary><span class="folder-icon" aria-hidden="true">${escapeHtml(icon)}</span><span class="folder-title">${escapeHtml(title)}</span><span class="folder-count">${items.length}</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body">${subfolders}</div></details>`;
+}
+
+function renderSubfolder(item){
+  const externalLink=item.url
+    ? `<a class="folder-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Åbn officiel side ↗</a>`
+    : '';
+  return `<details class="athen-subfolder"><summary><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span>${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></summary><div class="subfolder-body"><p>${escapeHtml(item.text||'')}</p>${externalLink}</div></details>`;
 }
 
 function formatDate(value){
