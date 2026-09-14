@@ -1,10 +1,10 @@
-const CACHE='rejser-v1-20260914-6';
+const CACHE='rejser-v1-20260914-7';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen.css','./antwerpen.js','./data/antwerpen.json',
   './interrail-istanbul.html','./interrail-istanbul.css','./interrail-istanbul.js','./data/interrail-istanbul.json',
   './ski-2027.html','./ski-2027-delt.html','./ski-2027.css','./ski-2027.js','./data/ski-2027.json',
-  './athen-2026.html','./athen-2026.css','./athen-2026.js','./data/athen-2026.json',
+  './athen-2026.html','./athen-2026.css','./athen-2026.js','./data/athen-2026.json','./assets/athen-banner.svg',
   './interrail.html','./styles.css','./app.js','./install.js','./data/itinerary.json','./data/links.json','./data/hotels.json',
   './assets/rejser-icon.svg','./assets/favicon.svg','./assets/icon-192.jpg','./assets/icon-512.jpg','./assets/icon-maskable-512.jpg'
 ];
