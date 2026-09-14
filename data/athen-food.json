@@ -1,0 +1,69 @@
+{
+  "restaurants": [
+    {
+      "icon": "🍆",
+      "title": "Moussaka",
+      "text": "Klassisk ovnret med aubergine, kartoffel, krydret hakket kød og béchamel. Her er flere gode steder, så I kan vælge efter hvor I befinder jer.",
+      "places": [
+        {"title":"Greek Stories · Akropolis","url":"https://www.google.com/maps/search/?api=1&query=Greek+Stories+Makrygianni+19+Athens"},
+        {"title":"Liondi Traditional Greek Restaurant · Akropolis","url":"https://www.google.com/maps/search/?api=1&query=Liondi+Traditional+Greek+Restaurant+Makrygianni+19+Athens"},
+        {"title":"Stone · Monastiraki","url":"https://www.google.com/maps/search/?api=1&query=Stone+Adrianou+31+Athens"},
+        {"title":"Veganaki · Olympieion · vegansk moussaka","url":"https://www.google.com/maps/search/?api=1&query=Veganaki+Athanasiou+Diakou+38+Athens"}
+      ]
+    },
+    {
+      "icon": "🍢",
+      "title": "Souvlaki / gyros",
+      "text": "En af Athens klassikere: grillet kød på spyd eller i pita med grønt, sauce og ofte kartofler. Der er mange gode, uformelle steder i centrum.",
+      "places": [
+        {"title":"Street Souvlaki · Kolokotroni","url":"https://www.google.com/maps/search/?api=1&query=Street+Souvlaki+Kolokotroni+30+Athens"},
+        {"title":"O Thanasis · Monastiraki","url":"https://www.google.com/maps/search/?api=1&query=O+Thanasis+Mitropoleos+69+Athens"},
+        {"title":"Souvlaki Kerameikos · Kerameikos","url":"https://www.google.com/maps/search/?api=1&query=Souvlaki+Kerameikos+Kerameikou+101+Athens"},
+        {"title":"Kostas · tæt ved Agia Irini","url":"https://www.google.com/maps/search/?api=1&query=Kostas+Souvlaki+Pentelis+5+Athens"}
+      ]
+    },
+    {
+      "icon": "🥙",
+      "title": "Meze",
+      "text": "Små græske retter til deling, lidt som tapas. En god måde at smage mange forskellige ting på ved samme måltid.",
+      "places": [
+        {"title":"Raki Meze Athens · Agias Irinis-pladsen","url":"https://www.google.com/maps/search/?api=1&query=Raki+Meze+Agias+Irinis+Athens"},
+        {"title":"Ama Lachei at Nefeli's · Exarcheia","url":"https://www.google.com/maps/search/?api=1&query=Ama+Lachei+Kallidromiou+69+Athens"},
+        {"title":"Ta Karamanlidika tou Fani · centrum","url":"https://www.google.com/maps/search/?api=1&query=Ta+Karamanlidika+tou+Fani+Sokratous+1+Athens"}
+      ]
+    },
+    {
+      "icon": "🥧",
+      "title": "Spanakopita / tyropita",
+      "text": "Spanakopita er spinattærte, mens tyropita er ostetærte. Perfekt som morgenmad, frokost eller snack på farten.",
+      "places": [
+        {"title":"Ariston · Voulis 10","url":"https://www.google.com/maps/search/?api=1&query=Ariston+Voulis+10+Athens"},
+        {"title":"Takis Bakery · Koukaki","url":"https://www.google.com/maps/search/?api=1&query=Takis+Bakery+Misaraliotou+14+Athens"},
+        {"title":"Athens Bakery · Solonos 62","url":"https://www.google.com/maps/search/?api=1&query=Athens+Bakery+Solonos+62+Athens"},
+        {"title":"Veneti · flere steder i Athen","url":"https://www.google.com/maps/search/?api=1&query=Veneti+Bakery+Athens"}
+      ]
+    },
+    {
+      "icon": "🍩",
+      "title": "Loukoumades",
+      "text": "Små friskstegte græske dejkugler, typisk med honning og kanel. De er bedst helt varme.",
+      "places": [
+        {"title":"Lukumades · Aiolou / Monastiraki","url":"https://www.google.com/maps/search/?api=1&query=Lukumades+Aiolou+21+Athens"},
+        {"title":"Loukoumades Chanion · Sokratous","url":"https://www.google.com/maps/search/?api=1&query=Loukoumades+Chanion+Sokratous+59+Athens"},
+        {"title":"Puff Puff Lukumades · Kerameikos","url":"https://www.google.com/maps/search/?api=1&query=Puff+Puff+Lukumades+Persefonis+59+Athens"},
+        {"title":"Loukoumania · Pangrati","url":"https://www.google.com/maps/search/?api=1&query=Loukoumania+Frynis+4+Athens"}
+      ]
+    },
+    {
+      "icon": "🍯",
+      "title": "Baklava og græske søde sager",
+      "text": "Sprød filodej, nødder og sirup eller honning. Prøv også galaktoboureko, hvis I ser det i montren.",
+      "places": [
+        {"title":"Mitropolitikon · Voulis 39","url":"https://www.google.com/maps/search/?api=1&query=Mitropolitikon+Voulis+39+Athens"},
+        {"title":"Kosmikon Pastry Shops · kendt for galaktoboureko og baklava","url":"https://www.google.com/maps/search/?api=1&query=Kosmikon+Pastry+Athens"},
+        {"title":"Chara Pastry · Ano Patisia","url":"https://www.google.com/maps/search/?api=1&query=Chara+Pastry+Patision+339G+Athens"},
+        {"title":"Takis Bakery · pistacie-baklava","url":"https://www.google.com/maps/search/?api=1&query=Takis+Bakery+Misaraliotou+14+Athens"}
+      ]
+    }
+  ]
+}
