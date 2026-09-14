@@ -5,7 +5,7 @@
     "travelers": "Jolanta & Camilla",
     "status": "Fly booket",
     "privacyNote": "Booking- og ordrenumre vises ikke i den offentlige app.",
-    "sourceNote": "Transport- og museumsoplysninger er kontrolleret mod officielle kilder 14. september 2026. Priser og åbningstider kan ændre sig."
+    "sourceNote": "Transport, museer, seværdigheder og madsteder er kontrolleret mod officielle eller aktuelle kilder 14. september 2026. Priser, åbningstider og drift kan ændre sig."
   },
   "flights": [
     {
@@ -37,39 +37,57 @@
     {
       "icon": "🚌",
       "title": "24-timers billet",
-      "text": "€4,10. Gælder almindelig offentlig transport i Athen. Lufthavnens Express-busser og metro til/fra lufthavnen er ikke inkluderet.",
+      "text": "€4,10. Gælder almindelig offentlig transport i Athen. Airport Express og lufthavnsmetro er ikke inkluderet.",
       "url": "https://www.oasa.gr/en/tickets/prices-of-products/"
     },
     {
       "icon": "🎫",
       "title": "5-dages billet",
-      "text": "€8,20. Et godt valg til et ophold på fire nætter. Gælder 5 × 24 timer i byzonen, men ikke lufthavnsmetro eller Airport Express.",
+      "text": "€8,20. Et oplagt valg til fire nætter. Gælder i byzonen, men ikke lufthavnsmetro eller Airport Express.",
       "url": "https://www.oasa.gr/en/tickets/products/ath-ena-ticket/"
     },
     {
       "icon": "✈️",
-      "title": "Lufthavn ↔ centrum",
-      "text": "Metro til/fra lufthavnen: €9,00 én vej. Airport Express-bus: €5,50. Den bedste løsning vælges, når hotellets adresse er kendt.",
-      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+      "title": "Metro linje 3 · lufthavn til centrum",
+      "text": "Metro linje 3 kører direkte fra lufthavnen til bl.a. Evangelismos, Syntagma, Monastiraki og Kerameikos. OASA oplyser lufthavnstog cirka hvert 36. minut. Lufthavnsbilletten koster €9 én vej.",
+      "url": "https://www.oasa.gr/en/visit-athens/metro-line-3-to-airport/"
+    },
+    {
+      "icon": "🚌",
+      "title": "Airport Express-busser · 24 timer",
+      "text": "X95 kører mellem lufthavnen og Syntagma, X96 til Piræus, X93 til Kifissos/Liosion busstationer og X97 til Elliniko. OASA angiver cirka 60 min. for X95, 90 min. for X96, 65 min. for X93 og 45 min. for X97, afhængigt af trafik. Pris €5,50.",
+      "url": "https://www.oasa.gr/en/visit-athens/airport-express-bus-lines/"
     },
     {
       "icon": "💳",
       "title": "Kontaktløs betaling",
-      "text": "Bankkort, Apple Pay og Google Pay kan bruges direkte på OASA's validatorer til blandt andet 90-minutters billet, 24-timers billet og lufthavnsbilletter.",
+      "text": "Bankkort, Apple Pay og Google Pay kan bruges direkte på OASA-validatorer til flere fuldprisbillettyper, herunder Airport Express. Husk at validere ved rejsens start.",
       "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+    },
+    {
+      "icon": "🧳",
+      "title": "Bagage i offentlig transport",
+      "text": "OASA oplyser maksimal bagagestørrelse på 100 × 60 × 25 cm og vægt op til 25 kg i deres net. Hold bagagen samlet og fri af døre og gangarealer.",
+      "url": "https://www.oasa.gr/en/visit-athens/"
+    },
+    {
+      "icon": "🌙",
+      "title": "Aften · tjek linje 3 før afgang",
+      "text": "Der har i 2026 været aftenarbejde på metro linje 3 søndag–torsdag med tidligere lukning af enkelte stationer. Det påvirker normalt ikke ankomsten midt på dagen, men tjek OASA samme dag ved sen aftenkørsel.",
+      "url": "https://www.oasa.gr/en/"
     }
   ],
   "museums": [
     {
       "icon": "🏛️",
       "title": "Akropolismuseet",
-      "text": "Et af de vigtigste museer i Athen. Sommeråbning 1/4–31/10: mandag 09–17, tirsdag–søndag 09–20 og fredag 09–22. Entré €20, reduceret €10. Billet inkluderer også udgravningen under museet.",
+      "text": "Et af de vigtigste museer i Athen. Sommeråbning 1/4–31/10: mandag 09–17, tirsdag–torsdag og weekend 09–20, fredag 09–22. Entré €20, reduceret €10. Metro: Akropoli.",
       "url": "https://www.theacropolismuseum.gr/en/node/793"
     },
     {
       "icon": "🏺",
       "title": "Det Nationale Arkæologiske Museum",
-      "text": "Grækenlands største arkæologiske museum. 4/5–15/11: onsdag–mandag 08–20, tirsdag 13–20. Sidste adgang 19:30. Entré €20. Adresse: 44 Patission, Athen.",
+      "text": "Grækenlands største arkæologiske museum. 4/5–15/11: onsdag–mandag 08–20, tirsdag 13–20. Sidste adgang 19:30. Entré €20. Adresse: 44 Patission.",
       "url": "https://www.namuseum.gr/en/episkepsi/"
     },
     {
@@ -81,20 +99,44 @@
     {
       "icon": "⛪",
       "title": "Byzantine and Christian Museum",
-      "text": "Godt supplement til antikken med byzantinsk og kristen kunst. Mandag og onsdag–søndag 08:30–15:30. Tirsdag lukket.",
+      "text": "Byzantinsk og kristen kunst som supplement til antikken. Tirsdag er normalt lukket. Kontrollér dagens åbningstid før besøget.",
       "url": "https://www.byzantinemuseum.gr/en/visit/3/opening-hours-tickets"
     },
     {
       "icon": "🖼️",
       "title": "National Gallery",
-      "text": "Græsk kunst fra nyere tid. Mandag 10–18, tirsdag lukket, onsdag 10–22, torsdag–søndag 10–18. Permanent udstilling €10, reduceret €5. Metro: Evangelismos.",
+      "text": "Græsk kunst fra nyere tid. Onsdag er særlig god, fordi galleriet har udvidet åbent til kl. 22. Metro: Evangelismos.",
       "url": "https://www.nationalgallery.gr/en/buildings/national-gallery-central-building/"
     },
     {
       "icon": "🏛️",
-      "title": "Akropolis · selve området",
-      "text": "Den officielle Hellenic Heritage-billet til Akropolis koster aktuelt €30. Museet og selve Akropolis har separate billetter.",
+      "title": "Akropolis · Parthenon",
+      "text": "Selve Akropolis er separat fra Akropolismuseet. Den officielle Hellenic Heritage-platform bruges til information og billetter. Gå gerne tidligt på dagen.",
       "url": "https://www.hh.gr/en/"
+    },
+    {
+      "icon": "🏺",
+      "title": "Ancient Agora · Stoa of Attalos",
+      "text": "Centrum for det antikke Athens politiske og offentlige liv. I perioden 16.–30. september er åbningstiden 08:00–18:30. Billet €20, reduceret €10. Ca. 4 minutters gang fra Monastiraki.",
+      "url": "https://www.hh.gr/en/destinations/ancient-agora-athens/"
+    },
+    {
+      "icon": "🏟️",
+      "title": "Panathenaic Stadium",
+      "text": "Det historiske marmorstion fra de moderne olympiske leges historie. Marts–oktober 08:00–19:00. Entré €12, reduceret €6. Cirka 1 km fra Syntagma, Akropoli og Evangelismos metro.",
+      "url": "https://www.panathenaicstadium.gr/en/visit/"
+    },
+    {
+      "icon": "🏛️",
+      "title": "Temple of Olympian Zeus · Olympieion",
+      "text": "Et af antikkens største templer. 16.–30. september: 08:00–19:00. Billet €20, reduceret €10. Ligger mellem Akropolis og Panathenaic Stadium.",
+      "url": "https://www.hh.gr/en/destinations/olympieion/"
+    },
+    {
+      "icon": "🌇",
+      "title": "Lycabettus Hill",
+      "text": "277 meter høj udsigt over hele Athen. Kan nås til fods eller med kabelbane. Særligt flot omkring solnedgang.",
+      "url": "https://www.thisisathens.org/sights/lycabettus-hill"
     }
   ],
   "senior": [
@@ -106,28 +148,40 @@
   ],
   "restaurants": [
     {
-      "icon": "🍽️",
-      "title": "Mani Mani",
-      "text": "Moderne græsk køkken med rødder i Mani/Peloponnes. Tæt på Akropolis i Koukaki. God kandidat til middag efter museums- eller Akropolisbesøg.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Mani+Mani+Falirou+10+Athens"
-    },
-    {
-      "icon": "🥗",
-      "title": "Ydria",
-      "text": "Græsk og middelhavskøkken i Plaka tæt ved Ancient Agora. Praktisk til frokost eller middag under sightseeing i centrum.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Ydria+Adrianou+68+Athens"
+      "icon": "🍆",
+      "title": "Moussaka · prøv hos Greek Stories",
+      "text": "Klassisk ovnret med aubergine, kartoffel, krydret hakket kød og béchamel. Greek Stories ligger ved Akropolis og har moussaka blandt de traditionelle retter.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Greek+Stories+Makrygianni+19+Athens"
     },
     {
       "icon": "🍢",
-      "title": "Iliada",
-      "text": "Uformelt og prisvenligt sted i Plaka med traditionelle græske retter, gyros og større portioner.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Iliada+Kidathineon+Athens"
+      "title": "Souvlaki · Street Souvlaki Athens Center",
+      "text": "En af de mest klassiske hurtige græske retter: grillet kød i pita eller på spyd med grønt og sauce. Centralt og prisvenligt valg.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Street+Souvlaki+Kolokotroni+30+Athens"
     },
     {
-      "icon": "☕",
-      "title": "Akropolismuseets restaurant",
-      "text": "Nem mulighed på museumsdagen med udsigt mod Akropolis. Restaurantens åbning følger museets sæsonplan og har længere åbent fredag.",
-      "url": "https://www.theacropolismuseum.gr/en/node/793"
+      "icon": "🥙",
+      "title": "Meze · Raki Meze Athens",
+      "text": "Små græske retter, der deles ved bordet. God måde at smage flere ting på én gang. Raki Meze ligger ved Agias Irinis-pladsen i centrum.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Raki+Meze+Agias+Irinis+Athens"
+    },
+    {
+      "icon": "🥧",
+      "title": "Spanakopita / Tyropita · Ariston",
+      "text": "Prøv spinattærte eller den klassiske ostetærte tyropita. Ariston har bagt græske pitaer siden 1910 og ligger centralt på Voulis 10.",
+      "url": "https://aristonbakery.com/the-menu-at-ariston-bakery/"
+    },
+    {
+      "icon": "🍩",
+      "title": "Loukoumades · Lukumades",
+      "text": "Små friskstegte græske dejkugler med honning og kanel. Lukumades har butik ved Aiolou 21 tæt på Monastiraki og også ved Akropolis.",
+      "url": "https://www.lukumades.com/locations/"
+    },
+    {
+      "icon": "🍯",
+      "title": "Baklava / græske søde sager · Mitropolitikon",
+      "text": "Historisk konditori fra 1930 i centrum. Kendt for bl.a. mandel-baklava og klassiske græske søde sager. Adresse: Voulis 39.",
+      "url": "https://www.thisisathens.org/cafes-bakeries/historic-pastry-dessert-shops"
     }
   ],
   "suggestedPlan": [
@@ -144,12 +198,12 @@
     {
       "icon": "3️⃣",
       "title": "Onsdag 23. september",
-      "text": "Akropolis tidligt på dagen. National Gallery kan bruges senere og har åbent til kl. 22 onsdag."
+      "text": "Akropolis tidligt på dagen. Fortsæt evt. til Ancient Agora og National Gallery senere; National Gallery har åbent til kl. 22 onsdag."
     },
     {
       "icon": "4️⃣",
       "title": "Torsdag 24. september",
-      "text": "Museum of Cycladic Art eller Byzantine and Christian Museum, kombineret med Plaka og en god middag."
+      "text": "Museum of Cycladic Art eller Byzantine Museum. Kombinér med Panathenaic Stadium, Plaka og en middag med græske småretter."
     },
     {
       "icon": "5️⃣",
