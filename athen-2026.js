@@ -2,13 +2,15 @@ async function loadAthenTrip(){
   const flightRoot=document.getElementById('flightContent');
   const infoRoot=document.getElementById('athenContent');
   try{
-    const [tripResponse,foodResponse]=await Promise.all([
+    const [tripResponse,foodResponse,stayResponse]=await Promise.all([
       fetch('data/athen-2026.json?v=20260914-2',{cache:'no-store'}),
-      fetch('data/athen-food.json?v=20260914-1',{cache:'no-store'})
+      fetch('data/athen-food.json?v=20260914-1',{cache:'no-store'}),
+      fetch('data/athen-stay.json?v=20260914-1',{cache:'no-store'})
     ]);
     if(!tripResponse.ok)throw new Error('Athen-data kunne ikke hentes');
     const data=await tripResponse.json();
     const foodData=foodResponse.ok?await foodResponse.json():{};
+    const stayData=stayResponse.ok?await stayResponse.json():{};
     document.getElementById('tripTitle').textContent=data.trip.title;
     document.getElementById('tripSubtitle').textContent=data.trip.subtitle;
     document.getElementById('tripStatus').textContent=data.trip.status;
@@ -18,6 +20,7 @@ async function loadAthenTrip(){
 
     const folders=[];
     if(data.sections?.length)folders.push(renderFolder('Overblik','🧭',data.sections));
+    if(stayData.items?.length)folders.push(renderStayFolder(stayData));
     if(data.transport?.length)folders.push(renderFolder('Transport','🚇',data.transport));
     if(data.museums?.length)folders.push(renderFolder('Museer & seværdigheder','🏛️',data.museums));
     if(data.senior?.length)folders.push(renderFolder('Senior & rabatter','🪪',data.senior));
@@ -34,6 +37,22 @@ async function loadAthenTrip(){
     flightRoot.innerHTML='<article class="flight-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
     infoRoot.innerHTML='';
   }
+}
+
+function renderStayFolder(stayData){
+  const stay=stayData.stay||{};
+  const header=`${stay.name||'Bolig'}${stay.status?` · ${stay.status}`:''}`;
+  const details=[];
+  if(stay.type)details.push(stay.type);
+  if(stay.area)details.push(stay.area);
+  if(stay.guests)details.push(stay.guests);
+  if(stay.bedroom)details.push(stay.bedroom);
+  if(stay.bed)details.push(stay.bed);
+  if(stay.bathroom)details.push(stay.bathroom);
+  const stayLink=stay.airbnbUrl?`<a class="folder-link" href="${escapeHtml(stay.airbnbUrl)}" target="_blank" rel="noopener noreferrer">Åbn Airbnb-opslaget ↗</a>`:'';
+  const note=stay.note?`<p class="quality-note">${escapeHtml(stay.note)}</p>`:'';
+  const subfolders=(stayData.items||[]).map(item=>renderSubfolder(item)).join('');
+  return `<details class="athen-folder"><summary><span class="folder-icon" aria-hidden="true">🏠</span><span class="folder-title">Bolig · Koukaki</span><span class="folder-count">${stayData.items.length}</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body"><article class="stay-summary"><strong>${escapeHtml(header)}</strong><p>${escapeHtml(details.join(' · '))}</p>${stayLink}${note}</article>${subfolders}</div></details>`;
 }
 
 function renderFolder(title,icon,items){
