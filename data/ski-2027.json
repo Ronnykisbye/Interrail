@@ -1,40 +1,89 @@
 {
   "trip": {
     "title": "Skiferie 2027",
-    "subtitle": "30. jan. – 6. feb. 2027 · 4 voksne · Italien",
-    "status": "Planlægning",
-    "candidate": "Sestriere",
-    "sourceNote": "Opdateret ud fra rejseoversigt, aktuelle Skisport/Slopestar-resultater og Nortlander-bookingskærmbilleder kvalitetssikret 27.08.2026. Priser og bagageregler kan ændre sig og skal kontrolleres ved booking."
+    "subtitle": "30. jan. – 6. feb. 2027 · Sestriere, Italien · 4 voksne",
+    "status": "Bestilt",
+    "candidate": "Grand Hotel Sestriere",
+    "sourceNote": "Opdateret 14.09.2026 ud fra Slopestar-rejsebevis og bookingbekræftelse. Loginoplysninger, telefonnumre og e-mailadresser vises ikke i den offentlige app."
   },
-  "planning": [
-    {"icon":"👥","title":"Faste krav","text":"4 voksne. Fly fra København. Ski-in/ski-out eller helst maks. 300–500 m til lift/piste. Mindst 2 separate soveværelser. Par i ét værelse; datter + far kan dele det andet."},
-    {"icon":"🏔️","title":"Apartment Villaggio Olimpico · 8.945 kr.","url":"https://www.slopestar.dk/sestriere/apartment/villaggio/olimpico?TransportInput=Flight-Kastrup&TravelPeriodInput=357&TravelPeriodTypeInput=1","text":"30/1 2027 · 7 dage · fly fra København · 2-værelses lejlighed til 4 · 6 dages liftkort. Dokumenteret pris: 8.945 kr. pr. person, samlet 35.780 kr. for 4 før transfer, skiudstyr og ekstra bagage. Lejlighederne ligger ca. 50 meter fra piste og nærmeste lift."},
-    {"icon":"🏨","title":"Grand Hotel Sestriere · 11.195 kr.","url":"https://www.slopestar.dk/sestriere/grand/hotel/sestriere?TransportInput=Flight-Kastrup&TravelPeriodInput=357&TravelPeriodTypeInput=1","text":"30/1 2027 · 7 dage · fly fra København · dobbeltværelse standard · 6 dages liftkort. Dokumenteret pris: 11.195 kr. pr. person ved 2 personer. Hotellet er en konkret indkvartering; to separate værelser og endelig samlet pris for 4 skal bekræftes før booking."},
-    {"icon":"🔎","title":"Andre dobbeltværelsesfund","text":"Der er fundet øvrige flypakker med dobbeltværelser omkring 10.299–10.999 kr. pr. person inkl. fly og 6 dages liftkort. De vises ikke som klikbare pakker, før vi har et direkte link til det konkrete hotel."},
-    {"icon":"🎿","title":"Nortlander · skitransport","url":"https://www.nortlander.dk/om-rejsen/transport/skiferie-fly","text":"Nortlanders booking viser skitransport til 599 kr. pr. person. Maksimal vægt er 12 kg pr. skitransport, angivet som skitaske + støvlepose. Skitransport skal bestilles på forhånd, der er begrænset antal pladser, og hvis valget ikke vises i bookingen, er det udsolgt på den transportform."},
-    {"icon":"🧳","title":"Nortlander · bagage","url":"https://www.nortlander.dk/om-rejsen/transport/skiferie-fly","text":"Bookingen oplyser, at rejsen inkluderer 5 kg håndbagage og 10 kg indchecket bagage pr. person. Ekstra indchecket bagage kan tilkøbes fra 149 kr. pr. person. Tidligere Nortlander-info viser ekstra 5 kg til 149 kr. og ekstra 10 kg til 199 kr.; den konkrete bookingpris har altid forrang."},
-    {"icon":"💺","title":"Nortlander · sædevalg","text":"Valg af plads i flyet vises i bookingen fra 25 kr. pr. person."},
-    {"icon":"🧮","title":"Praktisk bagagebudget","text":"Hvis 2 personer medbringer egne ski, budgetteres foreløbigt med 2 × 599 kr. = 1.198 kr. i skitransport. Eventuel ekstra indchecket bagage lægges oveni efter det konkrete behov."},
-    {"icon":"✅","title":"Foreløbig anbefaling","text":"Arbejd videre med Apartment Villaggio Olimpico først, fordi den dokumenterede 4-personers flypakke til 8.945 kr. pr. person er meget konkurrencedygtig og boligen ligger tæt på piste og lift."},
-    {"icon":"🔎","title":"Før booking skal vi have slutprisen","text":"4 voksne, 2 separate værelser, fly, transfer, 6 dages liftkort, 2 skisæt som specialbagage, støvle/skitøjstaske, eventuel ekstra kuffert, eventuelt sædevalg og skileje til dem uden eget udstyr."}
+  "highlights": [
+    {"icon":"✅","title":"Rejsen er bestilt","text":"Skiferien er bekræftet gennem Slopestar med ophold på Grand Hotel Sestriere fra 30. januar til 6. februar 2027."},
+    {"icon":"🏨","title":"Grand Hotel Sestriere","text":"2 standard dobbeltværelser til 4 gæster med halvpension. Hotellet ligger centralt i Sestriere og ca. 600 meter fra lift og piste."},
+    {"icon":"✈️","title":"Fly og transfer","text":"Norwegian direkte mellem København og Torino. Transfer til og fra destinationen er inkluderet."}
+  ],
+  "sections": [
+    {
+      "title":"Rejseplan",
+      "icon":"✈️",
+      "items":[
+        {"label":"Udrejse","value":"Lørdag 30.01.2027 · København 17:20 → Torino 19:20 · Norwegian D89720"},
+        {"label":"Hjemrejse","value":"Lørdag 06.02.2027 · Torino 20:20 → København 22:25 · Norwegian D89721"},
+        {"label":"Transfer","value":"Inkluderet til og fra Sestriere · rejsebeviset angiver 1:45"},
+        {"label":"Bagage","value":"20 kg indchecket bagage + 5 kg håndbagage pr. person"},
+        {"label":"Check-in","value":"Åbner 2 timer før afgang og skal være afsluttet senest 1 time før afgang"}
+      ]
+    },
+    {
+      "title":"Hotel",
+      "icon":"🏨",
+      "items":[
+        {"label":"Hotel","value":"Grand Hotel Sestriere"},
+        {"label":"Værelser","value":"2 × standard dobbeltværelse · 4 gæster"},
+        {"label":"Pension","value":"Halvpension"},
+        {"label":"Beliggenhed","value":"Centralt i Sestriere · ca. 600 m til lift og piste"},
+        {"label":"Faciliteter","value":"Restaurant, bar, lounge, elevator, ski-rum, gratis Wi‑Fi, sauna, dampbad og jacuzzi"},
+        {"label":"Wellness","value":"Spa-/wellnessområde koster 20 € pr. person pr. dag"},
+        {"label":"Forplejning","value":"Morgenmadsbuffet og aftenbuffet. Én gang om ugen serveres gallamiddag med 4 retter."}
+      ]
+    },
+    {
+      "title":"Liftkort og skiområde",
+      "icon":"🎿",
+      "items":[
+        {"label":"Liftkort","value":"6 dage · start søndag 31.01.2027"},
+        {"label":"Område","value":"Standard liftkort til den italienske side af Via Lattea"},
+        {"label":"Pister","value":"Adgang til i alt 315 km pister"},
+        {"label":"Frankrig","value":"Ved minimum 6 dages liftkort følger automatisk 1 dags adgang til Montgenèvre med"}
+      ]
+    },
+    {
+      "title":"Skileje",
+      "icon":"🥽",
+      "items":[
+        {"label":"Ronny","value":"Ski og stave, Superior, voksen, 6 dage + hjelm"},
+        {"label":"Camilla","value":"Ski, støvler og stave, Superior, voksen, 6 dage"},
+        {"label":"Gabriella","value":"Ski, støvler og stave, Superior, voksen, 6 dage"},
+        {"label":"Friedrich","value":"Skitransport med fly er bestilt"},
+        {"label":"Udlejning","value":"Maison Clataud Sport · Via Pinerolo 10 · 10056 Sestriere"}
+      ]
+    },
+    {
+      "title":"Pris og betaling",
+      "icon":"💳",
+      "items":[
+        {"label":"Samlet pris","value":"48.765 kr."},
+        {"label":"1. rate","value":"7.600 kr. · senest 15.09.2026"},
+        {"label":"2. rate","value":"41.165 kr. · senest 01.12.2026"},
+        {"label":"Turistskat","value":"Inkluderet"},
+        {"label":"Pris pr. rejsende før tilvalg","value":"11.295 kr. pr. person ifølge rejsebeviset"}
+      ]
+    },
+    {
+      "title":"Vigtige regler og praktisk info",
+      "icon":"ℹ️",
+      "items":[
+        {"label":"Ansvarsforsikring","value":"Obligatorisk i Italien ved skiløb. Dokumentation for tredjepartsdækning skal medbringes."},
+        {"label":"Hjelm","value":"Hjelm er lovpligtig for både børn og voksne i Italien."},
+        {"label":"Ankomst","value":"Værelset er tidligst klar kl. 16:00 på ankomstdagen."},
+        {"label":"Afrejse","value":"Værelset skal normalt forlades senest kl. 10:00; det kan være kl. 09:00."},
+        {"label":"Billet","value":"Gyldigt pas og rejsebevis bruges ved check-in."}
+      ]
+    }
   ],
   "information": [
-    {"title":"YouTube · Skiferieinformation","url":"https://www.youtube.com/watch?v=0HuF-0JFL8I","text":"Video til inspiration og information om skiferien."},
-    {"title":"YouTube · Sestriere","url":"https://www.youtube.com/watch?v=_l2_XI1dJLA","text":"Ekstra video med information og inspiration om Sestriere."},
-    {"title":"Slopestar · Sestriere snestatistik","url":"https://www.slopestar.dk/sestriere/snestatistik","text":"Snestatistik og historiske sneforhold for Sestriere."},
-    {"title":"Skisport.dk · Sestriere pistekort","url":"https://www.skisport.dk/italien/sestriere/pistekort/","text":"Pistekort og overblik over skiområdet i Sestriere."}
-  ],
-  "links": [
-    {"title":"Apartment Villaggio Olimpico · konkret pakke","url":"https://www.slopestar.dk/sestriere/apartment/villaggio/olimpico?TransportInput=Flight-Kastrup&TravelPeriodInput=357&TravelPeriodTypeInput=1"},
-    {"title":"Grand Hotel Sestriere · konkret pakke","url":"https://www.slopestar.dk/sestriere/grand/hotel/sestriere?TransportInput=Flight-Kastrup&TravelPeriodInput=357&TravelPeriodTypeInput=1"},
-    {"title":"Sestriere · officiel Via Lattea","url":"https://www.vialattea.it/en/ski-area/sestriere/"},
-    {"title":"Sestriere · Skisport.dk","url":"https://www.skisport.dk/italien/sestriere/afbudsrejser/"},
-    {"title":"Nortlander · Italien","url":"https://www.nortlander.dk/skiferie/italien"},
-    {"title":"Nortlander · booking","url":"https://www.nortlander.dk/booking"},
-    {"title":"Slopestar","url":"https://www.slopestar.dk/"},
-    {"title":"Nortlander · fly og skitransport","url":"https://www.nortlander.dk/om-rejsen/transport/skiferie-fly"},
-    {"title":"Nortlander · FAQ","url":"https://www.nortlander.dk/info/kontakt/kundeservice-faq"},
-    {"title":"SAS · specialbagage og ski","url":"https://www.sas.dk/rejseinfo/bagage/special"},
-    {"title":"Norwegian · bagagepriser","url":"https://www.norwegian.com/dk/booking/bookingoplysninger/tillaeg-for-valgfri-service/"}
+    {"title":"Grand Hotel Sestriere · Slopestar","url":"https://www.slopestar.dk/sestriere/grand/hotel/sestriere","text":"Hotelbeskrivelse og aktuelle informationer."},
+    {"title":"Via Lattea · Sestriere","url":"https://www.vialattea.it/en/ski-area/sestriere/","text":"Officiel information om skiområdet."},
+    {"title":"Sestriere pistekort","url":"https://www.skisport.dk/italien/sestriere/pistekort/","text":"Pistekort og overblik over området."},
+    {"title":"Sestriere snestatistik","url":"https://www.slopestar.dk/sestriere/snestatistik","text":"Historiske sneforhold for Sestriere."}
   ]
 }
