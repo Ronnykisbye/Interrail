@@ -1,0 +1,36 @@
+{
+  "trip": {
+    "title": "Athen",
+    "subtitle": "21.–25. september 2026 · Grækenland",
+    "travelers": "Jolanta & Camilla",
+    "status": "Fly booket",
+    "privacyNote": "Booking- og ordrenumre vises ikke i den offentlige app."
+  },
+  "flights": [
+    {
+      "direction": "Udrejse",
+      "date": "2026-09-21",
+      "departureTime": "06:55",
+      "arrivalTime": "11:05",
+      "duration": "3 t 10 min",
+      "from": "Københavns Lufthavn Kastrup (CPH)",
+      "to": "Athen (ATH)"
+    },
+    {
+      "direction": "Hjemrejse",
+      "date": "2026-09-25",
+      "departureTime": "10:50",
+      "arrivalTime": "13:05",
+      "duration": "3 t 15 min",
+      "from": "Athen (ATH)",
+      "to": "Københavns Lufthavn Kastrup (CPH)"
+    }
+  ],
+  "sections": [
+    {"icon":"✈️","title":"Fly","text":"Flyrejsen er registreret med afgang fra København mandag 21. september og hjemrejse fra Athen fredag 25. september 2026."},
+    {"icon":"👩‍👧","title":"Rejsende","text":"Jolanta og Camilla."},
+    {"icon":"🏨","title":"Hotel","text":"Hotel og adresse tilføjes, når oplysningerne er klar."},
+    {"icon":"🚇","title":"Transport i Athen","text":"Transfer, metro, bus eller taxi tilføjes senere."},
+    {"icon":"📍","title":"Oplevelser","text":"Seværdigheder, restauranter og dagsplan kan tilføjes løbende."}
+  ]
+}
