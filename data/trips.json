@@ -25,20 +25,20 @@
       "slot": 3,
       "active": true,
       "title": "Skiferie 2027",
-      "subtitle": "Uge 5 · Italien · Sestriere?",
+      "subtitle": "Uge 5 · Italien · Sestriere",
       "icon": "⛷️",
       "status": "Planlægning",
       "target": "ski-2027"
     },
     {
-      "id": "reserve-4",
+      "id": "athen-2026",
       "slot": 4,
-      "active": false,
-      "title": "Ny rejse",
-      "subtitle": "Ledig plads",
-      "icon": "＋",
-      "status": "Reserve",
-      "target": null
+      "active": true,
+      "title": "Athen",
+      "subtitle": "21.–25. sep. 2026 · Grækenland",
+      "icon": "🇬🇷",
+      "status": "Fly booket",
+      "target": "athen-2026"
     },
     {
       "id": "reserve-5",
