@@ -12,7 +12,7 @@
     "checkIn": "21. september 2026 · efter kl. 14:00",
     "checkOut": "25. september 2026 · før kl. 12:00",
     "airbnbUrl": "https://www.airbnb.dk/rooms/1728474875564184013",
-    "note": "Boligen er booket. Den præcise adresse er endnu ikke oplyst i de oplysninger, vi har. Derfor beregnes præcis lufthavnstransport, nærmeste metro og gåafstande, når adressen er kendt."
+    "note": "Boligen er booket. Airbnb-kortet viser kun en omtrentlig placering i Koukaki, omkring Veikou/Falirou-området. Den præcise adresse vises derfor ikke i den offentlige app."
   },
   "items": [
     {
@@ -28,8 +28,37 @@
     },
     {
       "icon": "📍",
-      "title": "Område · Koukaki",
-      "text": "Boligen beskrives som liggende i hjertet af Koukaki, et livligt og gåvenligt område med caféer, restauranter, offentlig transport og kort afstand til Akropolis. Den nøjagtige adresse er endnu ikke kendt."
+      "title": "Ca. placering · Koukaki",
+      "text": "Airbnb-kortet placerer boligen omtrent i området Veikou/Falirou i Koukaki, lige nord for Kallirrois og vest for Syngrou-Fix. Placeringen er omtrentlig og ikke en bekræftet gadeadresse.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Veikou+Falirou+Koukaki+Athens"
+    },
+    {
+      "icon": "🚇",
+      "title": "Nærmeste metro · Syngrou-Fix",
+      "text": "Ud fra Airbnb-kortet ser Syngrou-Fix på metrolinje 2 ud til at være nærmeste station, cirka 5–8 minutters gang fra den omtrentlige placering. Brug tiden som et skøn, indtil den præcise adresse er frigivet.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Syngrou-Fix+Metro+Athens"
+    },
+    {
+      "icon": "✈️",
+      "title": "Fra lufthavnen · anbefalet offentlig transport",
+      "text": "En enkel rute er Metro linje 3 fra Athen Lufthavn til Syntagma, skift til linje 2 mod Elliniko og stå af ved Syngrou-Fix. Derfra cirka 5–8 minutters gang til Airbnb-kortets omtrentlige placering. Lufthavnsmetroen kræver særlig lufthavnsbillet.",
+      "url": "https://www.oasa.gr/en/visit-athens/metro-line-3-to-airport/"
+    },
+    {
+      "icon": "🚌",
+      "title": "Alternativ fra lufthavnen · X95",
+      "text": "Airport Express X95 kører til Syntagma døgnet rundt. Herfra kan man skifte til metro linje 2 mod Elliniko og stå af ved Syngrou-Fix. Det kan være et praktisk alternativ, især hvis metrodriften fra lufthavnen er påvirket.",
+      "url": "https://www.oasa.gr/en/visit-athens/airport-express-bus-lines/"
+    },
+    {
+      "icon": "🏛️",
+      "title": "Akropolis & Akropolismuseet · til fods",
+      "text": "Airbnb-kortet viser boligen i den sydlige del af Koukaki. Herfra ser Akropolismuseet og Akropolis-området ud til at være i gåafstand. Regn foreløbigt med cirka 15–20 minutters gang, afhængigt af den endelige adresse og rute."
+    },
+    {
+      "icon": "🌳",
+      "title": "Filopappou-højen · tæt på",
+      "text": "Filopappou-højen ligger lige nordvest for den omtrentlige placering. Det gør området godt til en rolig gåtur med udsigt mod Akropolis."
     },
     {
       "icon": "🔐",
