@@ -2,7 +2,7 @@ let skiData=null;
 async function loadSkiTrip(){
   const root=document.getElementById('skiContent');
   try{
-    const response=await fetch('data/ski-2027.json?v=20260914-3',{cache:'no-store'});
+    const response=await fetch('data/ski-2027.json?v=20260914-4',{cache:'no-store'});
     if(!response.ok)throw new Error('Skiferiedata kunne ikke hentes');
     skiData=await response.json();
     document.getElementById('skiTitle').textContent=skiData.trip.title;
@@ -39,7 +39,7 @@ function renderTab(tab){
   const cards=Array.isArray(tab.cards)?'<div class="ski-grid">'+tab.cards.map(renderCard).join('')+'</div>':'';
   const facts=Array.isArray(tab.facts)?'<article class="ski-card wide-card"><dl class="ski-facts">'+tab.facts.map(renderFact).join('')+'</dl></article>':'';
   const restaurants=Array.isArray(tab.restaurants)?'<section class="restaurant-section"><div class="restaurant-grid">'+tab.restaurants.map(r=>'<article class="restaurant-card"><h3>'+escapeHtml(r.name)+'</h3><p class="restaurant-type">'+escapeHtml(r.type||'')+'</p><span class="rating">★ '+escapeHtml(r.rating||'')+'</span><p>'+escapeHtml(r.note||'')+'</p><a href="'+escapeHtml(r.map)+'" target="_blank" rel="noopener noreferrer">Find på kort ↗</a></article>').join('')+'</div></section>':'';
-  const links=Array.isArray(tab.links)&&tab.links.length?'<article class="ski-card wide-card"><h2>Nyttige links</h2><div class="ski-links">'+tab.links.map(l=>'<a href="'+escapeHtml(l.url)+'" target="_blank" rel="noopener noreferrer"><strong>'+escapeHtml(l.title)+'</strong><b>↗</b></a>').join('')+'</div></article>':'';
+  const links=Array.isArray(tab.links)&&tab.links.length?'<article class="ski-card wide-card"><h2>Nyttige links</h2><div class="ski-links">'+tab.links.map(l=>'<a href="'+escapeHtml(l.url)+'" target="_blank" rel="noopener noreferrer"><span><strong>'+escapeHtml(l.title)+'</strong><small>'+escapeHtml(l.text||'')+'</small></span><b>↗</b></a>').join('')+'</div></article>':'';
   const privacy=tab.id==='praktisk'?'<article class="ski-card wide-card privacy-card"><div class="ski-icon">🔒</div><h2>Privatliv</h2><p>'+escapeHtml(skiData.trip.sourceNote)+'</p></article>':'';
   return '<section class="tab-panel" role="tabpanel"><h1 class="tab-title">'+escapeHtml(tab.icon||'')+' '+escapeHtml(tab.label)+'</h1>'+intro+featured+cards+facts+restaurants+links+privacy+'</section>';
 }
@@ -49,5 +49,5 @@ function renderCard(item){
 }
 function renderFact(item){return '<div class="ski-fact"><dt>'+escapeHtml(item.label)+'</dt><dd>'+escapeHtml(item.value)+'</dd></div>'}
 function escapeHtml(value){return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));}
-async function registerServiceWorker(){if(!('serviceWorker' in navigator))return;try{const r=await navigator.serviceWorker.register('service-worker.js?v=20260914-3',{updateViaCache:'none'});await r.update()}catch(e){console.error(e)}}
+async function registerServiceWorker(){if(!('serviceWorker' in navigator))return;try{const r=await navigator.serviceWorker.register('service-worker.js?v=20260914-4',{updateViaCache:'none'});await r.update()}catch(e){console.error(e)}}
 loadSkiTrip();registerServiceWorker();
