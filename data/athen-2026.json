@@ -4,7 +4,8 @@
     "subtitle": "21.–25. september 2026 · Grækenland",
     "travelers": "Jolanta & Camilla",
     "status": "Fly booket",
-    "privacyNote": "Booking- og ordrenumre vises ikke i den offentlige app."
+    "privacyNote": "Booking- og ordrenumre vises ikke i den offentlige app.",
+    "sourceNote": "Transport- og museumsoplysninger er kontrolleret mod officielle kilder 14. september 2026. Priser og åbningstider kan ændre sig."
   },
   "flights": [
     {
@@ -26,11 +27,139 @@
       "to": "Københavns Lufthavn Kastrup (CPH)"
     }
   ],
+  "transport": [
+    {
+      "icon": "🚇",
+      "title": "90-minutters billet",
+      "text": "€1,20. Gælder bus, trolleybus, sporvogn og metro i byzonen. Gælder ikke lufthavnsstrækningen.",
+      "url": "https://www.oasa.gr/en/tickets/prices-of-products/"
+    },
+    {
+      "icon": "🚌",
+      "title": "24-timers billet",
+      "text": "€4,10. Gælder almindelig offentlig transport i Athen. Lufthavnens Express-busser og metro til/fra lufthavnen er ikke inkluderet.",
+      "url": "https://www.oasa.gr/en/tickets/prices-of-products/"
+    },
+    {
+      "icon": "🎫",
+      "title": "5-dages billet",
+      "text": "€8,20. Et godt valg til et ophold på fire nætter. Gælder 5 × 24 timer i byzonen, men ikke lufthavnsmetro eller Airport Express.",
+      "url": "https://www.oasa.gr/en/tickets/products/ath-ena-ticket/"
+    },
+    {
+      "icon": "✈️",
+      "title": "Lufthavn ↔ centrum",
+      "text": "Metro til/fra lufthavnen: €9,00 én vej. Airport Express-bus: €5,50. Den bedste løsning vælges, når hotellets adresse er kendt.",
+      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+    },
+    {
+      "icon": "💳",
+      "title": "Kontaktløs betaling",
+      "text": "Bankkort, Apple Pay og Google Pay kan bruges direkte på OASA's validatorer til blandt andet 90-minutters billet, 24-timers billet og lufthavnsbilletter.",
+      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+    }
+  ],
+  "museums": [
+    {
+      "icon": "🏛️",
+      "title": "Akropolismuseet",
+      "text": "Et af de vigtigste museer i Athen. Sommeråbning 1/4–31/10: mandag 09–17, tirsdag–søndag 09–20 og fredag 09–22. Entré €20, reduceret €10. Billet inkluderer også udgravningen under museet.",
+      "url": "https://www.theacropolismuseum.gr/en/node/793"
+    },
+    {
+      "icon": "🏺",
+      "title": "Det Nationale Arkæologiske Museum",
+      "text": "Grækenlands største arkæologiske museum. 4/5–15/11: onsdag–mandag 08–20, tirsdag 13–20. Sidste adgang 19:30. Entré €20. Adresse: 44 Patission, Athen.",
+      "url": "https://www.namuseum.gr/en/episkepsi/"
+    },
+    {
+      "icon": "🗿",
+      "title": "Museum of Cycladic Art",
+      "text": "Kykladiske figurer, antik græsk kunst og dagligliv. Mandag, onsdag, fredag og lørdag 10–17; torsdag 10–20; søndag 11–17; tirsdag lukket. Permanent samling €12, reduceret €9.",
+      "url": "https://cycladic.gr/en/episkeftheite-to-mouseio/"
+    },
+    {
+      "icon": "⛪",
+      "title": "Byzantine and Christian Museum",
+      "text": "Godt supplement til antikken med byzantinsk og kristen kunst. Mandag og onsdag–søndag 08:30–15:30. Tirsdag lukket.",
+      "url": "https://www.byzantinemuseum.gr/en/visit/3/opening-hours-tickets"
+    },
+    {
+      "icon": "🖼️",
+      "title": "National Gallery",
+      "text": "Græsk kunst fra nyere tid. Mandag 10–18, tirsdag lukket, onsdag 10–22, torsdag–søndag 10–18. Permanent udstilling €10, reduceret €5. Metro: Evangelismos.",
+      "url": "https://www.nationalgallery.gr/en/buildings/national-gallery-central-building/"
+    },
+    {
+      "icon": "🏛️",
+      "title": "Akropolis · selve området",
+      "text": "Den officielle Hellenic Heritage-billet til Akropolis koster aktuelt €30. Museet og selve Akropolis har separate billetter.",
+      "url": "https://www.hh.gr/en/"
+    }
+  ],
+  "senior": [
+    {
+      "icon": "🪪",
+      "title": "Seniorrabatter",
+      "text": "Seniorgrænsen afhænger af stedet. Akropolismuseet giver reduceret billet til EU-borgere over 65 år mod ID eller pas. Museum of Cycladic Art oplyser 65+ som reduceret kategori. Medbring derfor altid ID og kontrollér den konkrete attraktion ved køb."
+    }
+  ],
+  "restaurants": [
+    {
+      "icon": "🍽️",
+      "title": "Mani Mani",
+      "text": "Moderne græsk køkken med rødder i Mani/Peloponnes. Tæt på Akropolis i Koukaki. God kandidat til middag efter museums- eller Akropolisbesøg.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Mani+Mani+Falirou+10+Athens"
+    },
+    {
+      "icon": "🥗",
+      "title": "Ydria",
+      "text": "Græsk og middelhavskøkken i Plaka tæt ved Ancient Agora. Praktisk til frokost eller middag under sightseeing i centrum.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Ydria+Adrianou+68+Athens"
+    },
+    {
+      "icon": "🍢",
+      "title": "Iliada",
+      "text": "Uformelt og prisvenligt sted i Plaka med traditionelle græske retter, gyros og større portioner.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Iliada+Kidathineon+Athens"
+    },
+    {
+      "icon": "☕",
+      "title": "Akropolismuseets restaurant",
+      "text": "Nem mulighed på museumsdagen med udsigt mod Akropolis. Restaurantens åbning følger museets sæsonplan og har længere åbent fredag.",
+      "url": "https://www.theacropolismuseum.gr/en/node/793"
+    }
+  ],
+  "suggestedPlan": [
+    {
+      "icon": "1️⃣",
+      "title": "Mandag 21. september",
+      "text": "Ankomst til Athen. Rolig eftermiddag og eventuelt Akropolismuseet, som mandag lukker kl. 17."
+    },
+    {
+      "icon": "2️⃣",
+      "title": "Tirsdag 22. september",
+      "text": "Det Nationale Arkæologiske Museum passer godt tirsdag, fordi det er åbent 13–20. Cycladic Art og Byzantine Museum er lukket tirsdag."
+    },
+    {
+      "icon": "3️⃣",
+      "title": "Onsdag 23. september",
+      "text": "Akropolis tidligt på dagen. National Gallery kan bruges senere og har åbent til kl. 22 onsdag."
+    },
+    {
+      "icon": "4️⃣",
+      "title": "Torsdag 24. september",
+      "text": "Museum of Cycladic Art eller Byzantine and Christian Museum, kombineret med Plaka og en god middag."
+    },
+    {
+      "icon": "5️⃣",
+      "title": "Fredag 25. september",
+      "text": "Hjemrejsedag. Flyet afgår fra ATH kl. 10:50, så morgenen bør holdes fri til transport til lufthavnen."
+    }
+  ],
   "sections": [
     {"icon":"✈️","title":"Fly","text":"Flyrejsen er registreret med afgang fra København mandag 21. september og hjemrejse fra Athen fredag 25. september 2026."},
     {"icon":"👩‍👧","title":"Rejsende","text":"Jolanta og Camilla."},
-    {"icon":"🏨","title":"Hotel","text":"Hotel og adresse tilføjes, når oplysningerne er klar."},
-    {"icon":"🚇","title":"Transport i Athen","text":"Transfer, metro, bus eller taxi tilføjes senere."},
-    {"icon":"📍","title":"Oplevelser","text":"Seværdigheder, restauranter og dagsplan kan tilføjes løbende."}
+    {"icon":"🏨","title":"Hotel","text":"Hotel og adresse tilføjes, når oplysningerne er klar. Når hotellet er kendt, kan lufthavnstransport, nærmeste metro og afstande til museerne beregnes præcist."}
   ]
 }
