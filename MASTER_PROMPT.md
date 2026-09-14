@@ -18,13 +18,13 @@ Når en ny session starter, skal ChatGPT først:
 # Projektets formål
 Den samlede løsning hedder **Rejser**.
 
-Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rejser og 3 reservepladser.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 4 aktive rejser og 2 reservepladser.
 
 Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
 3. **Skiferie 2027** – aktiv planlægning, uge 5, Sestriere i Italien
-4. Reserve
+4. **Athen 2026** – aktiv, 21.–25. september 2026
 5. Reserve
 6. Reserve
 
@@ -73,6 +73,12 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `ski-2027.js`
 - `data/ski-2027.json`
 
+## Athen 2026
+- `athen-2026.html`
+- `athen-2026.css`
+- `athen-2026.js`
+- `data/athen-2026.json`
+
 ## Tidligere Interrail-app
 Bevares separat:
 - `interrail.html`
@@ -85,7 +91,7 @@ Bevares separat:
 
 ## PWA
 - `manifest.webmanifest` beskriver hovedappen som **Rejser**.
-- `service-worker.js` cacher hub, Antwerpen, Istanbul-planen, Skiferie 2027, den delte skiferievisning og den gamle Interrail-side.
+- `service-worker.js` cacher hub, Antwerpen, Istanbul-planen, Skiferie 2027, Athen 2026, den delte skiferievisning og den gamle Interrail-side.
 
 ---
 
@@ -95,6 +101,7 @@ Bevares separat:
 - Den delte side har `noindex,nofollow,noarchive`.
 - GitHub Pages er stadig teknisk offentlig hosting; delt link er praktisk begrænsning, ikke stærk autentificering.
 - Følsomme oplysninger må ikke ligge i offentlige HTML/JS/JSON-filer.
+- Booking-/ordrenumre må ikke lægges i offentlige rejsemoduler.
 
 ---
 
@@ -184,6 +191,14 @@ Aktuelle kategorier omfatter:
 - Norwegian bagagepriser
 
 Eksterne links skal åbne med `target="_blank"` og `rel="noopener noreferrer"`.
+
+## 4. Athen – 21.–25. september 2026
+- Rejsende: **Jolanta og Camilla**.
+- Status: **Fly booket**.
+- Udrejse mandag 21. september 2026: København/Kastrup (CPH) **06:55** → Athen (ATH) **11:05**, flyvetid **3 t 10 min**.
+- Hjemrejse fredag 25. september 2026: Athen (ATH) **10:50** → København/Kastrup (CPH) **13:05**, flyvetid **3 t 15 min**.
+- Ordrenummer/bookingreference er privat og må ikke gemmes i den offentlige app.
+- Hotel, transfer og dagsplan tilføjes, når oplysningerne foreligger.
 
 ---
 
