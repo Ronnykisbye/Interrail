@@ -2,9 +2,13 @@ async function loadAthenTrip(){
   const flightRoot=document.getElementById('flightContent');
   const infoRoot=document.getElementById('athenContent');
   try{
-    const response=await fetch('data/athen-2026.json?v=20260914-2',{cache:'no-store'});
-    if(!response.ok)throw new Error('Athen-data kunne ikke hentes');
-    const data=await response.json();
+    const [tripResponse,foodResponse]=await Promise.all([
+      fetch('data/athen-2026.json?v=20260914-2',{cache:'no-store'}),
+      fetch('data/athen-food.json?v=20260914-1',{cache:'no-store'})
+    ]);
+    if(!tripResponse.ok)throw new Error('Athen-data kunne ikke hentes');
+    const data=await tripResponse.json();
+    const foodData=foodResponse.ok?await foodResponse.json():{};
     document.getElementById('tripTitle').textContent=data.trip.title;
     document.getElementById('tripSubtitle').textContent=data.trip.subtitle;
     document.getElementById('tripStatus').textContent=data.trip.status;
@@ -17,7 +21,8 @@ async function loadAthenTrip(){
     if(data.transport?.length)folders.push(renderFolder('Transport','🚇',data.transport));
     if(data.museums?.length)folders.push(renderFolder('Museer & seværdigheder','🏛️',data.museums));
     if(data.senior?.length)folders.push(renderFolder('Senior & rabatter','🪪',data.senior));
-    if(data.restaurants?.length)folders.push(renderFolder('Spisesteder','🍽️',data.restaurants));
+    const restaurants=foodData.restaurants?.length?foodData.restaurants:data.restaurants;
+    if(restaurants?.length)folders.push(renderFolder('Spisesteder','🍽️',restaurants));
     if(data.suggestedPlan?.length)folders.push(renderFolder('Forslag til dagene','📅',data.suggestedPlan));
 
     if(data.trip.sourceNote){
@@ -40,7 +45,10 @@ function renderSubfolder(item){
   const externalLink=item.url
     ? `<a class="folder-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Åbn officiel side ↗</a>`
     : '';
-  return `<details class="athen-subfolder"><summary><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span>${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></summary><div class="subfolder-body"><p>${escapeHtml(item.text||'')}</p>${externalLink}</div></details>`;
+  const places=Array.isArray(item.places)&&item.places.length
+    ? `<div class="place-links"><strong>Steder hvor I kan prøve retten:</strong>${item.places.map(place=>`<a class="folder-link place-link" href="${escapeHtml(place.url)}" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(place.title)} ↗</a>`).join('')}</div>`
+    : '';
+  return `<details class="athen-subfolder"><summary><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span>${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></summary><div class="subfolder-body"><p>${escapeHtml(item.text||'')}</p>${externalLink}${places}</div></details>`;
 }
 
 function formatDate(value){
