@@ -1,4 +1,4 @@
-const CACHE='rejser-v1-20260901-1';
+const CACHE='rejser-v1-20260914-1';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen.css','./antwerpen.js','./data/antwerpen.json',
@@ -23,10 +23,8 @@ self.addEventListener('activate',event=>{
 
 self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
-
   const url=new URL(event.request.url);
   if(url.protocol!=='http:'&&url.protocol!=='https:')return;
-
   event.respondWith(
     fetch(event.request)
       .then(response=>{
