@@ -18,10 +18,10 @@ a{color:inherit}
   min-height:500px;
   overflow:hidden;
   border-radius:0 0 24px 24px;
-  background:#1682d0 url("assets/sestriere-hero.jpg") center center/cover no-repeat;
+  background:#1682d0 url("https://www.vialattea.it/wp-content/uploads/2022/09/vialattea_22.jpg") center 55%/cover no-repeat;
   box-shadow:0 16px 34px rgba(20,87,138,.2);
 }
-.hero-fallback{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,68,132,.24),rgba(0,68,132,0) 60%)}
+.hero-fallback{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,53,104,.60) 0%,rgba(2,53,104,.30) 38%,rgba(2,53,104,.05) 68%,rgba(2,53,104,0) 100%)}
 .ski-hero-copy{position:relative;z-index:2;padding:30px 36px;color:#fff;max-width:700px;text-shadow:0 2px 8px rgba(0,39,76,.25)}
 .ski-kicker{font-size:1rem;font-weight:900;letter-spacing:.08em;margin:0 0 8px}
 .ski-hero h1{font-size:clamp(3rem,7vw,5.5rem);line-height:.95;margin:0 0 18px;font-weight:950}
