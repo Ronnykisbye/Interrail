@@ -2,15 +2,17 @@ async function loadAthenTrip(){
   const flightRoot=document.getElementById('flightContent');
   const infoRoot=document.getElementById('athenContent');
   try{
-    const [tripResponse,foodResponse,stayResponse]=await Promise.all([
+    const [tripResponse,foodResponse,stayResponse,practicalResponse]=await Promise.all([
       fetch('data/athen-2026.json?v=20260914-2',{cache:'no-store'}),
       fetch('data/athen-food.json?v=20260914-1',{cache:'no-store'}),
-      fetch('data/athen-stay.json?v=20260914-1',{cache:'no-store'})
+      fetch('data/athen-stay.json?v=20260914-2',{cache:'no-store'}),
+      fetch('data/athen-practical.json?v=20260915-1',{cache:'no-store'})
     ]);
     if(!tripResponse.ok)throw new Error('Athen-data kunne ikke hentes');
     const data=await tripResponse.json();
     const foodData=foodResponse.ok?await foodResponse.json():{};
     const stayData=stayResponse.ok?await stayResponse.json():{};
+    const practicalData=practicalResponse.ok?await practicalResponse.json():{};
     document.getElementById('tripTitle').textContent=data.trip.title;
     document.getElementById('tripSubtitle').textContent=data.trip.subtitle;
     document.getElementById('tripStatus').textContent=data.trip.status;
@@ -22,6 +24,8 @@ async function loadAthenTrip(){
     if(data.sections?.length)folders.push(renderFolder('Overblik','🧭',data.sections));
     if(stayData.items?.length)folders.push(renderStayFolder(stayData));
     if(data.transport?.length)folders.push(renderFolder('Transport','🚇',data.transport));
+    if(practicalData.taxi?.length)folders.push(renderFolder('Taxa & betaling','🚕',practicalData.taxi));
+    if(practicalData.publicTransportTips?.length)folders.push(renderFolder('Gode råd i offentlig transport','🧠',practicalData.publicTransportTips));
     if(data.museums?.length)folders.push(renderFolder('Museer & seværdigheder','🏛️',data.museums));
     if(data.senior?.length)folders.push(renderFolder('Senior & rabatter','🪪',data.senior));
     const restaurants=foodData.restaurants?.length?foodData.restaurants:data.restaurants;
