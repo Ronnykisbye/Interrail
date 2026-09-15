@@ -3,10 +3,10 @@ async function loadAthenTrip(){
   const infoRoot=document.getElementById('athenContent');
   try{
     const [tripResponse,foodResponse,stayResponse,practicalResponse]=await Promise.all([
-      fetch('data/athen-2026.json?v=20260915-2',{cache:'no-store'}),
-      fetch('data/athen-food.json?v=20260915-2',{cache:'no-store'}),
-      fetch('data/athen-stay.json?v=20260915-2',{cache:'no-store'}),
-      fetch('data/athen-practical.json?v=20260915-2',{cache:'no-store'})
+      fetch('data/athen-2026.json?v=20260915-3',{cache:'no-store'}),
+      fetch('data/athen-food.json?v=20260915-3',{cache:'no-store'}),
+      fetch('data/athen-stay.json?v=20260915-3',{cache:'no-store'}),
+      fetch('data/athen-practical.json?v=20260915-3',{cache:'no-store'})
     ]);
     if(!tripResponse.ok)throw new Error('Athen-data kunne ikke hentes');
     const data=await tripResponse.json();
@@ -21,34 +21,30 @@ async function loadAthenTrip(){
 
     flightRoot.innerHTML=(data.flights||[]).map(flight=>`<article class="flight-card"><h2>✈️ ${escapeHtml(flight.direction)}</h2><div class="flight-date">${formatDate(flight.date)}</div><div class="flight-times"><div class="flight-time">${escapeHtml(flight.departureTime)}</div><div class="flight-duration">${escapeHtml(flight.duration)}</div><div class="flight-time flight-arrival">${escapeHtml(flight.arrivalTime)}</div></div><div class="flight-route"><div>${escapeHtml(flight.from)}</div><div>${escapeHtml(flight.to)}</div></div></article>`).join('');
 
-    // Kvalitetssikring: hovedoversigten skal altid afspejle den aktuelle boligfil.
     const overviewSections=(data.sections||[]).map(section=>{
       if(section.title==='Bolig'&&stayData.stay){
-        return {
-          ...section,
-          text:`Booket bolig: ${stayData.stay.name||'Helichrysum Studio'} · ${stayData.stay.area||'Koukaki, Athen'} · 21.–25. september 2026. Placeringen i appen er kun omtrentligt angivet; præcis adresse offentliggøres ikke.`
-        };
+        return {...section,text:`Booket bolig: ${stayData.stay.name||'Helichrysum Studio'} · ${stayData.stay.area||'Koukaki, Athen'} · 21.–25. september 2026. Placeringen i appen er kun omtrentligt angivet; præcis adresse offentliggøres ikke.`};
       }
       return section;
     });
 
-    const folders=[];
-    if(overviewSections.length)folders.push(renderFolder('Overblik','🧭',overviewSections));
-    if(stayData.items?.length)folders.push(renderStayFolder(stayData));
-    if(data.transport?.length)folders.push(renderFolder('Transport','🚇',data.transport));
-    if(practicalData.taxi?.length)folders.push(renderFolder('Taxa & betaling','🚕',practicalData.taxi));
-    if(practicalData.publicTransportTips?.length)folders.push(renderFolder('Gode råd i offentlig transport','🧠',practicalData.publicTransportTips));
-    if(data.museums?.length)folders.push(renderFolder('Museer & seværdigheder','🏛️',data.museums));
-    if(data.senior?.length)folders.push(renderFolder('Senior & rabatter','🪪',data.senior));
+    const menuModel=[];
+    if(overviewSections.length)menuModel.push({title:'Overblik',icon:'🧭',items:overviewSections});
+    if(stayData.items?.length)menuModel.push({title:'Bolig · Koukaki',icon:'🏠',items:stayData.items,stay:stayData.stay});
+    if(data.transport?.length)menuModel.push({title:'Transport',icon:'🚇',items:data.transport});
+    if(practicalData.taxi?.length)menuModel.push({title:'Taxa & betaling',icon:'🚕',items:practicalData.taxi});
+    if(practicalData.publicTransportTips?.length)menuModel.push({title:'Gode råd i offentlig transport',icon:'🧠',items:practicalData.publicTransportTips});
+    if(data.museums?.length)menuModel.push({title:'Museer & seværdigheder',icon:'🏛️',items:data.museums});
+    if(data.senior?.length)menuModel.push({title:'Senior & rabatter',icon:'🪪',items:data.senior});
     const restaurants=foodData.restaurants?.length?foodData.restaurants:data.restaurants;
-    if(restaurants?.length)folders.push(renderFolder('Spisesteder','🍽️',restaurants));
-    if(data.suggestedPlan?.length)folders.push(renderFolder('Forslag til dagene','📅',data.suggestedPlan));
+    if(restaurants?.length)menuModel.push({title:'Spisesteder',icon:'🍽️',items:restaurants});
+    if(data.suggestedPlan?.length)menuModel.push({title:'Forslag til dagene',icon:'📅',items:data.suggestedPlan});
 
-    if(data.trip.sourceNote){
-      folders.push(`<details class="athen-folder quality-folder"><summary><span class="folder-icon" aria-hidden="true">✅</span><span class="folder-title">Kvalitetssikring</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body"><p class="quality-note">${escapeHtml(data.trip.sourceNote)}</p></div></details>`);
-    }
-    infoRoot.innerHTML=folders.join('');
-    qualityCheckMenus(infoRoot);
+    infoRoot.innerHTML=menuModel.map((menu,index)=>renderFolder(menu,index)).join('');
+    if(data.trip.sourceNote)infoRoot.insertAdjacentHTML('beforeend',renderQualityFolder(data.trip.sourceNote));
+
+    bindAccordion(infoRoot);
+    runMenuQA(infoRoot,menuModel);
   }catch(error){
     console.error(error);
     flightRoot.innerHTML='<article class="flight-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
@@ -56,62 +52,56 @@ async function loadAthenTrip(){
   }
 }
 
-function renderStayFolder(stayData){
-  const stay=stayData.stay||{};
-  const header=`${stay.name||'Bolig'}${stay.status?` · ${stay.status}`:''}`;
-  const details=[];
-  if(stay.type)details.push(stay.type);
-  if(stay.area)details.push(stay.area);
-  if(stay.guests)details.push(stay.guests);
-  if(stay.bedroom)details.push(stay.bedroom);
-  if(stay.bed)details.push(stay.bed);
-  if(stay.bathroom)details.push(stay.bathroom);
+function renderFolder(menu,index){
+  const id=`menu-${index}`;
+  const staySummary=menu.stay?renderStaySummary(menu.stay):'';
+  const subfolders=menu.items.map((item,itemIndex)=>renderSubfolder(item,index,itemIndex)).join('');
+  return `<section class="athen-folder" data-menu-title="${escapeHtml(menu.title)}" data-expected-count="${menu.items.length}"><button type="button" class="folder-toggle" aria-expanded="false" aria-controls="${id}"><span class="folder-icon" aria-hidden="true">${escapeHtml(menu.icon)}</span><span class="folder-title">${escapeHtml(menu.title)}</span><span class="folder-count">${menu.items.length}</span><span class="folder-arrow" aria-hidden="true">›</span></button><div id="${id}" class="folder-body" hidden>${staySummary}${subfolders}</div></section>`;
+}
+
+function renderStaySummary(stay){
+  const details=[stay.type,stay.area,stay.guests,stay.bedroom,stay.bed,stay.bathroom].filter(Boolean);
   const stayLink=stay.airbnbUrl?`<a class="folder-link" href="${escapeHtml(stay.airbnbUrl)}" target="_blank" rel="noopener noreferrer">Åbn Airbnb-opslaget ↗</a>`:'';
   const note=stay.note?`<p class="quality-note">${escapeHtml(stay.note)}</p>`:'';
-  const subfolders=(stayData.items||[]).map(item=>renderSubfolder(item)).join('');
-  return `<details class="athen-folder"><summary><span class="folder-icon" aria-hidden="true">🏠</span><span class="folder-title">Bolig · Koukaki</span><span class="folder-count">${stayData.items.length}</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body"><article class="stay-summary"><strong>${escapeHtml(header)}</strong><p>${escapeHtml(details.join(' · '))}</p>${stayLink}${note}</article>${subfolders}</div></details>`;
+  return `<article class="stay-summary"><strong>${escapeHtml(stay.name||'Bolig')}${stay.status?` · ${escapeHtml(stay.status)}`:''}</strong><p>${escapeHtml(details.join(' · '))}</p>${stayLink}${note}</article>`;
 }
 
-function renderFolder(title,icon,items){
-  const subfolders=items.map(item=>renderSubfolder(item)).join('');
-  return `<details class="athen-folder"><summary><span class="folder-icon" aria-hidden="true">${escapeHtml(icon)}</span><span class="folder-title">${escapeHtml(title)}</span><span class="folder-count">${items.length}</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body">${subfolders}</div></details>`;
+function renderSubfolder(item,menuIndex,itemIndex){
+  const id=`submenu-${menuIndex}-${itemIndex}`;
+  const externalLink=item.url?`<a class="folder-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Åbn officiel side ↗</a>`:'';
+  const places=Array.isArray(item.places)&&item.places.length?`<div class="place-links"><strong>Steder hvor I kan prøve retten:</strong>${item.places.map(place=>`<a class="folder-link place-link" href="${escapeHtml(place.url)}" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(place.title)} ↗</a>`).join('')}</div>`:'';
+  return `<article class="athen-subfolder"><button type="button" class="subfolder-toggle" aria-expanded="false" aria-controls="${id}"><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span class="subfolder-title">${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></button><div id="${id}" class="subfolder-body" hidden><p>${escapeHtml(item.text||'')}</p>${externalLink}${places}</div></article>`;
 }
 
-function renderSubfolder(item){
-  const externalLink=item.url
-    ? `<a class="folder-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Åbn officiel side ↗</a>`
-    : '';
-  const places=Array.isArray(item.places)&&item.places.length
-    ? `<div class="place-links"><strong>Steder hvor I kan prøve retten:</strong>${item.places.map(place=>`<a class="folder-link place-link" href="${escapeHtml(place.url)}" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(place.title)} ↗</a>`).join('')}</div>`
-    : '';
-  return `<details class="athen-subfolder"><summary><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span>${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></summary><div class="subfolder-body"><p>${escapeHtml(item.text||'')}</p>${externalLink}${places}</div></details>`;
+function renderQualityFolder(note){
+  return `<section class="athen-folder quality-folder"><button type="button" class="folder-toggle" aria-expanded="false" aria-controls="quality-panel"><span class="folder-icon" aria-hidden="true">✅</span><span class="folder-title">Kvalitetssikring</span><span class="folder-arrow" aria-hidden="true">›</span></button><div id="quality-panel" class="folder-body" hidden><p class="quality-note">${escapeHtml(note)}</p></div></section>`;
 }
 
-function qualityCheckMenus(root){
-  const folders=[...root.querySelectorAll(':scope > .athen-folder')];
-  let ok=true;
-  folders.forEach(folder=>{
-    const countElement=folder.querySelector(':scope > summary .folder-count');
-    if(!countElement)return;
-    const expected=Number(countElement.textContent.trim());
-    const actual=folder.querySelectorAll(':scope > .folder-body > .athen-subfolder').length;
-    if(expected!==actual){
-      ok=false;
-      console.error('Menu-QA fejl', {menu:folder.querySelector('.folder-title')?.textContent,expected,actual});
-    }
+function bindAccordion(root){
+  root.addEventListener('click',event=>{
+    const toggle=event.target.closest('.folder-toggle,.subfolder-toggle');
+    if(!toggle||!root.contains(toggle))return;
+    const panel=document.getElementById(toggle.getAttribute('aria-controls'));
+    if(!panel)return;
+    const willOpen=toggle.getAttribute('aria-expanded')!=='true';
+    toggle.setAttribute('aria-expanded',String(willOpen));
+    panel.hidden=!willOpen;
   });
-  if(ok)console.info(`Athen menu-QA OK: ${folders.length} hovedmenuer kontrolleret.`);
+}
 
-  // Mobil-webviews kan være aggressive med layout-cache. Tving åbne mapper til naturlig højde.
-  root.addEventListener('toggle',event=>{
-    const details=event.target;
-    if(!(details instanceof HTMLDetailsElement)||!details.open)return;
-    requestAnimationFrame(()=>{
-      details.style.maxHeight='none';
-      details.style.height='auto';
-      details.style.overflow='visible';
-    });
-  },true);
+function runMenuQA(root,menuModel){
+  const renderedMenus=[...root.querySelectorAll('.athen-folder[data-expected-count]')];
+  const checks=[];
+  menuModel.forEach((menu,index)=>{
+    const folder=renderedMenus[index];
+    const expected=menu.items.length;
+    const actual=folder?folder.querySelectorAll(':scope > .folder-body > .athen-subfolder').length:0;
+    checks.push({menu:menu.title,expected,actual,ok:expected===actual});
+  });
+  const allOk=checks.every(check=>check.ok)&&renderedMenus.length===menuModel.length;
+  console.table(checks);
+  if(allOk)console.info(`Athen menu-QA OK: ${menuModel.length} hovedmenuer, alle undermenuer renderet.`);
+  else console.error('Athen menu-QA FEJL',checks);
 }
 
 function formatDate(value){
