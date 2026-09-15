@@ -1,0 +1,96 @@
+{
+  "taxi": [
+    {
+      "icon": "🚕",
+      "title": "Brug kun licenseret taxa",
+      "text": "I Athen er de licenserede taxaer gule. Brug helst en officiel taxaholdeplads, Free Now, UberTaxi eller Taxiplon. Athens officielle turistguide anbefaler også kun licenserede taxaer.",
+      "url": "https://www.thisisathens.org/getting-around/taxis-cabs"
+    },
+    {
+      "icon": "💳",
+      "title": "Kortbetaling er et krav i licenserede taxaer",
+      "text": "Licenserede taxaer i Athen skal kunne modtage kredit- og betalingskort. Der skal være tydelig information i bilen om kortbetaling. Hvis en chauffør siger, at terminalen er i stykker, er det en god idé roligt at sige, at I ønsker at betale med kort, og få det afklaret før turen starter. Brug eventuelt Free Now eller UberTaxi, hvis I vil have betalingen registreret via en app.",
+      "url": "https://minfin.gov.gr/ypochreotiki-enimerotiki-simansi-se-ola-ta-taxi-gia-tin-apodochi-pliromon-me-karta/"
+    },
+    {
+      "icon": "🧾",
+      "title": "Bed om kvittering",
+      "text": "Taxachaufføren skal udstede kvittering for turen. Gem den især ved ture til eller fra lufthavnen eller hvis der opstår uenighed om prisen.",
+      "url": "https://www.aia.gr/en/traveller/transportation-airport/private-transportation"
+    },
+    {
+      "icon": "⏱️",
+      "title": "Taxameteret skal være tændt",
+      "text": "Ved almindelige byture skal taxameteret være slået til fra starten. Kontrollér det, når I sætter jer ind. Nogle lufthavnsruter til Athens centrum har fast pris i stedet for taxameterpris.",
+      "url": "https://www.thisisathens.org/getting-around/taxis-cabs"
+    },
+    {
+      "icon": "✈️",
+      "title": "Taxa fra Athen Lufthavn",
+      "text": "Den officielle taxaholdeplads ligger ved Exit 3 i ankomstområdet og er åben døgnet rundt. For rejser mellem lufthavnen og Athens centrum inden for den officielle centerzone er den faste pris aktuelt €40 fra kl. 05:00 til 24:00 og €55 fra kl. 00:00 til 05:00. Kontroller altid den konkrete destination, da den faste pris gælder den definerede centerzone.",
+      "url": "https://www.aia.gr/en/traveller/transportation-airport/private-transportation"
+    },
+    {
+      "icon": "📱",
+      "title": "Free Now og UberTaxi",
+      "text": "Free Now og Uber kan bruges i Athen. Uber fungerer her med lokale licenserede gule taxaer via UberTaxi. App-løsninger gør det lettere at se chauffør, tur og betaling på telefonen.",
+      "url": "https://www.thisisathens.org/getting-around/taxis-cabs"
+    },
+    {
+      "icon": "💶",
+      "title": "Drikkepenge",
+      "text": "Drikkepenge er frivillige. Den officielle Athens-guide nævner, at man typisk kan runde beløbet op eller lægge et par euro til en taxatur, hvis man er tilfreds.",
+      "url": "https://www.thisisathens.org/useful-tips/dos-donts"
+    }
+  ],
+  "publicTransportTips": [
+    {
+      "icon": "✅",
+      "title": "Validér altid billetten",
+      "text": "I bus, trolleybus og sporvogn skal billetten eller kortet valideres hver gang, I stiger på. I metro skal den valideres både ved indgang og udgang. En billet er ikke gyldig blot fordi den er købt.",
+      "url": "https://www.oasa.gr/en/tickets/useful-information/"
+    },
+    {
+      "icon": "💳",
+      "title": "Samme kort eller samme telefon hele rejsen",
+      "text": "Ved Tap2Ride skal I bruge præcis samme betalingskort eller samme enhed ved alle valideringer. Hvis man fx starter med fysisk kort og slutter med Apple Pay, kan systemet registrere det som forskellige rejser og opkræve ekstra.",
+      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+    },
+    {
+      "icon": "📲",
+      "title": "Kort, Apple Pay og Google Pay",
+      "text": "Kontaktløs betaling kan bruges direkte på validatorerne til fuldprisprodukter som 90-minutters billet, 24-timers billet, Airport Express og lufthavnsmetro. Hold betalingskortet adskilt fra ATH.ENA-kortet, så I undgår dobbelt registrering.",
+      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+    },
+    {
+      "icon": "🪪",
+      "title": "Senior- og andre rabatter kræver særlig billet",
+      "text": "Kontaktløs bankkortbetaling bruges til fuld pris og giver ikke automatisk seniorrabat. Ved reduceret billet skal I bruge den billettype og dokumentation, som OASA kræver. Medbring altid pas eller anden legitimation ved aldersbaseret rabat.",
+      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/"
+    },
+    {
+      "icon": "⏳",
+      "title": "Hold øje med de 90 minutter",
+      "text": "En almindelig billet gælder i 90 minutter fra første validering. Hvis tiden udløber, før turen er færdig, skal en ny billet aktiveres. På metro kan en udløbet billet betyde, at udgangsporten ikke åbner.",
+      "url": "https://www.oasa.gr/en/passenger-service/announcements/faqs/"
+    },
+    {
+      "icon": "⚠️",
+      "title": "Bøde uden gyldig billet",
+      "text": "OASA oplyser, at manglende gyldig billet kan give €100 i bøde ved fuld pris og €50 for rejsende, der er berettiget til reduceret billet. Kontrollér derfor altid, at valideringen lykkes.",
+      "url": "https://www.oasa.gr/en/passenger-service/information/payment-of-fines/"
+    },
+    {
+      "icon": "🟢",
+      "title": "Se efter grøn godkendelse",
+      "text": "Ved korrekt validering viser læseren grønne indikatorer og succesbesked. Ved fejl vises rødt. Hvis en validator er ude af drift i bus, trolleybus eller sporvogn, anbefaler OASA at henvende sig til chaufføren.",
+      "url": "https://www.oasa.gr/en/passenger-service/announcements/faqs/"
+    },
+    {
+      "icon": "🎒",
+      "title": "Pas ekstra godt på telefon og taske",
+      "text": "Athen er generelt sikker, men den officielle byguide anbefaler ekstra opmærksomhed på lommetyve i offentlig transport. Hold telefon, pung og taske tæt på kroppen, især ved travle stationer og i fyldte vogne.",
+      "url": "https://www.thisisathens.org/useful-tips/safety-tips"
+    }
+  ]
+}
