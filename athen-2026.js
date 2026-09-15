@@ -3,16 +3,17 @@ async function loadAthenTrip(){
   const infoRoot=document.getElementById('athenContent');
   try{
     const [tripResponse,foodResponse,stayResponse,practicalResponse]=await Promise.all([
-      fetch('data/athen-2026.json?v=20260914-2',{cache:'no-store'}),
-      fetch('data/athen-food.json?v=20260914-1',{cache:'no-store'}),
-      fetch('data/athen-stay.json?v=20260914-2',{cache:'no-store'}),
-      fetch('data/athen-practical.json?v=20260915-1',{cache:'no-store'})
+      fetch('data/athen-2026.json?v=20260915-2',{cache:'no-store'}),
+      fetch('data/athen-food.json?v=20260915-2',{cache:'no-store'}),
+      fetch('data/athen-stay.json?v=20260915-2',{cache:'no-store'}),
+      fetch('data/athen-practical.json?v=20260915-2',{cache:'no-store'})
     ]);
     if(!tripResponse.ok)throw new Error('Athen-data kunne ikke hentes');
     const data=await tripResponse.json();
     const foodData=foodResponse.ok?await foodResponse.json():{};
     const stayData=stayResponse.ok?await stayResponse.json():{};
     const practicalData=practicalResponse.ok?await practicalResponse.json():{};
+
     document.getElementById('tripTitle').textContent=data.trip.title;
     document.getElementById('tripSubtitle').textContent=data.trip.subtitle;
     document.getElementById('tripStatus').textContent=data.trip.status;
@@ -20,8 +21,19 @@ async function loadAthenTrip(){
 
     flightRoot.innerHTML=(data.flights||[]).map(flight=>`<article class="flight-card"><h2>✈️ ${escapeHtml(flight.direction)}</h2><div class="flight-date">${formatDate(flight.date)}</div><div class="flight-times"><div class="flight-time">${escapeHtml(flight.departureTime)}</div><div class="flight-duration">${escapeHtml(flight.duration)}</div><div class="flight-time flight-arrival">${escapeHtml(flight.arrivalTime)}</div></div><div class="flight-route"><div>${escapeHtml(flight.from)}</div><div>${escapeHtml(flight.to)}</div></div></article>`).join('');
 
+    // Kvalitetssikring: hovedoversigten skal altid afspejle den aktuelle boligfil.
+    const overviewSections=(data.sections||[]).map(section=>{
+      if(section.title==='Bolig'&&stayData.stay){
+        return {
+          ...section,
+          text:`Booket bolig: ${stayData.stay.name||'Helichrysum Studio'} · ${stayData.stay.area||'Koukaki, Athen'} · 21.–25. september 2026. Placeringen i appen er kun omtrentligt angivet; præcis adresse offentliggøres ikke.`
+        };
+      }
+      return section;
+    });
+
     const folders=[];
-    if(data.sections?.length)folders.push(renderFolder('Overblik','🧭',data.sections));
+    if(overviewSections.length)folders.push(renderFolder('Overblik','🧭',overviewSections));
     if(stayData.items?.length)folders.push(renderStayFolder(stayData));
     if(data.transport?.length)folders.push(renderFolder('Transport','🚇',data.transport));
     if(practicalData.taxi?.length)folders.push(renderFolder('Taxa & betaling','🚕',practicalData.taxi));
@@ -36,6 +48,7 @@ async function loadAthenTrip(){
       folders.push(`<details class="athen-folder quality-folder"><summary><span class="folder-icon" aria-hidden="true">✅</span><span class="folder-title">Kvalitetssikring</span><span class="folder-arrow" aria-hidden="true">›</span></summary><div class="folder-body"><p class="quality-note">${escapeHtml(data.trip.sourceNote)}</p></div></details>`);
     }
     infoRoot.innerHTML=folders.join('');
+    qualityCheckMenus(infoRoot);
   }catch(error){
     console.error(error);
     flightRoot.innerHTML='<article class="flight-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
@@ -72,6 +85,33 @@ function renderSubfolder(item){
     ? `<div class="place-links"><strong>Steder hvor I kan prøve retten:</strong>${item.places.map(place=>`<a class="folder-link place-link" href="${escapeHtml(place.url)}" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(place.title)} ↗</a>`).join('')}</div>`
     : '';
   return `<details class="athen-subfolder"><summary><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span>${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></summary><div class="subfolder-body"><p>${escapeHtml(item.text||'')}</p>${externalLink}${places}</div></details>`;
+}
+
+function qualityCheckMenus(root){
+  const folders=[...root.querySelectorAll(':scope > .athen-folder')];
+  let ok=true;
+  folders.forEach(folder=>{
+    const countElement=folder.querySelector(':scope > summary .folder-count');
+    if(!countElement)return;
+    const expected=Number(countElement.textContent.trim());
+    const actual=folder.querySelectorAll(':scope > .folder-body > .athen-subfolder').length;
+    if(expected!==actual){
+      ok=false;
+      console.error('Menu-QA fejl', {menu:folder.querySelector('.folder-title')?.textContent,expected,actual});
+    }
+  });
+  if(ok)console.info(`Athen menu-QA OK: ${folders.length} hovedmenuer kontrolleret.`);
+
+  // Mobil-webviews kan være aggressive med layout-cache. Tving åbne mapper til naturlig højde.
+  root.addEventListener('toggle',event=>{
+    const details=event.target;
+    if(!(details instanceof HTMLDetailsElement)||!details.open)return;
+    requestAnimationFrame(()=>{
+      details.style.maxHeight='none';
+      details.style.height='auto';
+      details.style.overflow='visible';
+    });
+  },true);
 }
 
 function formatDate(value){
