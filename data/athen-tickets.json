@@ -1,0 +1,59 @@
+{
+  "note": "Billetoplysninger er kontrolleret 18. september 2026. Officielle billetkilder vises først. Tredjepartsplatforme kan være praktiske til guidede ture, audioguides eller samlede pass, men kan koste mere end officiel billetpris.",
+  "items": [
+    {
+      "icon": "✅",
+      "title": "Start her · officielle billetter først",
+      "text": "Til statslige arkæologiske steder og museer er Hellenic Heritage den officielle platform fra det græske kulturministerium/ODAP. Sammenlign altid tredjepartspriser med den officielle pris før køb.",
+      "url": "https://www.hh.gr/en/"
+    },
+    {
+      "icon": "🏛️",
+      "title": "Akropolis · officiel billet",
+      "text": "Officiel pris: €30 fuld / €15 reduceret. I perioden 16.–30. september er åbningstiden 08:00–19:00. Vælg tidspunkt ved køb og kom i god tid.",
+      "url": "https://www.hh.gr/en/destinations/acropolis-of-athens/"
+    },
+    {
+      "icon": "🏺",
+      "title": "Akropolismuseet · separat billet",
+      "text": "Museet har sin egen billet og er ikke inkluderet i Akropolis-billetten. Officiel pris: €20 fuld / €10 reduceret. Den officielle e-billet er tidsbestemt.",
+      "url": "https://etickets.theacropolismuseum.gr/"
+    },
+    {
+      "icon": "🏺",
+      "title": "National Archaeological Museum · officiel",
+      "text": "Officiel entré er €20. Fra 4. maj til 15. november 2026: onsdag–mandag 08:00–20:00, tirsdag 13:00–20:00.",
+      "url": "https://www.namuseum.gr/en/episkepsi/"
+    },
+    {
+      "icon": "🏟️",
+      "title": "Panathenaic Stadium · officiel",
+      "text": "Billetter købes ved stadionets billetkontor med kontanter eller bankkort. Marts–oktober er stadion åbent 08:00–19:00.",
+      "url": "https://www.panathenaicstadium.gr/en/visit/"
+    },
+    {
+      "icon": "🎫",
+      "title": "Turbopass Athens City Pass",
+      "text": "Kommercielt bypas til 1–6 dage med 15+ attraktioner, bl.a. Akropolis, Akropolismuseet og National Archaeological Museum. Praktisk hvis I vil se mange steder; sammenlign totalprisen med officielle enkeltbilletter og eventuelle rabatter.",
+      "url": "https://www.turbopass.com/en/athens/athens-city-pass"
+    },
+    {
+      "icon": "🧭",
+      "title": "GetYourGuide · ture og audioguider",
+      "text": "Kommerciel platform med guidede ture, audioguider og billetter. Brug den især, hvis I ønsker en guidet oplevelse eller en samlet aktivitet. Kontrollér altid om entrébilletten faktisk er inkluderet i den valgte tur.",
+      "url": "https://www.getyourguide.com/athens-l91/"
+    },
+    {
+      "icon": "⚠️",
+      "title": "AthensTickets.org · tredjepart",
+      "text": "Siden oplyser selv, at den ikke er officiel eller tilknyttet myndighederne, og at billetpriser overstiger pålydende værdi. Kan bruges som alternativ med pakker/audioguide, men sammenlign først med officielle billetter.",
+      "url": "https://athenstickets.org/"
+    },
+    {
+      "icon": "🚌",
+      "title": "Dansk transportguide · Rejsekris",
+      "text": "Dansk oversigt over transport fra Athen Lufthavn til centrum. Brug den som praktisk supplement; aktuelle priser og driftsoplysninger bør fortsat kontrolleres hos OASA og Athens Lufthavn.",
+      "url": "https://rejsekris.dk/athen-lufthavn-til-centrum"
+    }
+  ]
+}
