@@ -71,7 +71,7 @@ function renderStaySummary(stay){
 
 function renderSubfolder(item,menuIndex,itemIndex){
   const id=`submenu-${menuIndex}-${itemIndex}`;
-  const externalLink=item.url?`<a class="folder-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Åbn officiel side ↗</a>`:'';
+  const externalLink=item.url?`<a class="folder-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.linkLabel||'Åbn officiel side ↗')}</a>`:'';
   const places=Array.isArray(item.places)&&item.places.length?`<div class="place-links"><strong>Steder hvor I kan prøve retten:</strong>${item.places.map(place=>`<a class="folder-link place-link" href="${escapeHtml(place.url)}" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(place.title)} ↗</a>`).join('')}</div>`:'';
   return `<article class="athen-subfolder"><button type="button" class="subfolder-toggle" aria-expanded="false" aria-controls="${id}"><span class="subfolder-icon" aria-hidden="true">${escapeHtml(item.icon||'ℹ️')}</span><span class="subfolder-title">${escapeHtml(item.title)}</span><span class="subfolder-arrow" aria-hidden="true">›</span></button><div id="${id}" class="subfolder-body" hidden><p>${escapeHtml(item.text||'')}</p>${externalLink}${places}</div></article>`;
 }
