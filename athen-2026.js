@@ -2,17 +2,19 @@ async function loadAthenTrip(){
   const flightRoot=document.getElementById('flightContent');
   const infoRoot=document.getElementById('athenContent');
   try{
-    const [tripResponse,foodResponse,stayResponse,practicalResponse]=await Promise.all([
-      fetch('data/athen-2026.json?v=20260915-3',{cache:'no-store'}),
-      fetch('data/athen-food.json?v=20260915-3',{cache:'no-store'}),
-      fetch('data/athen-stay.json?v=20260915-3',{cache:'no-store'}),
-      fetch('data/athen-practical.json?v=20260915-3',{cache:'no-store'})
+    const [tripResponse,foodResponse,stayResponse,practicalResponse,ticketsResponse]=await Promise.all([
+      fetch('data/athen-2026.json?v=20260918-1',{cache:'no-store'}),
+      fetch('data/athen-food.json?v=20260918-1',{cache:'no-store'}),
+      fetch('data/athen-stay.json?v=20260918-1',{cache:'no-store'}),
+      fetch('data/athen-practical.json?v=20260918-1',{cache:'no-store'}),
+      fetch('data/athen-tickets.json?v=20260918-1',{cache:'no-store'})
     ]);
     if(!tripResponse.ok)throw new Error('Athen-data kunne ikke hentes');
     const data=await tripResponse.json();
     const foodData=foodResponse.ok?await foodResponse.json():{};
     const stayData=stayResponse.ok?await stayResponse.json():{};
     const practicalData=practicalResponse.ok?await practicalResponse.json():{};
+    const ticketsData=ticketsResponse.ok?await ticketsResponse.json():{};
 
     document.getElementById('tripTitle').textContent=data.trip.title;
     document.getElementById('tripSubtitle').textContent=data.trip.subtitle;
@@ -34,6 +36,7 @@ async function loadAthenTrip(){
     if(data.transport?.length)menuModel.push({title:'Transport',icon:'🚇',items:data.transport});
     if(practicalData.taxi?.length)menuModel.push({title:'Taxa & betaling',icon:'🚕',items:practicalData.taxi});
     if(practicalData.publicTransportTips?.length)menuModel.push({title:'Gode råd i offentlig transport',icon:'🧠',items:practicalData.publicTransportTips});
+    if(ticketsData.items?.length)menuModel.push({title:'Billetter & ture',icon:'🎟️',items:ticketsData.items});
     if(data.museums?.length)menuModel.push({title:'Museer & seværdigheder',icon:'🏛️',items:data.museums});
     if(data.senior?.length)menuModel.push({title:'Senior & rabatter',icon:'🪪',items:data.senior});
     const restaurants=foodData.restaurants?.length?foodData.restaurants:data.restaurants;
