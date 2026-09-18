@@ -79,6 +79,9 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `athen-2026.js`
 - `data/athen-2026.json` – fly, transport, museer, seniorinfo og dagsforslag
 - `data/athen-food.json` – græske specialiteter og flere konkrete spisesteder pr. ret
+- `data/athen-stay.json` – booket bolig i Koukaki, praktiske boligoplysninger og omtrentlige afstande
+- `data/athen-practical.json` – taxa, betaling og gode råd til offentlig transport
+- `data/athen-tickets.json` – officielle billetter først samt tydeligt markerede tredjepartsalternativer, bypas og dansk transportguide
 - `assets/athen-banner.svg`
 - Athen-siden bruger sammenklappelige hovedmapper og undermapper, så indholdet ikke står som én lang væg af kort.
 
@@ -120,7 +123,7 @@ Bevares separat:
 - Tysk Umweltplakette bestilt hos FDM 26. august 2026, 245 kr. inkl. fragt.
 - Jesteburg: Hotel Heideblick, 3.–5. november 2026.
 - Antwerpen: Prize by Radisson, Antwerp City, 5.–8. november 2026.
-- Tomorrowland Immersive Experience: 6. november 2026 kl. 19:30, Waagnatie Expo & Events, 2 billetter. Personlige billet-/ordrelinks må ikke gemmes offentligt.
+- **A Tribute to Whitney Houston by Glennis Grace**: fredag 6. november 2026 kl. 20:00, Lotto Arena Antwerpen – Merksem (Antwerpen), 2 eTickets. Sæde-/ordreoplysninger og private billetlinks må ikke gemmes offentligt.
 - Hjemrejse: Bremen som hovedmulighed 8.–9. november; Kiel som alternativ samme dato.
 - Bookingreferencer, e-mail og betalingskortoplysninger må ikke offentliggøres.
 
@@ -197,18 +200,22 @@ Eksterne links skal åbne med `target="_blank"` og `rel="noopener noreferrer"`.
 
 ## 4. Athen – 21.–25. september 2026
 - Rejsende: **Jolanta og Camilla**.
-- Status: **Fly booket**.
+- Status: **Fly og bolig booket**.
 - Udrejse mandag 21. september 2026: København/Kastrup (CPH) **06:55** → Athen (ATH) **11:05**, flyvetid **3 t 10 min**.
 - Hjemrejse fredag 25. september 2026: Athen (ATH) **10:50** → København/Kastrup (CPH) **13:05**, flyvetid **3 t 15 min**.
 - Ordrenummer/bookingreference er privat og må ikke gemmes i den offentlige app.
 - Transportdata, museumsdata, seniorinfo og dagsplan ligger i `data/athen-2026.json`.
 - Mad og restauranter ligger separat i `data/athen-food.json`.
+- Boligen er **Helichrysum Studio | Pela Collection | Koukaki**, booket 21.–25. september 2026. Den offentlige app viser kun omtrentligt område, ikke præcis adresse.
+- Taxa, betaling og transport-råd ligger i `data/athen-practical.json`.
+- Billetter og ture ligger i `data/athen-tickets.json`; officielle billetkilder skal altid stå før tredjepartsplatforme. Turbopass, GetYourGuide og AthensTickets.org skal tydeligt markeres som kommercielle/tredjepart, mens Hellenic Heritage og de enkelte museers egne sider vises som officielle kilder.
 - Spisesteder er organiseret efter seks specialiteter: **moussaka, souvlaki/gyros, meze, spanakopita/tyropita, loukoumades samt baklava/græske søde sager**.
 - Hver specialitet skal så vidt muligt have flere valgmuligheder med direkte Google Maps-link, ikke kun ét sted.
-- UI-strukturen er sammenklappelige mapper: **Overblik**, **Transport**, **Museer & seværdigheder**, **Senior & rabatter**, **Spisesteder**, **Forslag til dagene** og **Kvalitetssikring**.
+- UI-strukturen er sammenklappelige mapper: **Overblik**, **Bolig · Koukaki**, **Transport**, **Taxa & betaling**, **Gode råd i offentlig transport**, **Billetter & ture**, **Museer & seværdigheder**, **Senior & rabatter**, **Spisesteder**, **Forslag til dagene** og **Kvalitetssikring**.
 - Hver hovedmappe kan åbnes/lukkes, og hvert punkt under mappen er en separat undermappe, som også kan åbnes/lukkes.
 - Athen-siden har et bannerbillede med Akropolis-stemning via `assets/athen-banner.svg`.
-- Hotel og præcis transfer til hotellet tilføjes, når hoteloplysningerne foreligger.
+- Vejrknap til den officielle græske meteorologiske tjeneste vises øverst i Athen-appen.
+- Boligens præcise adresse offentliggøres ikke; transfer og afstande må angives som omtrentlige, indtil en præcis privat adresse bruges uden at blive publiceret.
 
 ---
 
