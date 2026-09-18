@@ -1,59 +1,110 @@
 {
-  "note": "Billetoplysninger er kontrolleret 18. september 2026. Officielle billetkilder vises først. Tredjepartsplatforme kan være praktiske til guidede ture, audioguides eller samlede pass, men kan koste mere end officiel billetpris.",
+  "note": "Billetkilder kontrolleret 18. september 2026. Officielle græske billet- og transportsider vises først. Tredjepartsplatforme er kun supplement og er tydeligt markeret.",
   "items": [
     {
       "icon": "✅",
-      "title": "Start her · officielle billetter først",
-      "text": "Til statslige arkæologiske steder og museer er Hellenic Heritage den officielle platform fra det græske kulturministerium/ODAP. Sammenlign altid tredjepartspriser med den officielle pris før køb.",
-      "url": "https://www.hh.gr/en/"
+      "title": "Officielle kultur-billetter · Hellenic Heritage",
+      "text": "Hellenic Heritage er den officielle platform fra det græske kulturministerium og ODAP til billetter for statslige museer, monumenter og arkæologiske steder. Start her ved køb til fx Akropolis.",
+      "url": "https://www.hh.gr/en/",
+      "linkLabel": "Åbn officiel billetside ↗"
     },
     {
       "icon": "🏛️",
       "title": "Akropolis · officiel billet",
-      "text": "Officiel pris: €30 fuld / €15 reduceret. I perioden 16.–30. september er åbningstiden 08:00–19:00. Vælg tidspunkt ved køb og kom i god tid.",
-      "url": "https://www.hh.gr/en/destinations/acropolis-of-athens/"
+      "text": "Officiel billet via Hellenic Heritage. Aktuel pris: €30 fuld / €15 reduceret. 16.–30. september: 08:00–19:00. Vælg tidsrum ved køb.",
+      "url": "https://www.hh.gr/en/destinations/acropolis-of-athens/",
+      "linkLabel": "Køb officiel Akropolis-billet ↗"
     },
     {
       "icon": "🏺",
-      "title": "Akropolismuseet · separat billet",
-      "text": "Museet har sin egen billet og er ikke inkluderet i Akropolis-billetten. Officiel pris: €20 fuld / €10 reduceret. Den officielle e-billet er tidsbestemt.",
-      "url": "https://etickets.theacropolismuseum.gr/"
+      "title": "Akropolismuseet · officiel e-billet",
+      "text": "Akropolismuseet har sin egen officielle billet og er ikke inkluderet i Akropolis-billetten. Aktuel pris: €20 fuld / €10 reduceret.",
+      "url": "https://etickets.theacropolismuseum.gr/",
+      "linkLabel": "Køb officiel museumsbillet ↗"
+    },
+    {
+      "icon": "🚇",
+      "title": "Metro, bus & sporvogn · officiel OASA",
+      "text": "OASA er den officielle trafikmyndighed for Athens metro, busser, trolleybusser og sporvogne. Her finder I billetprodukter, priser og regler for ATH.ENA Ticket og ATH.ENA Card.",
+      "url": "https://www.oasa.gr/en/tickets/products/ath-ena-ticket/",
+      "linkLabel": "Se officielle OASA-billetter ↗"
+    },
+    {
+      "icon": "💳",
+      "title": "Tap2Ride · betal direkte med kort/telefon",
+      "text": "På OASA-nettet kan fuldprisrejsende bruge kontaktløst bankkort, Apple Pay eller Google Pay direkte på validatoren. Det gælder bl.a. 90-minutters billet (€1,20), 24-timers billet (€4,10), Airport Express (€5,50) og lufthavnsmetro (€9).",
+      "url": "https://www.oasa.gr/en/tickets/products/contactless-payments-with-bank-cards/",
+      "linkLabel": "Se officiel Tap2Ride-guide ↗"
+    },
+    {
+      "icon": "🎫",
+      "title": "ATH.ENA Ticket · hvor køber man den?",
+      "text": "ATH.ENA Ticket kan købes og genoplades ved billetkontorer og automater på metro-/togstationer samt udvalgte bus- og sporvognsstoppesteder. Betaling kan ske med kontanter eller kort.",
+      "url": "https://www.oasa.gr/en/passenger-service/announcements/faqs/",
+      "linkLabel": "Se officiel købsguide ↗"
+    },
+    {
+      "icon": "📱",
+      "title": "ATH.ENA Card App · officiel OASA-app",
+      "text": "OASA har en officiel ATH.ENA Card App til genopladning af ATH.ENA Card via NFC på kompatible Android-enheder. Til korte turistture er Tap2Ride ofte enklere, fordi I kan bruge bankkort eller telefon direkte.",
+      "url": "https://www.oasa.gr/en/passenger-service/tools/ath-ena-card-app/",
+      "linkLabel": "Åbn officiel app-guide ↗"
+    },
+    {
+      "icon": "🚆",
+      "title": "Tog · officiel Hellenic Train",
+      "text": "Hellenic Train er den officielle operatør for tog og forstadstog. Billetter kan købes på deres officielle hjemmeside eller i deres officielle mobilapp. OASA-billetter kan bruges på visse Hellenic Train-strækninger inden for Attika-zonen.",
+      "url": "https://www.hellenictrain.gr/en",
+      "linkLabel": "Køb officiel togbillet ↗"
+    },
+    {
+      "icon": "🛤️",
+      "title": "Forstadstog i Athen · officiel oversigt",
+      "text": "Den officielle oversigt viser bl.a. forbindelser mellem lufthavnen, Athen centrum og Piræus samt regionale tog. Brug denne side til ruter og aktuelle køreplaner.",
+      "url": "https://www.hellenictrain.gr/en/athens-suburban-railway/",
+      "linkLabel": "Se officielle togruter ↗"
     },
     {
       "icon": "🏺",
       "title": "National Archaeological Museum · officiel",
       "text": "Officiel entré er €20. Fra 4. maj til 15. november 2026: onsdag–mandag 08:00–20:00, tirsdag 13:00–20:00.",
-      "url": "https://www.namuseum.gr/en/episkepsi/"
+      "url": "https://www.namuseum.gr/en/episkepsi/",
+      "linkLabel": "Åbn officiel museumsside ↗"
     },
     {
       "icon": "🏟️",
       "title": "Panathenaic Stadium · officiel",
       "text": "Billetter købes ved stadionets billetkontor med kontanter eller bankkort. Marts–oktober er stadion åbent 08:00–19:00.",
-      "url": "https://www.panathenaicstadium.gr/en/visit/"
+      "url": "https://www.panathenaicstadium.gr/en/visit/",
+      "linkLabel": "Åbn officiel stadionside ↗"
     },
     {
       "icon": "🎫",
-      "title": "Turbopass Athens City Pass",
-      "text": "Kommercielt bypas til 1–6 dage med 15+ attraktioner, bl.a. Akropolis, Akropolismuseet og National Archaeological Museum. Praktisk hvis I vil se mange steder; sammenlign totalprisen med officielle enkeltbilletter og eventuelle rabatter.",
-      "url": "https://www.turbopass.com/en/athens/athens-city-pass"
+      "title": "Turbopass Athens City Pass · tredjepart",
+      "text": "Kommercielt bypas. Kan være praktisk ved mange attraktioner, men sammenlign totalprisen med officielle enkeltbilletter og eventuelle rabatter.",
+      "url": "https://www.turbopass.com/en/athens/athens-city-pass",
+      "linkLabel": "Åbn Turbopass ↗"
     },
     {
       "icon": "🧭",
-      "title": "GetYourGuide · ture og audioguider",
-      "text": "Kommerciel platform med guidede ture, audioguider og billetter. Brug den især, hvis I ønsker en guidet oplevelse eller en samlet aktivitet. Kontrollér altid om entrébilletten faktisk er inkluderet i den valgte tur.",
-      "url": "https://www.getyourguide.com/athens-l91/"
+      "title": "GetYourGuide · tredjepart",
+      "text": "Kommerciel platform til guidede ture, audioguider og billetpakker. Kontrollér altid om entré faktisk er inkluderet, og sammenlign med den officielle pris.",
+      "url": "https://www.getyourguide.com/athens-l91/",
+      "linkLabel": "Åbn GetYourGuide ↗"
     },
     {
       "icon": "⚠️",
       "title": "AthensTickets.org · tredjepart",
-      "text": "Siden oplyser selv, at den ikke er officiel eller tilknyttet myndighederne, og at billetpriser overstiger pålydende værdi. Kan bruges som alternativ med pakker/audioguide, men sammenlign først med officielle billetter.",
-      "url": "https://athenstickets.org/"
+      "text": "Siden oplyser selv, at den ikke er officiel eller tilknyttet myndighederne, og at priser kan ligge over pålydende værdi. Brug kun som alternativ efter prissammenligning.",
+      "url": "https://athenstickets.org/",
+      "linkLabel": "Åbn AthensTickets.org ↗"
     },
     {
-      "icon": "🚌",
-      "title": "Dansk transportguide · Rejsekris",
-      "text": "Dansk oversigt over transport fra Athen Lufthavn til centrum. Brug den som praktisk supplement; aktuelle priser og driftsoplysninger bør fortsat kontrolleres hos OASA og Athens Lufthavn.",
-      "url": "https://rejsekris.dk/athen-lufthavn-til-centrum"
+      "icon": "🇩🇰",
+      "title": "Rejsekris · dansk transportguide",
+      "text": "Dansk forklaring af transport fra Athen Lufthavn til centrum. God som læsevenlig hjælp, men OASA og Hellenic Train bruges som officielle kilder til priser, billetter og drift.",
+      "url": "https://rejsekris.dk/athen-lufthavn-til-centrum",
+      "linkLabel": "Åbn dansk guide ↗"
     }
   ]
 }
