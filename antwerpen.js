@@ -5,11 +5,19 @@ async function loadAntwerpen(){
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
+    renderJourney(data.journey||[]);
     root.innerHTML=data.sections.map(section=>renderSection(section,data.trip,data.outboundHotel,data.hotel,data.returnHotel,data.alternativeReturnHotel,data.links||[])).join('');
   }catch(error){
     console.error(error);
     root.innerHTML='<article class="section-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
   }
+}
+
+function renderJourney(journey){
+  const root=document.getElementById('travelTimeline');
+  if(!root)return;
+  if(!journey.length){root.innerHTML='';return;}
+  root.innerHTML=`<article class="journey-card"><div class="journey-heading"><span aria-hidden="true">🚗</span><div><small>REJSEPLAN</small><h2>Fra → til</h2></div></div><div class="journey-list">${journey.map((leg,index)=>`<div class="journey-leg"><div class="journey-date">${formatDate(leg.date)}</div><div class="journey-route"><strong>${escapeHtml(leg.from)}</strong><span aria-hidden="true">→</span><strong>${escapeHtml(leg.to)}</strong></div><p>${escapeHtml(leg.note||'')}</p>${index<journey.length-1?'<div class="journey-line" aria-hidden="true"></div>':''}</div>`).join('')}</div></article>`;
 }
 
 function renderHero(trip){
