@@ -26,7 +26,12 @@
     "checkOutTime": "11:00",
     "nights": 2,
     "room": "Economy-dobbeltværelse",
-    "features": ["Gratis Wi‑Fi", "Gratis selvstændig parkering", "Motionscenter", "Døgnåben reception"],
+    "features": [
+      "Gratis Wi‑Fi",
+      "Gratis selvstændig parkering",
+      "Motionscenter",
+      "Døgnåben reception"
+    ],
     "bookingInfoUrl": "https://www.booking.com/hotel/de/parkhotel-jesteburg.html",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany",
     "note": "Bekræftet reservation fra Hotels.com. Bookingnummer og e-mail gemmes ikke i den offentlige app."
@@ -45,15 +50,14 @@
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien"
   },
   "event": {
-    "title": "Tomorrowland Immersive Experience",
+    "title": "A Tribute to Whitney Houston by Glennis Grace",
     "date": "2026-11-06",
-    "time": "19:30",
-    "venue": "Waagnatie Expo & Events",
-    "address": "Rijnkaai 150, 2000 Antwerpen, Belgien",
+    "time": "20:00",
+    "venue": "Lotto Arena Antwerpen",
+    "address": "Schijnpoortweg 119, 2170 Antwerpen, Belgien",
     "tickets": 2,
-    "totalPrice": "€70,00",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Waagnatie%20Expo%20%26%20Events%2C%20Rijnkaai%20150%2C%202000%20Antwerpen%2C%20Belgium",
-    "note": "Billetter er købt. Personlige MyBeat- og Ticketmaster-ordrelinks gemmes ikke i den offentlige app."
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lotto+Arena+Antwerpen",
+    "note": "2 eTickets. Sæde-, ordre- og private billetoplysninger gemmes ikke i den offentlige app."
   },
   "returnHotel": {
     "name": "Best Western Hotel Zur Post",
@@ -65,7 +69,13 @@
     "checkOutTime": "12:00",
     "nights": 1,
     "room": "Classic-værelse · 1 dobbeltseng · køleskab (kan omdannes til 2 enkeltsenge)",
-    "features": ["Gratis Wi‑Fi", "Pool", "Spa", "Kæledyrsvenligt", "Mulighed for parkering"],
+    "features": [
+      "Gratis Wi‑Fi",
+      "Pool",
+      "Spa",
+      "Kæledyrsvenligt",
+      "Mulighed for parkering"
+    ],
     "website": "https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany",
     "note": "Bekræftet reservation fra Hotels.com. Bookingnummer og e-mail gemmes ikke i den offentlige app."
@@ -86,32 +96,183 @@
     "note": "Booket som alternativ på samme dato som Bremen-hotellet. Screenshot fra Hotels.com viser check-in 8. november kl. 15:00 og check-out 9. november kl. 11:00. Bookingnummer gemmes ikke i den offentlige app."
   },
   "links": [
-    {"title":"Antwerpen LEZ","subtitle":"Godkendt · officiel LEZ-information","url":"https://www.slimnaarantwerpen.be/en/lez","icon":"✅"},
-    {"title":"Tysk miljømærke hos FDM","subtitle":"Grøn Umweltplakette – bestilt 26. august 2026","url":"https://koeb.fdm.dk/vignetter-og-miljoemaerkater-til-bil/miljoemaerkat-tyskland/","icon":"🟢"},
-    {"title":"Tomorrowland Immersive Experience · sted","subtitle":"Waagnatie Expo & Events · Rijnkaai 150","url":"https://www.google.com/maps/search/?api=1&query=Waagnatie%20Expo%20%26%20Events%2C%20Rijnkaai%20150%2C%202000%20Antwerpen%2C%20Belgium","icon":"🎟️"},
-    {"title":"Hotel Heideblick i Google Maps","subtitle":"Itzenbütteler Straße 35, Jesteburg","url":"https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany","icon":"📍"},
-    {"title":"Hotel Heideblick - hotelinfo","subtitle":"Booking.com-side med adresse og faciliteter","url":"https://www.booking.com/hotel/de/parkhotel-jesteburg.html","icon":"🏨"},
-    {"title":"Prize by Radisson, Antwerp City","subtitle":"Hotellets officielle hjemmeside","url":"https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city","icon":"🏨"},
-    {"title":"Hotel i Google Maps","subtitle":"Tunnelplaats 5, Antwerpen","url":"https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien","icon":"📍"},
-    {"title":"Din kørerute til Antwerpen","subtitle":"Gemte Google Maps-rute","url":"https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7","icon":"🗺️"},
-    {"title":"Hjemrejse via Bremen","subtitle":"Antwerpen → Bremen → Helsingør","url":"https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving","icon":"🚗"},
-    {"title":"Best Western Hotel Zur Post","subtitle":"Hotellets officielle hjemmeside i Bremen","url":"https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel","icon":"🏨"},
-    {"title":"Bremen-hotel i Google Maps","subtitle":"Bahnhofsplatz 11, Bremen","url":"https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany","icon":"📍"},
-    {"title":"Alternativ hjemrejse via Kiel","subtitle":"Antwerpen → Kiel → Helsingør","url":"https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany&travelmode=driving","icon":"🚗"},
-    {"title":"Hotel Consul","subtitle":"Hotellets hjemmeside i Kiel","url":"https://consul-kiel.de/","icon":"🏨"},
-    {"title":"Hotel Consul i Google Maps","subtitle":"Walkerdamm 11, Kiel","url":"https://www.google.com/maps/search/?api=1&query=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany","icon":"📍"}
+    {
+      "title": "Antwerpen LEZ",
+      "subtitle": "Godkendt · officiel LEZ-information",
+      "url": "https://www.slimnaarantwerpen.be/en/lez",
+      "icon": "✅"
+    },
+    {
+      "title": "Tysk miljømærke hos FDM",
+      "subtitle": "Grøn Umweltplakette – bestilt 26. august 2026",
+      "url": "https://koeb.fdm.dk/vignetter-og-miljoemaerkater-til-bil/miljoemaerkat-tyskland/",
+      "icon": "🟢"
+    },
+    {
+      "title": "A Tribute to Whitney Houston by Glennis Grace",
+      "subtitle": "6. november 2026 kl. 20:00 · Lotto Arena Antwerpen",
+      "url": "https://www.google.com/maps/search/?api=1&query=Lotto+Arena+Antwerpen",
+      "icon": "🎟️"
+    },
+    {
+      "title": "Hotel Heideblick i Google Maps",
+      "subtitle": "Itzenbütteler Straße 35, Jesteburg",
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Heideblick%20an%20der%20L%C3%BCneburger%20Heide%2C%20Itzenb%C3%BCtteler%20Stra%C3%9Fe%2035%2C%2021266%20Jesteburg%2C%20Germany",
+      "icon": "📍"
+    },
+    {
+      "title": "Hotel Heideblick - hotelinfo",
+      "subtitle": "Booking.com-side med adresse og faciliteter",
+      "url": "https://www.booking.com/hotel/de/parkhotel-jesteburg.html",
+      "icon": "🏨"
+    },
+    {
+      "title": "Prize by Radisson, Antwerp City",
+      "subtitle": "Hotellets officielle hjemmeside",
+      "url": "https://www.radissonhotels.com/en-us/hotels/prize-by-radisson-antwerp-city",
+      "icon": "🏨"
+    },
+    {
+      "title": "Hotel i Google Maps",
+      "subtitle": "Tunnelplaats 5, Antwerpen",
+      "url": "https://www.google.com/maps/search/?api=1&query=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgien",
+      "icon": "📍"
+    },
+    {
+      "title": "Din kørerute til Antwerpen",
+      "subtitle": "Gemte Google Maps-rute",
+      "url": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
+      "icon": "🗺️"
+    },
+    {
+      "title": "Hjemrejse via Bremen",
+      "subtitle": "Antwerpen → Bremen → Helsingør",
+      "url": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving",
+      "icon": "🚗"
+    },
+    {
+      "title": "Best Western Hotel Zur Post",
+      "subtitle": "Hotellets officielle hjemmeside i Bremen",
+      "url": "https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel",
+      "icon": "🏨"
+    },
+    {
+      "title": "Bremen-hotel i Google Maps",
+      "subtitle": "Bahnhofsplatz 11, Bremen",
+      "url": "https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany",
+      "icon": "📍"
+    },
+    {
+      "title": "Alternativ hjemrejse via Kiel",
+      "subtitle": "Antwerpen → Kiel → Helsingør",
+      "url": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany&travelmode=driving",
+      "icon": "🚗"
+    },
+    {
+      "title": "Hotel Consul",
+      "subtitle": "Hotellets hjemmeside i Kiel",
+      "url": "https://consul-kiel.de/",
+      "icon": "🏨"
+    },
+    {
+      "title": "Hotel Consul i Google Maps",
+      "subtitle": "Walkerdamm 11, Kiel",
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany",
+      "icon": "📍"
+    }
   ],
   "sections": [
-    {"id":"route","icon":"🗺️","title":"Rute","text":"Udrejsen har hotelophold i Jesteburg 3.–5. november. Antwerpen nås 5. november. På hjemrejsen 8.–9. november er Bremen hovedmuligheden, mens Kiel er gemt som alternativ."},
-    {"id":"permits","icon":"🛂","title":"Tilladelser & miljøzoner","text":"Antwerpen LEZ: GODKENDT. Registreringen gælder fra 26. august 2026 og giver adgang til Antwerpen og Gent, men ikke Bruxelles. Tysk grøn Umweltplakette er bestilt hos FDM for 245 kr. inkl. fragt."},
-    {"id":"event","icon":"🎟️","title":"Tomorrowland Immersive Experience","text":"Fredag 6. november 2026 kl. 19:30 · Waagnatie Expo & Events · 2 billetter."},
-    {"id":"charging","icon":"⚡","title":"Opladning","text":"Ladestop og priser tilføjes efter verificering."},
-    {"id":"outboundHotel","icon":"🛏️","title":"Hotel på udrejsen","text":"Bekræftet hotelophold i Jesteburg 3.–5. november 2026."},
-    {"id":"hotel","icon":"🏨","title":"Hotel i Antwerpen","text":"Bekræftet hotel i Antwerpen 5.–8. november 2026."},
-    {"id":"returnHotel","icon":"🛏️","title":"Hjemrejse · Bremen","text":"Bekræftet overnatning i Bremen 8.–9. november 2026."},
-    {"id":"alternativeReturnHotel","icon":"🔁","title":"Alternativ hjemrejse · Kiel","text":"Hotel Consul i Kiel er booket som alternativ på samme dato, 8.–9. november 2026."},
-    {"id":"days","icon":"📅","title":"Dagsplan","text":"Dagsplanen bygges løbende."},
-    {"id":"parking","icon":"🅿️","title":"Parkering","text":"Parkering ved hoteller og centrum skal verificeres."},
-    {"id":"links","icon":"🔗","title":"Nyttige links","text":"Kort, hoteller, tilladelser, opladning og andre relevante links samles her."}
+    {
+      "id": "route",
+      "icon": "🗺️",
+      "title": "Rute",
+      "text": "Udrejsen har hotelophold i Jesteburg 3.–5. november. Antwerpen nås 5. november. På hjemrejsen 8.–9. november er Bremen hovedmuligheden, mens Kiel er gemt som alternativ."
+    },
+    {
+      "id": "permits",
+      "icon": "🛂",
+      "title": "Tilladelser & miljøzoner",
+      "text": "Antwerpen LEZ: GODKENDT. Registreringen gælder fra 26. august 2026 og giver adgang til Antwerpen og Gent, men ikke Bruxelles. Tysk grøn Umweltplakette er bestilt hos FDM for 245 kr. inkl. fragt."
+    },
+    {
+      "id": "event",
+      "icon": "🎟️",
+      "title": "A Tribute to Whitney Houston by Glennis Grace",
+      "text": "Fredag 6. november 2026 kl. 20:00 · Lotto Arena Antwerpen · 2 eTickets."
+    },
+    {
+      "id": "charging",
+      "icon": "⚡",
+      "title": "Opladning",
+      "text": "Ladestop og priser tilføjes efter verificering."
+    },
+    {
+      "id": "outboundHotel",
+      "icon": "🛏️",
+      "title": "Hotel på udrejsen",
+      "text": "Bekræftet hotelophold i Jesteburg 3.–5. november 2026."
+    },
+    {
+      "id": "hotel",
+      "icon": "🏨",
+      "title": "Hotel i Antwerpen",
+      "text": "Bekræftet hotel i Antwerpen 5.–8. november 2026."
+    },
+    {
+      "id": "returnHotel",
+      "icon": "🛏️",
+      "title": "Hjemrejse · Bremen",
+      "text": "Bekræftet overnatning i Bremen 8.–9. november 2026."
+    },
+    {
+      "id": "alternativeReturnHotel",
+      "icon": "🔁",
+      "title": "Alternativ hjemrejse · Kiel",
+      "text": "Hotel Consul i Kiel er booket som alternativ på samme dato, 8.–9. november 2026."
+    },
+    {
+      "id": "days",
+      "icon": "📅",
+      "title": "Dagsplan",
+      "text": "Dagsplanen bygges løbende."
+    },
+    {
+      "id": "parking",
+      "icon": "🅿️",
+      "title": "Parkering",
+      "text": "Parkering ved hoteller og centrum skal verificeres."
+    },
+    {
+      "id": "links",
+      "icon": "🔗",
+      "title": "Nyttige links",
+      "text": "Kort, hoteller, tilladelser, opladning og andre relevante links samles her."
+    }
+  ],
+  "journey": [
+    {
+      "date": "2026-11-03",
+      "from": "Helsingør",
+      "to": "Jesteburg",
+      "note": "Udrejse · Hotel Heideblick. Afgangstid er endnu ikke fastlagt."
+    },
+    {
+      "date": "2026-11-05",
+      "from": "Jesteburg",
+      "to": "Antwerpen",
+      "note": "Videre til Prize by Radisson, Antwerp City. Afgangstid er endnu ikke fastlagt."
+    },
+    {
+      "date": "2026-11-08",
+      "from": "Antwerpen",
+      "to": "Bremen",
+      "note": "Hjemrejse · Bremen er hovedplanen med 1 overnatning. Afgangstid er endnu ikke fastlagt."
+    },
+    {
+      "date": "2026-11-09",
+      "from": "Bremen",
+      "to": "Helsingør",
+      "note": "Sidste etape hjem til Danmark. Afgangstid er endnu ikke fastlagt."
+    }
   ]
 }
