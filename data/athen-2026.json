@@ -1,32 +1,5 @@
 {
-  "trip": {
-    "title": "Athen",
-    "subtitle": "21.–25. september 2026 · Grækenland",
-    "travelers": "Jolanta & Camilla",
-    "status": "Fly booket",
-    "privacyNote": "Booking- og ordrenumre vises ikke i den offentlige app.",
-    "sourceNote": "Transport, museer, seværdigheder og madsteder er kontrolleret mod officielle eller aktuelle kilder 14. september 2026. Priser, åbningstider og drift kan ændre sig."
-  },
-  "flights": [
-    {
-      "direction": "Udrejse",
-      "date": "2026-09-21",
-      "departureTime": "06:55",
-      "arrivalTime": "11:05",
-      "duration": "3 t 10 min",
-      "from": "Københavns Lufthavn Kastrup (CPH)",
-      "to": "Athen (ATH)"
-    },
-    {
-      "direction": "Hjemrejse",
-      "date": "2026-09-25",
-      "departureTime": "10:50",
-      "arrivalTime": "13:05",
-      "duration": "3 t 15 min",
-      "from": "Athen (ATH)",
-      "to": "Københavns Lufthavn Kastrup (CPH)"
-    }
-  ],
+  "note": "Generel Athen-viden bevaret fra den afsluttede rejse. Ingen fly, rejsedatoer, rejsende, bookingstatus eller konkrete opholdsoplysninger.",
   "transport": [
     {
       "icon": "🚇",
@@ -145,75 +118,5 @@
       "title": "Seniorrabatter",
       "text": "Seniorgrænsen afhænger af stedet. Akropolismuseet giver reduceret billet til EU-borgere over 65 år mod ID eller pas. Museum of Cycladic Art oplyser 65+ som reduceret kategori. Medbring derfor altid ID og kontrollér den konkrete attraktion ved køb."
     }
-  ],
-  "restaurants": [
-    {
-      "icon": "🍆",
-      "title": "Moussaka · prøv hos Greek Stories",
-      "text": "Klassisk ovnret med aubergine, kartoffel, krydret hakket kød og béchamel. Greek Stories ligger ved Akropolis og har moussaka blandt de traditionelle retter.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Greek+Stories+Makrygianni+19+Athens"
-    },
-    {
-      "icon": "🍢",
-      "title": "Souvlaki · Street Souvlaki Athens Center",
-      "text": "En af de mest klassiske hurtige græske retter: grillet kød i pita eller på spyd med grønt og sauce. Centralt og prisvenligt valg.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Street+Souvlaki+Kolokotroni+30+Athens"
-    },
-    {
-      "icon": "🥙",
-      "title": "Meze · Raki Meze Athens",
-      "text": "Små græske retter, der deles ved bordet. God måde at smage flere ting på én gang. Raki Meze ligger ved Agias Irinis-pladsen i centrum.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Raki+Meze+Agias+Irinis+Athens"
-    },
-    {
-      "icon": "🥧",
-      "title": "Spanakopita / Tyropita · Ariston",
-      "text": "Prøv spinattærte eller den klassiske ostetærte tyropita. Ariston har bagt græske pitaer siden 1910 og ligger centralt på Voulis 10.",
-      "url": "https://aristonbakery.com/the-menu-at-ariston-bakery/"
-    },
-    {
-      "icon": "🍩",
-      "title": "Loukoumades · Lukumades",
-      "text": "Små friskstegte græske dejkugler med honning og kanel. Lukumades har butik ved Aiolou 21 tæt på Monastiraki og også ved Akropolis.",
-      "url": "https://www.lukumades.com/locations/"
-    },
-    {
-      "icon": "🍯",
-      "title": "Baklava / græske søde sager · Mitropolitikon",
-      "text": "Historisk konditori fra 1930 i centrum. Kendt for bl.a. mandel-baklava og klassiske græske søde sager. Adresse: Voulis 39.",
-      "url": "https://www.thisisathens.org/cafes-bakeries/historic-pastry-dessert-shops"
-    }
-  ],
-  "suggestedPlan": [
-    {
-      "icon": "1️⃣",
-      "title": "Mandag 21. september",
-      "text": "Ankomst til Athen. Rolig eftermiddag og eventuelt Akropolismuseet, som mandag lukker kl. 17."
-    },
-    {
-      "icon": "2️⃣",
-      "title": "Tirsdag 22. september",
-      "text": "Det Nationale Arkæologiske Museum passer godt tirsdag, fordi det er åbent 13–20. Cycladic Art og Byzantine Museum er lukket tirsdag."
-    },
-    {
-      "icon": "3️⃣",
-      "title": "Onsdag 23. september",
-      "text": "Akropolis tidligt på dagen. Fortsæt evt. til Ancient Agora og National Gallery senere; National Gallery har åbent til kl. 22 onsdag."
-    },
-    {
-      "icon": "4️⃣",
-      "title": "Torsdag 24. september",
-      "text": "Museum of Cycladic Art eller Byzantine Museum. Kombinér med Panathenaic Stadium, Plaka og en middag med græske småretter."
-    },
-    {
-      "icon": "5️⃣",
-      "title": "Fredag 25. september",
-      "text": "Hjemrejsedag. Flyet afgår fra ATH kl. 10:50, så morgenen bør holdes fri til transport til lufthavnen."
-    }
-  ],
-  "sections": [
-    {"icon":"✈️","title":"Fly","text":"Flyrejsen er registreret med afgang fra København mandag 21. september og hjemrejse fra Athen fredag 25. september 2026."},
-    {"icon":"👩‍👧","title":"Rejsende","text":"Jolanta og Camilla."},
-    {"icon":"🏠","title":"Bolig","text":"Kandidatbolig: Helichrysum Studio | Pela Collection | Koukaki. Nyt Airbnb-opslag i Koukaki med smartlås, elevator til 5. sal, køkken og wi-fi. Den præcise adresse er endnu ikke kendt, så transfer og metroafstand beregnes senere."}
   ]
 }
