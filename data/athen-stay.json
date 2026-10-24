@@ -1,99 +1,39 @@
 {
-  "stay": {
-    "name": "Helichrysum Studio | Pela Collection | Koukaki",
-    "status": "Booket · 21.–25. september 2026",
-    "type": "Airbnb · hel udlejningsbolig",
-    "area": "Koukaki, Athen",
-    "guests": "2 gæster",
-    "bedroom": "1 soveværelse",
-    "bed": "1 kingsize-dobbeltseng",
-    "bathroom": "1 badeværelse",
-    "floor": "5. sal",
-    "checkIn": "21. september 2026 · efter kl. 14:00",
-    "checkOut": "25. september 2026 · før kl. 12:00",
-    "airbnbUrl": "https://www.airbnb.dk/rooms/1728474875564184013",
-    "note": "Boligen er booket. Airbnb-kortet viser kun en omtrentlig placering i Koukaki, omkring Veikou/Falirou-området. Den præcise adresse vises derfor ikke i den offentlige app."
-  },
+  "note": "Generel områdeinformation fra Koukaki er bevaret; konkrete booking-, vært-, dato- og boligoplysninger er fjernet.",
+  "area": "Koukaki, Athen",
   "items": [
     {
-      "icon": "✅",
-      "title": "Bookingstatus",
-      "text": "Helichrysum Studio | Pela Collection | Koukaki er booket til Jolanta og Camilla fra 21. til 25. september 2026."
-    },
-    {
-      "icon": "🏠",
-      "title": "Boligen",
-      "text": "Boutique-studio i Koukaki til 2 gæster. 1 soveværelse, 1 kingsize-dobbeltseng, 1 badeværelse, fuldt udstyret køkken, spise-/arbejdsplads og højhastigheds-wi-fi.",
-      "url": "https://www.airbnb.dk/rooms/1728474875564184013"
-    },
-    {
       "icon": "📍",
-      "title": "Ca. placering · Koukaki",
-      "text": "Airbnb-kortet placerer boligen omtrent i området Veikou/Falirou i Koukaki, lige nord for Kallirrois og vest for Syngrou-Fix. Placeringen er omtrentlig og ikke en bekræftet gadeadresse.",
-      "url": "https://www.google.com/maps/search/?api=1&query=Veikou+Falirou+Koukaki+Athens"
+      "title": "Koukaki",
+      "text": "Centralt kvarter syd for Akropolis med caféer, restauranter og gode muligheder for at gå til flere seværdigheder."
     },
     {
       "icon": "🚇",
-      "title": "Nærmeste metro · Syngrou-Fix",
-      "text": "Ud fra Airbnb-kortet ser Syngrou-Fix på metrolinje 2 ud til at være nærmeste station, cirka 5–8 minutters gang fra den omtrentlige placering. Brug tiden som et skøn, indtil den præcise adresse er frigivet.",
+      "title": "Syngrou-Fix",
+      "text": "Metrostation på linje 2, som betjener Koukaki-området.",
       "url": "https://www.google.com/maps/search/?api=1&query=Syngrou-Fix+Metro+Athens"
     },
     {
       "icon": "✈️",
-      "title": "Fra lufthavnen · anbefalet offentlig transport",
-      "text": "En enkel rute er Metro linje 3 fra Athen Lufthavn til Syntagma, skift til linje 2 mod Elliniko og stå af ved Syngrou-Fix. Derfra cirka 5–8 minutters gang til Airbnb-kortets omtrentlige placering. Lufthavnsmetroen kræver særlig lufthavnsbillet.",
+      "title": "Fra lufthavnen",
+      "text": "En almindelig offentlig transportmulighed er metro linje 3 fra lufthavnen til Syntagma og derfra linje 2 mod Elliniko til Syngrou-Fix.",
       "url": "https://www.oasa.gr/en/visit-athens/metro-line-3-to-airport/"
     },
     {
       "icon": "🚌",
-      "title": "Alternativ fra lufthavnen · X95",
-      "text": "Airport Express X95 kører til Syntagma døgnet rundt. Herfra kan man skifte til metro linje 2 mod Elliniko og stå af ved Syngrou-Fix. Det kan være et praktisk alternativ, især hvis metrodriften fra lufthavnen er påvirket.",
+      "title": "Airport Express X95",
+      "text": "X95 forbinder lufthavnen og Syntagma og kan bruges som alternativ til metroen.",
       "url": "https://www.oasa.gr/en/visit-athens/airport-express-bus-lines/"
     },
     {
       "icon": "🏛️",
-      "title": "Akropolis & Akropolismuseet · til fods",
-      "text": "Airbnb-kortet viser boligen i den sydlige del af Koukaki. Herfra ser Akropolismuseet og Akropolis-området ud til at være i gåafstand. Regn foreløbigt med cirka 15–20 minutters gang, afhængigt af den endelige adresse og rute."
+      "title": "Akropolis og Akropolismuseet",
+      "text": "Koukaki ligger tæt på Akropolis-området og er et praktisk udgangspunkt for sightseeing."
     },
     {
       "icon": "🌳",
-      "title": "Filopappou-højen · tæt på",
-      "text": "Filopappou-højen ligger lige nordvest for den omtrentlige placering. Det gør området godt til en rolig gåtur med udsigt mod Akropolis."
-    },
-    {
-      "icon": "🔐",
-      "title": "Indtjekning uden vært",
-      "text": "Indgang til bygning og studio sker via nøglefrit adgangssystem/smartlås. Gæster får individuelle adgangskoder og instruktioner før ankomst."
-    },
-    {
-      "icon": "🛗",
-      "title": "5. sal · elevator",
-      "text": "Studiet ligger på 5. sal og er tilgængeligt med elevator."
-    },
-    {
-      "icon": "🕑",
-      "title": "Ind- og udtjekning",
-      "text": "Indtjekning 21. september efter kl. 14:00. Udtjekning 25. september før kl. 12:00. Maksimum 2 gæster."
-    },
-    {
-      "icon": "☕",
-      "title": "Faciliteter",
-      "text": "Køkken, wi-fi, dedikeret arbejdsplads, tv, stempelkande til kaffe, rent sengetøj og håndklæder. Studiet rengøres professionelt før hver ankomst."
-    },
-    {
-      "icon": "🛡️",
-      "title": "Sikkerhed",
-      "text": "Røgalarm er angivet. Udendørs overvågningskameraer findes på ejendommen. Kuliltealarm er ikke angivet i opslaget."
-    },
-    {
-      "icon": "⭐",
-      "title": "Nyt opslag · få omtaler",
-      "text": "Opslaget er nyt og har 2 omtaler. De nuværende gæster fremhæver især beliggenheden, mulighed for at gå til Akropolis og centrum, moderne bolig, balkon og hurtig kommunikation med værten."
-    },
-    {
-      "icon": "👤",
-      "title": "Vært · Pela",
-      "text": "Værten oplyser, at hun taler græsk og engelsk. Airbnb viser 100 % svarrate og svar typisk inden for et par timer."
+      "title": "Filopappou-højen",
+      "text": "Filopappou-højen ligger ved Koukaki og er velegnet til en rolig gåtur med udsigt mod Akropolis."
     }
   ]
 }
