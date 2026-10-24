@@ -73,17 +73,14 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `ski-2027.js`
 - `data/ski-2027.json`
 
-## Athen 2026
-- `athen-2026.html`
-- `athen-2026.css`
-- `athen-2026.js`
-- `data/athen-2026.json` – fly, transport, museer, seniorinfo og dagsforslag
-- `data/athen-food.json` – græske specialiteter og flere konkrete spisesteder pr. ret
-- `data/athen-stay.json` – booket bolig i Koukaki, praktiske boligoplysninger og omtrentlige afstande
-- `data/athen-practical.json` – taxa, betaling og gode råd til offentlig transport
-- `data/athen-tickets.json` – officielle billetter først samt tydeligt markerede tredjepartsalternativer, bypas og dansk transportguide
-- `assets/athen-banner.svg`
-- Athen-siden bruger sammenklappelige hovedmapper og undermapper, så indholdet ikke står som én lang væg af kort.
+## Athen-viden · arkiv
+Selve Athen-rejsen og app-siden er fjernet. Kun genbrugelig, generel Athen-viden bevares:
+- `data/athen-2026.json` – generel transport, museer/seværdigheder og seniorinfo; ingen fly eller rejsepersoner
+- `data/athen-food.json` – græske specialiteter og konkrete spisesteder
+- `data/athen-stay.json` – kun generel Koukaki-/områdeinformation; ingen konkret booking eller boligdata
+- `data/athen-practical.json` – taxa, betaling og råd til offentlig transport
+- `data/athen-tickets.json` – officielle billet- og transportkilder samt tydeligt markerede tredjepartsalternativer
+- `assets/athen-banner.svg` – generelt visuelt materiale
 
 ## Tidligere Interrail-app
 Bevares separat:
@@ -97,7 +94,7 @@ Bevares separat:
 
 ## PWA
 - `manifest.webmanifest` beskriver hovedappen som **Rejser**.
-- `service-worker.js` cacher hub, Antwerpen, Istanbul-planen, Skiferie 2027, Athen 2026 inkl. madfilen, den delte skiferievisning og den gamle Interrail-side.
+- `service-worker.js` cacher hub, Antwerpen, Istanbul-planen, Skiferie 2027, den delte skiferievisning, den gamle Interrail-side samt generelle Athen-datafiler; den afsluttede Athen-app caches ikke længere.
 
 ---
 
@@ -199,25 +196,11 @@ Aktuelle kategorier omfatter:
 
 Eksterne links skal åbne med `target="_blank"` og `rel="noopener noreferrer"`.
 
-## Arkiv · Athen – 21.–25. september 2026
-- Rejsen er afsluttet og fjernet fra Rejser-forsiden. Filerne bevares som arkiv.
-- Rejsende: **Jolanta og Camilla**.
-- Status: **Fly og bolig booket**.
-- Udrejse mandag 21. september 2026: København/Kastrup (CPH) **06:55** → Athen (ATH) **11:05**, flyvetid **3 t 10 min**.
-- Hjemrejse fredag 25. september 2026: Athen (ATH) **10:50** → København/Kastrup (CPH) **13:05**, flyvetid **3 t 15 min**.
-- Ordrenummer/bookingreference er privat og må ikke gemmes i den offentlige app.
-- Transportdata, museumsdata, seniorinfo og dagsplan ligger i `data/athen-2026.json`.
-- Mad og restauranter ligger separat i `data/athen-food.json`.
-- Boligen er **Helichrysum Studio | Pela Collection | Koukaki**, booket 21.–25. september 2026. Den offentlige app viser kun omtrentligt område, ikke præcis adresse.
-- Taxa, betaling og transport-råd ligger i `data/athen-practical.json`.
-- Billetter og ture ligger i `data/athen-tickets.json`; officielle billetkilder skal altid stå før tredjepartsplatforme. Turbopass, GetYourGuide og AthensTickets.org skal tydeligt markeres som kommercielle/tredjepart, mens Hellenic Heritage og de enkelte museers egne sider vises som officielle kilder.
-- Spisesteder er organiseret efter seks specialiteter: **moussaka, souvlaki/gyros, meze, spanakopita/tyropita, loukoumades samt baklava/græske søde sager**.
-- Hver specialitet skal så vidt muligt have flere valgmuligheder med direkte Google Maps-link, ikke kun ét sted.
-- UI-strukturen er sammenklappelige mapper: **Overblik**, **Bolig · Koukaki**, **Transport**, **Taxa & betaling**, **Gode råd i offentlig transport**, **Billetter & ture**, **Museer & seværdigheder**, **Senior & rabatter**, **Spisesteder**, **Forslag til dagene** og **Kvalitetssikring**.
-- Hver hovedmappe kan åbnes/lukkes, og hvert punkt under mappen er en separat undermappe, som også kan åbnes/lukkes.
-- Athen-siden har et bannerbillede med Akropolis-stemning via `assets/athen-banner.svg`.
-- Vejrknap til den officielle græske meteorologiske tjeneste vises øverst i Athen-appen.
-- Boligens præcise adresse offentliggøres ikke; transfer og afstande må angives som omtrentlige, indtil en præcis privat adresse bruges uden at blive publiceret.
+## Arkiv · Athen-viden
+- Den konkrete Athen-rejse er slettet som rejseprojekt.
+- Flytider, rejsedatoer, rejsende, bookingstatus og den konkrete bolig er fjernet fra de bevarede data.
+- Kun generelle oplysninger om Athen, Koukaki, transport, taxa, billetter, museer/seværdigheder og madsteder bevares til mulig genbrug.
+- Athen vises ikke på Rejser-forsiden.
 
 ---
 
