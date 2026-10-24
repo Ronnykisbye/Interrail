@@ -18,13 +18,13 @@ Når en ny session starter, skal ChatGPT først:
 # Projektets formål
 Den samlede løsning hedder **Rejser**.
 
-Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 4 aktive rejser og 2 reservepladser.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rejser og 3 reservepladser.
 
 Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
 3. **Skiferie 2027** – aktiv planlægning, uge 5, Sestriere i Italien
-4. **Athen 2026** – aktiv, 21.–25. september 2026
+4. Reserve – Athen 2026 er afsluttet og fjernet fra forsiden
 5. Reserve
 6. Reserve
 
@@ -199,7 +199,8 @@ Aktuelle kategorier omfatter:
 
 Eksterne links skal åbne med `target="_blank"` og `rel="noopener noreferrer"`.
 
-## 4. Athen – 21.–25. september 2026
+## Arkiv · Athen – 21.–25. september 2026
+- Rejsen er afsluttet og fjernet fra Rejser-forsiden. Filerne bevares som arkiv.
 - Rejsende: **Jolanta og Camilla**.
 - Status: **Fly og bolig booket**.
 - Udrejse mandag 21. september 2026: København/Kastrup (CPH) **06:55** → Athen (ATH) **11:05**, flyvetid **3 t 10 min**.
