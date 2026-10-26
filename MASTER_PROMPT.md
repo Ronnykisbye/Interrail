@@ -118,11 +118,12 @@ Bevares separat:
 - Slutdatoen er foreløbig ikke fastlagt og kan ændres ved ændringer i LEZ-reglerne; adgang skal derfor kontrolleres igen tættere på rejsen.
 - Ansøgningsnummer, nummerplade og øvrige personlige LEZ-oplysninger må ikke gemmes i den offentlige app.
 - Tysk Umweltplakette bestilt hos FDM 26. august 2026, 245 kr. inkl. fragt.
-- Jesteburg: Hotel Heideblick, 3.–5. november 2026.
-- Antwerpen: Prize by Radisson, Antwerp City, 5.–8. november 2026.
+- Jesteburg: Hotel Heideblick, 3.–5. november 2026, check-in 3/11 kl. 15:00, check-out 5/11 kl. 11:00.
+- Antwerpen: Prize by Radisson, Antwerp City, 5.–8. november 2026, check-in 5/11 kl. 15:00, check-out 8/11 kl. 12:00.
+- Kiel: **Garner Hotel Kiel - Akademie by IHG**, 8.–11. november 2026, check-in 8/11 kl. 15:00, check-out 11/11 kl. 12:00. Tidligere Bremen-plan og Hotel Consul er ikke længere del af den aktive rejseplan.
 - **A Tribute to Whitney Houston by Glennis Grace**: fredag 6. november 2026 kl. 20:00, Lotto Arena Antwerpen – Merksem (Antwerpen), 2 eTickets. Sæde-/ordreoplysninger og private billetlinks må ikke gemmes offentligt.
-- Antwerpen-appen viser nu rejseforløbet øverst som **fra → til**: 3/11 Helsingør → Jesteburg, 5/11 Jesteburg → Antwerpen, 8/11 Antwerpen → Bremen og 9/11 Bremen → Helsingør. Klokkeslæt vises ikke, før de er fastlagt.
-- Hjemrejse: Bremen som hovedmulighed 8.–9. november; Kiel som alternativ samme dato.
+- Antwerpen-appen viser rejseforløbet øverst som **fra → til**: 3/11 Helsingør → Jesteburg, 5/11 Jesteburg → Antwerpen, 8/11 Antwerpen → Kiel og 11/11 Kiel → Helsingør.
+- Hjemrejsen går nu via Kiel 8.–11. november; Bremen og det tidligere Hotel Consul er fjernet fra aktiv plan.
 - Bookingreferencer, e-mail og betalingskortoplysninger må ikke offentliggøres.
 
 ## 2. Interrail – Istanbul
