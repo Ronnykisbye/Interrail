@@ -1,12 +1,12 @@
 async function loadAntwerpen(){
   const root=document.getElementById('antwerpenContent');
   try{
-    const response=await fetch('data/antwerpen.json?v=20260826-4',{cache:'no-store'});
+    const response=await fetch('data/antwerpen.json?v=20261026-1',{cache:'no-store'});
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
     renderJourney(data.journey||[]);
-    root.innerHTML=data.sections.map(section=>renderSection(section,data.trip,data.outboundHotel,data.hotel,data.returnHotel,data.alternativeReturnHotel,data.links||[])).join('');
+    root.innerHTML=data.sections.map(section=>renderSection(section,data.trip,data.outboundHotel,data.hotel,data.returnHotel,null,data.links||[])).join('');
   }catch(error){
     console.error(error);
     root.innerHTML='<article class="section-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
@@ -40,8 +40,7 @@ function renderSection(section,trip,outboundHotel,hotel,returnHotel,alternativeR
 function renderRoute(section,trip){
   const actions=[];
   if(trip.routeUrl)actions.push(`<a href="${escapeHtml(trip.routeUrl)}" target="_blank" rel="noopener noreferrer">Udrejse i Google Maps ↗</a>`);
-  if(trip.returnRouteUrl)actions.push(`<a href="${escapeHtml(trip.returnRouteUrl)}" target="_blank" rel="noopener noreferrer">Hjemrejse via Bremen ↗</a>`);
-  if(trip.alternativeReturnRouteUrl)actions.push(`<a href="${escapeHtml(trip.alternativeReturnRouteUrl)}" target="_blank" rel="noopener noreferrer">Alternativ hjemrejse via Kiel ↗</a>`);
+  if(trip.returnRouteUrl)actions.push(`<a href="${escapeHtml(trip.returnRouteUrl)}" target="_blank" rel="noopener noreferrer">Hjemrejse via Kiel ↗</a>`);
   return `<article class="section-card"><div class="section-icon" aria-hidden="true">${escapeHtml(section.icon)}</div><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p>${trip.outboundNote?`<p>${escapeHtml(trip.outboundNote)}</p>`:''}${trip.returnNote?`<p>${escapeHtml(trip.returnNote)}</p>`:''}${actions.length?`<div class="hotel-actions">${actions.join('')}</div>`:''}</article>`;
 }
 
