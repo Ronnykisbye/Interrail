@@ -1,7 +1,7 @@
 async function loadAntwerpen(){
   const root=document.getElementById('antwerpenContent');
   try{
-    const response=await fetch('data/antwerpen.json?v=20261026-1',{cache:'no-store'});
+    const response=await fetch('data/antwerpen.json?v=20261026-3',{cache:'no-store'});
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
@@ -33,15 +33,21 @@ function renderSection(section,trip,outboundHotel,hotel,returnHotel,alternativeR
   if(section.id==='returnHotel')return renderStayHotel(section,returnHotel);
   if(section.id==='alternativeReturnHotel')return renderStayHotel(section,alternativeReturnHotel);
   if(section.id==='route')return renderRoute(section,trip);
+  if(section.id==='charging')return renderCharging(section,trip);
   if(section.id==='links')return renderLinks(section,links);
   return `<article class="section-card"><div class="section-icon" aria-hidden="true">${escapeHtml(section.icon)}</div><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p></article>`;
 }
 
 function renderRoute(section,trip){
   const actions=[];
-  if(trip.routeUrl)actions.push(`<a href="${escapeHtml(trip.routeUrl)}" target="_blank" rel="noopener noreferrer">Udrejse i Google Maps ↗</a>`);
+  if(trip.routeUrl)actions.push(`<a href="${escapeHtml(trip.routeUrl)}" target="_blank" rel="noopener noreferrer">Google Maps · Helsingør → Jesteburg ↗</a>`);
   if(trip.returnRouteUrl)actions.push(`<a href="${escapeHtml(trip.returnRouteUrl)}" target="_blank" rel="noopener noreferrer">Hjemrejse via Kiel ↗</a>`);
   return `<article class="section-card"><div class="section-icon" aria-hidden="true">${escapeHtml(section.icon)}</div><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p>${trip.outboundNote?`<p>${escapeHtml(trip.outboundNote)}</p>`:''}${trip.returnNote?`<p>${escapeHtml(trip.returnNote)}</p>`:''}${actions.length?`<div class="hotel-actions">${actions.join('')}</div>`:''}</article>`;
+}
+
+function renderCharging(section,trip){
+  const action=trip.ionityRouteUrl?`<div class="hotel-actions"><a href="${escapeHtml(trip.ionityRouteUrl)}" target="_blank" rel="noopener noreferrer">⚡ Åbn IONITY-ruten ↗</a></div>`:'';
+  return `<article class="section-card"><div class="section-icon" aria-hidden="true">${escapeHtml(section.icon)}</div><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.text)}</p>${action}</article>`;
 }
 
 function renderHotel(section,hotel){
