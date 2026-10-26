@@ -8,7 +8,8 @@
     "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
     "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Garner%20Hotel%20Kiel%20-%20Akademie%20by%20IHG%2C%20Kiel%2C%20Germany&travelmode=driving",
     "outboundNote": "Udrejsen har hotelophold i Jesteburg 3.–5. november 2026. Der køres videre til Antwerpen den 5. november.",
-    "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Der er booket ophold på Garner Hotel Kiel - Akademie by IHG fra 8. november kl. 15:00 til 11. november kl. 12:00. Derefter køres hjem mod Helsingør."
+    "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Der er booket ophold på Garner Hotel Kiel - Akademie by IHG fra 8. november kl. 15:00 til 11. november kl. 12:00. Derefter køres hjem mod Helsingør.",
+    "ionityRouteUrl": "https://ionity-production.discover.chargetrip.com/plan-route/b7976250-d170-11f1-b645-59fe8b69b752"
   },
   "permits": {
     "antwerpLez": "Antwerpen LEZ er godkendt. Registreringen gælder fra 26. august 2026 og giver adgang til LEZ i Antwerpen og Gent. Den gælder ikke for Bruxelles. Slutdatoen er foreløbig ikke fastlagt og kan ændres ved ændringer i LEZ-reglerne.",
@@ -132,6 +133,12 @@
       "subtitle": "Booket 8. nov. kl. 15:00 – 11. nov. kl. 12:00",
       "url": "https://www.google.com/maps/search/?api=1&query=Garner+Hotel+Kiel+-+Akademie+by+IHG+Kiel",
       "icon": "🏨"
+    },
+    {
+      "title": "IONITY · foreslået lade-/kørerute",
+      "subtitle": "Gemte IONITY-rute til Antwerpen-turen",
+      "url": "https://ionity-production.discover.chargetrip.com/plan-route/b7976250-d170-11f1-b645-59fe8b69b752",
+      "icon": "⚡"
     }
   ],
   "sections": [
@@ -157,7 +164,7 @@
       "id": "charging",
       "icon": "⚡",
       "title": "Opladning",
-      "text": "Ladestop og priser tilføjes efter verificering."
+      "text": "IONITYs ruteplan er gemt som forslag til lade- og kørerute. Kontrollér aktuelle ladere og driftsstatus før afgang."
     },
     {
       "id": "outboundHotel",
