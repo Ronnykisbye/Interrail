@@ -6,10 +6,9 @@
     "vehicle": "Ford Mustang Mach-E",
     "status": "Aktiv planlægning",
     "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
-    "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving",
-    "alternativeReturnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany&travelmode=driving",
+    "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Garner%20Hotel%20Kiel%20-%20Akademie%20by%20IHG%2C%20Kiel%2C%20Germany&travelmode=driving",
     "outboundNote": "Udrejsen har hotelophold i Jesteburg 3.–5. november 2026. Der køres videre til Antwerpen den 5. november.",
-    "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Bremen er den nuværende hovedmulighed med én overnatning. Hotel Consul i Kiel er gemt som alternativ på samme dato. Der køres videre mod Danmark 9. november."
+    "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Der er booket ophold på Garner Hotel Kiel - Akademie by IHG fra 8. november kl. 15:00 til 11. november kl. 12:00. Derefter køres hjem mod Helsingør."
   },
   "permits": {
     "antwerpLez": "Antwerpen LEZ er godkendt. Registreringen gælder fra 26. august 2026 og giver adgang til LEZ i Antwerpen og Gent. Den gælder ikke for Bruxelles. Slutdatoen er foreløbig ikke fastlagt og kan ændres ved ændringer i LEZ-reglerne.",
@@ -60,40 +59,18 @@
     "note": "2 eTickets. Sæde-, ordre- og private billetoplysninger gemmes ikke i den offentlige app."
   },
   "returnHotel": {
-    "name": "Best Western Hotel Zur Post",
-    "city": "Bremen",
-    "address": "Bahnhofsplatz 11, 28195 Bremen, Tyskland",
-    "checkIn": "2026-11-08",
-    "checkInTime": "15:00",
-    "checkOut": "2026-11-09",
-    "checkOutTime": "12:00",
-    "nights": 1,
-    "room": "Classic-værelse · 1 dobbeltseng · køleskab (kan omdannes til 2 enkeltsenge)",
-    "features": [
-      "Gratis Wi‑Fi",
-      "Pool",
-      "Spa",
-      "Kæledyrsvenligt",
-      "Mulighed for parkering"
-    ],
-    "website": "https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany",
-    "note": "Bekræftet reservation fra Hotels.com. Bookingnummer og e-mail gemmes ikke i den offentlige app."
-  },
-  "alternativeReturnHotel": {
-    "name": "Hotel Consul",
+    "name": "Garner Hotel Kiel - Akademie by IHG",
     "city": "Kiel",
-    "address": "Walkerdamm 11, 24103 Kiel, Tyskland",
+    "address": "Kiel, Tyskland",
     "checkIn": "2026-11-08",
     "checkInTime": "15:00",
-    "checkOut": "2026-11-09",
-    "checkOutTime": "11:00",
-    "nights": 1,
-    "room": "1 værelse · 2 voksne",
-    "status": "Alternativ til Bremen",
-    "website": "https://consul-kiel.de/",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany",
-    "note": "Booket som alternativ på samme dato som Bremen-hotellet. Screenshot fra Hotels.com viser check-in 8. november kl. 15:00 og check-out 9. november kl. 11:00. Bookingnummer gemmes ikke i den offentlige app."
+    "checkOut": "2026-11-11",
+    "checkOutTime": "12:00",
+    "nights": 3,
+    "room": "Booket værelse",
+    "status": "Booket",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Garner+Hotel+Kiel+-+Akademie+by+IHG+Kiel",
+    "note": "Bekræftet som booket på brugerens Hotels.com-oversigt. Rejseplan-/bookingnummer gemmes ikke i den offentlige app."
   },
   "links": [
     {
@@ -145,40 +122,16 @@
       "icon": "🗺️"
     },
     {
-      "title": "Hjemrejse via Bremen",
-      "subtitle": "Antwerpen → Bremen → Helsingør",
-      "url": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany&travelmode=driving",
+      "title": "Hjemrejse via Kiel",
+      "subtitle": "Antwerpen → Kiel → Helsingør · 8.–11. november",
+      "url": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Garner%20Hotel%20Kiel%20-%20Akademie%20by%20IHG%2C%20Kiel%2C%20Germany&travelmode=driving",
       "icon": "🚗"
     },
     {
-      "title": "Best Western Hotel Zur Post",
-      "subtitle": "Hotellets officielle hjemmeside i Bremen",
-      "url": "https://www.bestwestern.de/en/hotels/Bremen/Best-Western-Hotel-zur-Post/hotel",
+      "title": "Garner Hotel Kiel - Akademie by IHG",
+      "subtitle": "Booket 8. nov. kl. 15:00 – 11. nov. kl. 12:00",
+      "url": "https://www.google.com/maps/search/?api=1&query=Garner+Hotel+Kiel+-+Akademie+by+IHG+Kiel",
       "icon": "🏨"
-    },
-    {
-      "title": "Bremen-hotel i Google Maps",
-      "subtitle": "Bahnhofsplatz 11, Bremen",
-      "url": "https://www.google.com/maps/search/?api=1&query=Best%20Western%20Hotel%20Zur%20Post%2C%20Bahnhofsplatz%2011%2C%2028195%20Bremen%2C%20Germany",
-      "icon": "📍"
-    },
-    {
-      "title": "Alternativ hjemrejse via Kiel",
-      "subtitle": "Antwerpen → Kiel → Helsingør",
-      "url": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Tunnelplaats%205%2C%202000%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany&travelmode=driving",
-      "icon": "🚗"
-    },
-    {
-      "title": "Hotel Consul",
-      "subtitle": "Hotellets hjemmeside i Kiel",
-      "url": "https://consul-kiel.de/",
-      "icon": "🏨"
-    },
-    {
-      "title": "Hotel Consul i Google Maps",
-      "subtitle": "Walkerdamm 11, Kiel",
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Consul%2C%20Walkerdamm%2011%2C%2024103%20Kiel%2C%20Germany",
-      "icon": "📍"
     }
   ],
   "sections": [
@@ -186,7 +139,7 @@
       "id": "route",
       "icon": "🗺️",
       "title": "Rute",
-      "text": "Udrejsen har hotelophold i Jesteburg 3.–5. november. Antwerpen nås 5. november. På hjemrejsen 8.–9. november er Bremen hovedmuligheden, mens Kiel er gemt som alternativ."
+      "text": "Udrejsen går via Jesteburg 3.–5. november og videre til Antwerpen 5.–8. november. Hjemrejsen går via Kiel med ophold 8.–11. november, derefter hjem til Helsingør."
     },
     {
       "id": "permits",
@@ -221,14 +174,8 @@
     {
       "id": "returnHotel",
       "icon": "🛏️",
-      "title": "Hjemrejse · Bremen",
-      "text": "Bekræftet overnatning i Bremen 8.–9. november 2026."
-    },
-    {
-      "id": "alternativeReturnHotel",
-      "icon": "🔁",
-      "title": "Alternativ hjemrejse · Kiel",
-      "text": "Hotel Consul i Kiel er booket som alternativ på samme dato, 8.–9. november 2026."
+      "title": "Hjemrejse · Kiel",
+      "text": "Bekræftet ophold på Garner Hotel Kiel - Akademie by IHG fra 8. til 11. november 2026."
     },
     {
       "id": "days",
@@ -254,25 +201,25 @@
       "date": "2026-11-03",
       "from": "Helsingør",
       "to": "Jesteburg",
-      "note": "Udrejse · Hotel Heideblick. Afgangstid er endnu ikke fastlagt."
+      "note": "Udrejse · Hotel Heideblick. Check-in kl. 15:00."
     },
     {
       "date": "2026-11-05",
       "from": "Jesteburg",
       "to": "Antwerpen",
-      "note": "Videre til Prize by Radisson, Antwerp City. Afgangstid er endnu ikke fastlagt."
+      "note": "Videre til Prize by Radisson, Antwerp City. Check-in kl. 15:00."
     },
     {
       "date": "2026-11-08",
       "from": "Antwerpen",
-      "to": "Bremen",
-      "note": "Hjemrejse · Bremen er hovedplanen med 1 overnatning. Afgangstid er endnu ikke fastlagt."
+      "to": "Kiel",
+      "note": "Hjemrejse med forlænget ophold i Kiel. Garner Hotel Kiel - Akademie by IHG · check-in kl. 15:00."
     },
     {
-      "date": "2026-11-09",
-      "from": "Bremen",
+      "date": "2026-11-11",
+      "from": "Kiel",
       "to": "Helsingør",
-      "note": "Sidste etape hjem til Danmark. Afgangstid er endnu ikke fastlagt."
+      "note": "Check-out kl. 12:00 og derefter hjem mod Helsingør."
     }
   ]
 }
