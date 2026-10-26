@@ -5,11 +5,12 @@
     "travelers": "Ronny & Jolanta",
     "vehicle": "Ford Mustang Mach-E",
     "status": "Aktiv planlægning",
-    "routeUrl": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
+    "routeUrl": "https://maps.app.goo.gl/K3KaHNr7rwj2CGrW8",
     "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Garner%20Hotel%20Kiel%20-%20Akademie%20by%20IHG%2C%20Kiel%2C%20Germany&travelmode=driving",
     "outboundNote": "Udrejsen har hotelophold i Jesteburg 3.–5. november 2026. Der køres videre til Antwerpen den 5. november.",
     "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Der er booket ophold på Garner Hotel Kiel - Akademie by IHG fra 8. november kl. 15:00 til 11. november kl. 12:00. Derefter køres hjem mod Helsingør.",
-    "ionityRouteUrl": "https://ionity-production.discover.chargetrip.com/plan-route/b7976250-d170-11f1-b645-59fe8b69b752"
+    "ionityRouteUrl": "https://ionity-production.discover.chargetrip.com/plan-route/b7976250-d170-11f1-b645-59fe8b69b752",
+    "firstLegRouteUrl": "https://maps.app.goo.gl/K3KaHNr7rwj2CGrW8"
   },
   "permits": {
     "antwerpLez": "Antwerpen LEZ er godkendt. Registreringen gælder fra 26. august 2026 og giver adgang til LEZ i Antwerpen og Gent. Den gælder ikke for Bruxelles. Slutdatoen er foreløbig ikke fastlagt og kan ændres ved ændringer i LEZ-reglerne.",
@@ -117,9 +118,9 @@
       "icon": "📍"
     },
     {
-      "title": "Din kørerute til Antwerpen",
-      "subtitle": "Gemte Google Maps-rute",
-      "url": "https://maps.app.goo.gl/KnLcYRxV6W5TD1Pa7",
+      "title": "Google Maps · Helsingør → Jesteburg",
+      "subtitle": "Første køreetape · gemt rute",
+      "url": "https://maps.app.goo.gl/K3KaHNr7rwj2CGrW8",
       "icon": "🗺️"
     },
     {
@@ -146,7 +147,7 @@
       "id": "route",
       "icon": "🗺️",
       "title": "Rute",
-      "text": "Udrejsen går via Jesteburg 3.–5. november og videre til Antwerpen 5.–8. november. Hjemrejsen går via Kiel med ophold 8.–11. november, derefter hjem til Helsingør."
+      "text": "Første køreetape Helsingør → Jesteburg bruger den gemte Google Maps-rute. IONITY-ruten ligger separat som ladeforslag. Videre går turen til Antwerpen 5.–8. november og hjem via Kiel 8.–11. november."
     },
     {
       "id": "permits",
