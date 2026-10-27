@@ -1,16 +1,39 @@
 async function loadAntwerpen(){
   const root=document.getElementById('antwerpenContent');
   try{
-    const response=await fetch('data/antwerpen.json?v=20261026-3',{cache:'no-store'});
+    const response=await fetch('data/antwerpen.json?v=20261027-1',{cache:'no-store'});
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
+    renderDrivePlan(data.routePlan||{},data.driveDays||[]);
     renderJourney(data.journey||[]);
     root.innerHTML=data.sections.map(section=>renderSection(section,data.trip,data.outboundHotel,data.hotel,data.returnHotel,null,data.links||[])).join('');
   }catch(error){
     console.error(error);
     root.innerHTML='<article class="section-card"><h2>Data kunne ikke indlæses</h2><p>Genindlæs siden og prøv igen.</p></article>';
   }
+}
+
+function renderDrivePlan(plan,days){
+  const root=document.getElementById('drivePlan');
+  if(!root)return;
+  if(!days.length){root.innerHTML='';return;}
+  const overview=days.map(day=>`<div class="route-day-line"><span class="route-day-badge">Dag ${day.day}</span><strong>${escapeHtml(day.from)}</strong><span aria-hidden="true">→</span><strong>${escapeHtml(day.to)}</strong></div>`).join('');
+  const cards=days.map(day=>`<article class="drive-day-card">
+    <div class="drive-day-head"><div><small>KØREDAG ${day.day} · ${formatDate(day.date)}</small><h3>${escapeHtml(day.from)} → ${escapeHtml(day.to)}</h3></div><span class="route-status">${escapeHtml(day.status||'Foreløbig')}</span></div>
+    <div class="stop-list">${(day.stops||[]).map((stop,index)=>`<div class="stop-row ${escapeHtml(stop.type||'')}"><div class="stop-index">${index+1}</div><div><strong>${escapeHtml(stop.name)}</strong>${stop.address?`<small>${escapeHtml(stop.address)}</small>`:''}${stop.chargeTime?`<p><b>Forventet ladetid:</b> ${escapeHtml(stop.chargeTime)}</p>`:''}${stop.facilities?`<p><b>Pause:</b> ${escapeHtml(stop.facilities)}</p>`:''}${stop.note?`<p>${escapeHtml(stop.note)}</p>`:''}</div></div>`).join('')}</div>
+    <a class="drive-nav" href="${escapeHtml(day.mapUrl)}" target="_blank" rel="noopener noreferrer">🗺️ Åbn køredag ${day.day} i Google Maps ↗</a>
+  </article>`).join('');
+  const hotelCharging=(plan.hotelCharging||[]).map(item=>`<div class="hotel-charge-item"><strong>${escapeHtml(item.hotel)}</strong><span>${escapeHtml(item.status)}</span><p>${escapeHtml(item.text)}</p></div>`).join('');
+  root.innerHTML=`<section class="route-plan-card">
+    <div class="route-plan-title"><div><small>4 KØREDAGE · SAMLET RUTEKORT</small><h2>Helsingør → Jesteburg → Antwerpen → Kiel → Helsingør</h2></div><span class="qa-pill">${escapeHtml(plan.status||'Foreløbig')}</span></div>
+    <div class="route-map-schematic" aria-label="Skematisk rutekort">${overview}</div>
+    <div class="route-rules"><p><strong>Bil:</strong> ${escapeHtml(plan.vehicle||'')}</p><p><strong>Start:</strong> ${escapeHtml(plan.startSoc||'')}</p><p><strong>Rækkevidde:</strong> ${escapeHtml(plan.statedRange||'')}</p><p><strong>Pausegrænse:</strong> ${escapeHtml(plan.maxInterval||'')}</p><p><strong>Ladning:</strong> ${escapeHtml(plan.chargingPriority||'')}</p><p><strong>Mål:</strong> ${escapeHtml(plan.chargingTarget||'')}</p></div>
+    <p class="charge-note">${escapeHtml(plan.chargeTimeNote||'')}</p>
+    <p class="qa-note">${escapeHtml(plan.qaNote||'')}</p>
+  </section>
+  <div class="drive-days-grid">${cards}</div>
+  <section class="hotel-charge-card"><h2>🔌 Opladning ved hoteller</h2><div class="hotel-charge-grid">${hotelCharging}</div></section>`;
 }
 
 function renderJourney(journey){
