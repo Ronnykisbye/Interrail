@@ -5,8 +5,8 @@
     "travelers": "Ronny & Jolanta",
     "vehicle": "Ford Mustang Mach-E",
     "status": "Aktiv planlægning",
-    "routeUrl": "https://maps.app.goo.gl/K3KaHNr7rwj2CGrW8",
-    "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Garner%20Hotel%20Kiel%20-%20Akademie%20by%20IHG%2C%20Kiel%2C%20Germany&travelmode=driving",
+    "routeUrl": "https://www.google.com/maps/dir/?api=1&origin=Helsing%C3%B8r%2C%20Denmark&destination=Itzenb%C3%BCtteler%20Str.%2035%2C%2021266%20Jesteburg%2C%20Germany&waypoints=Storeb%C3%A6ltsvej%201%2C%205800%20Nyborg%7CEgevej%206%2C%206200%20Aabenraa&travelmode=driving&avoid=ferries",
+    "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Faluner%20Weg%202%2C%20Kiel%2C%20Germany&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Egevej%206%2C%20Aabenraa%7CIONITY%20Aarup%2C%20Denmark&travelmode=driving&avoid=ferries",
     "outboundNote": "Udrejsen har hotelophold i Jesteburg 3.–5. november 2026. Der køres videre til Antwerpen den 5. november.",
     "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Der er booket ophold på Garner Hotel Kiel - Akademie by IHG fra 8. november kl. 15:00 til 11. november kl. 12:00. Derefter køres hjem mod Helsingør.",
     "ionityRouteUrl": "https://ionity-production.discover.chargetrip.com/plan-route/b7976250-d170-11f1-b645-59fe8b69b752",
@@ -147,7 +147,7 @@
       "id": "route",
       "icon": "🗺️",
       "title": "Rute",
-      "text": "Første køreetape Helsingør → Jesteburg bruger den gemte Google Maps-rute. IONITY-ruten ligger separat som ladeforslag. Videre går turen til Antwerpen 5.–8. november og hjem via Kiel 8.–11. november."
+      "text": "De fire køredage er nu gemt som separate, foreløbige Google Maps-etaper. De vises med ladestop i korrekt rækkefølge og skal endeligt kvalitetssikres for afstand, køretid og ladeforhold før afgang."
     },
     {
       "id": "permits",
@@ -165,7 +165,7 @@
       "id": "charging",
       "icon": "⚡",
       "title": "Opladning",
-      "text": "IONITYs ruteplan er gemt som forslag til lade- og kørerute. Kontrollér aktuelle ladere og driftsstatus før afgang."
+      "text": "IONITY er førstevalg og E.ON Drive reserve. De valgte IONITY-stop er gemt i de fire køredage. Ladetider er foreløbige estimater og afhænger af ankomst-SOC, temperatur og bilens aktuelle ladeeffekt."
     },
     {
       "id": "outboundHotel",
@@ -228,6 +228,182 @@
       "from": "Kiel",
       "to": "Helsingør",
       "note": "Check-out kl. 12:00 og derefter hjem mod Helsingør."
+    }
+  ],
+  "routePlan": {
+    "status": "FORELØBIG · IKKE FULDT KVALITETSSIKRET",
+    "vehicle": "Ford Mustang Mach-E Premium 2023",
+    "startSoc": "100 %",
+    "statedRange": "ca. 500 km ved 100 %; planlæg konservativt ved motorvejskørsel",
+    "maxInterval": "maks. 300 km eller 3 timers kørsel mellem pauser",
+    "chargingPriority": "IONITY er førstevalg. E.ON Drive er reserve.",
+    "chargingTarget": "Lad så meget som praktisk muligt, gerne 90–100 %. De sidste 10–20 % går langsommere på DC.",
+    "chargeTimeNote": "Ford oplyser ca. 36 min. fra 10–80 % for nyere Mach-E Premium-varianter. I planen vises derfor foreløbigt ca. 30–60 min. pr. IONITY-stop ved mål 90–100 %, afhængigt af ankomst-SOC, temperatur og ladeeffekt.",
+    "qaNote": "Rute, køretid og afstand mellem alle stop skal kontrolleres igen før afgang. Ingen af de fire dage er markeret som endeligt kvalitetssikret endnu.",
+    "hotelCharging": [
+      {
+        "hotel": "Hotel Heideblick · Jesteburg",
+        "status": "Ikke endeligt bekræftet",
+        "text": "Opladning på eller tæt ved hotellet skal verificeres før turen. Målet er 80–100 % ved afgang 5. november."
+      },
+      {
+        "hotel": "Prize by Radisson · Antwerpen",
+        "status": "Ikke endeligt bekræftet",
+        "text": "Opladning på eller tæt ved hotellet skal verificeres før turen. Målet er 80–100 % ved afgang 8. november."
+      },
+      {
+        "hotel": "Garner Hotel Kiel - Akademie by IHG",
+        "status": "Hotelparkering bekræftet · EV-lader ikke bekræftet",
+        "text": "IHG bekræfter hotelparkering, men den officielle hotelside viser ikke en EV-lader. Find derfor offentlig opladning i nærheden før hjemrejsen."
+      }
+    ]
+  },
+  "driveDays": [
+    {
+      "day": 1,
+      "date": "2026-11-03",
+      "from": "Helsingør",
+      "to": "Hotel Heideblick · Jesteburg",
+      "status": "Foreløbig",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Helsing%C3%B8r%2C%20Denmark&destination=Itzenb%C3%BCtteler%20Str.%2035%2C%2021266%20Jesteburg%2C%20Germany&waypoints=Storeb%C3%A6ltsvej%201%2C%205800%20Nyborg%7CEgevej%206%2C%206200%20Aabenraa&travelmode=driving&avoid=ferries",
+      "stops": [
+        {
+          "type": "start",
+          "name": "Helsingør",
+          "note": "Start med 100 % batteri."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Nyborg",
+          "address": "Storebæltsvej 1, 5800 Nyborg",
+          "chargeTime": "ca. 30–60 min. afhængigt af ankomst-SOC; mål 90–100 %",
+          "facilities": "Døgnåbent; mad/butik/WC i området."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Aabenraa",
+          "address": "Egevej 6, 6200 Aabenraa",
+          "chargeTime": "ca. 30–60 min. afhængigt af ankomst-SOC; mål 90–100 %",
+          "facilities": "Døgnåbent. WC/kaffe/mad kontrolleres igen før afgang."
+        },
+        {
+          "type": "hotel",
+          "name": "Hotel Heideblick",
+          "address": "Itzenbütteler Straße 35, Jesteburg",
+          "note": "2 nætter. Opladning nær hotellet skal endeligt verificeres."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-11-05",
+      "from": "Hotel Heideblick · Jesteburg",
+      "to": "Prize by Radisson · Antwerpen",
+      "status": "Foreløbig",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Itzenb%C3%BCtteler%20Str.%2035%2C%20Jesteburg%2C%20Germany&destination=Tunnelplaats%205%2C%202000%20Antwerpen%2C%20Belgium&waypoints=Ostetal%20S%C3%BCd%2C%20Tiste%7CNiedersachsendamm%202%2C%20Delmenhorst%7CLiersebaan%20123b%2C%20Zandhoven&travelmode=driving&avoid=ferries",
+      "stops": [
+        {
+          "type": "hotel",
+          "name": "Hotel Heideblick · Jesteburg",
+          "note": "Mål: afgang med 80–100 %."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Ostetal Süd",
+          "address": "Rastanlage Ostetal Süd, A1, Tiste",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "WC, café, restaurant og mad tæt på; døgnåbent."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Delmenhorst",
+          "address": "Niedersachsendamm 2, Delmenhorst",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "HPC-ladere. Faciliteter kontrolleres igen før afgang."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Zandhoven",
+          "address": "Liersebaan 123B, Zandhoven",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "350 kW CCS. Faciliteter kontrolleres igen før afgang."
+        },
+        {
+          "type": "hotel",
+          "name": "Prize by Radisson, Antwerp City",
+          "address": "Tunnelplaats 5, Antwerpen",
+          "note": "3 nætter. Opladning nær hotellet skal endeligt verificeres."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-11-08",
+      "from": "Antwerpen",
+      "to": "Garner Hotel Kiel - Akademie by IHG",
+      "status": "Foreløbig",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Tunnelplaats%205%2C%20Antwerpen%2C%20Belgium&destination=Faluner%20Weg%202%2C%20Kiel%2C%20Germany&waypoints=IONITY%20Sevenum%2C%20Netherlands%7CCarl-von-Linde-Stra%C3%9Fe%206%2C%20Sottrum%2C%20Germany&travelmode=driving&avoid=ferries",
+      "stops": [
+        {
+          "type": "hotel",
+          "name": "Prize by Radisson · Antwerpen",
+          "note": "Mål: afgang med 80–100 %."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Sevenum",
+          "address": "Kleefsedijk 29B, Sevenum, Nederlandene",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "350 kW CCS; mad og toiletter i kort gåafstand."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Sottrum",
+          "address": "Carl-von-Linde-Straße 6, Sottrum",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "350–400 kW HPC. Faciliteter kontrolleres igen før afgang."
+        },
+        {
+          "type": "hotel",
+          "name": "Garner Hotel Kiel - Akademie by IHG",
+          "address": "Faluner Weg 2, Kiel",
+          "note": "3 nætter. Hotelparkering findes; EV-lader på hotellet er ikke bekræftet."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-11-11",
+      "from": "Kiel",
+      "to": "Helsingør",
+      "status": "Foreløbig",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Faluner%20Weg%202%2C%20Kiel%2C%20Germany&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Egevej%206%2C%20Aabenraa%7CIONITY%20Aarup%2C%20Denmark&travelmode=driving&avoid=ferries",
+      "stops": [
+        {
+          "type": "hotel",
+          "name": "Garner Hotel Kiel - Akademie by IHG",
+          "note": "Mål: afgang med 80–100 % efter offentlig opladning i Kiel-området hvis nødvendigt."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Aabenraa",
+          "address": "Egevej 6, 6200 Aabenraa",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "Døgnåbent."
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Aarup",
+          "address": "Gamle Hovedvej 27, 5560 Aarup",
+          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
+          "facilities": "Døgnåbent. Faciliteter kontrolleres igen før afgang."
+        },
+        {
+          "type": "finish",
+          "name": "Helsingør",
+          "note": "Hjemme."
+        }
+      ]
     }
   ]
 }
