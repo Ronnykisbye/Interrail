@@ -1,4 +1,4 @@
-const CACHE='rejser-v1-20261101-1';
+const CACHE='rejser-v1-20261101-2';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen.css','./antwerpen.js','./data/antwerpen.json',
