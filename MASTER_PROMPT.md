@@ -123,7 +123,9 @@ Bevares separat:
 - Kiel: **Garner Hotel Kiel - Akademie by IHG**, 8.–11. november 2026, check-in 8/11 kl. 15:00, check-out 11/11 kl. 12:00. Tidligere Bremen-plan og Hotel Consul er ikke længere del af den aktive rejseplan.
 - **A Tribute to Whitney Houston by Glennis Grace**: fredag 6. november 2026 kl. 20:00, Lotto Arena Antwerpen – Merksem (Antwerpen), 2 eTickets. Sæde-/ordreoplysninger og private billetlinks må ikke gemmes offentligt.
 - Antwerpen-appen viser rejseforløbet øverst som **fra → til**: 3/11 Helsingør → Jesteburg, 5/11 Jesteburg → Antwerpen, 8/11 Antwerpen → Kiel og 11/11 Kiel → Helsingør.
-- Antwerpen-appen har nu **4 separate køredage** med egne Google Maps-links og ladestop i rækkefølge: 3/11 Helsingør → Jesteburg via Nyborg + Aabenraa; 5/11 Jesteburg → Antwerpen via Ostetal Süd + Delmenhorst + Zandhoven; 8/11 Antwerpen → Kiel via Sevenum + Sottrum; 11/11 Kiel → Helsingør via Aabenraa + Aarup.
+- Antwerpen-appen har nu **4 separate køredage** med egne Google Maps-links og ladestop i rækkefølge: 3/11 Helsingør → Jesteburg via Nyborg + Aabenraa; 5/11 Jesteburg → Antwerpen via Ostetal Süd + Delmenhorst + Zandhoven; 8/11 Antwerpen → Kiel via Sevenum + Sottrum; 11/11 Kiel → Helsingør via Handewitt + Aabenraa + Aarup.
+- Etape 3 er rettet til de præcise adresser: Kleefsedijk 29B, 5975 NV Sevenum; Carl-von-Linde-Straße 6, 27367 Sottrum; Faluner Weg 2, 24109 Kiel.
+- Etape 4 bruger nu det opdaterede Google Maps-link med ekstra stop ved Scandinavian Park 13, 24983 Handewitt. Handewitt vises foreløbigt som rutestop; ladeoperatør/faciliteter skal verificeres før endelig QA.
 - Ruteplanen vises som et samlet skematisk rutekort plus fire køredagskort. Hver køredag har direkte Google Maps-navigation.
 - Ruterne er **foreløbige og ikke fuldt kvalitetssikrede**. Maks. 300 km / 3 timers kørsel mellem pauser skal verificeres for hvert interval før de markeres endelige.
 - IONITY er førstevalg; E.ON Drive er reserve. Målet er 90–100 % ved ladestop, men 80–100 % kan tage væsentligt længere tid pga. ladebegrænsning ved høj SOC.
