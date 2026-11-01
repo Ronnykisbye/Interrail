@@ -6,7 +6,7 @@
     "vehicle": "Ford Mustang Mach-E",
     "status": "Aktiv planlægning",
     "routeUrl": "https://www.google.com/maps/dir/?api=1&origin=Helsing%C3%B8r%2C%20Denmark&destination=Itzenb%C3%BCtteler%20Str.%2035%2C%2021266%20Jesteburg%2C%20Germany&waypoints=Storeb%C3%A6ltsvej%201%2C%205800%20Nyborg%7CEgevej%206%2C%206200%20Aabenraa&travelmode=driving&avoid=ferries",
-    "returnRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Faluner%20Weg%202%2C%20Kiel%2C%20Germany&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Egevej%206%2C%20Aabenraa%7CIONITY%20Aarup%2C%20Denmark&travelmode=driving&avoid=ferries",
+    "returnRouteUrl": "https://www.google.com/maps/dir/Faluner+Weg+2,+Kiel,+Germany/Scandinavian+Park+13,+24983+Handewitt,+Germany/Egevej+6,+6200+Aabenraa,+Denmark/Gamle+Hovedvej+27,+5560+Aarup,+Denmark/Helsingor,+Denmark/",
     "outboundNote": "Udrejsen har hotelophold i Jesteburg 3.–5. november 2026. Der køres videre til Antwerpen den 5. november.",
     "returnNote": "Hjemrejsen starter 8. november 2026 fra Antwerpen. Der er booket ophold på Garner Hotel Kiel - Akademie by IHG fra 8. november kl. 15:00 til 11. november kl. 12:00. Derefter køres hjem mod Helsingør.",
     "ionityRouteUrl": "https://ionity-production.discover.chargetrip.com/plan-route/b7976250-d170-11f1-b645-59fe8b69b752",
@@ -63,7 +63,7 @@
   "returnHotel": {
     "name": "Garner Hotel Kiel - Akademie by IHG",
     "city": "Kiel",
-    "address": "Kiel, Tyskland",
+    "address": "Faluner Weg 2, 24109 Kiel, Tyskland",
     "checkIn": "2026-11-08",
     "checkInTime": "15:00",
     "checkOut": "2026-11-11",
@@ -71,7 +71,7 @@
     "nights": 3,
     "room": "Booket værelse",
     "status": "Booket",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Garner+Hotel+Kiel+-+Akademie+by+IHG+Kiel",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Faluner+Weg+2%2C+24109+Kiel%2C+Germany",
     "note": "Bekræftet som booket på brugerens Hotels.com-oversigt. Rejseplan-/bookingnummer gemmes ikke i den offentlige app."
   },
   "links": [
@@ -125,8 +125,8 @@
     },
     {
       "title": "Hjemrejse via Kiel",
-      "subtitle": "Antwerpen → Kiel → Helsingør · 8.–11. november",
-      "url": "https://www.google.com/maps/dir/?api=1&origin=Prize%20by%20Radisson%2C%20Antwerp%20City%2C%20Antwerp%2C%20Belgium&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Garner%20Hotel%20Kiel%20-%20Akademie%20by%20IHG%2C%20Kiel%2C%20Germany&travelmode=driving",
+      "subtitle": "Kiel → Handewitt → Aabenraa → Aarup → Helsingør · 11. november",
+      "url": "https://www.google.com/maps/dir/Faluner+Weg+2,+Kiel,+Germany/Scandinavian+Park+13,+24983+Handewitt,+Germany/Egevej+6,+6200+Aabenraa,+Denmark/Gamle+Hovedvej+27,+5560+Aarup,+Denmark/Helsingor,+Denmark/",
       "icon": "🚗"
     },
     {
@@ -342,7 +342,7 @@
       "from": "Antwerpen",
       "to": "Garner Hotel Kiel - Akademie by IHG",
       "status": "Foreløbig",
-      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Tunnelplaats%205%2C%20Antwerpen%2C%20Belgium&destination=Faluner%20Weg%202%2C%20Kiel%2C%20Germany&waypoints=IONITY%20Sevenum%2C%20Netherlands%7CCarl-von-Linde-Stra%C3%9Fe%206%2C%20Sottrum%2C%20Germany&travelmode=driving&avoid=ferries",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Tunnelplaats%205%2C%202000%20Antwerpen%2C%20Belgium&destination=Faluner%20Weg%202%2C%2024109%20Kiel%2C%20Germany&waypoints=Kleefsedijk%2029b%2C%205975%20NV%20Sevenum%2C%20Netherlands%7CCarl-von-Linde-Stra%C3%9Fe%206%2C%2027367%20Sottrum%2C%20Germany&travelmode=driving",
       "stops": [
         {
           "type": "hotel",
@@ -352,21 +352,21 @@
         {
           "type": "charge",
           "name": "IONITY Sevenum",
-          "address": "Kleefsedijk 29B, Sevenum, Nederlandene",
+          "address": "Kleefsedijk 29B, 5975 NV Sevenum, Nederlandene",
           "chargeTime": "ca. 30–60 min.; mål 90–100 %",
           "facilities": "350 kW CCS; mad og toiletter i kort gåafstand."
         },
         {
           "type": "charge",
           "name": "IONITY Sottrum",
-          "address": "Carl-von-Linde-Straße 6, Sottrum",
+          "address": "Carl-von-Linde-Straße 6, 27367 Sottrum, Tyskland",
           "chargeTime": "ca. 30–60 min.; mål 90–100 %",
           "facilities": "350–400 kW HPC. Faciliteter kontrolleres igen før afgang."
         },
         {
           "type": "hotel",
           "name": "Garner Hotel Kiel - Akademie by IHG",
-          "address": "Faluner Weg 2, Kiel",
+          "address": "Faluner Weg 2, 24109 Kiel, Tyskland",
           "note": "3 nætter. Hotelparkering findes; EV-lader på hotellet er ikke bekræftet."
         }
       ]
@@ -377,12 +377,19 @@
       "from": "Kiel",
       "to": "Helsingør",
       "status": "Foreløbig",
-      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Faluner%20Weg%202%2C%20Kiel%2C%20Germany&destination=Helsing%C3%B8r%2C%20Denmark&waypoints=Egevej%206%2C%20Aabenraa%7CIONITY%20Aarup%2C%20Denmark&travelmode=driving&avoid=ferries",
+      "mapUrl": "https://www.google.com/maps/dir/Faluner+Weg+2,+Kiel,+Germany/Scandinavian+Park+13,+24983+Handewitt,+Germany/Egevej+6,+6200+Aabenraa,+Denmark/Gamle+Hovedvej+27,+5560+Aarup,+Denmark/Helsingor,+Denmark/",
       "stops": [
         {
           "type": "hotel",
           "name": "Garner Hotel Kiel - Akademie by IHG",
+          "address": "Faluner Weg 2, 24109 Kiel, Tyskland",
           "note": "Mål: afgang med 80–100 % efter offentlig opladning i Kiel-området hvis nødvendigt."
+        },
+        {
+          "type": "stop",
+          "name": "Scandinavian Park · Handewitt",
+          "address": "Scandinavian Park 13, 24983 Handewitt, Tyskland",
+          "note": "Nyt rutestop fra den opdaterede Google Maps-etape. Ladeoperatør/faciliteter skal verificeres før ruten markeres endelig."
         },
         {
           "type": "charge",
