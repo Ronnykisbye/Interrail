@@ -129,6 +129,7 @@ Bevares separat:
 - Ruteplanen vises som et samlet skematisk rutekort plus fire køredagskort. Hver køredag har direkte Google Maps-navigation.
 - Ruterne er **foreløbige og ikke fuldt kvalitetssikrede**. Maks. 300 km / 3 timers kørsel mellem pauser skal verificeres for hvert interval før de markeres endelige.
 - IONITY er førstevalg; E.ON Drive er reserve. Målet er 90–100 % ved ladestop, men 80–100 % kan tage væsentligt længere tid pga. ladebegrænsning ved høj SOC.
+- Alle planlagte IONITY-stop skal findes i IONITY-appen/ruteplanlæggeren før afgang. Sottrum-stationen er registreret som **IONITY Stuckenborstel** på Carl-von-Linde-Straße 6. Scandinavian Park 13 i Handewitt drives af team energie / GP JOULE og er **ikke IONITY**; den må kun bruges som separat reserve-/pausestop.
 - Hotelopladning skal verificeres før afgang. Garner Hotel Kiel - Akademie har officiel hotelparkering, men ingen EV-lader er bekræftet på IHG-siden.
 - Hjemrejsen går nu via Kiel 8.–11. november; Bremen og det tidligere Hotel Consul er fjernet fra aktiv plan.
 - Bookingreferencer, e-mail og betalingskortoplysninger må ikke offentliggøres.
