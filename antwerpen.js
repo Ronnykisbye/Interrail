@@ -1,7 +1,7 @@
 async function loadAntwerpen(){
   const root=document.getElementById('antwerpenContent');
   try{
-    const response=await fetch('data/antwerpen.json?v=20261027-1',{cache:'no-store'});
+    const response=await fetch('data/antwerpen.json?v=20261101-1',{cache:'no-store'});
     if(!response.ok)throw new Error('Antwerpen-data kunne ikke hentes');
     const data=await response.json();
     renderHero(data.trip);
