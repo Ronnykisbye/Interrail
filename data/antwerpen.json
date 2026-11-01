@@ -239,7 +239,7 @@
     "chargingPriority": "IONITY er førstevalg. E.ON Drive er reserve.",
     "chargingTarget": "Lad så meget som praktisk muligt, gerne 90–100 %. De sidste 10–20 % går langsommere på DC.",
     "chargeTimeNote": "Ford oplyser ca. 36 min. fra 10–80 % for nyere Mach-E Premium-varianter. I planen vises derfor foreløbigt ca. 30–60 min. pr. IONITY-stop ved mål 90–100 %, afhængigt af ankomst-SOC, temperatur og ladeeffekt.",
-    "qaNote": "Rute, køretid og afstand mellem alle stop skal kontrolleres igen før afgang. Ingen af de fire dage er markeret som endeligt kvalitetssikret endnu.",
+    "qaNote": "Alle planlagte IONITY-stop skal kunne findes i IONITY-appen/ruteplanlæggeren før afgang. Sottrum skal søges som “Stuckenborstel”. Scandinavian Park i Handewitt er ikke IONITY og må ikke regnes som IONITY-stop.",
     "hotelCharging": [
       {
         "hotel": "Hotel Heideblick · Jesteburg",
@@ -358,10 +358,11 @@
         },
         {
           "type": "charge",
-          "name": "IONITY Sottrum",
+          "name": "IONITY Stuckenborstel (Sottrum)",
           "address": "Carl-von-Linde-Straße 6, 27367 Sottrum, Tyskland",
           "chargeTime": "ca. 30–60 min.; mål 90–100 %",
-          "facilities": "350–400 kW HPC. Faciliteter kontrolleres igen før afgang."
+          "facilities": "350–400 kW HPC. Faciliteter kontrolleres igen før afgang.",
+          "note": "Søg efter “Stuckenborstel” i IONITY-appen. Stationen ligger på Carl-von-Linde-Straße 6 og er en aktiv IONITY-station."
         },
         {
           "type": "hotel",
@@ -389,7 +390,7 @@
           "type": "stop",
           "name": "Scandinavian Park · Handewitt",
           "address": "Scandinavian Park 13, 24983 Handewitt, Tyskland",
-          "note": "Nyt rutestop fra den opdaterede Google Maps-etape. Ladeoperatør/faciliteter skal verificeres før ruten markeres endelig."
+          "note": "Ikke IONITY. Ladeparken drives af team energie / GP JOULE. Brug den kun som separat reserve/pausestop; IONITY-abonnement kan ikke antages at gælde her."
         },
         {
           "type": "charge",
