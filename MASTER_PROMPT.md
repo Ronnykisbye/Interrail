@@ -65,6 +65,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `antwerpen-by.html` – Antwerpen til fods
 - `antwerpen-kiel.html` – Kiel og omegn
 - `antwerpen-praktisk.html` – koncert, tilladelser og links
+- `antwerpen-vejr.html` – vejrudsigt for Jesteburg, Antwerpen og Kiel på de faktiske opholdsdatoer
 - `antwerpen-info.js` – renderer dagplan, ruter, hoteller og praktisk
 - `antwerpen-guide.js` – renderer oplevelsesguider
 - `data/antwerpen.json` – rejse-, hotel-, rute- og dagsplansdata
@@ -133,7 +134,8 @@ Bevares separat:
 - Kiel: **Garner Hotel Kiel - Akademie by IHG**, 8.–11. november 2026, check-in 8/11 kl. 15:00, check-out 11/11 kl. 12:00. Tidligere Bremen-plan og Hotel Consul er ikke længere del af den aktive rejseplan.
 - **A Tribute to Whitney Houston by Glennis Grace**: fredag 6. november 2026 kl. 20:00, Lotto Arena Antwerpen – Merksem (Antwerpen), 2 eTickets. Sæde-/ordreoplysninger og private billetlinks må ikke gemmes offentligt.
 - Antwerpen-appen er nu opdelt i en hovedmenu med store knapper og separate undersider. Alle undersider har fast **← Tilbage til Antwerpen**-knap.
-- Hovedmenuens sektioner: Dag for dag, Ruter & opladning, Hoteller, Jesteburg & Lüneburger Heide, Antwerpen, Kiel & omegn samt Koncert & praktisk.
+- Hovedmenuens sektioner: Dag for dag, Ruter & opladning, Hoteller, Jesteburg & Lüneburger Heide, Antwerpen, Kiel & omegn, Vejrudsigt samt Koncert & praktisk.
+- Vejrsiden er tilføjet 2. november 2026 med dag-for-dag prognose for Jesteburg 3.–5/11, Antwerpen 5.–8/11 og Kiel 8.–11/11. Prognosen er et øjebliksbillede og skal opdateres tættere på de enkelte dage.
 - Rejseguiden fra november 2026 er indarbejdet som oplevelsesdata. Forslag: 4/11 Wildpark + Heide Himmel; 6/11 Grote Markt + katedral + Het Steen; 7/11 MAS + Red Star Line + havneområdet; 9/11 Laboe/U-995 + Kiel-Holtenau; 10/11 Schloss Gottorf.
 - Antwerpen-appen viser rejseforløbet: 3/11 Helsingør → Jesteburg, 5/11 Jesteburg → Antwerpen, 8/11 Antwerpen → Kiel og 11/11 Kiel → Helsingør.
 - Antwerpen-appen har nu **4 separate køredage** med egne Google Maps-links og ladestop i rækkefølge: 3/11 Helsingør → Jesteburg via Nyborg + Aabenraa; 5/11 Jesteburg → Antwerpen via Ostetal Süd + Delmenhorst + Zandhoven; 8/11 Antwerpen → Kiel via Sevenum + Sottrum; 11/11 Kiel → Helsingør via Handewitt + Aabenraa + Aarup.
