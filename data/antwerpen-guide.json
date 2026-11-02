@@ -1,0 +1,155 @@
+{
+  "jesteburg": {
+    "title": "Jesteburg & Lüneburger Heide",
+    "subtitle": "3.–5. november · udflugtsdag 4. november",
+    "suggestion": "Forslag 4. november: Wildpark Lüneburger Heide + Heide Himmel. Alternativ: Lüneburg eller Freilichtmuseum Kiekeberg.",
+    "places": [
+      {
+        "name": "Wildpark Lüneburger Heide",
+        "address": "Am Wildpark 1, 21271 Hanstedt",
+        "text": "Stor dyrepark med blandt andet ulve, bjørne og andre dyr. God til flere timers besøg; tag praktiske sko og varmt overtøj. Kombinér med Heide Himmel i samme område.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Am%20Wildpark%201%2C%2021271%20Hanstedt"
+      },
+      {
+        "name": "Heide Himmel",
+        "address": "Am Wildpark 1, 21271 Hanstedt",
+        "text": "En gangbro i trækronerne og et højt udsigtstårn. Et anderledes blik ud over skovlandskabet. Vælg en dag med klart vejr, og vær opmærksom på vind.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Am%20Wildpark%201%2C%2021271%20Hanstedt"
+      },
+      {
+        "name": "Lüneburg – gammel by",
+        "address": "Am Sande, 21335 Lüneburg",
+        "text": "En charmerende historisk by med flotte gavlhuse, gamle handelsgader og caféer. Besøg Am Sande, rådhusområdet og havnen.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Am%20Sande%2C%2021335%20L%C3%BCneburg"
+      },
+      {
+        "name": "Freilichtmuseum Kiekeberg",
+        "address": "Am Kiekeberg 1, 21224 Rosengarten",
+        "text": "Frilandsmuseum med gamle huse, landbrugshistorie og udstillinger om dagliglivet.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Am%20Kiekeberg%201%2C%2021224%20Rosengarten"
+      },
+      {
+        "name": "Wilseder Berg",
+        "address": "Wilsede, 29646 Bispingen",
+        "text": "Klassisk hedelandskab med åbne vidder og enebær. Kræver gang fra adgangs- eller parkeringssted.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wilsede%2C%2029646%20Bispingen"
+      },
+      {
+        "name": "Buchholz in der Nordheide",
+        "address": "Breite Straße, 21244 Buchholz",
+        "text": "Mindre by med butikker, caféer og hyggelig stemning. God som kort eftermiddagstur.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Breite%20Stra%C3%9Fe%2C%2021244%20Buchholz"
+      }
+    ]
+  },
+  "antwerpen": {
+    "title": "Antwerpen – til fods",
+    "subtitle": "5.–8. november · udflugtsdage 6. og 7. november",
+    "suggestion": "6. november: Grote Markt, katedralen og Het Steen. 7. november: MAS, Red Star Line og havneområdet.",
+    "places": [
+      {
+        "name": "MAS – Museum aan de Stroom",
+        "address": "Hanzestedenplaats 1, 2000 Antwerpen",
+        "text": "Museumstårn ved havnen med udstillinger om byens historie og udsigt fra de øvre niveauer.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hanzestedenplaats%201%2C%202000%20Antwerpen"
+      },
+      {
+        "name": "Red Star Line Museum",
+        "address": "Montevideostraat 3, 2000 Antwerpen",
+        "text": "Historier om udvandrere, som rejste fra Antwerpen til Amerika.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montevideostraat%203%2C%202000%20Antwerpen"
+      },
+      {
+        "name": "Havenhuis – Port House",
+        "address": "Zaha Hadidplein 1, 2030 Antwerpen",
+        "text": "Markant moderne arkitektur oven på en ældre havnebygning; godt fotomotiv udefra.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zaha%20Hadidplein%201%2C%202030%20Antwerpen"
+      },
+      {
+        "name": "Grote Markt",
+        "address": "Grote Markt, 2000 Antwerpen",
+        "text": "Historisk centrum med rådhus, købmandshuse og Brabo-fontænen.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grote%20Markt%2C%202000%20Antwerpen"
+      },
+      {
+        "name": "Onze-Lieve-Vrouwekathedraal",
+        "address": "Groenplaats 21, 2000 Antwerpen",
+        "text": "Stor gotisk katedral med kirkekunst, blandt andet værker af Rubens.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Groenplaats%2021%2C%202000%20Antwerpen"
+      },
+      {
+        "name": "Het Steen",
+        "address": "Steenplein 1, 2000 Antwerpen",
+        "text": "Gammel borg ved Schelde. Nem at kombinere med en gåtur langs vandet og den historiske bymidte.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Steenplein%201%2C%202000%20Antwerpen"
+      },
+      {
+        "name": "Antwerpen-Centraal",
+        "address": "Koningin Astridplein 27, 2018 Antwerpen",
+        "text": "Imponerende jernbanestation med stor kuppelhal, stentrapper og flere niveauer.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Koningin%20Astridplein%2027%2C%202018%20Antwerpen"
+      },
+      {
+        "name": "Chocolate Nation",
+        "address": "Koningin Astridplein 7, 2018 Antwerpen",
+        "text": "Oplevelsesmuseum om belgisk chokolade. God til regnvejr og oplagt sammen med banegården.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Koningin%20Astridplein%207%2C%202018%20Antwerpen"
+      },
+      {
+        "name": "Meir – shoppinggade",
+        "address": "Meir, 2000 Antwerpen",
+        "text": "Bred shoppinggade med butikker, historiske facader og caféer.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Meir%2C%202000%20Antwerpen"
+      },
+      {
+        "name": "Sint-Annatunnel",
+        "address": "Sint-Jansvliet, 2000 Antwerpen",
+        "text": "Fodgængertunnel under Schelde med originale træ-rulletrapper fra 1930'erne.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sint-Jansvliet%2C%202000%20Antwerpen"
+      }
+    ]
+  },
+  "kiel": {
+    "title": "Kiel & omegn – med bil",
+    "subtitle": "8.–11. november · udflugtsdage 9. og 10. november",
+    "suggestion": "9. november: Laboe, U-995 og Kiel-Holtenau. 10. november: Schloss Gottorf. Alternativer: Eckernförde, Molfsee eller Plön.",
+    "places": [
+      {
+        "name": "U-995 og Laboe-mindesmærket",
+        "address": "Strandstraße 92, 24235 Laboe",
+        "text": "Historisk ubåd og mindesmærke ved Østersøen. Der er smalle passager i ubåden.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Strandstra%C3%9Fe%2092%2C%2024235%20Laboe"
+      },
+      {
+        "name": "Schloss Gottorf",
+        "address": "Schlossinsel 1, 24837 Schleswig",
+        "text": "Stort slotsanlæg med samlinger om kunst og arkæologi. Godt heldagsmål.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Schlossinsel%201%2C%2024837%20Schleswig"
+      },
+      {
+        "name": "Freilichtmuseum Molfsee",
+        "address": "Hamburger Landstraße 97, 24113 Molfsee",
+        "text": "Historiske gårde, håndværk og kulturhistorie. Undersøg vinteråbning før besøg.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hamburger%20Landstra%C3%9Fe%2097%2C%2024113%20Molfsee"
+      },
+      {
+        "name": "Kiel-Holtenau sluser",
+        "address": "Schleuseninsel, 24159 Kiel",
+        "text": "Se store skibe og sluseanlægget ved Kielerkanalen.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Schleuseninsel%2C%2024159%20Kiel"
+      },
+      {
+        "name": "Eckernförde",
+        "address": "Hafen, 24340 Eckernförde",
+        "text": "Hyggelig kystby med fiskerihavn, gamle gader og caféer.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hafen%2C%2024340%20Eckernf%C3%B6rde"
+      },
+      {
+        "name": "Plön og Plöner See",
+        "address": "Schlossgebiet 10, 24306 Plön",
+        "text": "Smuk by i sølandskab med slot og udsigt over vandet.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Schlossgebiet%2010%2C%2024306%20Pl%C3%B6n"
+      }
+    ]
+  }
+}
