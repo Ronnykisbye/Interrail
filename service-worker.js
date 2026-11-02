@@ -1,8 +1,8 @@
-const CACHE='rejser-v1-20261102-2';
+const CACHE='rejser-v1-20261102-3';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen-menu.css','./antwerpen-sub.css','./antwerpen-guide.js','./antwerpen-info.js','./antwerpen.css','./antwerpen.js','./data/antwerpen.json','./data/antwerpen-guide.json',
-  './antwerpen-dage.html','./antwerpen-ruter.html','./antwerpen-hoteller.html','./antwerpen-jesteburg.html','./antwerpen-by.html','./antwerpen-kiel.html','./antwerpen-praktisk.html',
+  './antwerpen-dage.html','./antwerpen-ruter.html','./antwerpen-hoteller.html','./antwerpen-jesteburg.html','./antwerpen-by.html','./antwerpen-kiel.html','./antwerpen-vejr.html','./antwerpen-praktisk.html',
   './interrail-istanbul.html','./interrail-istanbul.css','./interrail-istanbul.js','./data/interrail-istanbul.json',
   './ski-2027.html','./ski-2027-delt.html','./ski-2027.css','./ski-2027.js','./data/ski-2027.json',
   './data/athen-2026.json','./data/athen-food.json','./data/athen-stay.json','./data/athen-practical.json','./data/athen-tickets.json','./assets/athen-banner.svg',
