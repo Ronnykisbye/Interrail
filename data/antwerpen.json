@@ -413,5 +413,103 @@
         }
       ]
     }
+  ],
+  "dailyPlan": [
+    {
+      "date": "2026-11-03",
+      "title": "Dag 1 · Helsingør → Jesteburg",
+      "type": "drive",
+      "items": [
+        "Afgang fra Helsingør med 100 % batteri.",
+        "Kør via Storebælt og Jylland uden færge.",
+        "Planlagte IONITY-stop: Nyborg og Aabenraa.",
+        "Ankomst: Hotel Heideblick an der Lüneburger Heide, Itzenbütteler Straße 35, 21266 Jesteburg.",
+        "Check-in fra kl. 15.00."
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Dag 2 · Udflugtsdag i Lüneburger Heide",
+      "type": "excursion",
+      "items": [
+        "Forslag: Wildpark Lüneburger Heide + Heide Himmel.",
+        "Alternativer: Lüneburg eller Freilichtmuseum Kiekeberg.",
+        "Ingen lang køredag. Brug gerne dagen til opladning før næste etape."
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Dag 3 · Jesteburg → Antwerpen",
+      "type": "drive",
+      "items": [
+        "Check-out fra Hotel Heideblick senest kl. 11.00.",
+        "Planlagte IONITY-stop: Ostetal Süd, Delmenhorst og Zandhoven.",
+        "Ankomst: Prize by Radisson, Antwerp City, Tunnelplaats 5, 2000 Antwerpen.",
+        "Check-in fra kl. 15.00."
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Dag 4 · Historisk Antwerpen + koncert",
+      "type": "excursion",
+      "items": [
+        "Forslag i dagtimerne: Grote Markt, Onze-Lieve-Vrouwekathedraal og Het Steen.",
+        "Aften: A Tribute to Whitney Houston by Glennis Grace.",
+        "Lotto Arena Antwerpen, Schijnpoortweg 119, 2170 Antwerpen.",
+        "Koncertstart kl. 20.00."
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Dag 5 · Havnen og museer i Antwerpen",
+      "type": "excursion",
+      "items": [
+        "Forslag: MAS, Red Star Line Museum og havneområdet.",
+        "Alternativ: Antwerpen-Centraal, Chocolate Nation og Meir.",
+        "Sørg gerne for 80–100 % batteri før næste dags køretur."
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Dag 6 · Antwerpen → Kiel",
+      "type": "drive",
+      "items": [
+        "Check-out fra Prize by Radisson.",
+        "Planlagte IONITY-stop: Sevenum og Stuckenborstel (Sottrum).",
+        "Ankomst: Garner Hotel Kiel - Akademie by IHG, Faluner Weg 2, 24109 Kiel.",
+        "Check-in fra kl. 15.00."
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Dag 7 · Laboe og Kielerkanalen",
+      "type": "excursion",
+      "items": [
+        "Forslag: U-995 og Laboe-mindesmærket.",
+        "Fortsæt eventuelt til Kiel-Holtenau sluser.",
+        "Alternativ: Eckernförde."
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Dag 8 · Schloss Gottorf",
+      "type": "excursion",
+      "items": [
+        "Forslag: Schloss Gottorf i Schleswig.",
+        "Alternativer: Freilichtmuseum Molfsee eller Plön og Plöner See.",
+        "Pak bilen og sørg for høj batteriprocent før hjemrejsen."
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Dag 9 · Kiel → Helsingør",
+      "type": "drive",
+      "items": [
+        "Check-out fra Garner Hotel senest kl. 12.00.",
+        "Rute: Kiel → Scandinavian Park, Handewitt → IONITY Aabenraa → IONITY Aarup → Helsingør.",
+        "Scandinavian Park er pause-/indkøbsstop og ikke IONITY.",
+        "Ankomst hjemme i Helsingør."
+      ]
+    }
   ]
 }
