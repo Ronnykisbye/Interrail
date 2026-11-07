@@ -239,7 +239,7 @@
     "chargingPriority": "IONITY er førstevalg. E.ON Drive er reserve.",
     "chargingTarget": "Lad så meget som praktisk muligt, gerne 90–100 %. De sidste 10–20 % går langsommere på DC.",
     "chargeTimeNote": "Ford oplyser ca. 36 min. fra 10–80 % for nyere Mach-E Premium-varianter. I planen vises derfor foreløbigt ca. 30–60 min. pr. IONITY-stop ved mål 90–100 %, afhængigt af ankomst-SOC, temperatur og ladeeffekt.",
-    "qaNote": "Alle planlagte IONITY-stop skal kunne findes i IONITY-appen/ruteplanlæggeren før afgang. Sottrum skal søges som “Stuckenborstel”. Scandinavian Park i Handewitt er ikke IONITY og må ikke regnes som IONITY-stop.",
+    "qaNote": "Rute 3 er valgt med fem IONITY-stop: Sevenum, Werne, Dammer Berge Ost, Ostetal Nord og Brokenlande Ost. Brug præcise adresser/koordinater til navigation. Køretider og afstande mellem stoppene skal stadig verificeres mod målet om 1–2 timers kørsel ved maks. 120 km/t. Øvrige ruter skal fortsat kvalitetssikres før afgang.",
     "hotelCharging": [
       {
         "hotel": "Hotel Heideblick · Jesteburg",
@@ -339,37 +339,81 @@
     {
       "day": 3,
       "date": "2026-11-08",
-      "from": "Antwerpen",
-      "to": "Garner Hotel Kiel - Akademie by IHG",
-      "status": "Foreløbig",
-      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Tunnelplaats%205%2C%202000%20Antwerpen%2C%20Belgium&destination=Faluner%20Weg%202%2C%2024109%20Kiel%2C%20Germany&waypoints=Kleefsedijk%2029b%2C%205975%20NV%20Sevenum%2C%20Netherlands%7CCarl-von-Linde-Stra%C3%9Fe%206%2C%2027367%20Sottrum%2C%20Germany&travelmode=driving",
+      "from": "Prize by Radisson Antwerp City · Antwerpen",
+      "to": "Garner Hotel Kiel – Akademie · Kiel",
+      "status": "Valgt · køretider og etaper skal stadig verificeres",
+      "mapUrl": "https://maps.app.goo.gl/iAEcDGxbPwhhbrsu8",
       "stops": [
         {
           "type": "hotel",
-          "name": "Prize by Radisson · Antwerpen",
-          "note": "Mål: afgang med 80–100 %."
+          "name": "Prize by Radisson Antwerp City",
+          "address": "Tunnelplaats 5, 2000 Antwerpen, Belgien",
+          "note": "Afgang kl. 09.30."
         },
         {
           "type": "charge",
           "name": "IONITY Sevenum",
-          "address": "Kleefsedijk 29B, 5975 NV Sevenum, Nederlandene",
-          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
-          "facilities": "350 kW CCS; mad og toiletter i kort gåafstand."
+          "address": "Kleefsedijk 29b, 5975 NV Sevenum, Holland",
+          "chargeTime": "Opladning ved stoppet",
+          "facilities": "Toilet, kaffe og mad prioriteres.",
+          "legDistance": "Skal verificeres",
+          "legDriveTime": "Skal verificeres"
         },
         {
           "type": "charge",
-          "name": "IONITY Stuckenborstel (Sottrum)",
-          "address": "Carl-von-Linde-Straße 6, 27367 Sottrum, Tyskland",
-          "chargeTime": "ca. 30–60 min.; mål 90–100 %",
-          "facilities": "350–400 kW HPC. Faciliteter kontrolleres igen før afgang.",
-          "note": "Søg efter “Stuckenborstel” i IONITY-appen. Stationen ligger på Carl-von-Linde-Straße 6 og er en aktiv IONITY-station."
+          "name": "IONITY Werne",
+          "address": "Nordlippestraße 52–54, 59368 Werne, Tyskland",
+          "chargeTime": "Opladning ved stoppet",
+          "facilities": "Toilet, kaffe og mad prioriteres.",
+          "legDistance": "Skal verificeres",
+          "legDriveTime": "Skal verificeres"
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Dammer Berge Ost",
+          "address": "Rasteplads ved A1, 49451 Holdorf, Tyskland",
+          "chargeTime": "Opladning ved stoppet",
+          "facilities": "Rasteplads ved A1; toilet, kaffe og mad prioriteres.",
+          "legDistance": "Skal verificeres",
+          "legDriveTime": "Skal verificeres"
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Ostetal Nord",
+          "address": "Rasteplads ved A1, 27419 Tiste, Tyskland",
+          "chargeTime": "Opladning ved stoppet",
+          "facilities": "Rasteplads ved A1; toilet, kaffe og mad prioriteres.",
+          "legDistance": "Skal verificeres",
+          "legDriveTime": "Skal verificeres"
+        },
+        {
+          "type": "charge",
+          "name": "IONITY Brokenlande Ost",
+          "address": "Apothekerholz 3, 24623 Großenaspe, Tyskland",
+          "chargeTime": "Opladning ved stoppet",
+          "facilities": "Toilet, kaffe og mad prioriteres.",
+          "legDistance": "Skal verificeres",
+          "legDriveTime": "Skal verificeres"
         },
         {
           "type": "hotel",
-          "name": "Garner Hotel Kiel - Akademie by IHG",
+          "name": "Garner Hotel Kiel – Akademie",
           "address": "Faluner Weg 2, 24109 Kiel, Tyskland",
-          "note": "3 nætter. Hotelparkering findes; EV-lader på hotellet er ikke bekræftet."
+          "note": "Destination.",
+          "legDistance": "Skal verificeres",
+          "legDriveTime": "Skal verificeres"
         }
+      ],
+      "departureTime": "09:30",
+      "rules": [
+        "Maksimal hastighed: 120 km/t",
+        "Minimum 1 times kørsel mellem ladestop",
+        "Helst maksimalt 2 timers kørsel mellem ladestop",
+        "Opladning ved hvert stop, hvis muligt",
+        "IONITY foretrækkes; E.ON accepteres som alternativ",
+        "Undgå unødvendige afstikkere fra motorvejen",
+        "Prioritér toilet, kaffe og mulighed for mad",
+        "Ingen færger"
       ]
     },
     {
@@ -474,10 +518,12 @@
       "title": "Dag 6 · Antwerpen → Kiel",
       "type": "drive",
       "items": [
-        "Check-out fra Prize by Radisson.",
-        "Planlagte IONITY-stop: Sevenum og Stuckenborstel (Sottrum).",
-        "Ankomst: Garner Hotel Kiel - Akademie by IHG, Faluner Weg 2, 24109 Kiel.",
-        "Check-in fra kl. 15.00."
+        "Afgang fra Prize by Radisson Antwerp City kl. 09.30.",
+        "Planlagte IONITY-stop i rækkefølge: Sevenum → Werne → Dammer Berge Ost → Ostetal Nord → Brokenlande Ost.",
+        "Maks. 120 km/t. Målet er 1–2 timers kørsel mellem ladestoppene.",
+        "Ingen færger og ingen unødvendige afstikkere fra motorvejen.",
+        "Ankomst: Garner Hotel Kiel – Akademie, Faluner Weg 2, 24109 Kiel.",
+        "Køretider og afstande for de enkelte etaper skal stadig verificeres."
       ]
     },
     {
