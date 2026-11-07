@@ -2,7 +2,7 @@ async function loadInfo(){
   const page=document.body.dataset.page;
   const root=document.getElementById('pageContent');
   try{
-    const r=await fetch('data/antwerpen.json?v=20261102-2',{cache:'no-store'});
+    const r=await fetch('data/antwerpen.json?v=20261107-1',{cache:'no-store'});
     if(!r.ok)throw new Error('Data kunne ikke hentes');
     const d=await r.json();
     if(page==='days')renderDays(root,d);
@@ -20,7 +20,7 @@ function renderDays(root,d){
 }
 function renderRoutes(root,d){
   const intro=`<div class="warning"><strong>${esc(d.routePlan?.status||'Foreløbig')}</strong><br>${esc(d.routePlan?.qaNote||'')}</div>`;
-  const cards=(d.driveDays||[]).map(day=>`<article class="route-card"><span class="route-status">Køredag ${day.day} · ${esc(day.status||'Foreløbig')}</span><h2>${esc(day.from)} → ${esc(day.to)}</h2><p><strong>${fmt(day.date)}</strong></p><div class="stop-list">${(day.stops||[]).map((s,i)=>`<div class="stop-line"><strong>${i+1}. ${esc(s.name)}</strong>${s.address?`<p>${esc(s.address)}</p>`:''}${s.chargeTime?`<p><b>Ladetid:</b> ${esc(s.chargeTime)}</p>`:''}${s.note?`<p>${esc(s.note)}</p>`:''}</div>`).join('')}</div><a href="${esc(day.mapUrl)}" target="_blank" rel="noopener noreferrer">Åbn i Google Maps ↗</a></article>`).join('');
+  const cards=(d.driveDays||[]).map(day=>`<article class="route-card"><span class="route-status">Køredag ${day.day} · ${esc(day.status||'Foreløbig')}</span><h2>${esc(day.from)} → ${esc(day.to)}</h2><p><strong>${fmt(day.date)}</strong></p><div class="stop-list">${day.departureTime?`<p><b>Afgang:</b> kl. ${esc(day.departureTime)}</p>`:''}${Array.isArray(day.rules)&&day.rules.length?`<div class="warning"><b>Regler:</b><br>${day.rules.map(x=>`• ${esc(x)}`).join('<br>')}</div>`:''}${(day.stops||[]).map((s,i)=>`<div class="stop-line"><strong>${i+1}. ${esc(s.name)}</strong>${s.address?`<p>${esc(s.address)}</p>`:''}${s.legDistance?`<p><b>Afstand fra forrige punkt:</b> ${esc(s.legDistance)}</p>`:''}${s.legDriveTime?`<p><b>Køretid fra forrige punkt:</b> ${esc(s.legDriveTime)}</p>`:''}${s.chargeTime?`<p><b>Ladning:</b> ${esc(s.chargeTime)}</p>`:''}${s.note?`<p>${esc(s.note)}</p>`:''}</div>`).join('')}</div><a href="${esc(day.mapUrl)}" target="_blank" rel="noopener noreferrer">Åbn i Google Maps ↗</a></article>`).join('');
   const hotel=(d.routePlan?.hotelCharging||[]).map(h=>`<article class="info-card"><h2>${esc(h.hotel)}</h2><p><strong>${esc(h.status)}</strong></p><p>${esc(h.text)}</p></article>`).join('');
   root.innerHTML=intro+`<section class="cards">${cards}</section><section class="sub-hero"><h1>Opladning ved hoteller</h1></section><section class="cards">${hotel}</section>`;
 }
