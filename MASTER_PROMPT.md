@@ -125,7 +125,10 @@ Bevares separat:
 - `data/links.json`
 
 ## PWA
-- `manifest.webmanifest` beskriver hovedappen som **Rejser**.
+- Installation ligger nu inde i den enkelte rejse, ikke på Rejser-hubben.
+- Aktive rejser har egne installationssider/manifester: Antwerpen, Interrail, Skiferie 2027 og Kaunas.
+- Hver installeret rejse åbner direkte i sin egen rejse-app.
+- `manifest.webmanifest` beskriver fortsat hovedappen som **Rejser**, men hubben viser ikke længere en installationsknap.
 - `service-worker.js` cacher hub, Antwerpen, Istanbul-planen, Skiferie 2027, den delte skiferievisning, den gamle Interrail-side samt generelle Athen-datafiler; den afsluttede Athen-app caches ikke længere.
 
 ---
