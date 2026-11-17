@@ -12,3 +12,22 @@
 
 /* 2026.11 usability upgrades */
 .share-button{border:1px solid #d9cabc;background:#fffaf2;color:#7b4d35;padding:9px 13px;border-radius:100px;font-size:.73rem;font-weight:800}.result-tag{display:inline-block;margin-bottom:12px;color:#9a5838;font-size:.7rem;letter-spacing:.06em;font-weight:800}.result-open{margin-top:12px;background:transparent;border:0;color:#9a5838;text-decoration:underline;font-weight:800;padding:8px 0}.search-wrap:focus-within{outline:2px solid #b75e3d;outline-offset:2px}@media(max-width:420px){.status{display:none}.topbar{gap:8px}}
+
+
+/* Unified action styling */
+.card .action,.links a,.result-open{
+  background:#f1e2d6;
+  color:#6f412d;
+  border:1px solid #e3c8b7;
+  border-radius:14px;
+  transition:background .18s ease,transform .18s ease,border-color .18s ease;
+}
+.card .action:hover,.links a:hover,.result-open:hover{
+  background:#e8d2c2;
+  border-color:#d2ab93;
+  transform:translateY(-1px);
+}
+.card .action:focus-visible,.links a:focus-visible,.result-open:focus-visible{
+  outline:3px solid #b75e3d;
+  outline-offset:2px;
+}
