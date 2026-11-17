@@ -929,6 +929,25 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Lithuanian+restaurants+Kaunas"
         }
       ]
+    },
+    {
+      "id": "billeder",
+      "label": "Billeder",
+      "icon": "📷",
+      "intro": "Billeder fra tidligere ture til Kaunas. Tryk på et billede for at se det større.",
+      "gallery": [
+        "20250506_215509.jpg",
+        "20250508_112542.jpg",
+        "20251215_163905.jpg",
+        "20251215_164346.jpg",
+        "20251215_204609.jpg",
+        "20251215_211128.jpg",
+        "20251215_211227.jpg",
+        "20251216_191227.jpg",
+        "20251219_194739.jpg",
+        "WP_20170310_12_57_43_Pro.jpg",
+        "WP_20170313_15_29_02_Pro.jpg"
+      ]
     }
   ]
 }
