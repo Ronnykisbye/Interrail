@@ -91,6 +91,8 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `data/koners-efteraar-2026.json`
 - Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. Præcise datoer, transport og hotel er endnu ikke oplyst.
 - Historiedel: Vytautas den Stores Bro og den historiske 13-dages kalenderhistorie samt Aleksotas-funikulæren fra 1935.
+- Juletema: turen ligger omkring juletræstændingen 27. november 2026. Appen har nu `Jul i Kaunas` med juletræ, julebyer, Laisvės alėja-lys, Vienybės aikštė, weekendoplevelser og Spurginė på Laisvės al. 84.
+- Google Maps-linket `https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm` er bekræftet af brugeren som hotel-link, men hotelnavnet må først skrives, når det kan verificeres sikkert.
 
 ## Athen-viden · arkiv
 Selve Athen-rejsen og app-siden er fjernet. Kun genbrugelig, generel Athen-viden bevares:
