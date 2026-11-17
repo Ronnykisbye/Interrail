@@ -25,9 +25,8 @@
         },
         {
           "icon": "🗺️",
-          "title": "Hotellet · Google Maps",
-          "text": "Det første faste hotel-link til turen. Navnet udfyldes, når det kan verificeres sikkert fra Maps-linket.",
-          "url": "https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm"
+          "title": "Hotel · afventer korrekt adresse",
+          "text": "Det tidligere Maps-link var forkert og er fjernet. Hotelnavn og adresse indsættes først, når de er verificeret."
         }
       ],
       "facts": [
