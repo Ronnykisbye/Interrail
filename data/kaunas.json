@@ -1,6 +1,6 @@
 {
   "trip": {
-    "title": "Kaunas",
+    "title": "Kaunas – Efterår 2026",
     "destination": "Kaunas, Litauen",
     "travellers": "7 unge piger",
     "dates": "Efterår 2026 – præcise datoer ikke oplyst",
@@ -11,7 +11,7 @@
       "id": "overblik",
       "label": "Overblik",
       "icon": "🍂",
-      "intro": "Kaunas-guide til 7 unge piger med juleweekend, shopping, gåtur gennem centrum, transport, sikkerhed og oplevelser. Datoer, fly og hotelnavn udfyldes, når de er sikkert verificeret.",
+      "intro": "Velkommen til Kaunas – Efterår 2026! Vælg en mappe nedenfor. Flybilletter og hotel udfyldes, når oplysningerne er klar.",
       "cards": [
         {
           "icon": "🇱🇹",
@@ -44,6 +44,25 @@
           "value": "Planlægning"
         }
       ]
+    },
+    {
+      "id": "fly",
+      "label": "Flybilletter",
+      "icon": "✈️",
+      "intro": "Flyoplysningerne kommer her, så snart billetterne er kendt.",
+      "cards": [
+        {
+          "icon": "🛫",
+          "title": "Udrejse",
+          "text": "Flynummer, lufthavn og afgangstid afventer."
+        },
+        {
+          "icon": "🛬",
+          "title": "Hjemrejse",
+          "text": "Flynummer, lufthavn og hjemrejsetid afventer."
+        }
+      ],
+      "links": []
     },
     {
       "id": "jul",
@@ -100,6 +119,188 @@
           "url": "https://kaunasin.lt/ka-veikti/kaledinis-miestas/"
         }
       ]
+    },
+    {
+      "id": "mad",
+      "label": "Litauisk mad",
+      "icon": "🥟",
+      "intro": "Smag på Litauen! Her er traditionelle retter forklaret på dansk. Spørg altid restauranten om allergener.",
+      "cards": [
+        {
+          "icon": "🥔",
+          "title": "Cepelinai",
+          "text": "Store kartoffelboller med fyld af kød eller ostemasse, typisk serveret med cremefraiche og bacon."
+        },
+        {
+          "icon": "🍲",
+          "title": "Kugelis",
+          "text": "Ovnbagt kartoffelret, ofte serveret med cremefraiche."
+        },
+        {
+          "icon": "🥟",
+          "title": "Kibinai",
+          "text": "Små lune, bagte dejpakker, ofte med kød eller grøntsager."
+        },
+        {
+          "icon": "🥣",
+          "title": "Šaltibarščiai",
+          "text": "Kold lyserød rødbedesuppe med kefir; en klassiker, men mere sommerlig."
+        },
+        {
+          "icon": "🍩",
+          "title": "Varškės spurgos",
+          "text": "Små søde, friturestegte ostemasseboller. Prøv dem med kaffe."
+        },
+        {
+          "icon": "🎄",
+          "title": "Kūčiukai",
+          "text": "Små traditionelle julekager med valmuefrø, knyttet til litauisk juleaftensmad."
+        },
+        {
+          "icon": "🐟",
+          "title": "Kūčios – juleaftensmåltidet",
+          "text": "Traditionelt litauisk julemåltid med blandt andet fisk, svampe og valmuefrø. Retterne varierer fra familie til familie."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "spisesteder",
+      "label": "Små spisesteder",
+      "icon": "🍽️",
+      "intro": "Hyggelige steder at undersøge omkring Laisvės alėja og den gamle bydel. Åbningstider, menuer og ledige borde skal tjekkes før besøget.",
+      "cards": [
+        {
+          "icon": "🍲",
+          "title": "Višta Puode",
+          "text": "S. Daukanto g. 23. Hyggeligt sted tæt på centrum med lokale retter.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vi%C5%A1ta%20Puode%20S.%20Daukanto%20g.%2023%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🎻",
+          "title": "Folkas",
+          "text": "L. Zamenhofo g. 12. Et stemningsfuldt sted i et gårdmiljø.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Folkas%20L.%20Zamenhofo%20g.%2012%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🏡",
+          "title": "Bernelių užeiga",
+          "text": "M. Valančiaus g. 9. Rustik kro med klassiske litauiske retter.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Berneli%C5%B3%20u%C5%BEeiga%20M.%20Valan%C4%8Diaus%20g.%209%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🍽️",
+          "title": "Bajorų kiemas",
+          "text": "Laisvės al. 72. Traditionel mad på hovedgaden.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Bajor%C5%B3%20kiemas%20Laisv%C4%97s%20al.%2072%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🍩",
+          "title": "Spurginė",
+          "text": "Laisvės al. 84. Lille klassisk café med lune litauiske doughnuts.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spurgin%C4%97%20Laisv%C4%97s%20al.%2084%20Kaunas%20Lithuania"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "julemad",
+      "label": "Julemad & hygge",
+      "icon": "🕯️",
+      "intro": "Små lækkerier til en kold dag og litauiske juletraditioner. Udbuddet ved boderne varierer.",
+      "cards": [
+        {
+          "icon": "🍪",
+          "title": "Kūčiukai",
+          "text": "Små julekager med valmuefrø; traditionelt knyttet til Kūčios."
+        },
+        {
+          "icon": "🍯",
+          "title": "Honningkager",
+          "text": "Se efter krydrede honningkager og små søde julegaver på markedet."
+        },
+        {
+          "icon": "☕",
+          "title": "Varme drikke",
+          "text": "Prøv en krydret varm drik eller varm kakao mellem juleboderne."
+        },
+        {
+          "icon": "🥟",
+          "title": "Noget varmt at spise",
+          "text": "Kig efter lokale kartoffelretter, lune bagværk og spurgos i byen."
+        },
+        {
+          "icon": "🧡",
+          "title": "Jul i Litauen",
+          "text": "Kūčios er den traditionelle juleaftensmiddag den 24. december. Traditionelt er der ofte 12 retter."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "julerute",
+      "label": "Julegåtur",
+      "icon": "🚶‍♀️",
+      "intro": "En rolig gåtur mellem de to juleområder. Sæt god tid af til butikker, caféer og billeder.",
+      "cards": [
+        {
+          "icon": "🎄",
+          "title": "1 · Vienybės aikštė",
+          "text": "Start ved den moderne juleplads.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vienyb%C4%97s%20aik%C5%A1t%C4%97%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "✨",
+          "title": "2 · Laisvės alėja",
+          "text": "Følg den lange gågade med butikker, caféer og julelys.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisv%C4%97s%20al%C4%97ja%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🍩",
+          "title": "3 · Spurginė",
+          "text": "Hold en hyggelig pause på Laisvės al. 84.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spurgin%C4%97%20Laisv%C4%97s%20al.%2084%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🏘️",
+          "title": "4 · Vilniaus gatvė",
+          "text": "Gå videre gennem den historiske gågade.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vilniaus%20gatv%C4%97%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🎁",
+          "title": "5 · Rotušės aikštė",
+          "text": "Slut ved den klassiske juleplads og det store juletræ.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Rotu%C5%A1%C4%97s%20aik%C5%A1t%C4%97%20Kaunas%20Lithuania"
+        }
+      ],
+      "links": [
+        {
+          "title": "Åbn hele julegåturen i Google Maps",
+          "text": "Rute til fods fra Vienybės aikštė til Rådhuspladsen",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Vienybes+aikste+Kaunas&destination=Rotuses+aikste+Kaunas&waypoints=Laisves+aleja+Kaunas%7CSpurgine+Laisves+al+84+Kaunas%7CVilniaus+gatve+Kaunas&travelmode=walking"
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "label": "Mit hotel",
+      "icon": "🏨",
+      "intro": "Hotellets navn og adresse afventer. Indtil da kan I åbne det hotel-link, der allerede er gemt fra planlægningen.",
+      "cards": [
+        {
+          "icon": "📍",
+          "title": "Hotel-link fra planlægningen",
+          "text": "Åbn det tidligere gemte kortlink. Kontroller at det viser det rigtige hotel.",
+          "url": "https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm"
+        },
+        {
+          "icon": "🏠",
+          "title": "Find vej hjem",
+          "text": "Når hoteladressen er bekræftet, får denne mappe en direkte navigationsknap."
+        }
+      ],
+      "links": []
     },
     {
       "id": "gaatur",
