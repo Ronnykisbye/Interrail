@@ -479,6 +479,142 @@
           "url": "https://112.lt/en/about-number-112/"
         }
       ]
+    },
+    {
+      "id": "genbrug",
+      "label": "Genbrug",
+      "icon": "♻️",
+      "intro": "Genbrug, vintage og antik i Kaunas. Udvalget ændrer sig hele tiden, så Google Maps-linket nederst er godt til at se alle aktuelle butikker i nærheden.",
+      "cards": [
+        {
+          "icon": "👗",
+          "title": "Humana Vintage · M. Daukšos g. 25",
+          "text": "Vintage og secondhand tæt på den gamle bydel.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Humana+Vintage+M+Dauksos+25+Kaunas"
+        },
+        {
+          "icon": "👚",
+          "title": "Humana · Elzės Ožeškienės g. 9",
+          "text": "Klassisk secondhand-butik centralt i Kaunas.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Humana+Elzes+Ozeskienes+9+Kaunas"
+        },
+        {
+          "icon": "👜",
+          "title": "Valentinos skrynelė · M. Daukšos g. 24",
+          "text": "Lille secondhand- og tøjbutik lige over for Humana Vintage.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Valentinos+skrynele+M+Dauksos+24+Kaunas"
+        },
+        {
+          "icon": "🧥",
+          "title": "Gausa · Vytauto pr. 3",
+          "text": "Genbrug og secondhand tæt på stationen og centrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Gausa+Vytauto+pr+3+Kaunas"
+        },
+        {
+          "icon": "👖",
+          "title": "Textale · Pramonės pr. 14",
+          "text": "Secondhand-butik lidt uden for centrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Textale+Pramones+pr+14+Kaunas"
+        },
+        {
+          "icon": "☕",
+          "title": "Sendaikčiai ir Kava · Veiverių g. 45A",
+          "text": "Et anderledes sted med brugte ting og kaffe.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Sendaikciai+ir+Kava+Veiveriu+45A+Kaunas"
+        },
+        {
+          "icon": "📚",
+          "title": "Vidmantas Staniulis · antikvariat",
+          "text": "Antikvarisk boghandel på Vytauto pr. 58 med gamle bøger, fotos, mønter, smykker og samlerobjekter.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vidmantas+Staniulis+Vytauto+58+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Google Maps · alle genbrugsbutikker i Kaunas",
+          "text": "Se aktuelle secondhand-, vintage- og thrift-butikker i hele Kaunas.",
+          "url": "https://www.google.com/maps/search/?api=1&query=second+hand+shops+Kaunas"
+        },
+        {
+          "title": "Google Maps · vintage i Kaunas",
+          "text": "Søg specifikt efter vintagebutikker.",
+          "url": "https://www.google.com/maps/search/?api=1&query=vintage+shops+Kaunas"
+        }
+      ]
+    },
+    {
+      "id": "mad",
+      "label": "Madretter",
+      "icon": "🍽️",
+      "intro": "Typiske litauiske retter, så pigerne kan se både navnet og hvad retten normalt består af, før de bestiller.",
+      "cards": [
+        {
+          "icon": "🥔",
+          "title": "Cepelinai",
+          "text": "Store kartoffelboller lavet af revne og kogte kartofler. Fyldes typisk med hakket svinekød, kvark/ost eller svampe og serveres ofte med cremefraiche og bacon.",
+          "url": "https://www.google.com/maps/search/?api=1&query=cepelinai+Kaunas"
+        },
+        {
+          "icon": "🩷",
+          "title": "Šaltibarščiai",
+          "text": "Kold pink rødbedesuppe med rødbede, kefir eller kærnemælk, agurk, dild, forårsløg og ofte æg. Serveres typisk med varme kogte kartofler.",
+          "url": "https://www.google.com/maps/search/?api=1&query=saltibarsciai+Kaunas"
+        },
+        {
+          "icon": "🥔",
+          "title": "Kugelis",
+          "text": "Litauisk kartoffelgratin/kage af revne kartofler, æg, mælk og ofte løg og bacon. Serveres ofte med cremefraiche.",
+          "url": "https://www.google.com/maps/search/?api=1&query=kugelis+Kaunas"
+        },
+        {
+          "icon": "🥟",
+          "title": "Kibinai",
+          "text": "Ovnbagt dejpakke med fyld, typisk hakket eller skåret kød og løg. Findes også med ost, grønt eller andre fyld.",
+          "url": "https://www.google.com/maps/search/?api=1&query=kibinai+Kaunas"
+        },
+        {
+          "icon": "🥞",
+          "title": "Žemaičių blynai",
+          "text": "Kartoffelpandekager med kødfyld, stegt på panden og ofte serveret med cremefraiche.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Zemaiciu+blynai+Kaunas"
+        },
+        {
+          "icon": "🍞",
+          "title": "Kepta duona",
+          "text": "Mørkt rugbrød skåret i stave og friturestegt eller ristet med hvidløg. Serveres ofte med ostedip.",
+          "url": "https://www.google.com/maps/search/?api=1&query=kepta+duona+Kaunas"
+        },
+        {
+          "icon": "🍩",
+          "title": "Spurgos",
+          "text": "Litauiske donuts eller friturestegte dejkager. De kan være med sukker, marmelade eller ost/kvark. Spurginė på Laisvės alėja er et klassisk sted at prøve dem.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spurgine+Laisves+al+84+Kaunas"
+        },
+        {
+          "icon": "🍰",
+          "title": "Šakotis",
+          "text": "Traditionel litauisk kage bagt på roterende spid, så den får grene eller pigge. Laves typisk af æg, smør, mel, sukker og fløde.",
+          "url": "https://www.google.com/maps/search/?api=1&query=sakotis+Kaunas"
+        },
+        {
+          "icon": "🍞",
+          "title": "Sort rugbrød",
+          "text": "Mørkt, tæt rugbrød er en klassiker i Litauen og spises både til måltider og som snack med fx ost eller honning.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lithuanian+black+bread+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Lithuania Travel · litauisk mad",
+          "text": "Officiel introduktion til traditionelle litauiske retter og produkter.",
+          "url": "https://lithuania.travel/en/what-to-do/food-and-drink"
+        },
+        {
+          "title": "Google Maps · litauiske restauranter i Kaunas",
+          "text": "Find restauranter, der serverer klassiske lokale retter.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lithuanian+restaurants+Kaunas"
+        }
+      ]
     }
   ]
 }
