@@ -568,8 +568,26 @@
       "id": "transport",
       "label": "Transport",
       "icon": "🚌",
-      "intro": "Det er nemt at komme rundt i Kaunas med busser og trolleybusser. For 7 personer kan Bolt også være praktisk, især sent om aftenen eller hvis gruppen deler sig.",
+      "intro": "I Kaunas er Bolt en af de nemmeste måder at komme rundt på. Appen kan bruges til almindelige Bolt-kørsler, lokale taxaer og el-løbehjul. Offentlig transport fungerer også godt med busser og trolleybusser.",
       "cards": [
+        {
+          "icon": "🚕",
+          "title": "Bolt · taxa og kørsel",
+          "text": "Bolt er meget udbredt i Kaunas. Bestil bilen i appen, se pris, chauffør og nummerplade før turen. Der findes både almindelige Bolt-biler og lokal Taxi-kategori.",
+          "url": "https://bolt.eu/en/cities/kaunas/"
+        },
+        {
+          "icon": "🛴",
+          "title": "Bolt · el-løbehjul",
+          "text": "Den samme Bolt-app kan bruges til el-løbehjul i Kaunas. Godt til korte ture i centrum. Følg altid de lokale regler, og parker løbehjulet hensynsfuldt.",
+          "url": "https://bolt.eu/en/cities/kaunas/"
+        },
+        {
+          "icon": "🚖",
+          "title": "eTaksi · traditionel taxa",
+          "text": "eTaksi samler flere traditionelle taxiselskaber i byen. Hotellet kan også bestille en almindelig taxa for jer.",
+          "url": "https://www.etaksi.lt/"
+        },
         {
           "icon": "💳",
           "title": "Kontaktløs betaling",
@@ -589,12 +607,6 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+bus+station"
         },
         {
-          "icon": "🚕",
-          "title": "Bolt og Uber",
-          "text": "Kaunas IN anbefaler blandt andet Bolt og Uber. Brug appen, så pris, bil og chauffør fremgår på forhånd.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Lithuania"
-        },
-        {
           "icon": "✈️",
           "title": "Bus 29 fra lufthavnen",
           "text": "Fra Kaunas Airport går bus 29 til centrum. Tjek den aktuelle køreplan på rejsedagen.",
@@ -602,6 +614,11 @@
         }
       ],
       "links": [
+        {
+          "title": "Bolt Kaunas · officiel",
+          "text": "Se aktuelle Bolt-tjenester i Kaunas, herunder kørsel, Taxi og el-løbehjul.",
+          "url": "https://bolt.eu/en/cities/kaunas/"
+        },
         {
           "title": "Kaunas IN · offentlig transport",
           "text": "Officiel guide til betaling, busser og trolleybusser.",
