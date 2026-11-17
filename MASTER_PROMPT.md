@@ -86,6 +86,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 
 ## Kaunas
 - `kaunas.html`
+- `kaunas-delt.html` – delt Kaunas-visning uden navigation til øvrige rejser
 - `kaunas.css`
 - `kaunas.js`
 - `data/kaunas.json`
