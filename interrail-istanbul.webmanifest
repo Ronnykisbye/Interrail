@@ -1,0 +1,14 @@
+{
+  "id":"./interrail-istanbul.html",
+  "name":"Interrail",
+  "short_name":"Interrail",
+  "description":"Rejseapp: Interrail",
+  "start_url":"./interrail-istanbul.html",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "background_color":"#eef4fa",
+  "theme_color":"#233c67",
+  "lang":"da-DK",
+  "icons":[{"src":"assets/interrail-istanbul-icon.svg?v=20261117-1","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
