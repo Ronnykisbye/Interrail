@@ -1,0 +1,14 @@
+{
+  "id":"./ski-2027.html",
+  "name":"Skiferie 2027",
+  "short_name":"Skiferie 2027",
+  "description":"Rejseapp: Skiferie 2027",
+  "start_url":"./ski-2027.html",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "background_color":"#eef7ff",
+  "theme_color":"#0b71d9",
+  "lang":"da-DK",
+  "icons":[{"src":"assets/ski-2027-icon.svg?v=20261117-1","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
