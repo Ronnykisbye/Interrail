@@ -18,13 +18,13 @@ Når en ny session starter, skal ChatGPT først:
 # Projektets formål
 Den samlede løsning hedder **Rejser**.
 
-Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 3 aktive rejser og 3 reservepladser.
+Forsiden er en rejse-hub med **6 store 3D-rejseknapper**. Der er nu 4 aktive rejser og 2 reservepladser.
 
 Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
 3. **Skiferie 2027** – aktiv planlægning, uge 5, Sestriere i Italien
-4. Reserve – Athen 2026 er afsluttet og fjernet fra forsiden
+4. **Koners efterår 2026** – aktiv planlægning, Kaunas i Litauen
 5. Reserve
 6. Reserve
 
@@ -83,6 +83,14 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `ski-2027.css`
 - `ski-2027.js`
 - `data/ski-2027.json`
+
+## Koners efterår 2026
+- `koners-efteraar-2026.html`
+- `koners-efteraar-2026.css`
+- `koners-efteraar-2026.js`
+- `data/koners-efteraar-2026.json`
+- Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. Præcise datoer, transport og hotel er endnu ikke oplyst.
+- Historiedel: Vytautas den Stores Bro og den historiske 13-dages kalenderhistorie samt Aleksotas-funikulæren fra 1935.
 
 ## Athen-viden · arkiv
 Selve Athen-rejsen og app-siden er fjernet. Kun genbrugelig, generel Athen-viden bevares:
