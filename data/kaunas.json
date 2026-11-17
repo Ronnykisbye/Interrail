@@ -1,0 +1,620 @@
+{
+  "trip": {
+    "title": "Kaunas",
+    "destination": "Kaunas, Litauen",
+    "travellers": "7 unge piger",
+    "dates": "Efterår 2026 – præcise datoer ikke oplyst",
+    "status": "Planlægning"
+  },
+  "tabs": [
+    {
+      "id": "overblik",
+      "label": "Overblik",
+      "icon": "🍂",
+      "intro": "Kaunas-guide til 7 unge piger med juleweekend, shopping, gåtur gennem centrum, transport, sikkerhed og oplevelser. Datoer, fly og hotelnavn udfyldes, når de er sikkert verificeret.",
+      "cards": [
+        {
+          "icon": "🇱🇹",
+          "title": "Kaunas",
+          "text": "Litauens næststørste by ved sammenløbet af floderne Nemunas og Neris. En kompakt by med gammel bydel, mellemkrigsarkitektur og gode udsigter."
+        },
+        {
+          "icon": "👩‍👧‍👧",
+          "title": "Rejsende",
+          "text": "7 unge piger."
+        },
+        {
+          "icon": "🗺️",
+          "title": "Hotellet · Google Maps",
+          "text": "Det første faste hotel-link til turen. Navnet udfyldes, når det kan verificeres sikkert fra Maps-linket.",
+          "url": "https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Destination",
+          "value": "Kaunas, Litauen"
+        },
+        {
+          "label": "Periode",
+          "value": "Efterår 2026 – præcise datoer kommer senere"
+        },
+        {
+          "label": "Status",
+          "value": "Planlægning"
+        }
+      ]
+    },
+    {
+      "id": "jul",
+      "label": "Jul i Kaunas",
+      "icon": "🎄",
+      "intro": "Turen ligger i weekenden, hvor Kaunas tænder juletræet og åbner julebyen. Det gør den weekend til et af årets hyggeligste tidspunkter at besøge byen.",
+      "cards": [
+        {
+          "icon": "🎄",
+          "title": "Juletræstænding · 27. november",
+          "text": "Hovedtræet tændes på Rotušės aikštė (Rådhuspladsen) fredag 27. november 2026. Aktuelle kilder angiver aftenarrangement med koncert; tjek den officielle juleside tæt på dagen for endeligt klokkeslæt."
+        },
+        {
+          "icon": "✨",
+          "title": "Laisvės alėja i julelys",
+          "text": "Hovedgaden bliver pyntet med tusindvis af lys og forbinder den moderne juleby ved Vienybės-pladsen med den historiske juleby ved Rådhuspladsen."
+        },
+        {
+          "icon": "🎁",
+          "title": "To julebyer",
+          "text": "Rotušės aikštė får klassisk julemarked med træhuse, julemand, julepost og karrusel. Vienybės aikštė får en mere moderne juleby med glasdomer, et ekstra juletræ og skøjteområde."
+        },
+        {
+          "icon": "🍩",
+          "title": "Smag noget lokalt",
+          "text": "Julebyen byder blandt andet på varme ostefritter, honningkager og krydrede varme drikke. På Laisvės alėja ligger også den klassiske Spurginė med varme litauiske donuts."
+        },
+        {
+          "icon": "🚶",
+          "title": "God gåtur mellem juleområderne",
+          "text": "Man kan gå fra Vienybės aikštė via Laisvės alėja og videre gennem centrum til Rådhuspladsen. Ruten kan gøres på cirka en halv time uden stop – men er bedre som en rolig julevandring."
+        },
+        {
+          "icon": "🎶",
+          "title": "Hvad sker der den weekend?",
+          "text": "Fredag er der juletræstænding og festkoncert. Samme aften er der også Jovani-show i Žalgirio Arena. Lørdag 28. november er der UTMA 21 fight night i arenaen. Byens juleaktiviteter fortsætter hele weekenden."
+        },
+        {
+          "icon": "⛸️",
+          "title": "Skøjtebane i julesæsonen",
+          "text": "Kaunas IN oplyser for 2026, at skøjtebane bliver en del af juleoplevelserne. Den præcise placering og åbningstid bør tjekkes tæt på besøget.",
+          "url": "https://www.google.com/maps/search/?api=1&query=ice+rink+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Kaunas Christmas 2026 · officiel turistinfo",
+          "text": "Aktuel juleguide med julebyer, lys, markeder og sæsonens oplevelser.",
+          "url": "https://kaunasin.lt/en/news/slow-down-for-christmas-a-cosy-winter-break-in-kaunas/"
+        },
+        {
+          "title": "Julebyen i Kaunas",
+          "text": "Officiel Kaunas IN-side om juleoplevelser i byen.",
+          "url": "https://kaunasin.lt/ka-veikti/kaledinis-miestas/"
+        }
+      ]
+    },
+    {
+      "id": "gaatur",
+      "label": "Byvandring",
+      "icon": "🚶‍♀️",
+      "intro": "En oplagt gåtur går fra Rådhuspladsen gennem den gamle bydel ad Vilniaus gatvė, videre ud på Laisvės alėja og helt frem til Vytautas Magnus University ved S. Daukanto g. 28.",
+      "cards": [
+        {
+          "icon": "🏛️",
+          "title": "1 · Kaunas Rådhus",
+          "text": "Start på Rotušės aikštė i den gamle bydel. Her står byens hvide rådhus, og i julesæsonen er pladsen et af de vigtigste juleområder.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall"
+        },
+        {
+          "icon": "🏘️",
+          "title": "2 · Vilniaus gatvė",
+          "text": "Fortsæt gennem den gamle bydel ad Vilniaus gatvė, en af Kaunas’ ældste gader med røde murstenshuse, små caféer, butikker og historiske gårdrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vilniaus+gatve+Kaunas"
+        },
+        {
+          "icon": "✨",
+          "title": "3 · Laisvės alėja",
+          "text": "Gå videre ad den lange gågade Laisvės alėja. Den er næsten 1,7 km lang og har caféer, restauranter, butikker, julelys og masser af byliv.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
+        },
+        {
+          "icon": "🍩",
+          "title": "4 · Spurginė",
+          "text": "Hold pause på Laisvės al. 84 og prøv varme litauiske spurgos på den klassiske lille café.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spurgine+Laisves+al+84+Kaunas"
+        },
+        {
+          "icon": "🎓",
+          "title": "5 · Vytautas Magnus University",
+          "text": "Slut ved universitetets centrale bygning på S. Daukanto g. 28. Det ligger tæt på den østlige ende af Laisvės alėja.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+Magnus+University+S+Daukanto+28+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Google Maps · hele gåturen",
+          "text": "Rådhuset → Vilniaus gatvė → Laisvės alėja → Vytautas Magnus University.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Kaunas+Town+Hall&destination=Vytautas+Magnus+University+S.+Daukanto+g.+28+Kaunas&waypoints=Vilniaus+gatve+Kaunas%7CLaisves+aleja+Kaunas&travelmode=walking"
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "label": "Shopping",
+      "icon": "🛍️",
+      "intro": "Kaunas har både butikker langs Laisvės alėja og et stort shopping- og underholdningscenter ved floden.",
+      "cards": [
+        {
+          "icon": "🏬",
+          "title": "AKROPOLIS Kaunas",
+          "text": "Stort shoppingcenter på Karaliaus Mindaugo pr. 49 med mange butikker, restauranter, supermarked og underholdning. Butikkerne har aktuelt normalt åbent 10–21.",
+          "url": "https://www.google.com/maps/search/?api=1&query=AKROPOLIS+Kaunas+Karaliaus+Mindaugo+49"
+        },
+        {
+          "icon": "🛒",
+          "title": "Laisvės alėja",
+          "text": "God til en mere lokal shoppingtur med butikker, caféer og byliv midt i centrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
+        },
+        {
+          "icon": "⛸️",
+          "title": "Skøjteløb ved AKROPOLIS",
+          "text": "AKROPOLIS har haft en helårs isarena. Tjek aktuelle sessioner og priser før turen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Akropolis+Ice+Arena+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "AKROPOLIS Kaunas · officiel side",
+          "text": "Butikker, restauranter, åbningstider og centerplan.",
+          "url": "https://akropolis.lt/kaunas/en/"
+        }
+      ]
+    },
+    {
+      "id": "historie",
+      "label": "Historie",
+      "icon": "📖",
+      "intro": "To historier, der ligger næsten lige efter hinanden: den berømte bro over Nemunas og det lille tog op ad Aleksotas-bakken.",
+      "cards": [
+        {
+          "icon": "🌉",
+          "title": "“Verdens længste bro”",
+          "text": "Vytautas den Stores Bro fik sit muntre kælenavn, fordi Kaunas og Aleksotas historisk lå under forskellige styreformer og brugte forskellige kalendere. Forskellen var 13 dage, så man spøgte med, at det tog 13 dage at krydse broen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+Bridge+Kaunas"
+        },
+        {
+          "icon": "🧭",
+          "title": "Det var kalenderen – ikke afstanden",
+          "text": "Historien handler altså ikke om, at broen fysisk tog 13 dage at gå over. Pointen er, at datoen kunne være 13 dage forskellig fra den ene side af Nemunas til den anden."
+        },
+        {
+          "icon": "💥",
+          "title": "Broen i krigstid",
+          "text": "Den nuværende bro blev sprængt to gange under Anden Verdenskrig og genopbygget i 1948. Ældre broer over stedet så anderledes ud end den bro, man ser i dag.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+Bridge+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Visit Kaunas · Vytautas the Great Bridge",
+          "text": "Officiel turistinformation om broens historie.",
+          "url": "https://www.visit.kaunas.lt/en/see-and-do/sights/vytautas-the-great-bridge/"
+        }
+      ]
+    },
+    {
+      "id": "funikulaer",
+      "label": "Lille tog",
+      "icon": "🚋",
+      "intro": "Når man er kommet over broen til Aleksotas, ligger den historiske funikulær tæt på.",
+      "cards": [
+        {
+          "icon": "🚋",
+          "title": "Aleksotas Funicular",
+          "text": "Det lille røde tog har kørt siden 1935 og forbinder området ved floden med Aleksotas-bakken og udsigtspunktet over Kaunas.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+        },
+        {
+          "icon": "👀",
+          "title": "Udsigt over byen",
+          "text": "Fra toppen er der panorama over Nemunas, den gamle bydel og Kaunas centrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Praktisk",
+          "text": "Den officielle operatør oplyser normalt drift kl. 07–19, pause kl. 12–13 og afgange cirka hvert 10. minut. Tjek igen på rejsedagen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+        },
+        {
+          "icon": "💶",
+          "title": "Billet",
+          "text": "Den officielle operatør angiver aktuelt 1,50 € for en enkeltbillet. Pris og drift bør kontrolleres igen tæt på turen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Aleksotas Funicular · officiel operatør",
+          "text": "Aktuelle tider og billetpriser.",
+          "url": "https://kaunoautobusai.lt/paslaugos/aleksoto-funikulierius/"
+        },
+        {
+          "title": "Visit Kaunas · Aleksotas Funicular",
+          "text": "Historie og turistinformation.",
+          "url": "https://visit.kaunas.lt/en/see-and-do/sights/interwar-architecture/funicular-of-aleksotas/"
+        }
+      ]
+    },
+    {
+      "id": "oplevelser",
+      "label": "Oplevelser",
+      "icon": "✨",
+      "intro": "Gode steder at bygge en Kaunas-tur omkring. Endelig dagsplan laves, når datoer og hotel er kendt.",
+      "cards": [
+        {
+          "icon": "🍩",
+          "title": "Spurginė · Laisvės alėja 84",
+          "text": "En ægte Kaunas-klassiker på hovedgaden. Den lille retro café er kendt for varme spurgos – litauiske donuts – og har været et populært stop i næsten fire årtier.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spurgine+Laisves+al+84+Kaunas"
+        },
+        {
+          "icon": "🏰",
+          "title": "Kaunas Castle",
+          "text": "Middelalderborg ved sammenløbet af Nemunas og Neris. Et naturligt sted at starte i den gamle bydel.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Castle"
+        },
+        {
+          "icon": "🤍",
+          "title": "Rådhuset – “Den hvide svane”",
+          "text": "Det historiske rådhus på den store plads kaldes den hvide svane på grund af form og farve.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall"
+        },
+        {
+          "icon": "🌳",
+          "title": "Santaka Park",
+          "text": "Grønt område ved stedet, hvor Nemunas og Neris mødes. God til en rolig gåtur mellem seværdighederne.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Santaka+Park+Kaunas"
+        },
+        {
+          "icon": "🏙️",
+          "title": "Den gamle bydel",
+          "text": "Gader med gotik, renæssance og barok, caféer og korte afstande mellem mange af byens klassiske seværdigheder.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Old+Town"
+        },
+        {
+          "icon": "🏛️",
+          "title": "Mellemkrigsarkitektur",
+          "text": "Kaunas er kendt for sin modernistiske arkitektur fra perioden, hvor byen fungerede som Litauens midlertidige hovedstad.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+modernist+architecture"
+        },
+        {
+          "icon": "📸",
+          "title": "Aleksotas udsigtspunkt",
+          "text": "Kombinér broen, funikulæren og udsigten i én samlet tur.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Observation+Deck+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Visit Kaunas",
+          "text": "Byens officielle turistportal.",
+          "url": "https://visit.kaunas.lt/en/"
+        },
+        {
+          "title": "Spurginė · officiel Visit Kaunas",
+          "text": "Adresse, åbningstider og information om den klassiske donut-café.",
+          "url": "https://visit.kaunas.lt/en/eat-and-drink/restaurants/classic/spurgine/"
+        }
+      ]
+    },
+    {
+      "id": "praktisk",
+      "label": "Praktisk",
+      "icon": "ℹ️",
+      "intro": "De praktiske oplysninger bliver mere præcise, når rejsedato, transport og overnatning er kendt.",
+      "facts": [
+        {
+          "label": "Valuta",
+          "value": "Euro (€)"
+        },
+        {
+          "label": "Land",
+          "value": "Litauen"
+        },
+        {
+          "label": "By",
+          "value": "Kaunas"
+        },
+        {
+          "label": "Sprog",
+          "value": "Litauisk; engelsk er almindeligt i turistområder"
+        },
+        {
+          "label": "Tidszone",
+          "value": "Kaunas er normalt 1 time foran Danmark"
+        },
+        {
+          "label": "Kort",
+          "value": "Google Maps-linket fra planlægningen ligger under Overblik"
+        }
+      ],
+      "links": [
+        {
+          "title": "Visit Kaunas · officiel turistside",
+          "text": "Se aktuelle attraktioner, arrangementer og praktiske oplysninger.",
+          "url": "https://visit.kaunas.lt/en/"
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "label": "Transport",
+      "icon": "🚌",
+      "intro": "Det er nemt at komme rundt i Kaunas med busser og trolleybusser. For 7 personer kan Bolt også være praktisk, især sent om aftenen eller hvis gruppen deler sig.",
+      "cards": [
+        {
+          "icon": "💳",
+          "title": "Kontaktløs betaling",
+          "text": "På de fleste busser og trolleybusser kan man betale ved at holde Visa/Mastercard eller telefon/watch med NFC på validatoren. Den officielle 2026-information angiver 1,50 € pr. tur og én person pr. kort.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+public+transport"
+        },
+        {
+          "icon": "📱",
+          "title": "Žiogas-appen",
+          "text": "Kaunas bruger også Žiogas som billetapp. Den er god, hvis man vil bruge offentlig transport flere gange under opholdet.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Public+Transport+Service+Centre+Laisves+al+114"
+        },
+        {
+          "icon": "🚎",
+          "title": "Busser og trolleybusser",
+          "text": "Netværket dækker centrum og de fleste seværdigheder. Trafi bruges til aktuelle afgange og ruteplanlægning.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+bus+station"
+        },
+        {
+          "icon": "🚕",
+          "title": "Bolt og Uber",
+          "text": "Kaunas IN anbefaler blandt andet Bolt og Uber. Brug appen, så pris, bil og chauffør fremgår på forhånd.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Lithuania"
+        },
+        {
+          "icon": "✈️",
+          "title": "Bus 29 fra lufthavnen",
+          "text": "Fra Kaunas Airport går bus 29 til centrum. Tjek den aktuelle køreplan på rejsedagen.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Kaunas+International+Airport&destination=Kaunas+city+centre&travelmode=transit"
+        }
+      ],
+      "links": [
+        {
+          "title": "Kaunas IN · offentlig transport",
+          "text": "Officiel guide til betaling, busser og trolleybusser.",
+          "url": "https://kaunasin.lt/en/transportation-in-kaunas/"
+        },
+        {
+          "title": "Kaunas IN · før rejsen",
+          "text": "Transport, lufthavnsbus, taxa og praktiske svar.",
+          "url": "https://kaunasin.lt/en/before-your-trip/"
+        }
+      ]
+    },
+    {
+      "id": "sikkerhed",
+      "label": "Sikkerhed",
+      "icon": "🆘",
+      "intro": "Praktisk sikkerhedsinfo til 7 unge piger, så alle hurtigt ved hvad de skal gøre, hvis nogen bliver væk, mister telefon eller får brug for hjælp.",
+      "cards": [
+        {
+          "icon": "🚨",
+          "title": "112 · alarmnummer",
+          "text": "112 er fælles alarmnummer i Litauen til politi, ambulance og brand. Det er gratis og virker døgnet rundt, også uden SIM-kort.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Police"
+        },
+        {
+          "icon": "🇩🇰",
+          "title": "Dansk hjælp i Litauen",
+          "text": "Danmarks ambassade ligger i Vilnius. Udenrigsministeriets Globale Vagtcenter kan kontaktes døgnet rundt på +45 33 92 11 12.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Embassy+of+Denmark+Vilnius"
+        },
+        {
+          "icon": "📍",
+          "title": "Lav et fælles mødested",
+          "text": "Aftal ét fast mødested i Kaunas, fx Rådhuspladsen eller hotellet, hvis gruppen bliver delt. Del også hotellets Google Maps-pin i gruppen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall"
+        },
+        {
+          "icon": "🔋",
+          "title": "Telefon og strøm",
+          "text": "Hav mindst én powerbank i gruppen, gem hoteladressen offline og sørg for at alle har adgang til gruppens kontaktliste.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Lithuania"
+        },
+        {
+          "icon": "🚕",
+          "title": "Hjem om aftenen",
+          "text": "Ved sen hjemtur er en kendt app som Bolt eller Uber en enkel løsning. Tjek nummerplade og chauffør i appen før indstigning.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Lithuania"
+        },
+        {
+          "icon": "🩺",
+          "title": "Blåt EU-sygesikringskort",
+          "text": "Det blå EU-sygesikringskort kan bruges i Litauen, men Udenrigsministeriet anbefaler også privat rejseforsikring.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+hospital"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Alarm",
+          "value": "112"
+        },
+        {
+          "label": "UM Vagtcenter",
+          "value": "+45 33 92 11 12"
+        },
+        {
+          "label": "Ambassade",
+          "value": "Danmarks Ambassade, Vilnius · +370 (5) 264 8760"
+        },
+        {
+          "label": "Rejseklar",
+          "value": "Download appen og overvej Danskerlisten"
+        }
+      ],
+      "links": [
+        {
+          "title": "Udenrigsministeriet · Litauen",
+          "text": "Aktuel dansk rejsevejledning.",
+          "url": "https://um.dk/rejse-og-ophold/rejse-til-udlandet/rejsevejledninger/litauen/"
+        },
+        {
+          "title": "112 Litauen",
+          "text": "Officiel information om alarmnummer 112.",
+          "url": "https://112.lt/en/about-number-112/"
+        }
+      ]
+    },
+    {
+      "id": "genbrug",
+      "label": "Genbrug",
+      "icon": "♻️",
+      "intro": "Genbrug, vintage og antik i Kaunas. Udvalget ændrer sig hele tiden, så Google Maps-linket nederst er godt til at se alle aktuelle butikker i nærheden.",
+      "cards": [
+        {
+          "icon": "👗",
+          "title": "Humana Vintage · M. Daukšos g. 25",
+          "text": "Vintage og secondhand tæt på den gamle bydel.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Humana+Vintage+M+Dauksos+25+Kaunas"
+        },
+        {
+          "icon": "👚",
+          "title": "Humana · Elzės Ožeškienės g. 9",
+          "text": "Klassisk secondhand-butik centralt i Kaunas.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Humana+Elzes+Ozeskienes+9+Kaunas"
+        },
+        {
+          "icon": "👜",
+          "title": "Valentinos skrynelė · M. Daukšos g. 24",
+          "text": "Lille secondhand- og tøjbutik lige over for Humana Vintage.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Valentinos+skrynele+M+Dauksos+24+Kaunas"
+        },
+        {
+          "icon": "🧥",
+          "title": "Gausa · Vytauto pr. 3",
+          "text": "Genbrug og secondhand tæt på stationen og centrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Gausa+Vytauto+pr+3+Kaunas"
+        },
+        {
+          "icon": "👖",
+          "title": "Textale · Pramonės pr. 14",
+          "text": "Secondhand-butik lidt uden for centrum.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Textale+Pramones+pr+14+Kaunas"
+        },
+        {
+          "icon": "☕",
+          "title": "Sendaikčiai ir Kava · Veiverių g. 45A",
+          "text": "Et anderledes sted med brugte ting og kaffe.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Sendaikciai+ir+Kava+Veiveriu+45A+Kaunas"
+        },
+        {
+          "icon": "📚",
+          "title": "Vidmantas Staniulis · antikvariat",
+          "text": "Antikvarisk boghandel på Vytauto pr. 58 med gamle bøger, fotos, mønter, smykker og samlerobjekter.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vidmantas+Staniulis+Vytauto+58+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Google Maps · alle genbrugsbutikker i Kaunas",
+          "text": "Se aktuelle secondhand-, vintage- og thrift-butikker i hele Kaunas.",
+          "url": "https://www.google.com/maps/search/?api=1&query=second+hand+shops+Kaunas"
+        },
+        {
+          "title": "Google Maps · vintage i Kaunas",
+          "text": "Søg specifikt efter vintagebutikker.",
+          "url": "https://www.google.com/maps/search/?api=1&query=vintage+shops+Kaunas"
+        }
+      ]
+    },
+    {
+      "id": "mad",
+      "label": "Madretter",
+      "icon": "🍽️",
+      "intro": "Typiske litauiske retter, så pigerne kan se både navnet og hvad retten normalt består af, før de bestiller.",
+      "cards": [
+        {
+          "icon": "🥔",
+          "title": "Cepelinai",
+          "text": "Store kartoffelboller lavet af revne og kogte kartofler. Fyldes typisk med hakket svinekød, kvark/ost eller svampe og serveres ofte med cremefraiche og bacon.",
+          "url": "https://www.google.com/maps/search/?api=1&query=cepelinai+Kaunas"
+        },
+        {
+          "icon": "🩷",
+          "title": "Šaltibarščiai",
+          "text": "Kold pink rødbedesuppe med rødbede, kefir eller kærnemælk, agurk, dild, forårsløg og ofte æg. Serveres typisk med varme kogte kartofler.",
+          "url": "https://www.google.com/maps/search/?api=1&query=saltibarsciai+Kaunas"
+        },
+        {
+          "icon": "🥔",
+          "title": "Kugelis",
+          "text": "Litauisk kartoffelgratin/kage af revne kartofler, æg, mælk og ofte løg og bacon. Serveres ofte med cremefraiche.",
+          "url": "https://www.google.com/maps/search/?api=1&query=kugelis+Kaunas"
+        },
+        {
+          "icon": "🥟",
+          "title": "Kibinai",
+          "text": "Ovnbagt dejpakke med fyld, typisk hakket eller skåret kød og løg. Findes også med ost, grønt eller andre fyld.",
+          "url": "https://www.google.com/maps/search/?api=1&query=kibinai+Kaunas"
+        },
+        {
+          "icon": "🥞",
+          "title": "Žemaičių blynai",
+          "text": "Kartoffelpandekager med kødfyld, stegt på panden og ofte serveret med cremefraiche.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Zemaiciu+blynai+Kaunas"
+        },
+        {
+          "icon": "🍞",
+          "title": "Kepta duona",
+          "text": "Mørkt rugbrød skåret i stave og friturestegt eller ristet med hvidløg. Serveres ofte med ostedip.",
+          "url": "https://www.google.com/maps/search/?api=1&query=kepta+duona+Kaunas"
+        },
+        {
+          "icon": "🍩",
+          "title": "Spurgos",
+          "text": "Litauiske donuts eller friturestegte dejkager. De kan være med sukker, marmelade eller ost/kvark. Spurginė på Laisvės alėja er et klassisk sted at prøve dem.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spurgine+Laisves+al+84+Kaunas"
+        },
+        {
+          "icon": "🍰",
+          "title": "Šakotis",
+          "text": "Traditionel litauisk kage bagt på roterende spid, så den får grene eller pigge. Laves typisk af æg, smør, mel, sukker og fløde.",
+          "url": "https://www.google.com/maps/search/?api=1&query=sakotis+Kaunas"
+        },
+        {
+          "icon": "🍞",
+          "title": "Sort rugbrød",
+          "text": "Mørkt, tæt rugbrød er en klassiker i Litauen og spises både til måltider og som snack med fx ost eller honning.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lithuanian+black+bread+Kaunas"
+        }
+      ],
+      "links": [
+        {
+          "title": "Lithuania Travel · litauisk mad",
+          "text": "Officiel introduktion til traditionelle litauiske retter og produkter.",
+          "url": "https://lithuania.travel/en/what-to-do/food-and-drink"
+        },
+        {
+          "title": "Google Maps · litauiske restauranter i Kaunas",
+          "text": "Find restauranter, der serverer klassiske lokale retter.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lithuanian+restaurants+Kaunas"
+        }
+      ]
+    }
+  ]
+}
