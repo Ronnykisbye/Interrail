@@ -1,0 +1,14 @@
+{
+  "id":"./antwerpen.html",
+  "name":"Antwerpen",
+  "short_name":"Antwerpen",
+  "description":"Rejseapp: Antwerpen",
+  "start_url":"./antwerpen.html",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "background_color":"#fff1de",
+  "theme_color":"#c97a3d",
+  "lang":"da-DK",
+  "icons":[{"src":"assets/antwerpen-icon.svg?v=20261117-1","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
