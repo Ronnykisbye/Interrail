@@ -1,4 +1,4 @@
-const CACHE='rejser-v1-20261117-15';
+const CACHE='rejser-v1-20261117-16';
 const CORE=[
   './','./index.html','./hub.css','./hub.js','./manifest.webmanifest','./data/trips.json',
   './antwerpen.html','./antwerpen-menu.css','./antwerpen-sub.css','./antwerpen-guide.js','./antwerpen-info.js','./antwerpen.css','./antwerpen.js','./data/antwerpen.json','./data/antwerpen-guide.json',
@@ -6,6 +6,7 @@ const CORE=[
   './interrail-istanbul.html','./interrail-istanbul.css','./interrail-istanbul.js','./data/interrail-istanbul.json',
   './ski-2027.html','./ski-2027-delt.html','./ski-2027.css','./ski-2027.js','./data/ski-2027.json',
   './kaunas.html','./kaunas-delt.html','./kaunas.css','./kaunas.js','./data/kaunas.json','./kaunas-install.html','./kaunas-install.css','./kaunas-install.js','./kaunas.webmanifest','./assets/kaunas-icon.svg',
+  './trip-install.css','./trip-install.js','./antwerpen-install.html','./antwerpen.webmanifest','./assets/antwerpen-icon.svg','./interrail-istanbul-install.html','./interrail-istanbul.webmanifest','./assets/interrail-istanbul-icon.svg','./ski-2027-install.html','./ski-2027.webmanifest','./assets/ski-2027-icon.svg',
   './data/athen-2026.json','./data/athen-food.json','./data/athen-stay.json','./data/athen-practical.json','./data/athen-tickets.json','./assets/athen-banner.svg',
   './interrail.html','./styles.css','./app.js','./install.js','./data/itinerary.json','./data/links.json','./data/hotels.json',
   './assets/rejser-icon.svg','./assets/favicon.svg','./assets/icon-192.jpg','./assets/icon-512.jpg','./assets/icon-maskable-512.jpg'
