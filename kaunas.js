@@ -2,7 +2,7 @@ let tripData=null;
 async function loadTrip(){
   const root=document.getElementById('content');
   try{
-    const r=await fetch('data/kaunas.json?v=20261117-1',{cache:'no-store'});
+    const r=await fetch('data/kaunas.json?v=20261117-2',{cache:'no-store'});
     if(!r.ok)throw new Error('Data kunne ikke hentes');
     tripData=await r.json();renderTabs();selectTab(location.hash.slice(1)||'overblik',false);
   }catch(e){console.error(e);root.innerHTML='<article class="card"><h2>Data kunne ikke indlæses</h2><p>Prøv at genindlæse siden.</p></article>'}
