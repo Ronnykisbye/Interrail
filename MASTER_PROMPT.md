@@ -96,7 +96,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `kaunas.js`
 - `data/kaunas.json`
 - Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. Præcise datoer, transport og hotel er endnu ikke oplyst.
-- Historiedel: Vytautas den Stores Bro og den historiske 13-dages kalenderhistorie samt Aleksotas-funikulæren fra 1935.
+- Historiedel: udvidet fortælling fra 1361 og middelalderborgen via Magdeburg-rettigheder 1408, hansahandel, perioden som Litauens midlertidige hovedstad 1919–1939, mellemkrigsmodernisme, dansk byplanlægger Marius Frandsen, funikulærerne, krig/Sovjettid og UNESCO-status 2023. Overblik har intern `Læs mere`-knap direkte til Historie.
 - Juletema: turen ligger omkring juletræstændingen 27. november 2026. Appen har nu `Jul i Kaunas` med juletræ, julebyer, Laisvės alėja-lys, Vienybės aikštė, weekendoplevelser og Spurginė på Laisvės al. 84.
 - Kaunas-guiden er udvidet til 7 unge piger med byvandring fra Rådhuspladsen via Vilniaus gatvė og Laisvės alėja til Vytautas Magnus University, shopping/AKROPOLIS, offentlig transport, sikkerhed/nødnumre, skøjteløb, genbrug/vintage samt litauiske madretter med ingrediensforklaringer. Konkrete steder har Google Maps-links.
 - Transportdelen fremhæver nu Bolt til kørsel/taxa og el-løbehjul samt eTaksi som traditionel taxa. Handlingsknapper og linkbokse bruger ensartet farve, radius og hover/fokus-stil for et mere professionelt design.
