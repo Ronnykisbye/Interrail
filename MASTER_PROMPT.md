@@ -85,10 +85,10 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `data/ski-2027.json`
 
 ## Kaunas
-- `koners-efteraar-2026.html`
-- `koners-efteraar-2026.css`
-- `koners-efteraar-2026.js`
-- `data/koners-efteraar-2026.json`
+- `kaunas.html`
+- `kaunas.css`
+- `kaunas.js`
+- `data/kaunas.json`
 - Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. Præcise datoer, transport og hotel er endnu ikke oplyst.
 - Historiedel: Vytautas den Stores Bro og den historiske 13-dages kalenderhistorie samt Aleksotas-funikulæren fra 1935.
 - Juletema: turen ligger omkring juletræstændingen 27. november 2026. Appen har nu `Jul i Kaunas` med juletræ, julebyer, Laisvės alėja-lys, Vienybės aikštė, weekendoplevelser og Spurginė på Laisvės al. 84.
