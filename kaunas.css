@@ -166,7 +166,6 @@
   }
   .hero-content{padding:245px 24px 42px}
   .hero h1{font-size:3.45rem}
-  .hero-number{bottom:13px}
 }
 
 
@@ -178,7 +177,7 @@
     position:absolute;
     z-index:3;
     left:50%;
-    bottom:15px;
+    bottom:7px;
     transform:translateX(-50%);
     display:flex;
     flex-direction:column;
