@@ -24,7 +24,7 @@ function targetFor(target){
   if(target==='antwerpen')return 'antwerpen.html';
   if(target==='interrail-istanbul')return 'interrail-istanbul.html';
   if(target==='ski-2027')return 'ski-2027.html';
-  if(target==='koners-efteraar-2026')return 'koners-efteraar-2026.html';
+  if(target==='kaunas')return 'kaunas.html';
   if(target==='athen-2026')return 'athen-2026.html';
   if(target==='interrail')return 'interrail.html';
   return '#';
