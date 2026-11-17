@@ -94,6 +94,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - Juletema: turen ligger omkring juletræstændingen 27. november 2026. Appen har nu `Jul i Kaunas` med juletræ, julebyer, Laisvės alėja-lys, Vienybės aikštė, weekendoplevelser og Spurginė på Laisvės al. 84.
 - Kaunas-guiden er udvidet til 7 unge piger med byvandring fra Rådhuspladsen via Vilniaus gatvė og Laisvės alėja til Vytautas Magnus University, shopping/AKROPOLIS, offentlig transport, sikkerhed/nødnumre, skøjteløb, genbrug/vintage samt litauiske madretter med ingrediensforklaringer. Konkrete steder har Google Maps-links.
 - Det tidligere Maps-link `https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm` viste sig at pege på Aleksotas Funicular og er fjernet fra hotel-sektionen. Hotelnavigation må først aktiveres igen, når hotelnavn og adresse er verificeret.
+- Hotel er nu verificeret som **Amberton Cozy Hotel Kaunas**, V. Kuzmos g. 8, LT-44280 Kaunas. `Mit hotel` og `Find vej hjem` bruger direkte Google Maps-links til dette hotel.
 
 ## Athen-viden · arkiv
 Selve Athen-rejsen og app-siden er fjernet. Kun genbrugelig, generel Athen-viden bevares:
