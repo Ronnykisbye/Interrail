@@ -1,0 +1,21 @@
+{
+  "id": "./kaunas-delt.html",
+  "name": "Kaunas",
+  "short_name": "Kaunas",
+  "description": "Pigernes rejseguide til Kaunas",
+  "start_url": "./kaunas-delt.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f9f6ef",
+  "theme_color": "#152a2b",
+  "lang": "da-DK",
+  "icons": [
+    {
+      "src": "assets/kaunas-icon.svg?v=20261117-1",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
