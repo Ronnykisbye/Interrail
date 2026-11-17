@@ -127,6 +127,37 @@
       ]
     },
     {
+      "id": "vejr",
+      "label": "Vejret",
+      "icon": "🌦️",
+      "intro": "Tjek vejret tæt på rejsedagen. Sidst i november kan Kaunas være kold og våd, og der kan forekomme slud eller sne, men det er for tidligt at love sne på forhånd.",
+      "cards": [
+        {
+          "icon": "🌡️",
+          "title": "Officiel vejrudsigt for Kaunas",
+          "text": "Litauens meteorologiske tjeneste Meteo LT viser temperatur, nedbør, vind og den aktuelle prognose for Kaunas.",
+          "url": "https://www.meteo.lt/en/?area=kaunas"
+        },
+        {
+          "icon": "🧥",
+          "title": "Pak jer til koldt vejr",
+          "text": "Lange frakker, varme støvler, hue, handsker og lag-på-lag er en god idé. Tag også noget vandafvisende med, hvis prognosen viser regn eller slud."
+        },
+        {
+          "icon": "❄️",
+          "title": "Bliver der sne?",
+          "text": "Det kan godt ske sidst i november, men det kan også være regn og få plusgrader. Tjek den officielle prognose igen få dage før afrejse."
+        }
+      ],
+      "links": [
+        {
+          "title": "Meteo LT · Kaunas",
+          "text": "Officiel litauisk vejrudsigt.",
+          "url": "https://www.meteo.lt/en/?area=kaunas"
+        }
+      ]
+    },
+    {
       "id": "mad",
       "label": "Litauisk mad",
       "icon": "🥟",
