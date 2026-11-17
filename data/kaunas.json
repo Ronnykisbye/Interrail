@@ -286,18 +286,17 @@
       "id": "hotel",
       "label": "Mit hotel",
       "icon": "🏨",
-      "intro": "Hotellets navn og adresse afventer. Indtil da kan I åbne det hotel-link, der allerede er gemt fra planlægningen.",
+      "intro": "Hotellets korrekte navn og adresse skal stå her, før navigation aktiveres. Det tidligere gemte Maps-link var forkert og pegede på Aleksotas Funicular, så det er fjernet.",
       "cards": [
         {
-          "icon": "📍",
-          "title": "Hotel-link fra planlægningen",
-          "text": "Åbn det tidligere gemte kortlink. Kontroller at det viser det rigtige hotel.",
-          "url": "https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm"
+          "icon": "🏨",
+          "title": "Hotel · afventer korrekt adresse",
+          "text": "Det tidligere hotel-link er fjernet, fordi det åbnede Aleksotas Funicular. Hotelknappen aktiveres først igen, når navn og adresse er verificeret."
         },
         {
           "icon": "🏠",
           "title": "Find vej hjem",
-          "text": "Når hoteladressen er bekræftet, får denne mappe en direkte navigationsknap."
+          "text": "Denne knap bliver først aktiv, når den korrekte hoteladresse er verificeret. På den måde kan ingen ved en fejl blive sendt til et forkert sted."
         }
       ],
       "links": []
