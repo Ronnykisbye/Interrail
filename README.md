@@ -10,8 +10,9 @@ Live app:
 1. **Antwerpen 2026** – bilrejse med Ford Mustang Mach-E, hoteller, rute, miljøzoner, opladning og nyttige links.
 2. **Interrail mod Istanbul** – foreløbig rute via bl.a. Kraków, Bratislava, Budapest, București og Sofia.
 3. **Skiferie 2027** – uge 5, 30. januar–6. februar 2027, 4 voksne, med fokus på Sestriere i Italien.
+4. **Kaunas – Efterår 2026** – delt rejseapp til 7 unge piger med hotel, jul, mad, oplevelser, transport, vejr og egne Kaunas-billeder.
 
-Der er desuden 3 reservepladser til kommende rejser.
+Der er desuden 2 reservepladser til kommende rejser.
 
 ## Skiferie 2027
 
@@ -55,6 +56,16 @@ Der er en særskilt **Information**-sektion med bl.a.:
 
 Derudover findes en sektion med nyttige links til Via Lattea, Skisport.dk, Nortlander, Slopestar, SAS og Norwegian.
 
+## Kaunas – Efterår 2026
+
+Kaunas har sit eget modul:
+- `kaunas-delt.html` – delt rejseapp
+- `kaunas.css` og `kaunas.js` – design og funktioner
+- `data/kaunas.json` – rejseindhold
+- `assets/kaunas-billeder/` – 11 egne, weboptimerede Kaunas-fotos
+- **📷 Billeder** – synlig mappe i appen med responsivt galleri
+- mobilforsiden har en diskret **UDFORSK**-indikator, der viser at der er mere indhold nedenunder
+
 ## Projektstruktur
 
 ```text
@@ -76,16 +87,21 @@ Interrail/
 ├── ski-2027-delt.html
 ├── ski-2027.css
 ├── ski-2027.js
+├── kaunas-delt.html
+├── kaunas.css
+├── kaunas.js
 ├── interrail.html
 ├── styles.css
 ├── app.js
 ├── install.js
 ├── assets/
+│   └── kaunas-billeder/
 └── data/
     ├── trips.json
     ├── antwerpen.json
     ├── interrail-istanbul.json
     ├── ski-2027.json
+    ├── kaunas.json
     ├── itinerary.json
     ├── hotels.json
     └── links.json
@@ -121,4 +137,4 @@ Bookingreferencer, ansøgningsnumre, e-mail, telefonnumre, adresser, betalingsko
 
 ## Status
 
-Projektet er i aktiv udvikling. Antwerpen, Interrail Istanbul og Skiferie 2027 er aktive moduler, mens den tidligere Interrail-app fortsat er bevaret separat for at undgå at ødelægge fungerende funktioner.
+Projektet er i aktiv udvikling. Antwerpen, Interrail Istanbul, Skiferie 2027 og Kaunas er aktive moduler, mens den tidligere Interrail-app fortsat er bevaret separat for at undgå at ødelægge fungerende funktioner.
