@@ -1,80 +1,262 @@
 {
-  "trip":{
-    "title":"Koners efterår 2026",
-    "destination":"Kaunas, Litauen",
-    "travellers":"Gabriella og pigerne",
-    "dates":"Efterår 2026 – præcise datoer ikke oplyst",
-    "status":"Planlægning"
+  "trip": {
+    "title": "Koners efterår 2026",
+    "destination": "Kaunas, Litauen",
+    "travellers": "Gabriella og pigerne",
+    "dates": "Efterår 2026 – præcise datoer ikke oplyst",
+    "status": "Planlægning"
   },
-  "tabs":[
+  "tabs": [
     {
-      "id":"overblik","label":"Overblik","icon":"🍂",
-      "intro":"Første version af turen. Kaunas er fastlagt ud fra de steder og historier, I har fundet. Datoer, transport og overnatning tilføjes, når de er kendt.",
-      "cards":[
-        {"icon":"🇱🇹","title":"Kaunas","text":"Litauens næststørste by ved sammenløbet af floderne Nemunas og Neris. En kompakt by med gammel bydel, mellemkrigsarkitektur og gode udsigter."},
-        {"icon":"👩‍👧‍👧","title":"Rejsende","text":"Gabriella og pigerne."},
-        {"icon":"🗺️","title":"Første sted fra Google Maps","text":"Gemmes som udgangspunkt for planlægningen.","url":"https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm"}
+      "id": "overblik",
+      "label": "Overblik",
+      "icon": "🍂",
+      "intro": "Første version af turen. Kaunas er fastlagt ud fra de steder og historier, I har fundet. Datoer, transport og overnatning tilføjes, når de er kendt.",
+      "cards": [
+        {
+          "icon": "🇱🇹",
+          "title": "Kaunas",
+          "text": "Litauens næststørste by ved sammenløbet af floderne Nemunas og Neris. En kompakt by med gammel bydel, mellemkrigsarkitektur og gode udsigter."
+        },
+        {
+          "icon": "👩‍👧‍👧",
+          "title": "Rejsende",
+          "text": "Gabriella og pigerne."
+        },
+        {
+          "icon": "🗺️",
+          "title": "Hotellet · Google Maps",
+          "text": "Det første faste hotel-link til turen. Navnet udfyldes, når det kan verificeres sikkert fra Maps-linket.",
+          "url": "https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm"
+        }
       ],
-      "facts":[
-        {"label":"Destination","value":"Kaunas, Litauen"},
-        {"label":"Periode","value":"Efterår 2026 – præcise datoer kommer senere"},
-        {"label":"Status","value":"Planlægning"}
+      "facts": [
+        {
+          "label": "Destination",
+          "value": "Kaunas, Litauen"
+        },
+        {
+          "label": "Periode",
+          "value": "Efterår 2026 – præcise datoer kommer senere"
+        },
+        {
+          "label": "Status",
+          "value": "Planlægning"
+        }
       ]
     },
     {
-      "id":"historie","label":"Historie","icon":"📖",
-      "intro":"To historier, der ligger næsten lige efter hinanden: den berømte bro over Nemunas og det lille tog op ad Aleksotas-bakken.",
-      "cards":[
-        {"icon":"🌉","title":"“Verdens længste bro”","text":"Vytautas den Stores Bro fik sit muntre kælenavn, fordi Kaunas og Aleksotas historisk lå under forskellige styreformer og brugte forskellige kalendere. Forskellen var 13 dage, så man spøgte med, at det tog 13 dage at krydse broen."},
-        {"icon":"🧭","title":"Det var kalenderen – ikke afstanden","text":"Historien handler altså ikke om, at broen fysisk tog 13 dage at gå over. Pointen er, at datoen kunne være 13 dage forskellig fra den ene side af Nemunas til den anden."},
-        {"icon":"💥","title":"Broen i krigstid","text":"Den nuværende bro blev sprængt to gange under Anden Verdenskrig og genopbygget i 1948. Ældre broer over stedet så anderledes ud end den bro, man ser i dag."}
+      "id": "jul",
+      "label": "Jul i Kaunas",
+      "icon": "🎄",
+      "intro": "Turen ligger i weekenden, hvor Kaunas tænder juletræet og åbner julebyen. Det gør den weekend til et af årets hyggeligste tidspunkter at besøge byen.",
+      "cards": [
+        {
+          "icon": "🎄",
+          "title": "Juletræstænding · 27. november",
+          "text": "Hovedtræet tændes på Rotušės aikštė (Rådhuspladsen) fredag 27. november 2026. Aktuelle kilder angiver aftenarrangement med koncert; tjek den officielle juleside tæt på dagen for endeligt klokkeslæt."
+        },
+        {
+          "icon": "✨",
+          "title": "Laisvės alėja i julelys",
+          "text": "Hovedgaden bliver pyntet med tusindvis af lys og forbinder den moderne juleby ved Vienybės-pladsen med den historiske juleby ved Rådhuspladsen."
+        },
+        {
+          "icon": "🎁",
+          "title": "To julebyer",
+          "text": "Rotušės aikštė får klassisk julemarked med træhuse, julemand, julepost og karrusel. Vienybės aikštė får en mere moderne juleby med glasdomer, et ekstra juletræ og skøjteområde."
+        },
+        {
+          "icon": "🍩",
+          "title": "Smag noget lokalt",
+          "text": "Julebyen byder blandt andet på varme ostefritter, honningkager og krydrede varme drikke. På Laisvės alėja ligger også den klassiske Spurginė med varme litauiske donuts."
+        },
+        {
+          "icon": "🚶",
+          "title": "God gåtur mellem juleområderne",
+          "text": "Man kan gå fra Vienybės aikštė via Laisvės alėja og videre gennem centrum til Rådhuspladsen. Ruten kan gøres på cirka en halv time uden stop – men er bedre som en rolig julevandring."
+        },
+        {
+          "icon": "🎶",
+          "title": "Hvad sker der den weekend?",
+          "text": "Fredag er der juletræstænding og festkoncert. Samme aften er der også Jovani-show i Žalgirio Arena. Lørdag 28. november er der UTMA 21 fight night i arenaen. Byens juleaktiviteter fortsætter hele weekenden."
+        }
       ],
-      "links":[
-        {"title":"Visit Kaunas · Vytautas the Great Bridge","text":"Officiel turistinformation om broens historie.","url":"https://www.visit.kaunas.lt/en/see-and-do/sights/vytautas-the-great-bridge/"}
+      "links": [
+        {
+          "title": "Kaunas Christmas 2026 · officiel turistinfo",
+          "text": "Aktuel juleguide med julebyer, lys, markeder og sæsonens oplevelser.",
+          "url": "https://kaunasin.lt/en/news/slow-down-for-christmas-a-cosy-winter-break-in-kaunas/"
+        },
+        {
+          "title": "Julebyen i Kaunas",
+          "text": "Officiel Kaunas IN-side om juleoplevelser i byen.",
+          "url": "https://kaunasin.lt/ka-veikti/kaledinis-miestas/"
+        }
       ]
     },
     {
-      "id":"funikulaer","label":"Lille tog","icon":"🚋",
-      "intro":"Når man er kommet over broen til Aleksotas, ligger den historiske funikulær tæt på.",
-      "cards":[
-        {"icon":"🚋","title":"Aleksotas Funicular","text":"Det lille røde tog har kørt siden 1935 og forbinder området ved floden med Aleksotas-bakken og udsigtspunktet over Kaunas."},
-        {"icon":"👀","title":"Udsigt over byen","text":"Fra toppen er der panorama over Nemunas, den gamle bydel og Kaunas centrum."},
-        {"icon":"⏱️","title":"Praktisk","text":"Den officielle operatør oplyser normalt drift kl. 07–19, pause kl. 12–13 og afgange cirka hvert 10. minut. Tjek igen på rejsedagen."},
-        {"icon":"💶","title":"Billet","text":"Den officielle operatør angiver aktuelt 1,50 € for en enkeltbillet. Pris og drift bør kontrolleres igen tæt på turen."}
+      "id": "historie",
+      "label": "Historie",
+      "icon": "📖",
+      "intro": "To historier, der ligger næsten lige efter hinanden: den berømte bro over Nemunas og det lille tog op ad Aleksotas-bakken.",
+      "cards": [
+        {
+          "icon": "🌉",
+          "title": "“Verdens længste bro”",
+          "text": "Vytautas den Stores Bro fik sit muntre kælenavn, fordi Kaunas og Aleksotas historisk lå under forskellige styreformer og brugte forskellige kalendere. Forskellen var 13 dage, så man spøgte med, at det tog 13 dage at krydse broen."
+        },
+        {
+          "icon": "🧭",
+          "title": "Det var kalenderen – ikke afstanden",
+          "text": "Historien handler altså ikke om, at broen fysisk tog 13 dage at gå over. Pointen er, at datoen kunne være 13 dage forskellig fra den ene side af Nemunas til den anden."
+        },
+        {
+          "icon": "💥",
+          "title": "Broen i krigstid",
+          "text": "Den nuværende bro blev sprængt to gange under Anden Verdenskrig og genopbygget i 1948. Ældre broer over stedet så anderledes ud end den bro, man ser i dag."
+        }
       ],
-      "links":[
-        {"title":"Aleksotas Funicular · officiel operatør","text":"Aktuelle tider og billetpriser.","url":"https://kaunoautobusai.lt/paslaugos/aleksoto-funikulierius/"},
-        {"title":"Visit Kaunas · Aleksotas Funicular","text":"Historie og turistinformation.","url":"https://visit.kaunas.lt/en/see-and-do/sights/interwar-architecture/funicular-of-aleksotas/"}
+      "links": [
+        {
+          "title": "Visit Kaunas · Vytautas the Great Bridge",
+          "text": "Officiel turistinformation om broens historie.",
+          "url": "https://www.visit.kaunas.lt/en/see-and-do/sights/vytautas-the-great-bridge/"
+        }
       ]
     },
     {
-      "id":"oplevelser","label":"Oplevelser","icon":"✨",
-      "intro":"Gode steder at bygge en Kaunas-tur omkring. Endelig dagsplan laves, når datoer og hotel er kendt.",
-      "cards":[
-        {"icon":"🏰","title":"Kaunas Castle","text":"Middelalderborg ved sammenløbet af Nemunas og Neris. Et naturligt sted at starte i den gamle bydel."},
-        {"icon":"🤍","title":"Rådhuset – “Den hvide svane”","text":"Det historiske rådhus på den store plads kaldes den hvide svane på grund af form og farve."},
-        {"icon":"🌳","title":"Santaka Park","text":"Grønt område ved stedet, hvor Nemunas og Neris mødes. God til en rolig gåtur mellem seværdighederne."},
-        {"icon":"🏙️","title":"Den gamle bydel","text":"Gader med gotik, renæssance og barok, caféer og korte afstande mellem mange af byens klassiske seværdigheder."},
-        {"icon":"🏛️","title":"Mellemkrigsarkitektur","text":"Kaunas er kendt for sin modernistiske arkitektur fra perioden, hvor byen fungerede som Litauens midlertidige hovedstad."},
-        {"icon":"📸","title":"Aleksotas udsigtspunkt","text":"Kombinér broen, funikulæren og udsigten i én samlet tur."}
+      "id": "funikulaer",
+      "label": "Lille tog",
+      "icon": "🚋",
+      "intro": "Når man er kommet over broen til Aleksotas, ligger den historiske funikulær tæt på.",
+      "cards": [
+        {
+          "icon": "🚋",
+          "title": "Aleksotas Funicular",
+          "text": "Det lille røde tog har kørt siden 1935 og forbinder området ved floden med Aleksotas-bakken og udsigtspunktet over Kaunas."
+        },
+        {
+          "icon": "👀",
+          "title": "Udsigt over byen",
+          "text": "Fra toppen er der panorama over Nemunas, den gamle bydel og Kaunas centrum."
+        },
+        {
+          "icon": "⏱️",
+          "title": "Praktisk",
+          "text": "Den officielle operatør oplyser normalt drift kl. 07–19, pause kl. 12–13 og afgange cirka hvert 10. minut. Tjek igen på rejsedagen."
+        },
+        {
+          "icon": "💶",
+          "title": "Billet",
+          "text": "Den officielle operatør angiver aktuelt 1,50 € for en enkeltbillet. Pris og drift bør kontrolleres igen tæt på turen."
+        }
       ],
-      "links":[
-        {"title":"Visit Kaunas","text":"Byens officielle turistportal.","url":"https://visit.kaunas.lt/en/"}
+      "links": [
+        {
+          "title": "Aleksotas Funicular · officiel operatør",
+          "text": "Aktuelle tider og billetpriser.",
+          "url": "https://kaunoautobusai.lt/paslaugos/aleksoto-funikulierius/"
+        },
+        {
+          "title": "Visit Kaunas · Aleksotas Funicular",
+          "text": "Historie og turistinformation.",
+          "url": "https://visit.kaunas.lt/en/see-and-do/sights/interwar-architecture/funicular-of-aleksotas/"
+        }
       ]
     },
     {
-      "id":"praktisk","label":"Praktisk","icon":"ℹ️",
-      "intro":"De praktiske oplysninger bliver mere præcise, når rejsedato, transport og overnatning er kendt.",
-      "facts":[
-        {"label":"Valuta","value":"Euro (€)"},
-        {"label":"Land","value":"Litauen"},
-        {"label":"By","value":"Kaunas"},
-        {"label":"Sprog","value":"Litauisk; engelsk er almindeligt i turistområder"},
-        {"label":"Tidszone","value":"Kaunas er normalt 1 time foran Danmark"},
-        {"label":"Kort","value":"Google Maps-linket fra planlægningen ligger under Overblik"}
+      "id": "oplevelser",
+      "label": "Oplevelser",
+      "icon": "✨",
+      "intro": "Gode steder at bygge en Kaunas-tur omkring. Endelig dagsplan laves, når datoer og hotel er kendt.",
+      "cards": [
+        {
+          "icon": "🍩",
+          "title": "Spurginė · Laisvės alėja 84",
+          "text": "En ægte Kaunas-klassiker på hovedgaden. Den lille retro café er kendt for varme spurgos – litauiske donuts – og har været et populært stop i næsten fire årtier."
+        },
+        {
+          "icon": "🏰",
+          "title": "Kaunas Castle",
+          "text": "Middelalderborg ved sammenløbet af Nemunas og Neris. Et naturligt sted at starte i den gamle bydel."
+        },
+        {
+          "icon": "🤍",
+          "title": "Rådhuset – “Den hvide svane”",
+          "text": "Det historiske rådhus på den store plads kaldes den hvide svane på grund af form og farve."
+        },
+        {
+          "icon": "🌳",
+          "title": "Santaka Park",
+          "text": "Grønt område ved stedet, hvor Nemunas og Neris mødes. God til en rolig gåtur mellem seværdighederne."
+        },
+        {
+          "icon": "🏙️",
+          "title": "Den gamle bydel",
+          "text": "Gader med gotik, renæssance og barok, caféer og korte afstande mellem mange af byens klassiske seværdigheder."
+        },
+        {
+          "icon": "🏛️",
+          "title": "Mellemkrigsarkitektur",
+          "text": "Kaunas er kendt for sin modernistiske arkitektur fra perioden, hvor byen fungerede som Litauens midlertidige hovedstad."
+        },
+        {
+          "icon": "📸",
+          "title": "Aleksotas udsigtspunkt",
+          "text": "Kombinér broen, funikulæren og udsigten i én samlet tur."
+        }
       ],
-      "links":[
-        {"title":"Visit Kaunas · officiel turistside","text":"Se aktuelle attraktioner, arrangementer og praktiske oplysninger.","url":"https://visit.kaunas.lt/en/"}
+      "links": [
+        {
+          "title": "Visit Kaunas",
+          "text": "Byens officielle turistportal.",
+          "url": "https://visit.kaunas.lt/en/"
+        },
+        {
+          "title": "Spurginė · officiel Visit Kaunas",
+          "text": "Adresse, åbningstider og information om den klassiske donut-café.",
+          "url": "https://visit.kaunas.lt/en/eat-and-drink/restaurants/classic/spurgine/"
+        }
+      ]
+    },
+    {
+      "id": "praktisk",
+      "label": "Praktisk",
+      "icon": "ℹ️",
+      "intro": "De praktiske oplysninger bliver mere præcise, når rejsedato, transport og overnatning er kendt.",
+      "facts": [
+        {
+          "label": "Valuta",
+          "value": "Euro (€)"
+        },
+        {
+          "label": "Land",
+          "value": "Litauen"
+        },
+        {
+          "label": "By",
+          "value": "Kaunas"
+        },
+        {
+          "label": "Sprog",
+          "value": "Litauisk; engelsk er almindeligt i turistområder"
+        },
+        {
+          "label": "Tidszone",
+          "value": "Kaunas er normalt 1 time foran Danmark"
+        },
+        {
+          "label": "Kort",
+          "value": "Google Maps-linket fra planlægningen ligger under Overblik"
+        }
+      ],
+      "links": [
+        {
+          "title": "Visit Kaunas · officiel turistside",
+          "text": "Se aktuelle attraktioner, arrangementer og praktiske oplysninger.",
+          "url": "https://visit.kaunas.lt/en/"
+        }
       ]
     }
   ]
