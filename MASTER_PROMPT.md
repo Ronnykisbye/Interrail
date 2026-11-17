@@ -24,7 +24,7 @@ Aktuelle slots:
 1. **Antwerpen** – aktiv
 2. **Interrail** – aktiv plan mod Istanbul, dato ikke fastlagt
 3. **Skiferie 2027** – aktiv planlægning, uge 5, Sestriere i Italien
-4. **Koners efterår 2026** – aktiv planlægning, Kaunas i Litauen
+4. **Kaunas** – aktiv planlægning, Kaunas i Litauen
 5. Reserve
 6. Reserve
 
@@ -84,7 +84,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `ski-2027.js`
 - `data/ski-2027.json`
 
-## Koners efterår 2026
+## Kaunas
 - `koners-efteraar-2026.html`
 - `koners-efteraar-2026.css`
 - `koners-efteraar-2026.js`
