@@ -31,14 +31,14 @@
       "target": "ski-2027"
     },
     {
-      "id": "koners-efteraar-2026",
+      "id": "kaunas",
       "slot": 4,
       "active": true,
       "title": "Kaunas",
       "subtitle": "Litauen · efterår 2026",
       "icon": "🍂",
       "status": "Planlægning",
-      "target": "koners-efteraar-2026"
+      "target": "kaunas"
     },
     {
       "id": "reserve-5",
