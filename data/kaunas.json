@@ -19,6 +19,12 @@
           "text": "Litauens næststørste by ved sammenløbet af floderne Nemunas og Neris. En kompakt by med gammel bydel, mellemkrigsarkitektur og gode udsigter."
         },
         {
+          "icon": "📜",
+          "title": "Historien om Kaunas",
+          "text": "Fra middelalderborg og hansestad til Litauens midlertidige hovedstad og UNESCO-by. Kaunas har en usædvanlig historie – tryk her og læs den korte fortælling.",
+          "go": "historie"
+        },
+        {
           "icon": "👩‍👧‍👧",
           "title": "Rejsende",
           "text": "7 unge piger."
@@ -391,30 +397,82 @@
       "id": "historie",
       "label": "Historie",
       "icon": "📖",
-      "intro": "To historier, der ligger næsten lige efter hinanden: den berømte bro over Nemunas og det lille tog op ad Aleksotas-bakken.",
+      "intro": "Kaunas er meget mere end en hyggelig gammel by. Den voksede fra en middelalderlig fæstning ved to floder til handelsby, blev Litauens midlertidige hovedstad og udviklede på få årtier en helt ny moderne identitet. Her er historien i korte kapitler.",
       "cards": [
         {
+          "icon": "🏰",
+          "title": "1361 · Byen træder ind i historien",
+          "text": "Kaunas nævnes første gang i skriftlige kilder i 1361. Ved sammenløbet af Nemunas og Neris lå en borg, som skulle beskytte området mod Den Tyske Orden. Omkring borgen voksede den by frem, vi kender i dag.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Castle"
+        },
+        {
+          "icon": "⚖️",
+          "title": "1408 · Kaunas bliver en rigtig by",
+          "text": "Storhertug Vytautas gav Kaunas Magdeburg-rettigheder. Det betød selvstyre, eget bystyre og bedre muligheder for handel. Rådhuspladsen blev centrum for handel og byliv.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall"
+        },
+        {
+          "icon": "⚓",
+          "title": "1441 · Handel med Vesteuropa",
+          "text": "Hanseatiske købmænd fik lov til at oprette et handelskontor i Kaunas. Floderne gjorde byen til et vigtigt knudepunkt mellem Litauen og byer længere mod vest. Kaunas er i dag den eneste litauiske by i den internationale Nye Hanse.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Old+Town"
+        },
+        {
+          "icon": "🏛️",
+          "title": "1919–1939 · Litauens midlertidige hovedstad",
+          "text": "Da Vilnius ikke kunne fungere som landets hovedstad, blev Kaunas Litauens midlertidige hovedstad. Regering, ministerier, kulturinstitutioner og erhvervsliv rykkede hertil. På under 20 år blev en provinsby forvandlet til en moderne europæisk hovedstad.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
+        },
+        {
+          "icon": "🏙️",
+          "title": "En by bygges næsten på rekordtid",
+          "text": "I mellemkrigstiden voksede Kaunas voldsomt. Nye boliger, skoler, hospitaler, kontorer og offentlige bygninger skød op. Det er den periode, der har givet byen dens særlige modernistiske arkitektur.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+modernist+architecture"
+        },
+        {
+          "icon": "🇩🇰",
+          "title": "En lille dansk forbindelse",
+          "text": "I 1920’erne arbejdede den danske byplanlægger Marius Frandsen med en plan for Kaunas. Hans arbejde indgik i den modernisering, som skulle gøre byen egnet til rollen som hovedstad.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Naujamiestis+Kaunas"
+        },
+        {
+          "icon": "🚋",
+          "title": "1930’erne · Funikulærerne kommer",
+          "text": "Žaliakalnis-funikulæren åbnede i 1931 og Aleksotas-funikulæren i 1935. De små bjergbaner blev en del af den moderne bys transportsystem – og Aleksotas kører stadig.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+        },
+        {
           "icon": "🌉",
-          "title": "“Verdens længste bro”",
-          "text": "Vytautas den Stores Bro fik sit muntre kælenavn, fordi Kaunas og Aleksotas historisk lå under forskellige styreformer og brugte forskellige kalendere. Forskellen var 13 dage, så man spøgte med, at det tog 13 dage at krydse broen.",
+          "title": "Broen der tog 13 dage",
+          "text": "Vytautas den Stores Bro er knyttet til en af Kaunas’ bedste historier. Kaunas og Aleksotas brugte engang forskellige kalendere under forskellige styreformer. Derfor kunne datoen ændre sig med 13 dage, når man krydsede floden – og man jokede med, at broen tog 13 dage at krydse.",
           "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+Bridge+Kaunas"
         },
         {
-          "icon": "🧭",
-          "title": "Det var kalenderen – ikke afstanden",
-          "text": "Historien handler altså ikke om, at broen fysisk tog 13 dage at gå over. Pointen er, at datoen kunne være 13 dage forskellig fra den ene side af Nemunas til den anden."
+          "icon": "⚫",
+          "title": "Krig og Sovjettid",
+          "text": "Anden Verdenskrig og de efterfølgende sovjetiske år ændrede byen dramatisk. Kaunas mistede rollen som hovedstad, men mange af mellemkrigstidens bygninger og gadenet overlevede, hvilket i dag gør byen til et usædvanligt historisk tidsbillede."
         },
         {
-          "icon": "💥",
-          "title": "Broen i krigstid",
-          "text": "Den nuværende bro blev sprængt to gange under Anden Verdenskrig og genopbygget i 1948. Ældre broer over stedet så anderledes ud end den bro, man ser i dag.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+Bridge+Kaunas"
+          "icon": "🌍",
+          "title": "2023 · Kaunas bliver UNESCO-verdensarv",
+          "text": "UNESCO optog Modernist Kaunas: Architecture of Optimism, 1919–1939 på verdensarvslisten. Det er især områderne Naujamiestis og Žaliakalnis, som fortæller historien om den hurtige forvandling til moderne hovedstad.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Naujamiestis+Zaliakalnis+Kaunas"
         }
       ],
       "links": [
         {
+          "title": "Kaunas IN · byens historie",
+          "text": "Officiel Kaunas-guide fra middelalderen til den moderne by.",
+          "url": "https://kaunasin.lt/en/movies-about-kaunas/"
+        },
+        {
+          "title": "UNESCO · Modernist Kaunas",
+          "text": "Hvorfor Kaunas’ mellemkrigsarkitektur kom på verdensarvslisten.",
+          "url": "https://whc.unesco.org/en/list/1661/"
+        },
+        {
           "title": "Visit Kaunas · Vytautas the Great Bridge",
-          "text": "Officiel turistinformation om broens historie.",
+          "text": "Historien om broen og de 13 dage.",
           "url": "https://www.visit.kaunas.lt/en/see-and-do/sights/vytautas-the-great-bridge/"
         }
       ]
