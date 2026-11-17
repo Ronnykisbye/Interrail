@@ -24,9 +24,10 @@
           "text": "7 unge piger."
         },
         {
-          "icon": "🗺️",
-          "title": "Hotel · afventer korrekt adresse",
-          "text": "Det tidligere Maps-link var forkert og er fjernet. Hotelnavn og adresse indsættes først, når de er verificeret."
+          "icon": "🏨",
+          "title": "Amberton Cozy Hotel Kaunas",
+          "text": "V. Kuzmos g. 8, LT-44280 Kaunas · i den gamle bydel tæt på Rådhuspladsen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
         }
       ],
       "facts": [
@@ -285,20 +286,28 @@
       "id": "hotel",
       "label": "Mit hotel",
       "icon": "🏨",
-      "intro": "Hotellets korrekte navn og adresse skal stå her, før navigation aktiveres. Det tidligere gemte Maps-link var forkert og pegede på Aleksotas Funicular, så det er fjernet.",
+      "intro": "Jeres hotel er Amberton Cozy Hotel Kaunas i den gamle bydel, tæt på Rådhuspladsen. Herfra er der kort gåafstand til mange af de vigtigste steder i centrum.",
       "cards": [
         {
           "icon": "🏨",
-          "title": "Hotel · afventer korrekt adresse",
-          "text": "Det tidligere hotel-link er fjernet, fordi det åbnede Aleksotas Funicular. Hotelknappen aktiveres først igen, når navn og adresse er verificeret."
+          "title": "Amberton Cozy Hotel Kaunas",
+          "text": "V. Kuzmos g. 8, LT-44280 Kaunas. Hotellet ligger i den gamle bydel tæt på Rådhuspladsen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
         },
         {
           "icon": "🏠",
           "title": "Find vej hjem",
-          "text": "Denne knap bliver først aktiv, når den korrekte hoteladresse er verificeret. På den måde kan ingen ved en fejl blive sendt til et forkert sted."
+          "text": "Åbn Google Maps-navigation direkte tilbage til Amberton Cozy Hotel Kaunas.",
+          "url": "https://www.google.com/maps/dir/?api=1&destination=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
         }
       ],
-      "links": []
+      "links": [
+        {
+          "title": "Hotellets officielle hjemmeside",
+          "text": "Amberton Cozy Hotel Kaunas · kontakt og hotelinformation.",
+          "url": "https://ambertonhotels.com/en/kaunas-contacts/"
+        }
+      ]
     },
     {
       "id": "gaatur",
