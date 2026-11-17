@@ -92,6 +92,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. Præcise datoer, transport og hotel er endnu ikke oplyst.
 - Historiedel: Vytautas den Stores Bro og den historiske 13-dages kalenderhistorie samt Aleksotas-funikulæren fra 1935.
 - Juletema: turen ligger omkring juletræstændingen 27. november 2026. Appen har nu `Jul i Kaunas` med juletræ, julebyer, Laisvės alėja-lys, Vienybės aikštė, weekendoplevelser og Spurginė på Laisvės al. 84.
+- Kaunas-guiden er udvidet til 7 unge piger med byvandring fra Rådhuspladsen via Vilniaus gatvė og Laisvės alėja til Vytautas Magnus University, shopping/AKROPOLIS, offentlig transport, sikkerhed/nødnumre, skøjteløb, genbrug/vintage samt litauiske madretter med ingrediensforklaringer. Konkrete steder har Google Maps-links.
 - Google Maps-linket `https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm` er bekræftet af brugeren som hotel-link, men hotelnavnet må først skrives, når det kan verificeres sikkert.
 
 ## Athen-viden · arkiv
