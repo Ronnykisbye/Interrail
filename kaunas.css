@@ -177,22 +177,22 @@
     position:absolute;
     z-index:3;
     left:50%;
-    bottom:100px;
+    bottom:72px;
     transform:translateX(-50%);
     display:flex;
     flex-direction:column;
     align-items:center;
     gap:2px;
-    min-width:74px;
-    padding:7px 12px 5px;
+    min-width:78px;
+    padding:8px 14px 6px;
     color:#fff;
     text-decoration:none;
     border:1px solid rgba(255,255,255,.34);
     border-radius:999px;
-    background:rgba(12,32,32,.24);
+    background:rgba(12,32,32,.34);
     backdrop-filter:blur(9px);
     -webkit-backdrop-filter:blur(9px);
-    box-shadow:0 7px 20px rgba(7,25,25,.18);
+    box-shadow:0 8px 22px rgba(7,25,25,.22);
     font-size:.58rem;
     font-weight:800;
     letter-spacing:.16em;
@@ -210,4 +210,8 @@
 @keyframes scrollCue{
   0%,100%{transform:translateY(-1px);opacity:.72}
   50%{transform:translateY(4px);opacity:1}
+}
+
+@media(max-width:380px){
+  .hero-scroll-cue{bottom:66px}
 }
