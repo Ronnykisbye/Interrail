@@ -87,6 +87,11 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 ## Kaunas
 - `kaunas.html`
 - `kaunas-delt.html` – delt Kaunas-visning uden navigation til øvrige rejser
+- `kaunas-install.html` – fælles installationsside til iPhone/Android
+- `kaunas-install.css`
+- `kaunas-install.js`
+- `kaunas.webmanifest` – separat PWA-manifest, der starter direkte i `kaunas-delt.html`
+- `assets/kaunas-icon.svg` – Kaunas-appikon
 - `kaunas.css`
 - `kaunas.js`
 - `data/kaunas.json`
@@ -97,6 +102,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - Transportdelen fremhæver nu Bolt til kørsel/taxa og el-løbehjul samt eTaksi som traditionel taxa. Handlingsknapper og linkbokse bruger ensartet farve, radius og hover/fokus-stil for et mere professionelt design.
 - Det tidligere Maps-link `https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm` viste sig at pege på Aleksotas Funicular og er fjernet fra hotel-sektionen. Hotelnavigation må først aktiveres igen, når hotelnavn og adresse er verificeret.
 - Hotel er nu verificeret som **Amberton Cozy Hotel Kaunas**, V. Kuzmos g. 8, LT-44280 Kaunas. `Mit hotel` og `Find vej hjem` bruger direkte Google Maps-links til dette hotel.
+- Installationslink til pigerne: `https://ronnykisbye.github.io/Interrail/kaunas-install.html`. Android kan bruge installationsdialog; iPhone får kort vejledning til Del → Føj til hjemmeskærm. Den installerede PWA starter direkte i `kaunas-delt.html`.
 
 ## Athen-viden · arkiv
 Selve Athen-rejsen og app-siden er fjernet. Kun genbrugelig, generel Athen-viden bevares:
