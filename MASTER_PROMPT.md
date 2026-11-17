@@ -93,6 +93,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `kaunas.webmanifest` – separat PWA-manifest, der starter direkte i `kaunas-delt.html`
 - `assets/kaunas-icon.svg` – Kaunas-appikon
 - `assets/kaunas-julemarked-piger.jpg` – hero/forsidebillede med 7 piger ved julemarkedet foran Kaunas rådhus
+- `assets/kaunas-billeder/` – 11 egne, weboptimerede Kaunas-fotos til appens billedgalleri
 - `kaunas.css`
 - `kaunas.js`
 - `data/kaunas.json`
@@ -105,6 +106,8 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - Kaunas-menuens undermenukort har nu mørk, eksklusiv overflade inspireret af Kaunas-heroen samt glød hele vejen rundt om hvert kort: blålig som standard og grønlig på aktivt/valgt kort. Kortene har desuden tydelig 3D-dybde og løfte/tryk-effekt.
 - Det tidligere Maps-link `https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm` viste sig at pege på Aleksotas Funicular og er fjernet fra hotel-sektionen. Hotelnavigation må først aktiveres igen, når hotelnavn og adresse er verificeret.
 - Hotel er nu verificeret som **Amberton Cozy Hotel Kaunas**, V. Kuzmos g. 8, LT-44280 Kaunas. `Mit hotel` og `Find vej hjem` bruger direkte Google Maps-links til dette hotel.
+- Appen har nu en synlig **📷 Billeder**-mappe med 11 egne fotos fra tidligere Kaunas-ture. Galleriet vises responsivt og billeder kan åbnes større.
+- Mobilforsiden har en diskret **UDFORSK**-indikator, der viser at der er mere indhold nedenunder; de tidligere tre hero-piller og koordinaterne er fjernet.
 - Installationslink til pigerne: `https://ronnykisbye.github.io/Interrail/kaunas-install.html`. Android kan bruge installationsdialog; iPhone får kort vejledning til Del → Føj til hjemmeskærm. Den installerede PWA starter direkte i `kaunas-delt.html`.
 
 ## Athen-viden · arkiv
