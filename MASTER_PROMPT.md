@@ -303,3 +303,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 
 # Hovedprincip
 **Bevar fungerende apps. Byg Rejser som et stabilt modulært lag ovenpå dem. Nye rejser skal primært være nye data/moduler, ikke omskrivning af forsiden.**
+
+- Gabriellas plan er prioriteret som hovedknap: **📅 Gabriellas plan** ligger i øverste række på mobil (lige efter Overblik). Den tidligere selvstændige Byvandring-knap er fjernet; byvandringen er bevaret som ekstra oplevelse.
