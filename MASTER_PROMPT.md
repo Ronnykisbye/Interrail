@@ -307,3 +307,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 - Gabriellas plan er prioriteret som hovedknap: **📅 Gabriellas plan** ligger i øverste række på mobil (lige efter Overblik). Den tidligere selvstændige Byvandring-knap er fjernet; byvandringen er bevaret som ekstra oplevelse.
 
 - Historiekort har nu to knapper, hvor relevant: **📍 Se på kort** og **📖 Læs historien**. Læsekilderne er primært Kaunas Kommune, Kaunas IN, Visit Kaunas, Hanse.org, Modernist Kaunas og UNESCO.
+
+- `Broen der tog 13 dage` er nu forklaret direkte i appen med den fulde kalenderhistorie. Maps-link beholdes, mens det eksterne læselink er fjernet for at undgå døde links.
