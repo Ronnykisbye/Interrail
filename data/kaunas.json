@@ -3,15 +3,15 @@
     "title": "Kaunas – Efterår 2026",
     "destination": "Kaunas, Litauen",
     "travellers": "7 unge piger",
-    "dates": "Efterår 2026 – præcise datoer ikke oplyst",
-    "status": "Planlægning"
+    "dates": "26.–29. november 2026",
+    "status": "Booket"
   },
   "tabs": [
     {
       "id": "overblik",
       "label": "Overblik",
       "icon": "🍂",
-      "intro": "Velkommen til Kaunas – Efterår 2026! Vælg en mappe nedenfor. Flybilletter og hotel udfyldes, når oplysningerne er klar.",
+      "intro": "Kaunas – Efterår 2026 er booket til 26.–29. november. Her finder I fly, hotel, jul, mad, oplevelser, transport og billeder samlet ét sted.",
       "cards": [
         {
           "icon": "🇱🇹",
@@ -32,7 +32,7 @@
         {
           "icon": "🏨",
           "title": "Amberton Cozy Hotel Kaunas",
-          "text": "V. Kuzmos g. 8, LT-44280 Kaunas · i den gamle bydel tæt på Rådhuspladsen.",
+          "text": "V. Kuzmos g. 8, LT-44280 Kaunas · booket 26.–29. november 2026 (3 nætter) · i den gamle bydel tæt på Rådhuspladsen.",
           "url": "https://www.google.com/maps/search/?api=1&query=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
         }
       ],
@@ -43,11 +43,11 @@
         },
         {
           "label": "Periode",
-          "value": "Efterår 2026 – præcise datoer kommer senere"
+          "value": "26.–29. november 2026"
         },
         {
           "label": "Status",
-          "value": "Planlægning"
+          "value": "Booket"
         }
       ]
     },
@@ -55,17 +55,17 @@
       "id": "fly",
       "label": "Flybilletter",
       "icon": "✈️",
-      "intro": "Flyoplysningerne kommer her, så snart billetterne er kendt.",
+      "intro": "Flyrejsen er med Ryanair mellem København og Kaunas. Tiderne her er de lokale tider fra bookingoplysningerne.",
       "cards": [
         {
           "icon": "🛫",
-          "title": "Udrejse",
-          "text": "Flynummer, lufthavn og afgangstid afventer."
+          "title": "Udrejse · torsdag 26. november",
+          "text": "Ryanair FR 6155 · København 19:25 → Kaunas 21:55 · flyvetid 1 t 30 min."
         },
         {
           "icon": "🛬",
-          "title": "Hjemrejse",
-          "text": "Flynummer, lufthavn og hjemrejsetid afventer."
+          "title": "Hjemrejse · søndag 29. november",
+          "text": "Ryanair FR 6156 · Kaunas 19:25 → København 19:55 · flyvetid 1 t 30 min."
         }
       ],
       "links": []
@@ -323,12 +323,12 @@
       "id": "hotel",
       "label": "Mit hotel",
       "icon": "🏨",
-      "intro": "Jeres hotel er Amberton Cozy Hotel Kaunas i den gamle bydel, tæt på Rådhuspladsen. Herfra er der kort gåafstand til mange af de vigtigste steder i centrum.",
+      "intro": "Jeres hotel er Amberton Cozy Hotel Kaunas i den gamle bydel. Opholdet er booket fra torsdag 26. november til søndag 29. november 2026 – 3 nætter.",
       "cards": [
         {
           "icon": "🏨",
           "title": "Amberton Cozy Hotel Kaunas",
-          "text": "V. Kuzmos g. 8, LT-44280 Kaunas. Hotellet ligger i den gamle bydel tæt på Rådhuspladsen.",
+          "text": "V. Kuzmos g. 8, LT-44280 Kaunas. Booket 26.–29. november 2026 (3 nætter). Hotellet ligger i den gamle bydel tæt på Rådhuspladsen.",
           "url": "https://www.google.com/maps/search/?api=1&query=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
         },
         {
