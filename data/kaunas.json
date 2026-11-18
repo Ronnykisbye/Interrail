@@ -712,7 +712,7 @@
       "id": "praktisk",
       "label": "Praktisk",
       "icon": "ℹ️",
-      "intro": "Praktiske oplysninger til den bookede Kaunas-tur 26.–29. november 2026.",
+      "intro": "Praktiske oplysninger til den bookede Kaunas-tur 26.–29. november 2026 – inkl. mobil og roaming i Litauen.",
       "facts": [
         {
           "label": "Periode",
@@ -748,6 +748,42 @@
           "title": "Visit Kaunas · officiel turistside",
           "text": "Se aktuelle attraktioner, arrangementer og praktiske oplysninger.",
           "url": "https://visit.kaunas.lt/en/"
+        },
+        {
+          "title": "EU · roamingregler",
+          "text": "EU’s officielle forklaring af roaming til hjemmetakst og fair use.",
+          "url": "https://europa.eu/youreurope/citizens/consumers/internet-telecoms/mobile-roaming-costs/index_da.htm"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "📱",
+          "title": "Mobil i Kaunas · EU-roaming",
+          "text": "Litauen er med i EU/EØS-roaming. På et normalt dansk mobilabonnement med EU-roaming kan I bruge tale, sms og mobildata i Kaunas uden almindelige udlandspriser. Slå dataroaming til på telefonen. Den præcise datamængde afhænger af abonnementet, så tjek altid jeres egen app eller kundeside før afrejse."
+        },
+        {
+          "icon": "🟣",
+          "title": "YouSee",
+          "text": "Litauen er med i YouSee Roaming Europa. Tale, sms og data bruges efter vilkårene i dit abonnement. Hvor mange GB du har i udlandet afhænger af abonnementet; se det i Mit YouSee. Ved længerevarende eller usædvanligt stort EU-forbrug gælder fair-use-regler.",
+          "url": "https://yousee.dk/shop/roaming"
+        },
+        {
+          "icon": "🔵",
+          "title": "Telenor",
+          "text": "Telenor oplyser, at alle deres mobilabonnementer kan bruges i EU. Litauen er inkluderet. Den mængde data, du kan bruge i udlandet, afhænger af abonnementet. Telenor sender besked, når 80 % af den inkluderede udlandsdata er brugt; tjek Mit Telenor for den præcise grænse.",
+          "url": "https://www.telenor.dk/shop/landingpage/mobil/roaming/"
+        },
+        {
+          "icon": "⚫",
+          "title": "3",
+          "text": "Litauen er med i 3LikeHome. Fra Litauen kan du bruge inkluderet tale og sms/mms til EU-numre og data efter dit abonnement. 3’s aktuelle privatvilkår angiver højst 20 GB data pr. SIM pr. regningsperiode i 3LikeHome-lande inden for EU, medmindre dit konkrete abonnement angiver andet. Tjek 3-appen før turen.",
+          "url": "https://www.3.dk/abonnementer/fordele/3likehome/roaming/"
+        },
+        {
+          "icon": "🟢",
+          "title": "Norlys",
+          "text": "Litauen er blandt Norlys’ roaminglande. Norlys’ aktuelle mobilabonnementer inkluderer roaming i mange lande, men hvor meget data du kan bruge i Litauen afhænger af abonnementet. Tale og sms/mms i EU er som udgangspunkt inkluderet; tjek dit abonnement hos Norlys for den konkrete datagrænse.",
+          "url": "https://shop.norlys.dk/kundeservice/mobil/udland/"
         }
       ]
     },
