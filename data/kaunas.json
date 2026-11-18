@@ -52,29 +52,10 @@
       ]
     },
     {
-      "id": "fly",
-      "label": "Flybilletter",
-      "icon": "✈️",
-      "intro": "Flyrejsen er med Ryanair mellem København og Kaunas. Tiderne her er de lokale tider fra bookingoplysningerne.",
-      "cards": [
-        {
-          "icon": "🛫",
-          "title": "Udrejse · torsdag 26. november",
-          "text": "Ryanair FR 6155 · København 19:25 → Kaunas 21:55 · flyvetid 1 t 30 min."
-        },
-        {
-          "icon": "🛬",
-          "title": "Hjemrejse · søndag 29. november",
-          "text": "Ryanair FR 6156 · Kaunas 19:25 → København 19:55 · flyvetid 1 t 30 min."
-        }
-      ],
-      "links": []
-    },
-    {
       "id": "rejseplan",
-      "label": "Rejseplan",
+      "label": "Gabriellas plan",
       "icon": "📅",
-      "intro": "Gabriellas plan for turen 26.–29. november 2026. Tiderne er den aftalte plan; der er bevidst plads til fri leg og spontane stop undervejs.",
+      "intro": "Gabriellas dag-for-dag-plan er turens hovedprogram. Tiderne nedenfor er den aftalte plan; brug de øvrige mapper som inspiration og praktisk hjælp omkring programmet.",
       "cards": [
         {
           "icon": "🌙",
@@ -97,7 +78,7 @@
         {
           "icon": "🎄",
           "title": "Fredag · Jul og aften",
-          "text": "15.30: Gåtur tilbage mod hotellet eller det, der passer. 18.00–19.30: Kaunas’ store juletræstænding med julelys, musik og festlig stemning ved Laisvės alėja. 20.00: Middag ved Nüman (Michelin Guide). 22.00: Cocktails ved Knygnešys. Fra 23.30: Džem’pub – drinks, musik og dans.",
+          "text": "15.30: Gåtur tilbage mod hotellet eller det, der passer. 18.00–19.30: Kaunas’ store juletræstænding med julelys, musik og festlig stemning ved Laisvės alėja. 20.00: Middag ved Nüman. 22.00: Cocktails ved Knygnešys. Fra 23.30: Džem’pub – drinks, musik og dans.",
           "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
         },
         {
@@ -127,16 +108,30 @@
       ],
       "links": [
         {
-          "title": "Kaunas lufthavn",
-          "text": "Åbn Kaunas International Airport i Google Maps.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+International+Airport"
-        },
-        {
-          "title": "Amberton Cozy Hotel",
-          "text": "Hotellet under hele opholdet 26.–29. november.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
+          "title": "Hotel → lufthavn",
+          "text": "Navigation søndag efter bagagen er hentet.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas&destination=Kaunas+International+Airport"
         }
       ]
+    },
+    {
+      "id": "fly",
+      "label": "Flybilletter",
+      "icon": "✈️",
+      "intro": "Flyrejsen er med Ryanair mellem København og Kaunas. Tiderne her er de lokale tider fra bookingoplysningerne.",
+      "cards": [
+        {
+          "icon": "🛫",
+          "title": "Udrejse · torsdag 26. november",
+          "text": "Ryanair FR 6155 · København 19:25 → Kaunas 21:55 · flyvetid 1 t 30 min."
+        },
+        {
+          "icon": "🛬",
+          "title": "Hjemrejse · søndag 29. november",
+          "text": "Ryanair FR 6156 · Kaunas 19:25 → København 19:55 · flyvetid 1 t 30 min."
+        }
+      ],
+      "links": []
     },
     {
       "id": "jul",
@@ -458,51 +453,6 @@
       ]
     },
     {
-      "id": "gaatur",
-      "label": "Byvandring",
-      "icon": "🚶‍♀️",
-      "intro": "En oplagt gåtur går fra Rådhuspladsen gennem den gamle bydel ad Vilniaus gatvė, videre ud på Laisvės alėja og helt frem til Vytautas Magnus University ved S. Daukanto g. 28.",
-      "cards": [
-        {
-          "icon": "🏛️",
-          "title": "1 · Kaunas Rådhus",
-          "text": "Start på Rotušės aikštė i den gamle bydel. Her står byens hvide rådhus, og i julesæsonen er pladsen et af de vigtigste juleområder.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall"
-        },
-        {
-          "icon": "🏘️",
-          "title": "2 · Vilniaus gatvė",
-          "text": "Fortsæt gennem den gamle bydel ad Vilniaus gatvė, en af Kaunas’ ældste gader med røde murstenshuse, små caféer, butikker og historiske gårdrum.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Vilniaus+gatve+Kaunas"
-        },
-        {
-          "icon": "✨",
-          "title": "3 · Laisvės alėja",
-          "text": "Gå videre ad den lange gågade Laisvės alėja. Den er næsten 1,7 km lang og har caféer, restauranter, butikker, julelys og masser af byliv.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
-        },
-        {
-          "icon": "🍩",
-          "title": "4 · Spurginė",
-          "text": "Hold pause på Laisvės al. 84 og prøv varme litauiske spurgos på den klassiske lille café.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Spurgine+Laisves+al+84+Kaunas"
-        },
-        {
-          "icon": "🎓",
-          "title": "5 · Vytautas Magnus University",
-          "text": "Slut ved universitetets centrale bygning på S. Daukanto g. 28. Det ligger tæt på den østlige ende af Laisvės alėja.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+Magnus+University+S+Daukanto+28+Kaunas"
-        }
-      ],
-      "links": [
-        {
-          "title": "Google Maps · hele gåturen",
-          "text": "Rådhuset → Vilniaus gatvė → Laisvės alėja → Vytautas Magnus University.",
-          "url": "https://www.google.com/maps/dir/?api=1&origin=Kaunas+Town+Hall&destination=Vytautas+Magnus+University+S.+Daukanto+g.+28+Kaunas&waypoints=Vilniaus+gatve+Kaunas%7CLaisves+aleja+Kaunas&travelmode=walking"
-        }
-      ]
-    },
-    {
       "id": "shopping",
       "label": "Shopping",
       "icon": "🛍️",
@@ -669,6 +619,12 @@
       "icon": "✨",
       "intro": "Ekstra Kaunas-oplevelser, som kan bruges i den frie tid omkring Gabriellas dag-for-dag-plan.",
       "cards": [
+        {
+          "icon": "🚶‍♀️",
+          "title": "Byvandring · Rådhus til universitetet",
+          "text": "Ekstra tur til fri tid: Rådhuspladsen → Vilniaus gatvė → Laisvės alėja → Vytautas Magnus University.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Kaunas+Town+Hall&destination=Vytautas+Magnus+University+S.+Daukanto+g.+28+Kaunas&waypoints=Vilniaus+gatve+Kaunas%7CLaisves+aleja+Kaunas&travelmode=walking"
+        },
         {
           "icon": "⛪",
           "title": "Basilica Kauno Kristaus",
