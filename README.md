@@ -64,6 +64,7 @@ Kaunas har sit eget modul:
 - `data/kaunas.json` – rejseindhold
 - `assets/kaunas-billeder/` – 11 egne, weboptimerede Kaunas-fotos
 - **📷 Billeder** – synlig mappe i appen med responsivt galleri
+- **📅 Rejseplan** – Gabriellas dag-for-dag-program 26.–29. november med tider, måltider, museer, juletræstænding, vintage, natteliv og lufthavnstransport
 - mobilforsiden har en diskret **UDFORSK**-indikator, der viser at der er mere indhold nedenunder
 
 ## Projektstruktur
