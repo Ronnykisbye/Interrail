@@ -309,3 +309,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 - Historiekort har nu to knapper, hvor relevant: **📍 Se på kort** og **📖 Læs historien**. Læsekilderne er primært Kaunas Kommune, Kaunas IN, Visit Kaunas, Hanse.org, Modernist Kaunas og UNESCO.
 
 - `Broen der tog 13 dage` er nu forklaret direkte i appen med den fulde kalenderhistorie. Maps-link beholdes, mens det eksterne læselink er fjernet for at undgå døde links.
+
+- Alle historiekort er nu selvforklarende med en længere historisk tekst direkte i appen. Maps-links beholdes; eksterne læselinks er kun supplement og er ikke nødvendige for at forstå historien.
