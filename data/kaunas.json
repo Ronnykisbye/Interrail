@@ -11,7 +11,7 @@
       "id": "overblik",
       "label": "Overblik",
       "icon": "🍂",
-      "intro": "Kaunas – Efterår 2026 er booket til 26.–29. november. Her finder I fly, hotel, jul, mad, oplevelser, transport og billeder samlet ét sted.",
+      "intro": "Kaunas – Efterår 2026 er booket til 26.–29. november. Gabriellas dag-for-dag-plan ligger i mappen Rejseplan; her finder I også fly, hotel, jul, mad, oplevelser, transport og billeder.",
       "cards": [
         {
           "icon": "🇱🇹",
@@ -71,6 +71,74 @@
       "links": []
     },
     {
+      "id": "rejseplan",
+      "label": "Rejseplan",
+      "icon": "📅",
+      "intro": "Gabriellas plan for turen 26.–29. november 2026. Tiderne er den aftalte plan; der er bevidst plads til fri leg og spontane stop undervejs.",
+      "cards": [
+        {
+          "icon": "🌙",
+          "title": "Torsdag 26/11 · Ankomst",
+          "text": "21.55: Ankomst i Kaunas lufthavn. 22.40: Transport til Amberton Cozy Hotel. Derefter check-in, udpakning og godnat.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Kaunas+International+Airport&destination=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
+        },
+        {
+          "icon": "🥐",
+          "title": "Fredag 27/11 · Morgen",
+          "text": "09.00: Morgenmad hos Mbakery eller Kepyklėlė i den gamle bydel. 10.00: Gåtur langs Vilniaus gatvė og Laisvės alėja. 10.30: Basilica Kauno Kristaus – kirke og panoramaudsigt.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kauno+Kristaus+Prisikėlimo+bazilika+Kaunas"
+        },
+        {
+          "icon": "🥽",
+          "title": "Fredag · VR og frokost",
+          "text": "12.30–14.00: VR-udstilling, hold 1. 13.50–15.20: VR-udstilling, hold 2. Sted: M. K. Čiurlionis National Museum of Art. Fri leg mellem udstillingerne. Frokostforslag: Bernelių Užeiga.",
+          "url": "https://www.google.com/maps/search/?api=1&query=M.+K.+Ciurlionis+National+Museum+of+Art+Kaunas"
+        },
+        {
+          "icon": "🎄",
+          "title": "Fredag · Jul og aften",
+          "text": "15.30: Gåtur tilbage mod hotellet eller det, der passer. 18.00–19.30: Kaunas’ store juletræstænding med julelys, musik og festlig stemning ved Laisvės alėja. 20.00: Middag ved Nüman (Michelin Guide). 22.00: Cocktails ved Knygnešys. Fra 23.30: Džem’pub – drinks, musik og dans.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
+        },
+        {
+          "icon": "🛍️",
+          "title": "Lørdag 28/11 · Vintage og kunst",
+          "text": "09.00: Morgenmad ved Bundu eller andet godt sted. 10.30: Vintage shopping ved Vintažerija og derefter Humana Selected Vintage. 12.00: Frokost ved Višta Puode eller Bernelių Užeiga. 13.00: Kaunas Picture Gallery.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Picture+Gallery"
+        },
+        {
+          "icon": "☕",
+          "title": "Lørdag · Eftermiddag og aften",
+          "text": "15.00: Kaffe og kage ved Habits Coffee House. Derefter fri leg. 19.30: Middag – endnu ikke fastlagt. 21.30: Cocktails – endnu ikke fastlagt.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Habits+Coffee+House+Kaunas"
+        },
+        {
+          "icon": "🏰",
+          "title": "Søndag 29/11 · Sidste dag",
+          "text": "09.00: Morgenmad. Sidste gåtur gennem den gamle bydel og Rotušės aikštė. 10.30: Check-out og opbevaring af bagage. 11.00: Gåtur ved Kaunas Castle og flodområdet. 13.00: Frokost i centrum og derefter Akropolis.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Castle"
+        },
+        {
+          "icon": "✈️",
+          "title": "Søndag · Mod lufthavnen",
+          "text": "16.30: Hent bagage på hotellet. 16.45: Transport mod lufthavnen. 19.25: Hjemrejse med Ryanair FR 6156 til København.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas&destination=Kaunas+International+Airport"
+        }
+      ],
+      "links": [
+        {
+          "title": "Kaunas lufthavn",
+          "text": "Åbn Kaunas International Airport i Google Maps.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+International+Airport"
+        },
+        {
+          "title": "Amberton Cozy Hotel",
+          "text": "Hotellet under hele opholdet 26.–29. november.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Amberton+Cozy+Hotel+Kaunas+V.+Kuzmos+g.+8+Kaunas"
+        }
+      ]
+    },
+    {
       "id": "jul",
       "label": "Jul i Kaunas",
       "icon": "🎄",
@@ -79,7 +147,8 @@
         {
           "icon": "🎄",
           "title": "Juletræstænding · 27. november",
-          "text": "Hovedtræet tændes på Rotušės aikštė (Rådhuspladsen) fredag 27. november 2026. Aktuelle kilder angiver aftenarrangement med koncert; tjek den officielle juleside tæt på dagen for endeligt klokkeslæt."
+          "text": "Gabriellas rejseplan sætter juletræstændingen fredag 27. november kl. 18.00–19.30 med julelys, musik og festlig stemning ved Laisvės alėja.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
         },
         {
           "icon": "✨",
@@ -236,6 +305,48 @@
           "title": "Spurginė",
           "text": "Laisvės al. 84. Lille klassisk café med lune litauiske doughnuts.",
           "url": "https://www.google.com/maps/search/?api=1&query=Spurgin%C4%97%20Laisv%C4%97s%20al.%2084%20Kaunas%20Lithuania"
+        },
+        {
+          "icon": "🍽️",
+          "title": "Nüman",
+          "text": "Planlagt middag fredag kl. 20.00. Gabriellas plan angiver stedet som Michelin Guide.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Numan+Kaunas"
+        },
+        {
+          "icon": "🍸",
+          "title": "Knygnešys",
+          "text": "Planlagt cocktails fredag kl. 22.00.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Knygnesys+Kaunas"
+        },
+        {
+          "icon": "🎶",
+          "title": "Džem’pub",
+          "text": "Planlagt fredag fra ca. 23.30 til drinks, musik og dans.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Dzem+pub+Kaunas"
+        },
+        {
+          "icon": "☕",
+          "title": "Habits Coffee House",
+          "text": "Planlagt kaffe og kage lørdag kl. 15.00.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Habits+Coffee+House+Kaunas"
+        },
+        {
+          "icon": "🥐",
+          "title": "Mbakery",
+          "text": "Et af Gabriellas morgenmadsforslag fredag kl. 09.00.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Mbakery+Kaunas"
+        },
+        {
+          "icon": "🥐",
+          "title": "Kepyklėlė",
+          "text": "Et af Gabriellas morgenmadsforslag fredag kl. 09.00.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kepyklele+Kaunas"
+        },
+        {
+          "icon": "🥐",
+          "title": "Bundu",
+          "text": "Gabriellas morgenmadsforslag lørdag kl. 09.00.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Bundu+Kaunas"
         }
       ],
       "links": []
@@ -556,8 +667,26 @@
       "id": "oplevelser",
       "label": "Oplevelser",
       "icon": "✨",
-      "intro": "Gode steder at bygge en Kaunas-tur omkring. Endelig dagsplan laves, når datoer og hotel er kendt.",
+      "intro": "Ekstra Kaunas-oplevelser, som kan bruges i den frie tid omkring Gabriellas dag-for-dag-plan.",
       "cards": [
+        {
+          "icon": "⛪",
+          "title": "Basilica Kauno Kristaus",
+          "text": "Planlagt fredag kl. 10.30 for kirken og panoramaudsigten.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kauno+Kristaus+Prisikėlimo+bazilika+Kaunas"
+        },
+        {
+          "icon": "🥽",
+          "title": "M. K. Čiurlionis National Museum of Art",
+          "text": "VR-udstilling fredag: hold 1 kl. 12.30–14.00 og hold 2 kl. 13.50–15.20.",
+          "url": "https://www.google.com/maps/search/?api=1&query=M.+K.+Ciurlionis+National+Museum+of+Art+Kaunas"
+        },
+        {
+          "icon": "🖼️",
+          "title": "Kaunas Picture Gallery",
+          "text": "Planlagt lørdag kl. 13.00.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Picture+Gallery"
+        },
         {
           "icon": "🍩",
           "title": "Spurginė · Laisvės alėja 84",
@@ -618,8 +747,12 @@
       "id": "praktisk",
       "label": "Praktisk",
       "icon": "ℹ️",
-      "intro": "De praktiske oplysninger bliver mere præcise, når rejsedato, transport og overnatning er kendt.",
+      "intro": "Praktiske oplysninger til den bookede Kaunas-tur 26.–29. november 2026.",
       "facts": [
+        {
+          "label": "Periode",
+          "value": "26.–29. november 2026"
+        },
         {
           "label": "Valuta",
           "value": "Euro (€)"
@@ -800,6 +933,18 @@
       "icon": "♻️",
       "intro": "Genbrug, vintage og antik i Kaunas. Udvalget ændrer sig hele tiden, så Google Maps-linket nederst er godt til at se alle aktuelle butikker i nærheden.",
       "cards": [
+        {
+          "icon": "🧥",
+          "title": "Vintažerija",
+          "text": "Planlagt første vintage-stop lørdag kl. 10.30.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vintazerija+Kaunas"
+        },
+        {
+          "icon": "🧥",
+          "title": "Humana Selected Vintage",
+          "text": "Planlagt vintage-stop lørdag efter Vintažerija.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Humana+Selected+Vintage+Kaunas"
+        },
         {
           "icon": "👗",
           "title": "Humana Vintage · M. Daukšos g. 25",
