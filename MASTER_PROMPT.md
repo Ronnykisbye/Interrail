@@ -92,12 +92,12 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `kaunas-install.js`
 - `kaunas.webmanifest` – separat PWA-manifest, der starter direkte i `kaunas-delt.html`
 - `assets/kaunas-icon.svg` – Kaunas-appikon
-- `assets/kaunas-julemarked-piger.jpg` – hero/forsidebillede med 7 piger ved julemarkedet foran Kaunas rådhus
+- `assets/kaunas-hero-2026.jpg` – aktuelt hero/forsidebillede: Kaunas-gågade med 7 piger i efterårsmiljø
 - `assets/kaunas-billeder/` – 11 egne, weboptimerede Kaunas-fotos til appens billedgalleri
 - `kaunas.css`
 - `kaunas.js`
 - `data/kaunas.json`
-- Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. Præcise datoer, transport og hotel er endnu ikke oplyst.
+- Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. **Rejsedatoer: 26.–29. november 2026.** Fly med Ryanair: udrejse FR 6155 København 19:25 → Kaunas 21:55 den 26/11; hjemrejse FR 6156 Kaunas 19:25 → København 19:55 den 29/11. Bookingnummer må ikke offentliggøres.
 - Historiedel: udvidet fortælling fra 1361 og middelalderborgen via Magdeburg-rettigheder 1408, hansahandel, perioden som Litauens midlertidige hovedstad 1919–1939, mellemkrigsmodernisme, dansk byplanlægger Marius Frandsen, funikulærerne, krig/Sovjettid og UNESCO-status 2023. Overblik har intern `Læs mere`-knap direkte til Historie.
 - Vejr-knap: egen `Vejret`-sektion med officiel Meteo LT-prognose for Kaunas og praktiske råd om kulde/regn/slud/sne.
 - Juletema: turen ligger omkring juletræstændingen 27. november 2026. Appen har nu `Jul i Kaunas` med juletræ, julebyer, Laisvės alėja-lys, Vienybės aikštė, weekendoplevelser og Spurginė på Laisvės al. 84.
@@ -105,7 +105,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - Transportdelen fremhæver nu Bolt til kørsel/taxa og el-løbehjul samt eTaksi som traditionel taxa. Handlingsknapper og linkbokse bruger ensartet farve, radius og hover/fokus-stil for et mere professionelt design.
 - Kaunas-menuens undermenukort har nu mørk, eksklusiv overflade inspireret af Kaunas-heroen samt glød hele vejen rundt om hvert kort: blålig som standard og grønlig på aktivt/valgt kort. Kortene har desuden tydelig 3D-dybde og løfte/tryk-effekt.
 - Det tidligere Maps-link `https://maps.app.goo.gl/pDdAQLFnKpgvHHep8?g_st=afm` viste sig at pege på Aleksotas Funicular og er fjernet fra hotel-sektionen. Hotelnavigation må først aktiveres igen, når hotelnavn og adresse er verificeret.
-- Hotel er nu verificeret som **Amberton Cozy Hotel Kaunas**, V. Kuzmos g. 8, LT-44280 Kaunas. `Mit hotel` og `Find vej hjem` bruger direkte Google Maps-links til dette hotel.
+- Hotel er verificeret som **Amberton Cozy Hotel Kaunas**, V. Kuzmos g. 8, LT-44280 Kaunas. Opholdet er booket **26.–29. november 2026 (3 nætter)**. `Mit hotel` og `Find vej hjem` bruger direkte Google Maps-links til dette hotel.
 - Appen har nu en synlig **📷 Billeder**-mappe med 11 egne fotos fra tidligere Kaunas-ture. Galleriet vises responsivt og billeder kan åbnes større.
 - Mobilforsiden har en diskret **UDFORSK**-indikator, der viser at der er mere indhold nedenunder; de tidligere tre hero-piller og koordinaterne er fjernet.
 - Installationslink til pigerne: `https://ronnykisbye.github.io/Interrail/kaunas-install.html`. Android kan bruge installationsdialog; iPhone får kort vejledning til Del → Føj til hjemmeskærm. Den installerede PWA starter direkte i `kaunas-delt.html`.
