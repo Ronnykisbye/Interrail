@@ -97,6 +97,7 @@ Ved udvidelser skal eksisterende moduler genbruges frem for omskrives.
 - `kaunas.css`
 - `kaunas.js`
 - `data/kaunas.json`
+- **Gabriellas detaljerede dag-for-dag-plan er nu indarbejdet i appen** som `Rejseplan`: torsdag ankomst/check-in; fredag morgenmad, byvandring, Basilica Kauno Kristaus, VR på M. K. Čiurlionis-museet, juletræstænding, Nüman, Knygnešys og Džem’pub; lørdag vintage, frokost, Kaunas Picture Gallery, Habits Coffee House og fri aften; søndag gammel by, check-out, Kaunas Castle/floden, Akropolis, bagage og lufthavn.
 - Destination: Kaunas, Litauen. Rejsende: Gabriella og pigerne. **Rejsedatoer: 26.–29. november 2026.** Fly med Ryanair: udrejse FR 6155 København 19:25 → Kaunas 21:55 den 26/11; hjemrejse FR 6156 Kaunas 19:25 → København 19:55 den 29/11. Bookingnummer må ikke offentliggøres.
 - Historiedel: udvidet fortælling fra 1361 og middelalderborgen via Magdeburg-rettigheder 1408, hansahandel, perioden som Litauens midlertidige hovedstad 1919–1939, mellemkrigsmodernisme, dansk byplanlægger Marius Frandsen, funikulærerne, krig/Sovjettid og UNESCO-status 2023. Overblik har intern `Læs mere`-knap direkte til Historie.
 - Vejr-knap: egen `Vejret`-sektion med officiel Meteo LT-prognose for Kaunas og praktiske råd om kulde/regn/slud/sne.
