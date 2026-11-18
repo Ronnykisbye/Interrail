@@ -311,3 +311,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 - `Broen der tog 13 dage` er nu forklaret direkte i appen med den fulde kalenderhistorie. Maps-link beholdes, mens det eksterne læselink er fjernet for at undgå døde links.
 
 - Alle historiekort er nu selvforklarende med en længere historisk tekst direkte i appen. Maps-links beholdes; eksterne læselinks er kun supplement og er ikke nødvendige for at forstå historien.
+
+- `Praktisk` indeholder nu **Mobil i Kaunas** med EU-roaminginfo for YouSee, Telenor, 3 og Norlys. Præcis datamængde afhænger af abonnementet; appen linker til de officielle roaming-sider og anbefaler kontrol i kundens egen app før afrejse.
