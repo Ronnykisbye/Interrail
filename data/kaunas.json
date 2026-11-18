@@ -495,60 +495,70 @@
           "icon": "🏰",
           "title": "1361 · Byen træder ind i historien",
           "text": "Kaunas nævnes første gang i skriftlige kilder i 1361. Ved sammenløbet af Nemunas og Neris lå en borg, som skulle beskytte området mod Den Tyske Orden. Omkring borgen voksede den by frem, vi kender i dag.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Castle"
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Castle",
+          "readUrl": "https://visit.kaunas.lt/en/see-and-do/top/kauno-pilis/"
         },
         {
           "icon": "⚖️",
           "title": "1408 · Kaunas bliver en rigtig by",
           "text": "Storhertug Vytautas gav Kaunas Magdeburg-rettigheder. Det betød selvstyre, eget bystyre og bedre muligheder for handel. Rådhuspladsen blev centrum for handel og byliv.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall"
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Town+Hall",
+          "readUrl": "https://en.kaunas.lt/city/city-history"
         },
         {
           "icon": "⚓",
           "title": "1441 · Handel med Vesteuropa",
           "text": "Hanseatiske købmænd fik lov til at oprette et handelskontor i Kaunas. Floderne gjorde byen til et vigtigt knudepunkt mellem Litauen og byer længere mod vest. Kaunas er i dag den eneste litauiske by i den internationale Nye Hanse.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Old+Town"
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Old+Town",
+          "readUrl": "https://www.hanse.org/en/hanse/kaunas"
         },
         {
           "icon": "🏛️",
           "title": "1919–1939 · Litauens midlertidige hovedstad",
           "text": "Da Vilnius ikke kunne fungere som landets hovedstad, blev Kaunas Litauens midlertidige hovedstad. Regering, ministerier, kulturinstitutioner og erhvervsliv rykkede hertil. På under 20 år blev en provinsby forvandlet til en moderne europæisk hovedstad.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas"
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas",
+          "readUrl": "https://whc.unesco.org/en/list/1661/"
         },
         {
           "icon": "🏙️",
           "title": "En by bygges næsten på rekordtid",
           "text": "I mellemkrigstiden voksede Kaunas voldsomt. Nye boliger, skoler, hospitaler, kontorer og offentlige bygninger skød op. Det er den periode, der har givet byen dens særlige modernistiske arkitektur.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+modernist+architecture"
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+modernist+architecture",
+          "readUrl": "https://whc.unesco.org/en/list/1661/"
         },
         {
           "icon": "🇩🇰",
           "title": "En lille dansk forbindelse",
           "text": "I 1920’erne arbejdede den danske byplanlægger Marius Frandsen med en plan for Kaunas. Hans arbejde indgik i den modernisering, som skulle gøre byen egnet til rollen som hovedstad.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Naujamiestis+Kaunas"
+          "url": "https://www.google.com/maps/search/?api=1&query=Naujamiestis+Kaunas",
+          "readUrl": "https://modernist.kaunas.lt/en/unesco.php"
         },
         {
           "icon": "🚋",
           "title": "1930’erne · Funikulærerne kommer",
           "text": "Žaliakalnis-funikulæren åbnede i 1931 og Aleksotas-funikulæren i 1935. De små bjergbaner blev en del af den moderne bys transportsystem – og Aleksotas kører stadig.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas",
+          "readUrl": "https://visit.kaunas.lt/en/see-and-do/top/kaunas-funiculars/"
         },
         {
           "icon": "🌉",
           "title": "Broen der tog 13 dage",
           "text": "Vytautas den Stores Bro er knyttet til en af Kaunas’ bedste historier. Kaunas og Aleksotas brugte engang forskellige kalendere under forskellige styreformer. Derfor kunne datoen ændre sig med 13 dage, når man krydsede floden – og man jokede med, at broen tog 13 dage at krydse.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+Bridge+Kaunas"
+          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+Bridge+Kaunas",
+          "readUrl": "https://www.visit.kaunas.lt/en/see-and-do/sights/vytautas-the-great-bridge/"
         },
         {
           "icon": "⚫",
           "title": "Krig og Sovjettid",
-          "text": "Anden Verdenskrig og de efterfølgende sovjetiske år ændrede byen dramatisk. Kaunas mistede rollen som hovedstad, men mange af mellemkrigstidens bygninger og gadenet overlevede, hvilket i dag gør byen til et usædvanligt historisk tidsbillede."
+          "text": "Anden Verdenskrig og de efterfølgende sovjetiske år ændrede byen dramatisk. Kaunas mistede rollen som hovedstad, men mange af mellemkrigstidens bygninger og gadenet overlevede, hvilket i dag gør byen til et usædvanligt historisk tidsbillede.",
+          "readUrl": "https://kaunasin.lt/en/movies-about-kaunas/"
         },
         {
           "icon": "🌍",
           "title": "2023 · Kaunas bliver UNESCO-verdensarv",
           "text": "UNESCO optog Modernist Kaunas: Architecture of Optimism, 1919–1939 på verdensarvslisten. Det er især områderne Naujamiestis og Žaliakalnis, som fortæller historien om den hurtige forvandling til moderne hovedstad.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Naujamiestis+Zaliakalnis+Kaunas"
+          "url": "https://www.google.com/maps/search/?api=1&query=Naujamiestis+Zaliakalnis+Kaunas",
+          "readUrl": "https://whc.unesco.org/en/list/1661/"
         }
       ],
       "links": [
