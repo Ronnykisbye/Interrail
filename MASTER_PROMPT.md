@@ -319,3 +319,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 - VR/3D-kortet i `Museer & udstillinger` er markeret **⭐ BESTILT**, ligger altid først og har Google Maps, officiel VR-side, billetlink, aktuelle udstillinger og museets hjemmeside. Den præcise VR-titel må først skrives som bekræftet, når Gabriella oplyser den.
 
 - `Museer & udstillinger` er udvidet med Kaunas Picture Gallery, Devils' Museum, Kaunas Photography Gallery, Meno Parkas, Kaunas City Museum/Rådhuset, Historical Presidential Palace, Mokslo sala/Science Island og Vytautas the Great War Museum. Aktuelle udstillinger for rejsedatoerne nævnes, hvor verificeret.
+
+- Kaunas-menuen har nu **🏢 Art Deco & modernisme** i stedet for `Lille tog`. Afsnittet dækker Laisvės alėja, Centralposthuset, Pienocentras, Romuva, Officers’ Club, Bank of Lithuania, Pažanga og Kristi Genopstandelseskirke med forklaringer, Maps-links og læsekilder. Frie Wikimedia Commons-billeder vises med kildeangivelse. Funikulæren er bevaret under Oplevelser.
