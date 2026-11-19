@@ -381,49 +381,30 @@
       "links": []
     },
     {
-      "id": "julerute",
-      "label": "Julegåtur",
-      "icon": "🚶‍♀️",
-      "intro": "En rolig gåtur mellem de to juleområder. Sæt god tid af til butikker, caféer og billeder.",
+      "id": "museer",
+      "label": "Museer & udstillinger",
+      "icon": "🏛️",
+      "intro": "Museer, gallerier og udstillinger til turen. De to vigtigste steder her er allerede en del af Gabriellas dagplan.",
       "cards": [
         {
-          "icon": "🎄",
-          "title": "1 · Vienybės aikštė",
-          "text": "Start ved den moderne juleplads.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Vienyb%C4%97s%20aik%C5%A1t%C4%97%20Kaunas%20Lithuania"
+          "icon": "🥽",
+          "title": "M. K. Čiurlionis National Museum of Art · VR/3D",
+          "text": "Planlagt fredag. Hold 1: kl. 12.30–14.00. Hold 2: kl. 13.50–15.20. Gabriella har reserveret tid til oplevelsen. Når vi får de sidste detaljer om den konkrete VR/3D-udstilling, lægger jeg dem ind her.",
+          "url": "https://www.google.com/maps/search/?api=1&query=M.+K.+Ciurlionis+National+Museum+of+Art+Kaunas"
         },
         {
-          "icon": "✨",
-          "title": "2 · Laisvės alėja",
-          "text": "Følg den lange gågade med butikker, caféer og julelys.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Laisv%C4%97s%20al%C4%97ja%20Kaunas%20Lithuania"
+          "icon": "🖼️",
+          "title": "Kaunas Picture Gallery",
+          "text": "Planlagt lørdag kl. 13.00. Galleriet er en del af M. K. Čiurlionis National Museum of Art og viser skiftende kunstudstillinger.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Picture+Gallery"
         },
         {
-          "icon": "🍩",
-          "title": "3 · Spurginė",
-          "text": "Hold en hyggelig pause på Laisvės al. 84.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Spurgin%C4%97%20Laisv%C4%97s%20al.%2084%20Kaunas%20Lithuania"
-        },
-        {
-          "icon": "🏘️",
-          "title": "4 · Vilniaus gatvė",
-          "text": "Gå videre gennem den historiske gågade.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Vilniaus%20gatv%C4%97%20Kaunas%20Lithuania"
-        },
-        {
-          "icon": "🎁",
-          "title": "5 · Rotušės aikštė",
-          "text": "Slut ved den klassiske juleplads og det store juletræ.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Rotu%C5%A1%C4%97s%20aik%C5%A1t%C4%97%20Kaunas%20Lithuania"
+          "icon": "➕",
+          "title": "Flere museer og udstillinger",
+          "text": "Denne mappe kan udvides med flere museer, gallerier og aktuelle udstillinger, når I beslutter, hvad der passer ind i den frie tid."
         }
       ],
-      "links": [
-        {
-          "title": "Åbn hele julegåturen i Google Maps",
-          "text": "Rute til fods fra Vienybės aikštė til Rådhuspladsen",
-          "url": "https://www.google.com/maps/dir/?api=1&origin=Vienybes+aikste+Kaunas&destination=Rotuses+aikste+Kaunas&waypoints=Laisves+aleja+Kaunas%7CSpurgine+Laisves+al+84+Kaunas%7CVilniaus+gatve+Kaunas&travelmode=walking"
-        }
-      ]
+      "links": []
     },
     {
       "id": "hotel",
@@ -628,6 +609,12 @@
       "icon": "✨",
       "intro": "Ekstra Kaunas-oplevelser, som kan bruges i den frie tid omkring Gabriellas dag-for-dag-plan.",
       "cards": [
+        {
+          "icon": "🎄",
+          "title": "Julegåtur · hele ruten",
+          "text": "Ekstra tur i den frie tid: Vienybės aikštė → Laisvės alėja → Spurginė → Vilniaus gatvė → Rotušės aikštė.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Vienybes+aikste+Kaunas&destination=Rotuses+aikste+Kaunas&waypoints=Laisves+aleja+Kaunas%7CSpurgine+Laisves+al+84+Kaunas%7CVilniaus+gatve+Kaunas&travelmode=walking"
+        },
         {
           "icon": "🚶‍♀️",
           "title": "Byvandring · Rådhus til universitetet",
