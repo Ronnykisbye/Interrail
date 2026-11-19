@@ -143,3 +143,5 @@ Projektet er i aktiv udvikling. Antwerpen, Interrail Istanbul, Skiferie 2027 og 
 - I Kaunas-appen ligger **📅 Gabriellas plan** i øverste række på mobil. Byvandring er ikke længere en selvstændig menuknap, men ruten er bevaret under Oplevelser.
 
 - Kaunas har nu en **🏛️ Museer & udstillinger**-mappe. Den erstatter den tidligere Julegåtur-knap; selve julegåturen er bevaret under Oplevelser.
+
+- Kaunas har nu **🏢 Art Deco & modernisme** med billeder, forklaringer, Maps-links og kilder til de vigtigste mellemkrigsbygninger omkring Laisvės alėja.
