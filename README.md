@@ -141,3 +141,5 @@ Bookingreferencer, ansøgningsnumre, e-mail, telefonnumre, adresser, betalingsko
 Projektet er i aktiv udvikling. Antwerpen, Interrail Istanbul, Skiferie 2027 og Kaunas er aktive moduler, mens den tidligere Interrail-app fortsat er bevaret separat for at undgå at ødelægge fungerende funktioner.
 
 - I Kaunas-appen ligger **📅 Gabriellas plan** i øverste række på mobil. Byvandring er ikke længere en selvstændig menuknap, men ruten er bevaret under Oplevelser.
+
+- Kaunas har nu en **🏛️ Museer & udstillinger**-mappe. Den erstatter den tidligere Julegåtur-knap; selve julegåturen er bevaret under Oplevelser.
