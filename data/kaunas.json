@@ -384,13 +384,32 @@
       "id": "museer",
       "label": "Museer & udstillinger",
       "icon": "🏛️",
-      "intro": "Museer, gallerier og udstillinger til turen. De to vigtigste steder her er allerede en del af Gabriellas dagplan.",
+      "intro": "Museer, gallerier og udstillinger til turen. Gabriellas reserverede VR/3D-oplevelse står altid øverst og er markeret tydeligt.",
       "cards": [
         {
           "icon": "🥽",
           "title": "M. K. Čiurlionis National Museum of Art · VR/3D",
-          "text": "Planlagt fredag. Hold 1: kl. 12.30–14.00. Hold 2: kl. 13.50–15.20. Gabriella har reserveret tid til oplevelsen. Når vi får de sidste detaljer om den konkrete VR/3D-udstilling, lægger jeg dem ind her.",
-          "url": "https://www.google.com/maps/search/?api=1&query=M.+K.+Ciurlionis+National+Museum+of+Art+Kaunas"
+          "text": "BESTILT i Gabriellas plan til fredag. Hold 1: kl. 12.30–14.00. Hold 2: kl. 13.50–15.20. Museets besøgsindgang er V. Putvinskio g. 55, Kaunas. Museet har flere VR-oplevelser i perioden; den præcise titel på Gabriellas reservation tilføjer vi, når den er bekræftet.",
+          "url": "https://www.google.com/maps/search/?api=1&query=M.+K.+Ciurlionis+National+Museum+of+Art+V.+Putvinskio+g.+55+Kaunas",
+          "featured": true,
+          "badge": "⭐ BESTILT",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://ciurlionis.lt/veikla/renginiai/angelu-takais-virtualios-realybes-filmas/",
+          "readLabel": "🥽 Officiel VR-side",
+          "extraLinks": [
+            {
+              "label": "🎟️ Billetter / VR-booking",
+              "url": "https://angelutakais.lt/kaunas/"
+            },
+            {
+              "label": "🖼️ Aktuelle udstillinger",
+              "url": "https://ciurlionis.lt/activities/exhibitions/"
+            },
+            {
+              "label": "🏛️ Museets hjemmeside",
+              "url": "https://ciurlionis.lt/en/"
+            }
+          ]
         },
         {
           "icon": "🖼️",
