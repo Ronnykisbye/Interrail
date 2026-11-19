@@ -236,3 +236,26 @@
   .flight-leg span{font-size:.70rem;line-height:1.35}
   .hero-photo{background-position:center 52%}
 }
+
+/* Highlight reserved / important cards */
+.card.featured-card{
+  border:1px solid rgba(183,94,61,.48);
+  box-shadow:0 18px 48px rgba(123,63,42,.16),0 0 0 3px rgba(183,94,61,.08);
+  background:linear-gradient(180deg,#fffdf8 0%,#fff 100%);
+}
+.featured-badge{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin:0 0 10px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#b75e3d;
+  color:#fff;
+  font-size:.68rem;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+.card.featured-card h2{margin-top:2px}
+.card.featured-card .action{font-weight:800}
