@@ -313,3 +313,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 - Alle historiekort er nu selvforklarende med en længere historisk tekst direkte i appen. Maps-links beholdes; eksterne læselinks er kun supplement og er ikke nødvendige for at forstå historien.
 
 - `Praktisk` indeholder nu **Mobil i Kaunas** med EU-roaminginfo for YouSee, Telenor, 3 og Norlys. Præcis datamængde afhænger af abonnementet; appen linker til de officielle roaming-sider og anbefaler kontrol i kundens egen app før afrejse.
+
+- Kaunas-menuen har nu **🏛️ Museer & udstillinger** i stedet for den tidligere selvstændige Julegåtur-knap. Mappen indeholder M. K. Čiurlionis National Museum of Art med Gabriellas reserverede VR/3D-tider samt Kaunas Picture Gallery. Julegåturen er bevaret under Oplevelser.
