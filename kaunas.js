@@ -14,7 +14,7 @@ function cardActionsHtml(c){
 }
 function cardId(tab,idx){return tab.id+':'+idx}
 async function loadTrip(){
-try{const r=await fetch('data/kaunas.json?v=20261119-2',{cache:'no-store'});if(!r.ok)throw Error('Data kunne ikke hentes');tripData=await r.json();renderTabs();selectTab(location.hash.slice(1)||'overblik',false)}
+try{const r=await fetch('data/kaunas.json?v=20261119-3',{cache:'no-store'});if(!r.ok)throw Error('Data kunne ikke hentes');tripData=await r.json();renderTabs();selectTab(location.hash.slice(1)||'overblik',false)}
 catch(e){console.error(e);document.getElementById('content').innerHTML='<article class="card wide"><h2>Guiden kunne ikke indlæses</h2><p>Prøv at genindlæse siden.</p></article>'}
 }
 function renderTabs(){const nav=document.getElementById('tabs');nav.innerHTML=tripData.tabs.map(t=>'<button type="button" class="tab" data-id="'+esc(t.id)+'" aria-pressed="false"><span class="tab-emoji" aria-hidden="true">'+esc(t.icon)+'</span><span class="tab-label">'+esc(t.label)+'</span><span class="tab-arrow" aria-hidden="true">↗</span></button>').join('');nav.addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(b)selectTab(b.dataset.id,true)})}
