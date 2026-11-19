@@ -7,13 +7,14 @@ function safeUrl(v){try{const u=new URL(v,location.href);return ['https:','http:
 function cardActionsHtml(c){
   if(c.go)return '<button class="action internal-action" data-go="'+esc(c.go)+'" type="button">Læs mere ↗</button>';
   let out='';
-  if(c.url)out+='<a class="action" href="'+esc(safeUrl(c.url))+'" target="_blank" rel="noopener noreferrer">'+(c.readUrl?'📍 Se på kort ↗':'Åbn på kort / hjemmeside ↗')+'</a>';
-  if(c.readUrl)out+='<a class="action history-read" href="'+esc(safeUrl(c.readUrl))+'" target="_blank" rel="noopener noreferrer">📖 Læs historien ↗</a>';
+  if(c.url)out+='<a class="action" href="'+esc(safeUrl(c.url))+'" target="_blank" rel="noopener noreferrer">'+esc(c.urlLabel||(c.readUrl?'📍 Se på kort ↗':'Åbn på kort / hjemmeside ↗'))+'</a>';
+  if(c.readUrl)out+='<a class="action history-read" href="'+esc(safeUrl(c.readUrl))+'" target="_blank" rel="noopener noreferrer">'+esc(c.readLabel||'📖 Læs historien ↗')+'</a>';
+  if(Array.isArray(c.extraLinks))out+=c.extraLinks.map(x=>'<a class="action extra-action" href="'+esc(safeUrl(x.url))+'" target="_blank" rel="noopener noreferrer">'+esc(x.label||'Mere information ↗')+'</a>').join('');
   return out;
 }
 function cardId(tab,idx){return tab.id+':'+idx}
 async function loadTrip(){
-try{const r=await fetch('data/kaunas.json?v=20261119-1',{cache:'no-store'});if(!r.ok)throw Error('Data kunne ikke hentes');tripData=await r.json();renderTabs();selectTab(location.hash.slice(1)||'overblik',false)}
+try{const r=await fetch('data/kaunas.json?v=20261119-2',{cache:'no-store'});if(!r.ok)throw Error('Data kunne ikke hentes');tripData=await r.json();renderTabs();selectTab(location.hash.slice(1)||'overblik',false)}
 catch(e){console.error(e);document.getElementById('content').innerHTML='<article class="card wide"><h2>Guiden kunne ikke indlæses</h2><p>Prøv at genindlæse siden.</p></article>'}
 }
 function renderTabs(){const nav=document.getElementById('tabs');nav.innerHTML=tripData.tabs.map(t=>'<button type="button" class="tab" data-id="'+esc(t.id)+'" aria-pressed="false"><span class="tab-emoji" aria-hidden="true">'+esc(t.icon)+'</span><span class="tab-label">'+esc(t.label)+'</span><span class="tab-arrow" aria-hidden="true">↗</span></button>').join('');nav.addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(b)selectTab(b.dataset.id,true)})}
@@ -29,7 +30,7 @@ document.getElementById('content').innerHTML='<p class="intro">'+esc(t.intro||''
 return;
 }
 const saved=getSaved();let cards=(t.cards||[]).map((c,i)=>({...c,key:cardId(t,i)})).filter(c=>(!showFavorites||saved.includes(c.key))&&(!query||(c.title+' '+(c.text||'')).toLocaleLowerCase('da').includes(query)));
-const cardsHtml=cards.map(c=>'<article class="card '+(c.wide?'wide':'')+'"><button class="save '+(saved.includes(c.key)?'saved':'')+'" type="button" data-save="'+esc(c.key)+'" aria-label="'+(saved.includes(c.key)?'Fjern fra gemte':'Gem som favorit')+'" aria-pressed="'+saved.includes(c.key)+'">'+(saved.includes(c.key)?'♥':'♡')+'</button><div class="icon">'+esc(c.icon||'✦')+'</div><h2>'+esc(c.title)+'</h2><p>'+esc(c.text||'')+'</p>'+cardActionsHtml(c)+'</article>').join('');
+const cardsHtml=cards.map(c=>'<article class="card '+(c.wide?'wide ':'')+(c.featured?'featured-card':'')+'">'+(c.badge?'<span class="featured-badge">'+esc(c.badge)+'</span>':'')+'<button class="save '+(saved.includes(c.key)?'saved':'')+'" type="button" data-save="'+esc(c.key)+'" aria-label="'+(saved.includes(c.key)?'Fjern fra gemte':'Gem som favorit')+'" aria-pressed="'+saved.includes(c.key)+'">'+(saved.includes(c.key)?'♥':'♡')+'</button><div class="icon">'+esc(c.icon||'✦')+'</div><h2>'+esc(c.title)+'</h2><p>'+esc(c.text||'')+'</p>'+cardActionsHtml(c)+'</article>').join('');
 const facts=(!query&&!showFavorites&&t.facts)?'<article class="card wide">'+t.facts.map(f=>'<div class="fact"><strong>'+esc(f.label)+'</strong><span>'+esc(f.value)+'</span></div>').join('')+'</article>':'';
 const links=(!query&&!showFavorites&&t.links)?'<article class="card wide"><h2>Nyttige links</h2><div class="links">'+t.links.map(l=>'<a href="'+esc(safeUrl(l.url))+'" target="_blank" rel="noopener noreferrer">'+esc(l.title)+'<small>'+esc(l.text||'')+'</small></a>').join('')+'</div></article>':'';
 document.getElementById('content').innerHTML=(!query&&!showFavorites?'<p class="intro">'+esc(t.intro||'')+'</p>':'')+(cardsHtml||(!facts&&!links?'<div class="empty">Ingen resultater her. Prøv en anden mappe eller søgning.</div>':''))+facts+links;
