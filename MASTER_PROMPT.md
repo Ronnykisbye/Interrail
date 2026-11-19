@@ -315,3 +315,5 @@ Når aktuelle rejsefakta som priser, køreplaner, hoteller, ladestandere, parker
 - `Praktisk` indeholder nu **Mobil i Kaunas** med EU-roaminginfo for YouSee, Telenor, 3 og Norlys. Præcis datamængde afhænger af abonnementet; appen linker til de officielle roaming-sider og anbefaler kontrol i kundens egen app før afrejse.
 
 - Kaunas-menuen har nu **🏛️ Museer & udstillinger** i stedet for den tidligere selvstændige Julegåtur-knap. Mappen indeholder M. K. Čiurlionis National Museum of Art med Gabriellas reserverede VR/3D-tider samt Kaunas Picture Gallery. Julegåturen er bevaret under Oplevelser.
+
+- VR/3D-kortet i `Museer & udstillinger` er markeret **⭐ BESTILT**, ligger altid først og har Google Maps, officiel VR-side, billetlink, aktuelle udstillinger og museets hjemmeside. Den præcise VR-titel må først skrives som bekræftet, når Gabriella oplyser den.
