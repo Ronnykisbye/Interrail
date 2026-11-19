@@ -646,46 +646,119 @@
       ]
     },
     {
-      "id": "funikulaer",
-      "label": "Lille tog",
-      "icon": "🚋",
-      "intro": "Når man er kommet over broen til Aleksotas, ligger den historiske funikulær tæt på.",
+      "id": "modernisme",
+      "label": "Art Deco & modernisme",
+      "icon": "🏢",
+      "intro": "Kaunas er berømt for sin mellemkrigsarkitektur fra tiden som Litauens midlertidige hovedstad. Stilen er ikke kun Art Deco, men en særlig Kaunas-modernisme med inspiration fra Art Deco, Bauhaus, funktionalisme og litauiske motiver. Mange af de flotteste bygninger ligger på eller lige ved Laisvės alėja.",
       "cards": [
         {
-          "icon": "🚋",
-          "title": "Aleksotas Funicular",
-          "text": "Det lille røde tog har kørt siden 1935 og forbinder området ved floden med Aleksotas-bakken og udsigtspunktet over Kaunas.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+          "icon": "🚶‍♀️",
+          "title": "Laisvės alėja · kig op",
+          "text": "Hovedgaden er den nemmeste introduktion til Kaunas’ modernistiske arkitektur. Flere af de vigtigste bygninger ligger direkte på gaden eller få minutters gang derfra. UNESCO-området omfatter især Naujamiestis og Žaliakalnis.",
+          "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kaunas%20Laisv%C4%97s%20al%C4%97ja%201.jpg?width=1000",
+          "imageAlt": "Laisvės alėja i Kaunas",
+          "imageCredit": "Wikimedia Commons",
+          "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Kaunas_Laisv%C4%97s_al%C4%97ja_1.jpg",
+          "url": "https://www.google.com/maps/search/?api=1&query=Laisves+aleja+Kaunas",
+          "urlLabel": "📍 Se hovedgaden",
+          "readUrl": "https://modernist.kaunas.lt/en/",
+          "readLabel": "📖 Modernist Kaunas"
         },
         {
-          "icon": "👀",
-          "title": "Udsigt over byen",
-          "text": "Fra toppen er der panorama over Nemunas, den gamle bydel og Kaunas centrum.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+          "icon": "📮",
+          "title": "Centralposthuset · Laisvės al. 102",
+          "text": "Bygget i 1931 af Feliksas Vizbaras. Et af byens kendteste modernistiske bygningsværker, hvor moderne formsprog blandes med litauiske nationale detaljer. Postfunktionen er væk, og bygningen er planlagt til en ny rolle som arkitekturcenter/museum.",
+          "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Main%20post%20office%20in%20Kaunas.jpg?width=1000",
+          "imageAlt": "Det tidligere centralposthus i Kaunas",
+          "imageCredit": "Foto: Derbrauni · CC BY 4.0 · Wikimedia Commons",
+          "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Main_post_office_in_Kaunas.jpg",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Central+Post+Office+Laisves+al.+102",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://modernist.kaunas.lt/en/gidas_en.pdf",
+          "readLabel": "📖 Modernist-guiden"
         },
         {
-          "icon": "⏱️",
-          "title": "Praktisk",
-          "text": "Den officielle operatør oplyser normalt drift kl. 07–19, pause kl. 12–13 og afgange cirka hvert 10. minut. Tjek igen på rejsedagen.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+          "icon": "🥛",
+          "title": "Pienocentras · Laisvės al. 55",
+          "text": "Opført i 1932 og tegnet af Vytautas Landsbergis-Žemkalnis. Den smalle hjørnebygning er et godt eksempel på den enkle, funktionelle Kaunas-modernisme. Læg især mærke til hjørnet og de vandrette linjer.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Pienocentras+Laisves+al.+55+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://modernist.kaunas.lt/en/gidas_en.pdf",
+          "readLabel": "📖 Modernist-guiden"
         },
         {
-          "icon": "💶",
-          "title": "Billet",
-          "text": "Den officielle operatør angiver aktuelt 1,50 € for en enkeltbillet. Pris og drift bør kontrolleres igen tæt på turen.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
+          "icon": "🎬",
+          "title": "Romuva-biografen · Laisvės al. 54",
+          "text": "Romuva åbnede i 1940 og er et af de mest ikoniske eksempler på sen mellemkrigsmodernisme i Kaunas. Den er stadig biograf og kultursted og ligger direkte på Laisvės alėja.",
+          "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Romuva%20Cinema.jpg?width=1000",
+          "imageAlt": "Romuva-biografen i Kaunas",
+          "imageCredit": "Foto: Derbrauni · CC BY 4.0 · Wikimedia Commons",
+          "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Romuva_Cinema.jpg",
+          "url": "https://www.google.com/maps/search/?api=1&query=Romuva+Cinema+Laisves+al.+54+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://modernist.kaunas.lt/en/ehl-pastatai.php",
+          "readLabel": "📖 Læs om bygningen"
+        },
+        {
+          "icon": "🎖️",
+          "title": "Officers’ Club · A. Mickevičiaus g. 19",
+          "text": "Karininkų Ramovė blev færdig i 1937. Facaden er modernistisk, men har samtidig tydelige litauiske nationale motiver. Bygningen ligger kun få skridt fra Laisvės alėja og er et af de mest repræsentative huse fra perioden.",
+          "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kauno%20Karininku%20Ramove.jpg?width=1000",
+          "imageAlt": "Officers' Club i Kaunas",
+          "imageCredit": "Foto: Zirzilia · Wikimedia Commons",
+          "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Kauno_Karininku_Ramove.jpg",
+          "url": "https://www.google.com/maps/search/?api=1&query=Karininku+Ramove+A.+Mickeviciaus+g.+19+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://modernist.kaunas.lt/en/gidas_en.pdf",
+          "readLabel": "📖 Modernist-guiden"
+        },
+        {
+          "icon": "🏦",
+          "title": "Bank of Lithuania · Maironio g. 25",
+          "text": "Den monumentale bankbygning er fra 1929 og tegnet af Mykolas Songaila. Den er mere klassisk og pompøs end de helt stramme modernistiske huse, men hører med til mellemkrigstidens arkitektoniske fortælling og ligger få minutter fra hovedgaden.",
+          "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kaunas%20Bank.jpg?width=1000",
+          "imageAlt": "Bank of Lithuania-bygningen i Kaunas",
+          "imageCredit": "Foto: Boubloub · CC0 · Wikimedia Commons",
+          "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Kaunas_Bank.jpg",
+          "url": "https://www.google.com/maps/search/?api=1&query=Bank+of+Lithuania+Maironio+g.+25+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://modernist.kaunas.lt/en/gidas_en.pdf",
+          "readLabel": "📖 Modernist-guiden"
+        },
+        {
+          "icon": "🏛️",
+          "title": "Pažanga · Laisvės al. 53",
+          "text": "Feliksas Vizbaras tegnede Pažanga-bygningen i 1934. Den rummede blandt andet avisredaktion, butik og restaurant med tagterrasse. Sammen med Pienocentras lige ved siden af viser den, hvor tæt modernismens højdepunkter ligger på hovedgaden.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Pazanga+Laisves+al.+53+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://modernist.kaunas.lt/en/gidas_en.pdf",
+          "readLabel": "📖 Modernist-guiden"
+        },
+        {
+          "icon": "⛪",
+          "title": "Kristi Genopstandelseskirke · Žemaičių g. 31A",
+          "text": "Den store hvide kirke er et af de stærkeste symboler på mellemkrigstidens optimisme. Den blev påbegyndt i 1930’erne, men historien og senere besættelser betød, at projektet først blev afsluttet langt senere. Pigerne har allerede kirken i Gabriellas fredagstur.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Christ%27s+Resurrection+Basilica+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://lithuania.travel/en/where-to-visit/major-cities/kaunas/top-10-places-to-visit-in-kaunas/interwar-modernist-architecture",
+          "readLabel": "📖 Lithuania Travel"
         }
       ],
       "links": [
         {
-          "title": "Aleksotas Funicular · officiel operatør",
-          "text": "Aktuelle tider og billetpriser.",
-          "url": "https://kaunoautobusai.lt/paslaugos/aleksoto-funikulierius/"
+          "title": "UNESCO · Modernist Kaunas",
+          "text": "Hvorfor Kaunas’ arkitektur fra 1919–1939 er verdensarv.",
+          "url": "https://whc.unesco.org/en/list/1661/"
         },
         {
-          "title": "Visit Kaunas · Aleksotas Funicular",
-          "text": "Historie og turistinformation.",
-          "url": "https://visit.kaunas.lt/en/see-and-do/sights/interwar-architecture/funicular-of-aleksotas/"
+          "title": "Modernist’s Guide 2025",
+          "text": "Officiel illustreret guide med kort, bygninger, arkitekter og adresser.",
+          "url": "https://modernist.kaunas.lt/en/gidas_en.pdf"
+        },
+        {
+          "title": "Gåtur · modernistiske højdepunkter",
+          "text": "En enkel Google Maps-rute mellem flere af bygningerne omkring Laisvės alėja.",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Kaunas+Central+Post+Office&destination=Bank+of+Lithuania+Kaunas&waypoints=Romuva+Cinema+Kaunas%7CPienocentras+Kaunas%7CKarininku+Ramove+Kaunas&travelmode=walking"
         }
       ]
     },
@@ -766,6 +839,12 @@
           "title": "Aleksotas udsigtspunkt",
           "text": "Kombinér broen, funikulæren og udsigten i én samlet tur.",
           "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Observation+Deck+Kaunas"
+        },
+        {
+          "icon": "🚋",
+          "title": "Aleksotas Funicular · historisk lille tog",
+          "text": "Det tidligere menupunkt Lille tog er bevaret her. Den historiske funikulær fra 1935 kan kombineres med udsigten over byen.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Aleksotas+Funicular+Kaunas"
         }
       ],
       "links": [
