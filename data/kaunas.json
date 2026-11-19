@@ -384,7 +384,7 @@
       "id": "museer",
       "label": "Museer & udstillinger",
       "icon": "🏛️",
-      "intro": "Museer, gallerier og udstillinger til turen. Gabriellas reserverede VR/3D-oplevelse står altid øverst og er markeret tydeligt.",
+      "intro": "Museer, gallerier og udstillinger til turen. Gabriellas reserverede VR/3D-oplevelse står øverst. Derefter følger steder, der er gode valg i den frie tid — flere ligger direkte i centrum eller den gamle bydel.",
       "cards": [
         {
           "icon": "🥽",
@@ -414,13 +414,80 @@
         {
           "icon": "🖼️",
           "title": "Kaunas Picture Gallery",
-          "text": "Planlagt lørdag kl. 13.00. Galleriet er en del af M. K. Čiurlionis National Museum of Art og viser skiftende kunstudstillinger.",
-          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Picture+Gallery"
+          "text": "Planlagt lørdag kl. 13.00. Under jeres weekend viser galleriet bl.a. udstillinger om abstrakt polsk kunst og Jurgis Mačiūnas/Fluxus. Adresse: K. Donelaičio g. 16.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Picture+Gallery+K.+Donelaicio+g.+16",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://ciurlionis.lt/activities/branches/kaunas-picture-gallery/",
+          "readLabel": "🏛️ Officiel side",
+          "extraLinks": [
+            {
+              "label": "🖼️ Aktuelle udstillinger",
+              "url": "https://ciurlionis.lt/activities/exhibitions/"
+            }
+          ]
         },
         {
-          "icon": "➕",
-          "title": "Flere museer og udstillinger",
-          "text": "Denne mappe kan udvides med flere museer, gallerier og aktuelle udstillinger, når I beslutter, hvad der passer ind i den frie tid."
+          "icon": "😈",
+          "title": "Devils' Museum · Velnių muziejus",
+          "text": "Et af Kaunas’ mest usædvanlige museer med tusindvis af djævlefigurer og motiver fra kunst, folklore og satire. Under jeres tur kører også udstillingen “Tylūs horizontai”. Adresse: V. Putvinskio g. 64.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Devils+Museum+V.+Putvinskio+g.+64+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://ciurlionis.lt/en/",
+          "readLabel": "🏛️ Officiel museumsside"
+        },
+        {
+          "icon": "📷",
+          "title": "Kaunas Photography Gallery",
+          "text": "Et stærkt sted for fotografi midt i den gamle bydel. Galleriet viser både klassisk fotografi og moderne, eksperimenterende projekter. Adresse: Vilniaus g. 2.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+Photography+Gallery+Vilniaus+g.+2",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://www.kaunasgallery.lt/",
+          "readLabel": "📷 Galleriets hjemmeside"
+        },
+        {
+          "icon": "🎨",
+          "title": "Meno Parkas",
+          "text": "Lille galleri for samtidskunst på Rådhuspladsen. Godt som et kort kulturelt stop, fordi det ligger lige i den gamle bydel. Adresse: Rotušės a. 27.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Meno+Parkas+Rotuses+a.+27+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://www.menoparkas.lt/",
+          "readLabel": "🎨 Galleriets hjemmeside"
+        },
+        {
+          "icon": "🏛️",
+          "title": "Kaunas City Museum · Rådhuset",
+          "text": "Byhistorie inde i Kaunas’ ikoniske rådhus på Rådhuspladsen. Et oplagt stop, når I alligevel er i den gamle bydel. Adresse: Rotušės a. 15.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kaunas+City+Museum+Rotuses+a.+15",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://kaunomuziejus.lt/en/",
+          "readLabel": "🏛️ Museets hjemmeside"
+        },
+        {
+          "icon": "🇱🇹",
+          "title": "Historical Presidential Palace",
+          "text": "Det tidligere præsidentpalæ fra perioden, hvor Kaunas var Litauens midlertidige hovedstad. Godt valg hvis I vil forstå byens historie 1919–1940. Adresse: Vilniaus g. 33.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Historical+Presidential+Palace+Vilniaus+g.+33+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://istorineprezidentura.lt/en/",
+          "readLabel": "🏛️ Officiel hjemmeside"
+        },
+        {
+          "icon": "🔬",
+          "title": "Mokslo sala · Science Island",
+          "text": "Moderne interaktivt science-center på Nemunas-øen med hands-on udstillinger om mennesket, natur, energi, transport og teknologi samt et moderne planetarium. Adresse: Karaliaus Mindaugo pr. 50.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Mokslo+sala+Karaliaus+Mindaugo+pr.+50+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://mokslosala.lt/en/",
+          "readLabel": "🔬 Officiel hjemmeside"
+        },
+        {
+          "icon": "🎖️",
+          "title": "Vytautas the Great War Museum",
+          "text": "Stort museum om Litauens militærhistorie og kampen for uafhængighed. Ligger centralt ved Vienybės-pladsen. Adresse: K. Donelaičio g. 64.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vytautas+the+Great+War+Museum+K.+Donelaicio+g.+64+Kaunas",
+          "urlLabel": "📍 Google Maps",
+          "readUrl": "https://www.vdkaromuziejus.lt/en/",
+          "readLabel": "🎖️ Museets hjemmeside"
         }
       ],
       "links": []
