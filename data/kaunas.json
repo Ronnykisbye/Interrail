@@ -559,6 +559,18 @@
       "intro": "Kaunas er meget mere end en hyggelig gammel by. Den voksede fra en middelalderlig fæstning ved to floder til handelsby, blev Litauens midlertidige hovedstad og udviklede på få årtier en helt ny moderne identitet. Her er historien i korte kapitler.",
       "cards": [
         {
+          "icon": "🗿",
+          "title": "Gabriellas familiehistorie · stelen “Revoliucija”",
+          "badge": "FAMILIEHISTORIE",
+          "featured": true,
+          "wide": true,
+          "text": "På Vienybės aikštė stod tidligere tre store granitsteler: “Revoliucija” (Revolution) af Kazys Švažas, “Taika” (Fred) og “Darbas” (Arbejde). De blev fjernet i 2017 i forbindelse med renoveringen af pladsen og blev senere opbevaret ved S. Dariaus og S. Girėno-flyvepladsen. Ifølge familien stod Gabriellas morfar model til den markante mandlige figur på stelen “Revoliucija”. Det gør dette stykke Kaunas-historie til en helt særlig del af familiens egen fortælling.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vienybes+aikste+Kaunas",
+          "urlLabel": "📍 Se Vienybės aikštė på kort ↗",
+          "readUrl": "https://www.lrytas.lt/kultura/daile/2020/12/22/news/kauno-vienybes-aikste-puosusios-trys-stelos-prieglobsti-rado-aerodrome-17578122",
+          "readLabel": "📖 Læs artiklen i Lietuvos rytas ↗"
+        },
+        {
           "icon": "🏰",
           "title": "1361 · Byen træder ind i historien",
           "text": "Kaunas nævnes første gang i skriftlige kilder i 1361. Byens placering ved sammenløbet af Nemunas og Neris gjorde området strategisk vigtigt. Her blev Kaunas-borgen opført som forsvar mod Den Tyske Orden, som flere gange angreb området i middelalderen. Borgen blev ødelagt og genopbygget, og omkring den voksede en handelsplads og senere selve byen frem. I dag står dele af den genopførte borg stadig ved floderne og markerer stedet, hvor Kaunas’ historie for alvor begyndte.",
