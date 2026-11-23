@@ -3,7 +3,7 @@ const savedKey='kaunas-favorites-v1';
 function getSaved(){try{return JSON.parse(localStorage.getItem(savedKey)||'[]')}catch{return []}}
 function setSaved(v){try{localStorage.setItem(savedKey,JSON.stringify(v))}catch{}}
 function esc(v){return String(v??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]))}
-function safeUrl(v){try{const u=new URL(v,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
+function safeUrl(v){if(typeof v==='string'&&/^data:image\/(?:jpeg|jpg|png|webp);base64,/i.test(v))return v;try{const u=new URL(v,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
 function cardImageHtml(c){
   if(!c.image)return '';
   const src=esc(safeUrl(c.image));
