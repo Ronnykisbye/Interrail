@@ -568,7 +568,10 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Vienybes+aikste+Kaunas",
           "urlLabel": "📍 Se Vienybės aikštė på kort ↗",
           "readUrl": "https://www.lrytas.lt/kultura/daile/2020/12/22/news/kauno-vienybes-aikste-puosusios-trys-stelos-prieglobsti-rado-aerodrome-17578122",
-          "readLabel": "📖 Læs artiklen i Lietuvos rytas ↗"
+          "readLabel": "📖 Læs artiklen i Lietuvos rytas ↗",
+          "image": "assets/kaunas-billeder/revoliucija-gabriella-familie.jpg",
+          "imageAlt": "Familiens foto af stelen Revoliucija på Vienybės aikštė i Kaunas",
+          "imageCredit": "Privat familiefoto"
         },
         {
           "icon": "🏰",
