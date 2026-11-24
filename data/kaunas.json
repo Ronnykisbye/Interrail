@@ -172,9 +172,14 @@
         },
         {
           "icon": "⛸️",
-          "title": "Skøjtebane i julesæsonen",
-          "text": "Kaunas IN oplyser for 2026, at skøjtebane bliver en del af juleoplevelserne. Den præcise placering og åbningstid bør tjekkes tæt på besøget.",
-          "url": "https://www.google.com/maps/search/?api=1&query=ice+rink+Kaunas"
+          "title": "Udendørs skøjtebane · Vienybės aikštė",
+          "badge": "BEKRÆFTET 2026",
+          "featured": true,
+          "text": "Ja – den kommer igen til julen 2026. Kaunas Kommune har bekræftet, at den udendørs skøjtebane vender tilbage til Vienybės aikštė sammen med den moderne juleby, glaskuplerne og byens andet juletræ. Det er altså banen ude på pladsen – ikke en skøjtehal. Google Maps kan stadig vise den gamle sæsonplacering som “lukket permanent”, men de aktuelle 2026-oplysninger bekræfter, at banen vender tilbage. Præcise åbningstider, priser og skøjteudlejning for 2026 er endnu ikke offentliggjort pr. 24. november. God som spontan aktivitet: gå forbi, kig på stemningen, og tag en tur hvis I får lyst.",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vienybes+aikste+Kaunas",
+          "urlLabel": "📍 Se Vienybės aikštė på kort ↗",
+          "readUrl": "https://kaunas.kasvyksta.lt/miestas/kaunas-jau-ruosiasi-kaledoms-du-sventiniai-miesteliai-ir-daugiau-pramogu-maziesiems-foto",
+          "readLabel": "📖 Se 2026-oplysninger om julebyen og skøjtebanen ↗"
         }
       ],
       "links": [
